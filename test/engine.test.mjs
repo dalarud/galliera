@@ -37,3 +37,16 @@ test('kassa, utdelning, tillskott och andelsvärde', () => {
   assert.ok(Math.abs(d3.unit - expectedUnit) < 1e-6);
   assert.equal(r.positions.length, 2);
 });
+
+test('aktieantal före en split räknas om till dagens aktier', () => {
+  const ds = ['2020-01-02', '2020-01-03', '2021-05-03'];
+  const prices = new Map([
+    // Yahoo-kurser är splitjusterade: 400 kr före 4:1-split visas som 100.
+    ['AAA', { closes: new Map(ds.map((d) => [d, 100])), dividends: [], splits: [{ date: '2021-04-30', factor: 4 }], last: null }],
+  ]);
+  const benchmarks = { IDX: { label: 'Index', history: { closes: new Map(ds.map((d) => [d, 1000])), dividends: [], splits: [] } } };
+  const ledger = { baseline: '2020-01-02', events: [{ id: 's', date: '2020-01-02', type: 'snapshot', full: true, holdings: { AAA: 1000 } }] };
+  const r = replay({ ledger, securities: { AAA: { name: 'A' } }, prices, benchmarks });
+  assert.equal(r.positions[0].shares, 4000);
+  assert.equal(r.series[0].nav, 400000);
+});

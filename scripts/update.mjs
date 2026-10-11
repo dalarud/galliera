@@ -262,6 +262,7 @@ async function main() {
     lastNewsScan: newsDb.lastScan ?? null,
     fund: ledger.fund,
     baseline: ledger.baseline,
+    denseFrom: ledger.denseFrom ?? null,
     notes: ledger.notes,
     benchmarks: Object.fromEntries(Object.entries(benchmarks).map(([k, b]) => [k, b.label])),
     sectors: Object.fromEntries(ledgerTickers(ledger).map((t) => [t, securities[t]?.sector ?? ''])),

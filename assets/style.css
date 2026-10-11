@@ -209,6 +209,10 @@ button { font: inherit; color: inherit; }
 .sheet-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; }
 .sheet-head h2 { font: 700 15px/1.3 var(--sans); }
 .tabs { display: flex; gap: 4px; padding: 3px; border: 1px solid var(--rule2); }
+.ranges { display: flex; flex-wrap: wrap; gap: 2px; margin-left: auto; }
+.ranges button { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--ink2); font: 600 12px var(--mono); letter-spacing: .04em; cursor: pointer; }
+.ranges button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+@media (max-width: 639px) { .ranges { margin-left: 0; width: 100%; justify-content: space-between; } .ranges button { padding: 0 4px; } }
 .tabs button { min-height: 44px; padding: 0 18px; border: 0; font-size: 14px; font-weight: 600; cursor: pointer; background: transparent; color: var(--ink2); }
 .tabs button[aria-selected="true"] { background: var(--tab-on); color: var(--tab-on-fg); }
 .legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin-top: 14px; font-size: 13px; color: var(--ink2); }

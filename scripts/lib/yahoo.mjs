@@ -42,11 +42,16 @@ export async function getHistory(ticker, fromDay) {
   const dividends = Object.values(result.events?.dividends ?? {})
     .map((d) => ({ date: isoDay(d.date, off), amount: d.amount }))
     .sort((a, b) => a.date.localeCompare(b.date));
+  // Splitar: Yahoos kurser och utdelningar är splitjusterade, så äldre aktieantal måste räknas om.
+  const splits = Object.values(result.events?.splits ?? {})
+    .map((x) => ({ date: isoDay(x.date, off), factor: x.numerator && x.denominator ? x.numerator / x.denominator : 1 }))
+    .filter((x) => x.factor > 0 && x.factor !== 1)
+    .sort((a, b) => a.date.localeCompare(b.date));
   const last = meta.regularMarketPrice != null
     ? { price: meta.regularMarketPrice, time: meta.regularMarketTime, date: isoDay(meta.regularMarketTime, off) }
     : null;
   if (last) closes.set(last.date, last.price); // dagens senaste kurs ersätter/kompletterar dagens stapel
-  return { ticker, currency: meta.currency, name: meta.longName || meta.shortName, closes, dividends, last };
+  return { ticker, currency: meta.currency, name: meta.longName || meta.shortName, closes, dividends, splits, last };
 }
 
 export async function getMany(tickers, fromDay, { concurrency = 6 } = {}) {

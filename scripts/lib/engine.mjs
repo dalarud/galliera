@@ -38,6 +38,8 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = O
   const lookups = new Map([...prices].map(([t, h]) => [t, makePriceLookup(h)]));
   const benchLookups = Object.fromEntries(Object.entries(benchmarks).map(([k, b]) => [k, makePriceLookup(b.history)]));
   const nameOf = (t) => securities[t]?.name ?? t.replace(/\.ST$/, '');
+  // Aktieantal i källorna gäller dåtidens aktier; kurserna är justerade för senare splitar.
+  const splitFactor = (t, day) => (prices.get(t)?.splits ?? []).filter((x) => x.date > day).reduce((f, x) => f * x.factor, 1);
   const price = (t, day) => {
     const lk = lookups.get(t);
     const p = lk ? lk(day) : null;
@@ -140,8 +142,8 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = O
         const targets = new Map();
         for (const [t, spec] of Object.entries(e.holdings)) {
           let shares, basis = e.basis;
-          if (typeof spec === 'number') shares = spec;
-          else if (spec.shares != null) { shares = spec.shares; basis = spec.basis ?? basis; }
+          if (typeof spec === 'number') shares = spec * splitFactor(t, e.date);
+          else if (spec.shares != null) { shares = spec.shares * splitFactor(t, e.date); basis = spec.basis ?? basis; }
           else if (spec.value != null) { shares = Math.round(spec.value / price(t, day) / 100) * 100; basis = spec.basis ?? 'uppskattad'; }
           targets.set(t, { shares, basis });
         }
@@ -154,7 +156,7 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = O
         for (const [t, { shares, basis }] of targets) { const h = holdings.get(t); if (h && shares > 0) h.basis = basis ?? 'rapporterad'; }
       } else if (e.type === 'trade') {
         const held = holdings.get(e.ticker)?.shares ?? 0;
-        let shares = e.shares;
+        let shares = e.shares != null ? e.shares * splitFactor(e.ticker, e.date) : null;
         if (shares == null && e.value != null) shares = e.value / price(e.ticker, day);
         if (shares == null && e.fraction != null) shares = held * e.fraction;
         if (shares == null && e.weightOfNav != null) shares = (e.weightOfNav * navBefore) / price(e.ticker, day);
@@ -167,11 +169,12 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = O
         const h = holdings.get(e.ticker) ?? { shares: 0, cost: 0, first: day };
         const p = price(e.ticker, day);
         if (h.shares === 0) h.first = day;
-        h.shares += e.shares;
+        const spun = e.shares * splitFactor(e.ticker, e.date);
+        h.shares += spun;
         h.basis = e.basis ?? 'rapporterad';
-        h.cost += e.shares * p;
+        h.cost += spun * p;
         holdings.set(e.ticker, h);
-        trades.push({ date: day, ticker: e.ticker, name: nameOf(e.ticker), side: 'spinoff', shares: e.shares, price: round(p, 3), value: round(e.shares * p, 0), positionAfter: h.shares, ...sourceMeta(e) });
+        trades.push({ date: day, ticker: e.ticker, name: nameOf(e.ticker), side: 'spinoff', shares: spun, price: round(p, 3), value: round(spun * p, 0), positionAfter: h.shares, ...sourceMeta(e) });
       } else if (e.type === 'cash') {
         cash += e.amount;
         cashflows.push({ date: day, type: e.amount >= 0 ? 'insättning' : 'uttag', amount: e.amount, note: e.note ?? '' });
