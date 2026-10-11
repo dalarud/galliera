@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T18:29:33.501Z",
-  "lastNewsScan": "2026-10-11T18:29:33.494Z",
+  "generatedAt": "2026-10-11T18:30:18.258Z",
+  "lastNewsScan": "2026-10-11T18:30:18.256Z",
   "fund": "Gallierafonden",
   "baseline": "2025-11-07",
   "notes": [
@@ -1356,15 +1356,6 @@
     {
       "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "EPI-B.ST",
-      "name": "Epiroc",
-      "perShare": 1.9,
-      "shares": 38000,
-      "amount": 72200
-    },
-    {
-      "date": "2026-05-06",
-      "type": "utdelning",
       "ticker": "HM-B.ST",
       "name": "H&M",
       "perShare": 3.55,
@@ -1372,13 +1363,13 @@
       "amount": 25560
     },
     {
-      "date": "2026-04-30",
+      "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "SECU-B.ST",
-      "name": "Securitas",
-      "perShare": 2.65,
-      "shares": 30800,
-      "amount": 81620
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "perShare": 1.9,
+      "shares": 38000,
+      "amount": 72200
     },
     {
       "date": "2026-04-30",
@@ -1388,6 +1379,15 @@
       "perShare": 2.238612,
       "shares": 14600,
       "amount": 32684
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "perShare": 2.65,
+      "shares": 30800,
+      "amount": 81620
     },
     {
       "date": "2026-04-29",
