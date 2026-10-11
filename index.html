@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Som kungen – Gallierafonden</title>
+  <meta name="description" content="Kungens frimärksalbum: en fiktiv kopia av Gallierafonden som läser nyheter om kungens köp och sälj, gör samma affärer och visar innehav, kassa och utveckling mot börsen.">
+  <link rel="icon" href="assets/stamp.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="top" id="top">
+    <div class="wrap top-in">
+      <a class="logo" href="#">
+        <span class="logo-name">Som kungen</span>
+        <span class="logo-sub">Kungens frimärksalbum – Gallierafonden, rekonstruerad</span>
+      </a>
+      <div class="top-right">
+        <div class="status" id="status" role="status" aria-label="Laddar">
+          <span class="status-text" id="status-text"></span>
+          <span class="status-stamp" id="status-stamp" aria-hidden="true"><span id="st-l1">LIVE</span><span id="st-l2">…</span></span>
+        </div>
+        <button class="theme" id="theme" type="button" aria-label="Byt till mörkt tema">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.5 12.2A7 7 0 0 1 7.8 3.5a7 7 0 1 0 8.7 8.7z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="updating-line" aria-hidden="true"></div>
+  </header>
+
+  <div class="issue" id="issue" role="alert" hidden></div>
+
+  <main>
+    <section class="wrap hero" id="vardet" aria-labelledby="h1">
+      <div class="hero-grid">
+        <div class="hero-title">
+          <p class="kicker">I · VÄRDET</p>
+          <h1 id="h1">Vill du investera som kungen?</h1>
+        </div>
+        <figure class="king" id="king" aria-label="Gallierafondens värde">
+          <div class="king-stamp">
+            <span class="perf perf-t" aria-hidden="true"></span><span class="perf perf-b" aria-hidden="true"></span>
+            <span class="perf perf-l" aria-hidden="true"></span><span class="perf perf-r" aria-hidden="true"></span>
+            <div class="king-frame">
+              <div class="king-photo">
+                <img src="assets/kungen.jpg" alt="Porträtt av kung Carl XVI Gustaf" width="960" height="1276">
+                <span class="king-paper" aria-hidden="true"></span>
+                <span class="king-raster" aria-hidden="true"></span>
+                <span class="king-tag">ARV 1837</span>
+              </div>
+              <div class="king-foot">
+                <span class="king-label">GALLIERAFONDEN<br>FONDENS VÄRDE</span>
+                <span class="king-value" id="king-value">–</span>
+              </div>
+            </div>
+          </div>
+          <svg class="postmark" viewBox="0 0 250 150" aria-hidden="true">
+            <defs><path id="pmBue" d="M 22 75 A 53 53 0 0 1 128 75"/></defs>
+            <circle cx="75" cy="75" r="68" class="pm-ring pm-fill"/>
+            <circle cx="75" cy="75" r="44" class="pm-ring pm-thin"/>
+            <text class="pm-arc"><textPath href="#pmBue" startOffset="50%">STOCKHOLMSBÖRSEN</textPath></text>
+            <text x="75" y="70" class="pm-t" id="pm-date">–</text>
+            <text x="75" y="90" class="pm-t pm-big" id="pm-day">–</text>
+            <path class="pm-wave" d="M150 50 q 12 -8 24 0 t 24 0 t 24 0 t 24 0 M150 66 q 12 -8 24 0 t 24 0 t 24 0 t 24 0 M150 82 q 12 -8 24 0 t 24 0 t 24 0 t 24 0 M150 98 q 12 -8 24 0 t 24 0 t 24 0 t 24 0"/>
+          </svg>
+          <figcaption class="credit">Foto: <a href="https://commons.wikimedia.org/wiki/File:Carl_XVI_Gustaf_Tallinnas_2023_(cropped).jpg" target="_blank" rel="noopener">Metsavend</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.sv" target="_blank" rel="noopener">CC BY-SA 4.0</a> · tonad</figcaption>
+        </figure>
+
+        <div class="hero-body">
+          <div class="cmp">
+            <div class="cmp-stamps">
+              <div class="cmp-stamp cmp-king" id="cmp-king"><span>KUNGEN</span><b id="cmp-king-v">–</b></div>
+              <div class="cmp-stamp cmp-bench" id="cmp-bench"><span id="cmp-bench-l">BÖRSEN</span><b id="cmp-bench-v">–</b></div>
+            </div>
+            <p class="verdict" id="verdict"></p>
+          </div>
+          <p class="cmp-note" id="cmp-note"></p>
+          <div class="stale" id="stale-note" role="note" hidden>
+            <span id="stale-text"></span>
+            <button type="button" class="btn-line" id="retry">Försök igen</button>
+          </div>
+          <a class="incoming" id="incoming" href="#postgangen"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap chart-sec" aria-labelledby="chart-title">
+      <div class="sheet">
+        <div class="sheet-head">
+          <h2 id="chart-title">Kungens fond mot börsen</h2>
+          <div class="tabs" role="tablist" aria-label="Diagramvy">
+            <button type="button" role="tab" id="tab-return" aria-selected="true" aria-controls="chart">Avkastning</button>
+            <button type="button" role="tab" id="tab-value" aria-selected="false" aria-controls="chart">Värde</button>
+          </div>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="chart" id="chart" tabindex="0" aria-label="Diagram. Använd piltangenterna för att stega mellan dagar."></div>
+        <div class="xaxis" id="xaxis" aria-hidden="true"></div>
+        <div class="sheet-foot">
+          <span id="chart-foot"></span>
+          <button type="button" class="link-btn" id="table-toggle" aria-expanded="false" aria-controls="chart-table">Visa som tabell</button>
+        </div>
+        <div class="chart-table" id="chart-table" hidden></div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="albumet" aria-labelledby="album-title">
+      <div class="sec-head">
+        <div>
+          <p class="kicker">II · ALBUMET</p>
+          <h2 class="h2" id="album-title">Vad kungen äger</h2>
+          <p class="sub" id="album-sub"></p>
+        </div>
+        <ul class="inks" id="inks" aria-label="Färg betyder bransch"></ul>
+      </div>
+      <div class="album" id="album"></div>
+      <div class="album-below">
+        <div class="back paper-card" id="back" aria-live="polite"></div>
+        <aside class="cash" id="cash" aria-label="Kassa och utdelningar"></aside>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="postgangen" aria-labelledby="post-title">
+      <p class="kicker">III · POSTGÅNGEN</p>
+      <h2 class="h2" id="post-title">Vad kungen gjort senast</h2>
+      <div class="post-row">
+        <div class="post-main" id="post"></div>
+        <div class="post-side">
+          <h3>Sorteringen</h3>
+          <p class="sub">Sidan läser finansnyheter löpande och sorterar ut det som rör kungens fond.</p>
+          <div class="stale stale-small" id="stale-news" role="note" hidden></div>
+          <ol class="sort" id="sort"></ol>
+          <div class="scanline" id="scanline"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="ditt-album" aria-labelledby="copy-title">
+      <p class="kicker">IV · GÖR SOM KUNGEN</p>
+      <h2 class="h2" id="copy-title">Starta ditt eget album</h2>
+      <div class="copy-row">
+        <form class="copy-form" id="copy-form" novalidate>
+          <div>
+            <label for="belopp" class="lbl">Hur mycket vill du placera?</label>
+            <div class="amount"><input id="belopp" type="text" inputmode="numeric" autocomplete="off" value="10 000"><span>kr</span></div>
+            <div class="presets" id="presets"></div>
+          </div>
+          <fieldset>
+            <legend class="lbl">Hur många märken?</legend>
+            <div class="seg" id="segs"></div>
+            <p class="hint">Färre märken ger lägre courtage men en mindre exakt kopia.</p>
+          </fieldset>
+          <label class="check">
+            <input type="checkbox" id="keep-cash" checked>
+            <span><b>Håll kassa som kungen</b><span class="hint" id="keep-cash-hint"></span></span>
+          </label>
+        </form>
+        <div class="mine paper-card">
+          <div class="mine-head"><b>Ditt album</b><span id="coverage"></span></div>
+          <div class="mine-list" id="mine"></div>
+          <p class="hint">Belopp avrundade till tiotal kronor. Courtage och skatt ingår inte.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot" id="metod">
+    <div class="foot-row">
+      <p class="foot-text"><span class="foot-name">Som kungen</span> är en fiktiv kopia av Gallierafonden, byggd på uppgifter i medier. Ingen koppling till Kungliga Hovstaterna. Inte investeringsrådgivning. ≈ och påtrycket UPPSKATTAD betyder att siffran är vår uppskattning.</p>
+      <nav class="foot-nav" aria-label="Om sidan">
+        <button type="button" class="link-btn" data-open="m-method" aria-expanded="false">Så räknar vi</button>
+        <button type="button" class="link-btn" data-open="m-sources" aria-expanded="false">Källor</button>
+        <button type="button" class="link-btn" data-open="m-image" aria-expanded="false">Bildrättigheter</button>
+      </nav>
+    </div>
+    <div class="foot-panel" id="m-method" hidden>
+      <h3>Så räknar vi</h3>
+      <ol class="method">
+        <li><b>Bevakning.</b> Sidan söker i svenska nyhetsflöden efter artiklar om kungens aktieaffärer och läser dem: innehavslistor, antal aktier, belopp och formuleringar som <i>sålt hela innehavet</i>, <i>halverat</i> eller <i>tagit in</i>.</li>
+        <li><b>Uppskattning.</b> Saknas antal eller belopp uppskattas affären utifrån innehavets vikt: en minskning motsvarar en tredjedel av innehavet, ett nytt bolag fondens medianvikt. Publicerade innehavslistor ersätter alltid uppskattningarna.</li>
+        <li><b>Kopian.</b> Affärerna läggs in till stängningskurs på affärsdagen. Saknas exakt dag används mitten av den månad som rapporteras.</li>
+        <li><b>Kassa.</b> Försäljningar och utdelningar går till kassan och köp dras därifrån. Räcker inte kassan räknas mellanskillnaden som insatt kapital. Hovet redovisar inte kassan, så den är en modell.</li>
+        <li><b>Avkastning.</b> Fonden räknas i andelar som startar på 100 kr. Insatt kapital påverkar därför inte avkastningen, som kan jämföras rakt av med index.</li>
+      </ol>
+      <ul class="method-notes" id="notes"></ul>
+    </div>
+    <div class="foot-panel" id="m-sources" hidden>
+      <h3>Källor</h3>
+      <ul class="sources" id="sources"></ul>
+      <p class="hint">Kurser och utdelningar: Yahoo Finance. Innehavsdata: ägardatatjänsten Holdings via medierna ovan.</p>
+    </div>
+    <div class="foot-panel" id="m-image" hidden>
+      <h3>Bildrättigheter</h3>
+      <p>Porträttet av kung Carl XVI Gustaf är taget av Metsavend i Tallinn den 2 maj 2023 och publicerat på <a href="https://commons.wikimedia.org/wiki/File:Carl_XVI_Gustaf_Tallinnas_2023_(cropped).jpg" target="_blank" rel="noopener">Wikimedia Commons</a> under licensen <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.sv" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Bilden är beskuren och tonad i gråskala och karmin på den här sidan. Fotografen har ingen koppling till sidan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" type="module"></script>
+</body>
+</html>

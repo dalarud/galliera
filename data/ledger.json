@@ -1,0 +1,221 @@
+{
+  "fund": "Gallierafonden",
+  "baseline": "2025-11-07",
+  "startUnitValue": 100,
+  "startCash": 0,
+  "notes": [
+    "Startpunkten är den fullständiga innehavstabellen från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
+    "Fondens faktiska kassa redovisas inte offentligt. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som kapitaltillskott, vilket inte påverkar andelsvärdet.",
+    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen."
+  ],
+  "events": [
+    {
+      "id": "seed-2025-11-snapshot",
+      "date": "2025-11-07",
+      "type": "snapshot",
+      "full": true,
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "holdings": {
+        "INVE-B.ST": 43300,
+        "INDU-C.ST": 23000,
+        "NDA-SE.ST": 45000,
+        "ESSITY-B.ST": 24999,
+        "SAND.ST": 18000,
+        "SEB-A.ST": 26000,
+        "ALFA.ST": 9600,
+        "SHB-A.ST": 33000,
+        "SECU-B.ST": 27000,
+        "ATCO-B.ST": 26600,
+        "MCOV-B.ST": 14600,
+        "HEXA-B.ST": 22000,
+        "EPI-B.ST": 10500,
+        "GETI-B.ST": 6000,
+        "HM-B.ST": 7200,
+        "SKA-B.ST": 4200,
+        "ARJO-B.ST": 18000
+      }
+    },
+    {
+      "id": "seed-2026-04-snapshot",
+      "date": "2026-04-24",
+      "type": "snapshot",
+      "full": false,
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "holdings": {
+        "INVE-B.ST": 39300,
+        "INDU-C.ST": 26200,
+        "NDA-SE.ST": 51300,
+        "EPI-B.ST": 38000,
+        "SAND.ST": 20500,
+        "ALFA.ST": 10950,
+        "ESSITY-B.ST": 21500,
+        "SEB-A.ST": 29600,
+        "SECU-B.ST": 30800,
+        "ATCO-B.ST": 30300,
+        "GETI-B.ST": 0,
+        "ARJO-B.ST": 0,
+        "LATO-B.ST": {
+          "shares": 17000,
+          "basis": "uppskattad"
+        },
+        "EKTA-B.ST": {
+          "shares": 63000,
+          "basis": "uppskattad"
+        },
+        "SWEC-B.ST": {
+          "shares": 26000,
+          "basis": "uppskattad"
+        },
+        "SVOL-B.ST": {
+          "value": 5500000,
+          "basis": "uppskattad"
+        }
+      }
+    },
+    {
+      "id": "seed-2026-05-octave",
+      "date": "2026-05-25",
+      "type": "spinoff",
+      "ticker": "OCTV-SDB.ST",
+      "from": "HEXA-B.ST",
+      "shares": 2500,
+      "basis": "uppskattad",
+      "note": "Octave Intelligence knoppades av från Hexagon och noterades 25 maj 2026. Antalet (2 500) är det som senare rapporterades.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "seed-2026-09-inve",
+      "date": "2026-09-15",
+      "type": "trade",
+      "ticker": "INVE-B.ST",
+      "side": "sell",
+      "shares": 8000,
+      "basis": "rapporterad",
+      "note": "Investor-aktier fördes ut ur Gallierafonden i september (39 300 → 31 300). Exakt datum ej publicerat.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "seed-2026-09-indu",
+      "date": "2026-09-15",
+      "type": "trade",
+      "ticker": "INDU-C.ST",
+      "side": "sell",
+      "shares": 15100,
+      "basis": "rapporterad",
+      "note": "Innehavet i Industrivärden mer än halverades (26 200 → 11 100).",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "seed-2026-09-shb",
+      "date": "2026-09-15",
+      "type": "trade",
+      "ticker": "SHB-A.ST",
+      "side": "sell",
+      "fraction": 1,
+      "basis": "rapporterad",
+      "note": "Hela innehavet i Handelsbanken sålt.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "seed-2026-09-eqt",
+      "date": "2026-09-15",
+      "type": "trade",
+      "ticker": "EQT.ST",
+      "side": "buy",
+      "shares": 25600,
+      "basis": "rapporterad",
+      "note": "EQT, som plockades bort i augusti, är tillbaka med 25 600 aktier.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "seed-2026-09-beij",
+      "date": "2026-09-15",
+      "type": "trade",
+      "ticker": "BEIJ-B.ST",
+      "side": "buy",
+      "shares": 29000,
+      "basis": "rapporterad",
+      "note": "Nytt innehav: 29 000 aktier i kylteknikbolaget Beijer Ref.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      }
+    },
+    {
+      "id": "seed-2026-10-snapshot",
+      "date": "2026-10-08",
+      "type": "snapshot",
+      "full": true,
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "holdings": {
+        "INVE-B.ST": 31300,
+        "NDA-SE.ST": 51300,
+        "EPI-B.ST": 38000,
+        "SAND.ST": 20500,
+        "EQT.ST": 25600,
+        "SEB-A.ST": 29600,
+        "ALFA.ST": 10500,
+        "ATCO-B.ST": 30300,
+        "INDU-C.ST": 11100,
+        "HEXA-B.ST": 48300,
+        "SECU-B.ST": 30800,
+        "MCOV-B.ST": 16600,
+        "BEIJ-B.ST": 29000,
+        "LATO-B.ST": 17000,
+        "EKTA-B.ST": 63000,
+        "SWEC-B.ST": 26000,
+        "HM-B.ST": 8200,
+        "SKA-B.ST": 4800,
+        "OCTV-SDB.ST": 2500
+      }
+    }
+  ]
+}

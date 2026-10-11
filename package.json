@@ -1,0 +1,14 @@
+{
+  "name": "galliera",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vill du investera som kungen? En fiktiv skuggportfölj som replikerar Gallierafondens affärer utifrån nyheter.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "update": "node scripts/update.mjs",
+    "prices": "node scripts/update.mjs --no-news",
+    "test": "node --test test/*.test.mjs"
+  }
+}
