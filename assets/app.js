@@ -172,6 +172,7 @@ function renderStatus() {
   $('#st-l2').textContent = l2;
   $('#status-text').textContent = text;
   st.setAttribute('aria-label', aria);
+  st.title = text;
 
   // Notiser i hjältedelen och sorteringen
   const notes = [];
@@ -328,7 +329,9 @@ function renderChart() {
   let paths;
   const ends = [];
   if (m.ret) {
-    paths = `<path class="l-idx" d="${line(m.idx)}"/><path class="l-fund" d="${line(m.fund)}"/>`;
+    const upper = m.fund.map((v, i) => Math.max(v, m.idx[i]));
+    const back = m.idx.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
+    paths = `<path class="band" d="${line(upper)}${back}Z"/><path class="l-idx" d="${line(m.idx)}"/><path class="l-fund" d="${line(m.fund)}"/>`;
     ends.push({ y: Y(m.fund[N - 1]), label: `${sgn(m.fund[N - 1])} %` }, { y: Y(m.idx[N - 1]), label: `${sgn(m.idx[N - 1])} %` });
   } else {
     const back = m.stocks.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
@@ -389,7 +392,7 @@ function renderChart() {
     const L = (X(i) / W) * 100;
     if (L > 94) return;
     if (mobileMq.matches && (p.m - 2) % 3 !== 0 && i !== 0) return;
-    if (xs.length && L - xs[xs.length - 1].L < (mobileMq.matches ? 18 : 6)) return;
+    if (xs.length && L - xs[xs.length - 1].L < (mobileMq.matches ? 28 : 6)) return;
     xs.push({ L, text: `${MON3[p.m - 1]}${p.m === 1 || i === 0 ? ` ${p.y}` : ''}` });
   });
   $('#xaxis').innerHTML = xs.map((x) => `<span style="left:${x.L.toFixed(2)}%">${x.text}</span>`).join('');
@@ -398,7 +401,8 @@ function renderChart() {
   const d = S.data;
   $('#legend').innerHTML = m.ret
     ? `<span class="lg"><span class="sw" style="height:3px;background:var(--accent)"></span>Kungens fond (vår kopia)</span>
-       <span class="lg"><span class="sw" style="height:2px;background:var(--index)"></span>Börsen: ${esc(benchLabel())}</span>`
+       <span class="lg"><span class="sw" style="height:2px;background:var(--index)"></span>Börsen: ${esc(benchLabel())}</span>
+       <span class="lg"><span class="sw" style="height:12px;background:var(--band)"></span>Kungens försprång</span>`
     : `<span class="lg"><span class="sw" style="height:12px;background:var(--accent-soft)"></span>Aktier</span>
        <span class="lg"><span class="sw" style="height:12px;background:repeating-linear-gradient(-66deg,var(--pm) 0 1.3px,transparent 1.3px 5px)"></span>Kassa, uppskattad</span>`;
   $('#chart-title').textContent = m.ret ? 'Kungens fond mot börsen' : 'Fondens värde – aktier och kassa';
@@ -469,7 +473,7 @@ function renderAlbum() {
   const missing = new Set(missingQuotes().map((p) => p.ticker));
   if (!S.pick || (S.pick !== 'cash' && !d.positions.some((p) => p.ticker === S.pick))) S.pick = d.positions[0]?.ticker ?? 'cash';
 
-  $('#album-sub').textContent = `${d.positions.length} märken och kassan. Höjden följer andelen av fonden – tryck på ett märke för att vända det.`;
+  $('#album-sub').textContent = `${d.positions.length} märken. Höjden följer andelen av fonden – tryck på ett märke för att vända det.`;
   const used = new Set(d.positions.map((p) => GROUP[p.sector] ?? 'ind'));
   $('#inks').innerHTML = Object.keys(INK).filter((g) => used.has(g)).map((g) => `<li><i style="background:${INK[g]}"></i>${INK_NAME[g]}</li>`).join('');
 
@@ -494,22 +498,21 @@ function renderAlbum() {
       ${pm ? `<span class="st-pm" style="--c:${pm[2]}" aria-hidden="true"><span>${pm[0]}</span><span>${pm[1]}</span></span>` : ''}
     </button>`;
   });
-  stamps.push(`<button type="button" class="st st-cash" data-pick="cash" aria-pressed="${S.pick === 'cash'}" aria-label="Kassa, uppskattad, ${f1(s.cashPct)} procent av fonden" style="height:${Math.max(base + 28, Math.round(base + s.cashPct * k))}px">
-      <span class="perf perf-t" aria-hidden="true"></span><span class="perf perf-b" aria-hidden="true"></span><span class="perf perf-l" aria-hidden="true"></span><span class="perf perf-r" aria-hidden="true"></span>
-      <span class="st-in"><span class="st-n">Kassa</span><span class="st-v"><span class="st-p">${f1(s.cashPct)} %</span><span class="st-k">≈ ${f1(s.cash / 1e6)} Mkr</span></span><span class="over" aria-hidden="true">UPPSKATTAD</span></span>
-    </button>`);
+
   $('#album').innerHTML = stamps.join('');
   renderBack();
   renderCash();
 }
 
-$('#album').addEventListener('click', (e) => {
+const onPick = (e) => {
   const b = e.target.closest('[data-pick]');
   if (!b) return;
   S.pick = b.dataset.pick;
-  $('#album').querySelectorAll('[data-pick]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  document.querySelectorAll('[data-pick]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.pick === S.pick)));
   renderBack();
-});
+};
+$('#album').addEventListener('click', onPick);
+$('#cash').addEventListener('click', onPick);
 
 function tradeNote(t) {
   if (!t) return null;
@@ -556,6 +559,16 @@ function renderBack() {
     <p class="back-note">${esc(note)}${est ? ' Antalet aktier är uppskattat.' : ''}</p>`;
 }
 
+function cashStampHtml() {
+  const s = S.data.summary;
+  const mob = mobileMq.matches;
+  const base = mob ? 80 : 96, k = mob ? 6 : 9;
+  return `<button type="button" class="st st-cash" data-pick="cash" aria-pressed="${S.pick === 'cash'}" aria-label="Kassa, uppskattad, ${f1(s.cashPct)} procent av fonden" style="height:${Math.max(base + 28, Math.round(base + s.cashPct * k))}px">
+      <span class="perf perf-t" aria-hidden="true"></span><span class="perf perf-b" aria-hidden="true"></span><span class="perf perf-l" aria-hidden="true"></span><span class="perf perf-r" aria-hidden="true"></span>
+      <span class="st-in"><span class="st-n">Kassa</span><span class="st-v"><span class="st-p">${f1(s.cashPct)} %</span><span class="st-k">≈ ${f1(s.cash / 1e6)} Mkr</span></span><span class="over" aria-hidden="true">UPPSKATTAD</span></span>
+    </button>`;
+}
+
 function renderCash() {
   const d = S.data, s = d.summary;
   const maxW = Math.max(...d.positions.map((p) => p.weight));
@@ -567,7 +580,7 @@ function renderCash() {
     return `<li><span>${dShort(c.date)} · ${esc(label)}</span><span>${c.amount >= 0 ? '+' : '−'}${money(Math.abs(c.amount))}</span></li>`;
   }).join('');
   $('#cash').innerHTML = `
-    <div class="cash-v"><b>≈ ${mkr(s.cash)}</b><span class="tag-est">UPPSKATTAD</span></div>
+    <div class="cash-top">${cashStampHtml()}<div class="cash-v"><b>≈ ${mkr(s.cash)}</b></div></div>
     <p>${lead} Hovet redovisar den inte, så vi räknar fram den ur rapporterade affärer och utdelningar. <a href="#m-method" data-open-link="m-method">Så räknar vi</a></p>
     <div class="cash-row"><span>Utdelningar hittills</span><b>${mkr(s.dividends)}</b></div>
     ${flows ? `<details><summary>Alla utdelningar och kassaflöden</summary><ul class="flows">${flows}</ul></details>` : ''}`;
@@ -654,14 +667,14 @@ function renderPost() {
     const p = parts(n.date);
     const when = `${DAY[p.wd].slice(0, 3).toUpperCase()} ${p.d} ${MON3[p.m - 1].toUpperCase()}${newsNew(n) ? ' · NYSS' : ''}`;
     const href = safeUrl(n.url);
-    return `<li class="paper-card">
+    return `<li>
       <div class="sort-meta"><span>${esc(shortPublisher(n.publisher))}</span><span>${when}</span></div>
       ${href ? `<a class="sort-h" href="${esc(href)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : `<span class="sort-h">${esc(n.title)}</span>`}
       <div class="sort-i"><strong>Tolkning:</strong> ${esc(n.summary || '–')}</div>
       <span class="outcome ${c}">${esc(f(n))}</span>
     </li>`;
   });
-  $('#sort').innerHTML = items.slice(0, 3).join('') + (items.length > 3 ? `<li style="list-style:none"><details class="more"><summary>Fler artiklar (${items.length - 3})</summary><ol class="sort" style="margin-top:14px">${items.slice(3).join('')}</ol></details></li>` : '');
+  $('#sort').innerHTML = items.slice(0, 3).join('') + (items.length > 3 ? `<li class="more-li"><details class="more"><summary>Fler artiklar (${items.length - 3})</summary><ol class="sort" style="margin-top:14px">${items.slice(3).join('')}</ol></details></li>` : '');
   $('#scanline').innerHTML = `<span>${d.lastNewsScan ? `Senast läst ${sthlm(new Date(d.lastNewsScan).getTime(), { weekday: 'short' }).replace('.', '')} ${hhmm(new Date(d.lastNewsScan).getTime())}` : ''}</span><a href="data/feed.xml">Följ affärerna via RSS</a>`;
 }
 
@@ -682,6 +695,8 @@ function renderCopy() {
   const rows = chosen.map((p) => `<div><i style="background:${inkOf(p.sector)}"></i><span>${esc(p.name)}</span><b>${tens((amt * p.weight) / den)}</b></div>`);
   if (S.keepCash) rows.push(`<div><i style="background:#FFFDF6;border:1.5px dashed #4B2A86"></i><span>Kassa</span><b>${tens((amt * s.cashPct) / den)}</b></div>`);
   $('#mine').innerHTML = rows.join('');
+  $('#strip').innerHTML = chosen.map((p) => `<i style="flex:${p.weight};background:${inkOf(p.sector)}" title="${esc(p.name)}"></i>`).join('')
+    + (S.keepCash ? `<i style="flex:${s.cashPct};background:repeating-linear-gradient(-66deg,#4B2A86 0 1.3px,transparent 1.3px 5px)" title="Kassa"></i>` : '');
   $('#coverage').textContent = `Täcker ${Math.round((wsum / (100 - s.cashPct)) * 100)} % av kungens aktier`;
 }
 $('#presets').addEventListener('click', (e) => {
