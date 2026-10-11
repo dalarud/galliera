@@ -4,9 +4,11 @@
   "startUnitValue": 100,
   "startCash": 0,
   "notes": [
-    "Startpunkten är den fullständiga innehavstabellen från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
-    "Fondens faktiska kassa redovisas inte offentligt. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som kapitaltillskott, vilket inte påverkar andelsvärdet.",
-    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen."
+    "Startpunkten är den fullständiga innehavslistan från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
+    "Fondens faktiska kassa redovisas inte. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som nytt kapital, vilket inte påverkar andelsvärdet. Fanns det redan en kassa vid start blir den verkliga kassan större.",
+    "Köp och försäljningar mellan två innehavslistor syns ofta först i nästa lista. De bokförs då på listans datum, vilket gör att kursutvecklingen däremellan blir ungefärlig.",
+    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen.",
+    "Artiklar om kungabarnens portfölj Gluonen räknas inte. När två tabeller står sida vid sida används bara Gallierafondens."
   ],
   "events": [
     {
@@ -48,7 +50,7 @@
       "type": "snapshot",
       "full": false,
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -81,20 +83,20 @@
           "basis": "uppskattad"
         },
         "SVOL-B.ST": {
-          "value": 5500000,
+          "shares": 68000,
           "basis": "uppskattad"
         }
       }
     },
     {
       "id": "seed-2026-05-octave",
-      "date": "2026-05-25",
+      "date": "2026-05-13",
       "type": "spinoff",
       "ticker": "OCTV-SDB.ST",
       "from": "HEXA-B.ST",
       "shares": 2500,
       "basis": "uppskattad",
-      "note": "Octave Intelligence knoppades av från Hexagon och noterades 25 maj 2026. Antalet (2 500) är det som senare rapporterades.",
+      "note": "Octave Intelligence knoppades av från Hexagon (x-dag 13 maj 2026, notering 25 maj). Antalet (2 500) är det som senare rapporterades. Fram till noteringen värderas aktierna till första noterade kurs.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -188,7 +190,7 @@
       "type": "snapshot",
       "full": true,
       "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "note": "Fullständig innehavslista för Gallierafonden enligt Holdings, 21 bolag (högra tabellen i artikeln; den vänstra är Gluonen). Skillnader mot tidigare uppskattning bokförs som affärer.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -202,13 +204,15 @@
         "SAND.ST": 20500,
         "EQT.ST": 25600,
         "SEB-A.ST": 29600,
-        "ALFA.ST": 10500,
+        "ALFA.ST": 10950,
+        "ESSITY-B.ST": 21500,
         "ATCO-B.ST": 30300,
         "INDU-C.ST": 11100,
         "HEXA-B.ST": 48300,
         "SECU-B.ST": 30800,
         "MCOV-B.ST": 16600,
         "BEIJ-B.ST": 29000,
+        "SVOL-B.ST": 68000,
         "LATO-B.ST": 17000,
         "EKTA-B.ST": 63000,
         "SWEC-B.ST": 26000,

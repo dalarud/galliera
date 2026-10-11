@@ -34,7 +34,7 @@ export function ledgerTickers(ledger) {
  * @param benchmarks  { key: { label, history } }
  * @param calendarKey benchmark vars handelsdagar används som kalender
  */
-export function replay({ ledger, securities, prices, benchmarks, calendarKey = 'OMXSPI', today }) {
+export function replay({ ledger, securities, prices, benchmarks, calendarKey = Object.keys(benchmarks)[0], today }) {
   const lookups = new Map([...prices].map(([t, h]) => [t, makePriceLookup(h)]));
   const benchLookups = Object.fromEntries(Object.entries(benchmarks).map(([k, b]) => [k, makePriceLookup(b.history)]));
   const nameOf = (t) => securities[t]?.name ?? t.replace(/\.ST$/, '');
@@ -45,9 +45,11 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = '
     return p;
   };
 
-  // Kalender: indexets handelsdagar från startdatum, plus senaste dag med kursdata.
-  const cal = new Set([...benchmarks[calendarKey].history.closes.keys()].filter((d) => d >= ledger.baseline));
-  for (const h of prices.values()) if (h.last?.date >= ledger.baseline) cal.add(h.last.date);
+  // Kalender: alla dagar med kurser i index eller innehav från startdatum (tål att en serie är gles).
+  const cal = new Set();
+  for (const h of [benchmarks[calendarKey].history, ...prices.values()]) {
+    for (const d of h.closes.keys()) if (d >= ledger.baseline) cal.add(d);
+  }
   let calendar = [...cal].sort();
   if (today) calendar = calendar.filter((d) => d <= today);
   if (!calendar.length || calendar[0] !== ledger.baseline) calendar.unshift(ledger.baseline);

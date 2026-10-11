@@ -17,9 +17,10 @@ const args = new Set(process.argv.slice(2));
 const DRY = args.has('--dry-run');
 const log = (...a) => console.log(new Date().toISOString().slice(11, 19), ...a);
 
+// Totalavkastningsindex (inklusive utdelningar), eftersom fonden också räknar med utdelningar.
+// OMXSBGI är det index svenska aktiefonder normalt jämförs med.
 const BENCHMARKS = {
-  OMXSPI: { ticker: '^OMXSPI', label: 'OMX Stockholm PI' },
-  OMXS30: { ticker: '^OMX', label: 'OMX Stockholm 30' },
+  OMXSBGI: { ticker: '^OMXSBGI', label: 'OMX Stockholm Benchmark GI' },
 };
 
 const readJson = async (f, fallback) => {
@@ -36,9 +37,9 @@ async function compute(ledger, securities) {
   const { data: prices, errors } = await getMany(tickers, ledger.baseline);
   const { data: bench, errors: bErr } = await getMany(Object.values(BENCHMARKS).map((b) => b.ticker), ledger.baseline);
   const benchmarks = Object.fromEntries(Object.entries(BENCHMARKS)
-    .filter(([, b]) => bench.has(b.ticker))
+    .filter(([, b]) => bench.has(b.ticker) && bench.get(b.ticker).closes.size > 20)
     .map(([k, b]) => [k, { label: b.label, history: bench.get(b.ticker) }]));
-  if (!benchmarks.OMXSPI) throw new Error('Kunde inte hämta jämförelseindex');
+  if (!benchmarks.OMXSBGI) throw new Error('Kunde inte hämta jämförelseindex med historik');
   const result = replay({ ledger, securities, prices, benchmarks });
   return { result, errors: [...errors, ...bErr], benchmarks };
 }
@@ -57,12 +58,13 @@ function planEvents(article, { table, signals }, { ledger, result }) {
   const source = { publisher: article.publisher, title: article.title, url: article.url, date: article.date };
   const currentCount = result.positions.length;
 
+  if (table.ambiguous) notes.push('Flera tabeller utan rubrik – oklart vilken som är Gallierafonden, ingen avstämning gjord');
   if (table.size >= 5) {
     const near = ledger.events.find((e) => e.type === 'snapshot' && Math.abs(new Date(e.date) - new Date(article.date)) < 12 * 864e5);
     if (near) {
       notes.push(`Innehavstabell (${table.size} bolag) – redan inlagd från ${near.source?.publisher ?? 'tidigare källa'}`);
     } else {
-      const full = table.size >= Math.max(5, currentCount - 2);
+      const full = !table.partial && table.size >= Math.max(5, currentCount - 2);
       const d = new Date(article.date); d.setUTCDate(d.getUTCDate() - 1);
       events.push({
         id: `auto-${article.id}-snapshot`, date: d.toISOString().slice(0, 10), type: 'snapshot', full, auto: true,
@@ -194,6 +196,38 @@ function summarizeNews(rec, ledger, securities) {
   }
 }
 
+const xmlEsc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+/** Atom-flöde med de senaste affärerna, så att man kan prenumerera i en flödesläsare. */
+function buildFeed(result, baseline) {
+  const nf = (n) => Math.round(n).toLocaleString('sv-SE');
+  const trades = result.trades.filter((t) => t.date !== baseline && !t.implied).slice(0, 40);
+  const entries = trades.map((t) => {
+    const verb = t.side === 'buy' ? 'köpt' : t.side === 'sell' ? 'sålt' : 'fått (avknoppning)';
+    const est = /uppskatt/.test(t.basis) ? '≈ ' : '';
+    const title = `Kungen har ${verb} ${est}${nf(t.shares)} aktier i ${t.name} (${est}${(t.value / 1e6).toLocaleString('sv-SE', { maximumFractionDigits: 1 })} Mkr)`;
+    const updated = `${t.source?.date ?? t.date}T08:00:00Z`;
+    return `  <entry>
+    <id>urn:som-kungen:${xmlEsc(t.eventId)}:${xmlEsc(t.ticker)}</id>
+    <title>${xmlEsc(title)}</title>
+    <updated>${updated}</updated>
+    ${t.source?.url ? `<link href="${xmlEsc(t.source.url)}"/>` : ''}
+    <summary>${xmlEsc(`${t.note ?? ''} Källa: ${t.source?.publisher ?? 'okänd'}.`.trim())}</summary>
+  </entry>`;
+  });
+  const updated = trades[0] ? `${trades[0].source?.date ?? trades[0].date}T08:00:00Z` : new Date().toISOString();
+  return `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>urn:som-kungen:gallierafonden</id>
+  <title>Som kungen – Gallierafondens affärer</title>
+  <subtitle>Köp och försäljningar i kungens Gallierafond, så som de rapporterats i medier. Fiktiv kopia, inte investeringsrådgivning.</subtitle>
+  <updated>${updated}</updated>
+  <link href="../"/>
+${entries.join('\n')}
+</feed>
+`;
+}
+
 async function main() {
   const securities = await readJson(DATA('securities.json'));
   const ledger = await readJson(DATA('ledger.json'));
@@ -235,7 +269,10 @@ async function main() {
     news,
     errors,
   };
-  if (!DRY) await writeJson(DATA('portfolio.json'), out);
+  if (!DRY) {
+    await writeJson(DATA('portfolio.json'), out);
+    await writeFile(DATA('feed.xml'), buildFeed(result, ledger.baseline));
+  }
   log(`Klart: andelsvärde ${result.summary.unit.toFixed(2)}, kassa ${Math.round(result.summary.cash).toLocaleString('sv-SE')} kr` + (errors.length ? `, ${errors.length} fel` : ''));
   return out;
 }

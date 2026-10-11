@@ -1,16 +1,17 @@
 {
-  "generatedAt": "2026-10-11T18:08:06.037Z",
-  "lastNewsScan": "2026-10-11T18:08:06.034Z",
+  "generatedAt": "2026-10-11T18:29:33.501Z",
+  "lastNewsScan": "2026-10-11T18:29:33.494Z",
   "fund": "Gallierafonden",
   "baseline": "2025-11-07",
   "notes": [
-    "Startpunkten är den fullständiga innehavstabellen från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
-    "Fondens faktiska kassa redovisas inte offentligt. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som kapitaltillskott, vilket inte påverkar andelsvärdet.",
-    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen."
+    "Startpunkten är den fullständiga innehavslistan från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
+    "Fondens faktiska kassa redovisas inte. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som nytt kapital, vilket inte påverkar andelsvärdet. Fanns det redan en kassa vid start blir den verkliga kassan större.",
+    "Köp och försäljningar mellan två innehavslistor syns ofta först i nästa lista. De bokförs då på listans datum, vilket gör att kursutvecklingen däremellan blir ungefärlig.",
+    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen.",
+    "Artiklar om kungabarnens portfölj Gluonen räknas inte. När två tabeller står sida vid sida används bara Gallierafondens."
   ],
   "benchmarks": {
-    "OMXSPI": "OMX Stockholm PI",
-    "OMXS30": "OMX Stockholm 30"
+    "OMXSBGI": "OMX Stockholm Benchmark GI"
   },
   "sectors": {
     "INVE-B.ST": "Investmentbolag",
@@ -40,19 +41,19 @@
   },
   "asOf": "2026-10-09",
   "summary": {
-    "nav": 115300347,
-    "cash": 13974822,
-    "cashPct": 12.12,
-    "invested": 101325525,
-    "unit": 122.6959,
-    "dayChangePct": 1.67,
-    "dayChangeKr": 1895245,
-    "sinceStartPct": 22.7,
-    "positions": 19,
-    "dividends": 3073459,
-    "realized": 3755088,
+    "nav": 113263947,
+    "cash": 1976552,
+    "cashPct": 1.75,
+    "invested": 111287395,
+    "unit": 122.7698,
+    "dayChangePct": 1.84,
+    "dayChangeKr": 2050485,
+    "sinceStartPct": 22.77,
+    "positions": 21,
+    "dividends": 3039799,
+    "realized": 3247462,
     "startCapital": 74129663,
-    "injected": 22584692
+    "injected": 20632412
   },
   "positions": [
     {
@@ -64,7 +65,7 @@
       "prevClose": 406.55,
       "dayChangePct": 1.35,
       "value": 12897165,
-      "weight": 11.19,
+      "weight": 11.39,
       "avgCost": 312.6,
       "gainPct": 31.81,
       "since": "2025-11-07",
@@ -80,7 +81,7 @@
       "prevClose": 187,
       "dayChangePct": 0.16,
       "value": 9608490,
-      "weight": 8.33,
+      "weight": 8.48,
       "avgCost": 160.452,
       "gainPct": 16.73,
       "since": "2025-11-07",
@@ -96,7 +97,7 @@
       "prevClose": 218.6,
       "dayChangePct": 2.47,
       "value": 8512000,
-      "weight": 7.38,
+      "weight": 7.52,
       "avgCost": 204.278,
       "gainPct": 9.65,
       "since": "2025-11-07",
@@ -112,7 +113,7 @@
       "prevClose": 352.4,
       "dayChangePct": 2.41,
       "value": 7398450,
-      "weight": 6.42,
+      "weight": 6.53,
       "avgCost": 299.227,
       "gainPct": 20.61,
       "since": "2025-11-07",
@@ -128,7 +129,7 @@
       "prevClose": 276,
       "dayChangePct": 2.93,
       "value": 7272960,
-      "weight": 6.31,
+      "weight": 6.42,
       "avgCost": 302.6,
       "gainPct": -6.11,
       "since": "2026-09-15",
@@ -144,7 +145,7 @@
       "prevClose": 223.6,
       "dayChangePct": 1.97,
       "value": 6748800,
-      "weight": 5.85,
+      "weight": 5.96,
       "avgCost": 180.502,
       "gainPct": 26.31,
       "since": "2025-11-07",
@@ -155,17 +156,33 @@
       "ticker": "ALFA.ST",
       "name": "Alfa Laval",
       "sector": "Verkstad",
-      "shares": 10500,
+      "shares": 10950,
       "price": 577.6,
       "prevClose": 560.4,
       "dayChangePct": 3.07,
-      "value": 6064800,
-      "weight": 5.26,
+      "value": 6324720,
+      "weight": 5.58,
       "avgCost": 453.008,
       "gainPct": 27.5,
       "since": "2025-11-07",
       "basis": "rapporterad",
       "quoteTime": 1791559779
+    },
+    {
+      "ticker": "ESSITY-B.ST",
+      "name": "Essity",
+      "sector": "Hygien",
+      "shares": 21500,
+      "price": 263.7,
+      "prevClose": 261.9,
+      "dayChangePct": 0.69,
+      "value": 5669550,
+      "weight": 5.01,
+      "avgCost": 267.5,
+      "gainPct": -1.42,
+      "since": "2025-11-07",
+      "basis": "rapporterad",
+      "quoteTime": 1791559790
     },
     {
       "ticker": "INDU-C.ST",
@@ -176,7 +193,7 @@
       "prevClose": 495.4,
       "dayChangePct": 1.13,
       "value": 5561100,
-      "weight": 4.82,
+      "weight": 4.91,
       "avgCost": 405.104,
       "gainPct": 23.67,
       "since": "2025-11-07",
@@ -192,7 +209,7 @@
       "prevClose": 179.7,
       "dayChangePct": 1.81,
       "value": 5543385,
-      "weight": 4.81,
+      "weight": 4.89,
       "avgCost": 141.709,
       "gainPct": 29.1,
       "since": "2025-11-07",
@@ -208,7 +225,7 @@
       "prevClose": 101.25,
       "dayChangePct": 2.86,
       "value": 5030445,
-      "weight": 4.36,
+      "weight": 4.44,
       "avgCost": 107.399,
       "gainPct": -3.03,
       "since": "2025-11-07",
@@ -224,7 +241,7 @@
       "prevClose": 154.6,
       "dayChangePct": 1.81,
       "value": 4847920,
-      "weight": 4.2,
+      "weight": 4.28,
       "avgCost": 146.709,
       "gainPct": 7.29,
       "since": "2025-11-07",
@@ -240,7 +257,7 @@
       "prevClose": 260,
       "dayChangePct": 1.35,
       "value": 4374100,
-      "weight": 3.79,
+      "weight": 3.86,
       "avgCost": 237.572,
       "gainPct": 10.91,
       "since": "2025-11-07",
@@ -256,12 +273,28 @@
       "prevClose": 138.2,
       "dayChangePct": 2.03,
       "value": 4089000,
-      "weight": 3.55,
+      "weight": 3.61,
       "avgCost": 133.6,
       "gainPct": 5.54,
       "since": "2026-09-15",
       "basis": "rapporterad",
       "quoteTime": 1791559776
+    },
+    {
+      "ticker": "SVOL-B.ST",
+      "name": "Svolder",
+      "sector": "Investmentbolag",
+      "shares": 68000,
+      "price": 59.3,
+      "prevClose": 57.7,
+      "dayChangePct": 2.77,
+      "value": 4032400,
+      "weight": 3.56,
+      "avgCost": 52.2,
+      "gainPct": 13.6,
+      "since": "2026-04-24",
+      "basis": "rapporterad",
+      "quoteTime": 1791559773
     },
     {
       "ticker": "LATO-B.ST",
@@ -272,7 +305,7 @@
       "prevClose": 199.6,
       "dayChangePct": 2.3,
       "value": 3471400,
-      "weight": 3.01,
+      "weight": 3.06,
       "avgCost": 224.1,
       "gainPct": -8.88,
       "since": "2026-04-24",
@@ -288,7 +321,7 @@
       "prevClose": 52.9,
       "dayChangePct": 2.93,
       "value": 3430350,
-      "weight": 2.98,
+      "weight": 3.03,
       "avgCost": 54.7,
       "gainPct": -0.46,
       "since": "2026-04-24",
@@ -304,7 +337,7 @@
       "prevClose": 126.9,
       "dayChangePct": 1.26,
       "value": 3341000,
-      "weight": 2.9,
+      "weight": 2.95,
       "avgCost": 140.8,
       "gainPct": -8.74,
       "since": "2026-04-24",
@@ -320,7 +353,7 @@
       "prevClose": 162.65,
       "dayChangePct": 1.81,
       "value": 1357920,
-      "weight": 1.18,
+      "weight": 1.2,
       "avgCost": 171.562,
       "gainPct": -3.48,
       "since": "2025-11-07",
@@ -336,7 +369,7 @@
       "prevClose": 258.4,
       "dayChangePct": 2.09,
       "value": 1266240,
-      "weight": 1.1,
+      "weight": 1.12,
       "avgCost": 244.138,
       "gainPct": 8.05,
       "since": "2025-11-07",
@@ -352,10 +385,10 @@
       "prevClose": 197.5,
       "dayChangePct": 3.29,
       "value": 510000,
-      "weight": 0.44,
+      "weight": 0.45,
       "avgCost": 157,
       "gainPct": 29.94,
-      "since": "2026-05-25",
+      "since": "2026-05-13",
       "basis": "rapporterad",
       "quoteTime": 1791559784
     }
@@ -372,7 +405,7 @@
       "positionAfter": 4800,
       "eventId": "seed-2026-10-snapshot",
       "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "note": "Fullständig innehavslista för Gallierafonden enligt Holdings, 21 bolag (högra tabellen i artikeln; den vänstra är Gluonen). Skillnader mot tidigare uppskattning bokförs som affärer.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -393,7 +426,7 @@
       "positionAfter": 8200,
       "eventId": "seed-2026-10-snapshot",
       "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "note": "Fullständig innehavslista för Gallierafonden enligt Holdings, 21 bolag (högra tabellen i artikeln; den vänstra är Gluonen). Skillnader mot tidigare uppskattning bokförs som affärer.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -414,7 +447,7 @@
       "positionAfter": 16600,
       "eventId": "seed-2026-10-snapshot",
       "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "note": "Fullständig innehavslista för Gallierafonden enligt Holdings, 21 bolag (högra tabellen i artikeln; den vänstra är Gluonen). Skillnader mot tidigare uppskattning bokförs som affärer.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -435,70 +468,7 @@
       "positionAfter": 48300,
       "eventId": "seed-2026-10-snapshot",
       "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
-      "source": {
-        "publisher": "Placera",
-        "title": "Kungafamiljen minskar i Investor – tar in EQT",
-        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
-        "date": "2026-10-09"
-      },
-      "auto": false,
-      "implied": true
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "SVOL-B.ST",
-      "name": "Svolder",
-      "side": "sell",
-      "shares": 105400,
-      "price": 57.7,
-      "value": 6081580,
-      "positionAfter": 0,
-      "eventId": "seed-2026-10-snapshot",
-      "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
-      "source": {
-        "publisher": "Placera",
-        "title": "Kungafamiljen minskar i Investor – tar in EQT",
-        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
-        "date": "2026-10-09"
-      },
-      "auto": false,
-      "implied": true
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "ESSITY-B.ST",
-      "name": "Essity",
-      "side": "sell",
-      "shares": 21500,
-      "price": 261.9,
-      "value": 5630850,
-      "positionAfter": 0,
-      "eventId": "seed-2026-10-snapshot",
-      "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
-      "source": {
-        "publisher": "Placera",
-        "title": "Kungafamiljen minskar i Investor – tar in EQT",
-        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
-        "date": "2026-10-09"
-      },
-      "auto": false,
-      "implied": true
-    },
-    {
-      "date": "2026-10-08",
-      "ticker": "ALFA.ST",
-      "name": "Alfa Laval",
-      "side": "sell",
-      "shares": 450,
-      "price": 560.4,
-      "value": 252180,
-      "positionAfter": 10500,
-      "eventId": "seed-2026-10-snapshot",
-      "basis": "rapporterad",
-      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "note": "Fullständig innehavslista för Gallierafonden enligt Holdings, 21 bolag (högra tabellen i artikeln; den vänstra är Gluonen). Skillnader mot tidigare uppskattning bokförs som affärer.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -614,7 +584,7 @@
       "implied": false
     },
     {
-      "date": "2026-05-25",
+      "date": "2026-05-13",
       "ticker": "OCTV-SDB.ST",
       "name": "Octave Intelligence",
       "side": "spinoff",
@@ -624,7 +594,7 @@
       "positionAfter": 2500,
       "eventId": "seed-2026-05-octave",
       "basis": "uppskattad",
-      "note": "Octave Intelligence knoppades av från Hexagon och noterades 25 maj 2026. Antalet (2 500) är det som senare rapporterades.",
+      "note": "Octave Intelligence knoppades av från Hexagon (x-dag 13 maj 2026, notering 25 maj). Antalet (2 500) är det som senare rapporterades. Fram till noteringen värderas aktierna till första noterade kurs.",
       "source": {
         "publisher": "Placera",
         "title": "Kungafamiljen minskar i Investor – tar in EQT",
@@ -639,13 +609,13 @@
       "ticker": "SVOL-B.ST",
       "name": "Svolder",
       "side": "buy",
-      "shares": 105400,
+      "shares": 68000,
       "price": 52.2,
-      "value": 5501880,
-      "positionAfter": 105400,
+      "value": 3549600,
+      "positionAfter": 68000,
       "eventId": "seed-2026-04-snapshot",
       "basis": "uppskattad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -666,7 +636,7 @@
       "positionAfter": 26000,
       "eventId": "seed-2026-04-snapshot",
       "basis": "uppskattad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -687,7 +657,7 @@
       "positionAfter": 63000,
       "eventId": "seed-2026-04-snapshot",
       "basis": "uppskattad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -708,7 +678,7 @@
       "positionAfter": 17000,
       "eventId": "seed-2026-04-snapshot",
       "basis": "uppskattad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -729,7 +699,7 @@
       "positionAfter": 30300,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -750,7 +720,7 @@
       "positionAfter": 30800,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -771,7 +741,7 @@
       "positionAfter": 29600,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -792,7 +762,7 @@
       "positionAfter": 10950,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -813,7 +783,7 @@
       "positionAfter": 20500,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -834,7 +804,7 @@
       "positionAfter": 38000,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -855,7 +825,7 @@
       "positionAfter": 51300,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -876,7 +846,7 @@
       "positionAfter": 26200,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -897,7 +867,7 @@
       "positionAfter": 0,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -918,7 +888,7 @@
       "positionAfter": 0,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -939,7 +909,7 @@
       "positionAfter": 21500,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -960,7 +930,7 @@
       "positionAfter": 39300,
       "eventId": "seed-2026-04-snapshot",
       "basis": "rapporterad",
-      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån antalet i innehavslistan från oktober.",
       "source": {
         "publisher": "Börskollen / DI",
         "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
@@ -1344,8 +1314,8 @@
       "ticker": "SVOL-B.ST",
       "name": "Svolder",
       "perShare": 0.45,
-      "shares": 105400,
-      "amount": 47430
+      "shares": 68000,
+      "amount": 30600
     },
     {
       "date": "2026-08-05",
@@ -1362,8 +1332,8 @@
       "ticker": "SVOL-B.ST",
       "name": "Svolder",
       "perShare": 0.45,
-      "shares": 105400,
-      "amount": 47430
+      "shares": 68000,
+      "amount": 30600
     },
     {
       "date": "2026-05-12",
@@ -1386,15 +1356,6 @@
     {
       "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "HM-B.ST",
-      "name": "H&M",
-      "perShare": 3.55,
-      "shares": 7200,
-      "amount": 25560
-    },
-    {
-      "date": "2026-05-06",
-      "type": "utdelning",
       "ticker": "EPI-B.ST",
       "name": "Epiroc",
       "perShare": 1.9,
@@ -1402,13 +1363,13 @@
       "amount": 72200
     },
     {
-      "date": "2026-04-30",
+      "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 2.238612,
-      "shares": 14600,
-      "amount": 32684
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "perShare": 3.55,
+      "shares": 7200,
+      "amount": 25560
     },
     {
       "date": "2026-04-30",
@@ -1418,6 +1379,15 @@
       "perShare": 2.65,
       "shares": 30800,
       "amount": 81620
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 2.238612,
+      "shares": 14600,
+      "amount": 32684
     },
     {
       "date": "2026-04-29",
@@ -1449,7 +1419,7 @@
     {
       "date": "2026-04-24",
       "type": "kapitaltillskott",
-      "amount": 22584692
+      "amount": 20632412
     },
     {
       "date": "2026-04-23",
@@ -1517,20 +1487,20 @@
     {
       "date": "2026-03-25",
       "type": "utdelning",
-      "ticker": "NDA-SE.ST",
-      "name": "Nordea Bank",
-      "perShare": 10.7453375,
-      "shares": 45000,
-      "amount": 483540
-    },
-    {
-      "date": "2026-03-25",
-      "type": "utdelning",
       "ticker": "SEB-A.ST",
       "name": "SEB",
       "perShare": 11,
       "shares": 26000,
       "amount": 286000
+    },
+    {
+      "date": "2026-03-25",
+      "type": "utdelning",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "perShare": 10.7453375,
+      "shares": 45000,
+      "amount": 483540
     },
     {
       "date": "2025-11-19",
@@ -1548,1840 +1518,1610 @@
       "nav": 74129663,
       "cash": 0,
       "unit": 100,
-      "OMXSPI": 1004.78,
-      "OMXS30": 2733.11
+      "OMXSBGI": 2072.41
     },
     {
       "d": "2025-11-10",
       "nav": 74679401,
       "cash": 0,
       "unit": 100.7416,
-      "OMXSPI": 1013.91,
-      "OMXS30": 2759.94
+      "OMXSBGI": 2090.35
     },
     {
       "d": "2025-11-11",
       "nav": 75747609,
       "cash": 0,
       "unit": 102.1826,
-      "OMXSPI": 1025.46,
-      "OMXS30": 2790.98
+      "OMXSBGI": 2114.82
     },
     {
       "d": "2025-11-12",
       "nav": 76150018,
       "cash": 0,
       "unit": 102.7254,
-      "OMXSPI": 1031.49,
-      "OMXS30": 2806.05
+      "OMXSBGI": 2127.26
     },
     {
       "d": "2025-11-13",
       "nav": 75633555,
       "cash": 0,
       "unit": 102.0287,
-      "OMXSPI": 1022.09,
-      "OMXS30": 2780.58
+      "OMXSBGI": 2107.52
     },
     {
       "d": "2025-11-14",
       "nav": 74954859,
       "cash": 0,
       "unit": 101.1132,
-      "OMXSPI": 1013.5,
-      "OMXS30": 2757.12
+      "OMXSBGI": 2089.81
     },
     {
       "d": "2025-11-17",
       "nav": 74247328,
       "cash": 0,
       "unit": 100.1587,
-      "OMXSPI": 1005.54,
-      "OMXS30": 2736.13
+      "OMXSBGI": 2073.14
     },
     {
       "d": "2025-11-18",
       "nav": 72588303,
       "cash": 0,
       "unit": 97.9207,
-      "OMXSPI": 983.86,
-      "OMXS30": 2673.73
+      "OMXSBGI": 2028.49
     },
     {
       "d": "2025-11-19",
       "nav": 72854937,
       "cash": 60750,
       "unit": 98.2804,
-      "OMXSPI": 987.96,
-      "OMXS30": 2685.84
+      "OMXSBGI": 2038.35
     },
     {
       "d": "2025-11-20",
       "nav": 73235913,
       "cash": 60750,
       "unit": 98.7943,
-      "OMXSPI": 990.95,
-      "OMXS30": 2701.95
+      "OMXSBGI": 2045.91
     },
     {
       "d": "2025-11-21",
       "nav": 73335729,
       "cash": 60750,
       "unit": 98.929,
-      "OMXSPI": 989.84,
-      "OMXS30": 2699.35
+      "OMXSBGI": 2044.9
     },
     {
       "d": "2025-11-24",
       "nav": 74068965,
       "cash": 60750,
       "unit": 99.9181,
-      "OMXSPI": 1000.35,
-      "OMXS30": 2725.35
+      "OMXSBGI": 2065.56
     },
     {
       "d": "2025-11-25",
       "nav": 74974348,
       "cash": 60750,
       "unit": 101.1395,
-      "OMXSPI": 1011.3,
-      "OMXS30": 2758.16
+      "OMXSBGI": 2090.39
     },
     {
       "d": "2025-11-26",
       "nav": 75335088,
       "cash": 60750,
       "unit": 101.6261,
-      "OMXSPI": 1018.46,
-      "OMXS30": 2779.44
+      "OMXSBGI": 2105.59
     },
     {
       "d": "2025-11-27",
       "nav": 75467118,
       "cash": 60750,
       "unit": 101.8042,
-      "OMXSPI": 1023.34,
-      "OMXS30": 2789.44
+      "OMXSBGI": 2105.59
     },
     {
       "d": "2025-11-28",
       "nav": 75384729,
       "cash": 60750,
       "unit": 101.6931,
-      "OMXSPI": 1022.63,
-      "OMXS30": 2787.77
+      "OMXSBGI": 2114.81
     },
     {
       "d": "2025-12-01",
       "nav": 75554856,
       "cash": 60750,
       "unit": 101.9226,
-      "OMXSPI": 1019.44,
-      "OMXS30": 2784.53
+      "OMXSBGI": 2111.01
     },
     {
       "d": "2025-12-02",
       "nav": 75513344,
       "cash": 60750,
       "unit": 101.8666,
-      "OMXSPI": 1016.39,
-      "OMXS30": 2783.53
+      "OMXSBGI": 2106.64
     },
     {
       "d": "2025-12-03",
       "nav": 75384460,
       "cash": 60750,
       "unit": 101.6927,
-      "OMXSPI": 1013.34,
-      "OMXS30": 2779.82
+      "OMXSBGI": 2103.3
     },
     {
       "d": "2025-12-04",
       "nav": 75975359,
       "cash": 60750,
       "unit": 102.4898,
-      "OMXSPI": 1027.28,
-      "OMXS30": 2813.61
+      "OMXSBGI": 2131.5
     },
     {
       "d": "2025-12-05",
       "nav": 76137417,
       "cash": 60750,
       "unit": 102.7084,
-      "OMXSPI": 1030.5,
-      "OMXS30": 2826.62
+      "OMXSBGI": 2138.69
     },
     {
       "d": "2025-12-08",
       "nav": 75746636,
       "cash": 60750,
       "unit": 102.1813,
-      "OMXSPI": 1027.28,
-      "OMXS30": 2823.91
+      "OMXSBGI": 2134.39
     },
     {
       "d": "2025-12-09",
       "nav": 75450632,
       "cash": 60750,
       "unit": 101.782,
-      "OMXSPI": 1020.74,
-      "OMXS30": 2808.73
+      "OMXSBGI": 2120.95
     },
     {
       "d": "2025-12-10",
       "nav": 75750687,
       "cash": 60750,
       "unit": 102.1867,
-      "OMXSPI": 1021.11,
-      "OMXS30": 2810.59
+      "OMXSBGI": 2122.02
     },
     {
       "d": "2025-12-11",
       "nav": 76032206,
       "cash": 60750,
       "unit": 102.5665,
-      "OMXSPI": 1026.77,
-      "OMXS30": 2829.04
+      "OMXSBGI": 2134.59
     },
     {
       "d": "2025-12-12",
       "nav": 75828958,
       "cash": 60750,
       "unit": 102.2923,
-      "OMXSPI": 1026.02,
-      "OMXS30": 2821.01
+      "OMXSBGI": 2130.15
     },
     {
       "d": "2025-12-15",
       "nav": 75999338,
       "cash": 60750,
       "unit": 102.5222,
-      "OMXSPI": 1027.66,
-      "OMXS30": 2832.71
+      "OMXSBGI": 2134.95
     },
     {
       "d": "2025-12-16",
       "nav": 75697044,
       "cash": 60750,
       "unit": 102.1144,
-      "OMXSPI": 1021.26,
-      "OMXS30": 2812.83
+      "OMXSBGI": 2121.38
     },
     {
       "d": "2025-12-17",
       "nav": 75358236,
       "cash": 60750,
       "unit": 101.6573,
-      "OMXSPI": 1015.21,
-      "OMXS30": 2794.95
+      "OMXSBGI": 2107.84
     },
     {
       "d": "2025-12-18",
       "nav": 76226569,
       "cash": 60750,
       "unit": 102.8287,
-      "OMXSPI": 1026.3,
-      "OMXS30": 2827.91
+      "OMXSBGI": 2130.41
     },
     {
       "d": "2025-12-19",
       "nav": 76498186,
       "cash": 60750,
       "unit": 103.1951,
-      "OMXSPI": 1029.09,
-      "OMXS30": 2841.27
+      "OMXSBGI": 2137.56
     },
     {
       "d": "2025-12-22",
       "nav": 76615637,
       "cash": 60750,
       "unit": 103.3535,
-      "OMXSPI": 1031.67,
-      "OMXS30": 2845.06
+      "OMXSBGI": 2140.38
     },
     {
       "d": "2025-12-23",
       "nav": 76694466,
       "cash": 60750,
       "unit": 103.4599,
-      "OMXSPI": 1033.3,
-      "OMXS30": 2849.09
+      "OMXSBGI": 2142.84
     },
     {
       "d": "2025-12-29",
       "nav": 77045506,
       "cash": 60750,
       "unit": 103.9334,
-      "OMXSPI": 1040.24,
-      "OMXS30": 2863.64
+      "OMXSBGI": 2156.7
     },
     {
       "d": "2025-12-30",
       "nav": 77570975,
       "cash": 60750,
       "unit": 104.6423,
-      "OMXSPI": 1045.68,
-      "OMXS30": 2882.97
+      "OMXSBGI": 2169.84
     },
     {
       "d": "2026-01-02",
       "nav": 77309523,
       "cash": 60750,
       "unit": 104.2896,
-      "OMXSPI": 1041.83,
-      "OMXS30": 2881.19
+      "OMXSBGI": 2163.85
     },
     {
       "d": "2026-01-05",
       "nav": 77558774,
       "cash": 60750,
       "unit": 104.6258,
-      "OMXSPI": 1046.19,
-      "OMXS30": 2901.78
+      "OMXSBGI": 2176.1
     },
     {
       "d": "2026-01-07",
       "nav": 79072871,
       "cash": 60750,
       "unit": 106.6683,
-      "OMXSPI": 1069.68,
-      "OMXS30": 2963.31
+      "OMXSBGI": 2225.95
     },
     {
       "d": "2026-01-08",
       "nav": 78661808,
       "cash": 60750,
       "unit": 106.1138,
-      "OMXSPI": 1059.86,
-      "OMXS30": 2937.94
+      "OMXSBGI": 2205.5
     },
     {
       "d": "2026-01-09",
       "nav": 79412907,
       "cash": 60750,
       "unit": 107.127,
-      "OMXSPI": 1072.31,
-      "OMXS30": 2974.6
+      "OMXSBGI": 2231.05
     },
     {
       "d": "2026-01-12",
       "nav": 79338382,
       "cash": 60750,
       "unit": 107.0265,
-      "OMXSPI": 1072.09,
-      "OMXS30": 2984.21
+      "OMXSBGI": 2232.31
     },
     {
       "d": "2026-01-13",
       "nav": 79668294,
       "cash": 60750,
       "unit": 107.4715,
-      "OMXSPI": 1071.31,
-      "OMXS30": 2983.9
+      "OMXSBGI": 2230.87
     },
     {
       "d": "2026-01-14",
       "nav": 79970887,
       "cash": 60750,
       "unit": 107.8797,
-      "OMXSPI": 1069.81,
-      "OMXS30": 2983.91
+      "OMXSBGI": 2229.51
     },
     {
       "d": "2026-01-15",
       "nav": 81031279,
       "cash": 60750,
       "unit": 109.3102,
-      "OMXSPI": 1087.67,
-      "OMXS30": 3036.64
+      "OMXSBGI": 2269
     },
     {
       "d": "2026-01-16",
       "nav": 81151062,
       "cash": 60750,
       "unit": 109.4718,
-      "OMXSPI": 1087.42,
-      "OMXS30": 3039.09
+      "OMXSBGI": 2269.21
     },
     {
       "d": "2026-01-19",
       "nav": 79189853,
       "cash": 60750,
       "unit": 106.8261,
-      "OMXSPI": 1064.62,
-      "OMXS30": 2984.58
+      "OMXSBGI": 2269.21
     },
     {
       "d": "2026-01-20",
       "nav": 79229068,
       "cash": 60750,
       "unit": 106.879,
-      "OMXSPI": 1060.99,
-      "OMXS30": 2976.37
+      "OMXSBGI": 2216.17
     },
     {
       "d": "2026-01-21",
       "nav": 79578309,
       "cash": 60750,
       "unit": 107.3502,
-      "OMXSPI": 1063.24,
-      "OMXS30": 2988.02
+      "OMXSBGI": 2222.48
     },
     {
       "d": "2026-01-22",
       "nav": 79859379,
       "cash": 60750,
       "unit": 107.7293,
-      "OMXSPI": 1071.6,
-      "OMXS30": 3003.06
+      "OMXSBGI": 2238.58
     },
     {
       "d": "2026-01-23",
       "nav": 79690899,
       "cash": 60750,
       "unit": 107.502,
-      "OMXSPI": 1073.82,
-      "OMXS30": 3013.63
+      "OMXSBGI": 2244.4
     },
     {
       "d": "2026-01-26",
       "nav": 80157779,
       "cash": 60750,
       "unit": 108.1319,
-      "OMXSPI": 1074.52,
-      "OMXS30": 3024.15
+      "OMXSBGI": 2250.34
     },
     {
       "d": "2026-01-27",
       "nav": 80748099,
       "cash": 60750,
       "unit": 108.9282,
-      "OMXSPI": 1078.45,
-      "OMXS30": 3043.95
+      "OMXSBGI": 2259.17
     },
     {
       "d": "2026-01-28",
       "nav": 80309642,
       "cash": 60750,
       "unit": 108.3367,
-      "OMXSPI": 1074.71,
-      "OMXS30": 3027.47
+      "OMXSBGI": 2248.28
     },
     {
       "d": "2026-01-29",
       "nav": 80077195,
       "cash": 60750,
       "unit": 108.0231,
-      "OMXSPI": 1071.3,
-      "OMXS30": 3031.39
+      "OMXSBGI": 2246.15
     },
     {
       "d": "2026-01-30",
       "nav": 80212238,
       "cash": 60750,
       "unit": 108.2053,
-      "OMXSPI": 1068.47,
-      "OMXS30": 3026.57
+      "OMXSBGI": 2241.1
     },
     {
       "d": "2026-02-02",
       "nav": 81339637,
       "cash": 60750,
       "unit": 109.7262,
-      "OMXSPI": 1080.35,
-      "OMXS30": 3066.86
+      "OMXSBGI": 2269.51
     },
     {
       "d": "2026-02-03",
       "nav": 81916306,
       "cash": 60750,
       "unit": 110.5041,
-      "OMXSPI": 1082.62,
-      "OMXS30": 3087.35
+      "OMXSBGI": 2282.05
     },
     {
       "d": "2026-02-04",
       "nav": 83247821,
       "cash": 60750,
       "unit": 112.3003,
-      "OMXSPI": 1093.05,
-      "OMXS30": 3117.93
+      "OMXSBGI": 2307.86
     },
     {
       "d": "2026-02-05",
       "nav": 82841059,
       "cash": 60750,
       "unit": 111.7516,
-      "OMXSPI": 1081.99,
-      "OMXS30": 3089.67
+      "OMXSBGI": 2288.86
     },
     {
       "d": "2026-02-06",
       "nav": 83620226,
       "cash": 60750,
       "unit": 112.8027,
-      "OMXSPI": 1092.96,
-      "OMXS30": 3120.45
+      "OMXSBGI": 2312.09
     },
     {
       "d": "2026-02-09",
       "nav": 83831843,
       "cash": 60750,
       "unit": 113.0881,
-      "OMXSPI": 1098.22,
-      "OMXS30": 3136.56
+      "OMXSBGI": 2321.02
     },
     {
       "d": "2026-02-10",
       "nav": 84165142,
       "cash": 60750,
       "unit": 113.5377,
-      "OMXSPI": 1100.13,
-      "OMXS30": 3136.54
+      "OMXSBGI": 2325.16
     },
     {
       "d": "2026-02-11",
       "nav": 84096888,
       "cash": 60750,
       "unit": 113.4457,
-      "OMXSPI": 1096.79,
-      "OMXS30": 3145.48
+      "OMXSBGI": 2324.66
     },
     {
       "d": "2026-02-12",
       "nav": 83453336,
       "cash": 60750,
       "unit": 112.5775,
-      "OMXSPI": 1085.93,
-      "OMXS30": 3123.65
+      "OMXSBGI": 2306.74
     },
     {
       "d": "2026-02-13",
       "nav": 83074663,
       "cash": 60750,
       "unit": 112.0667,
-      "OMXSPI": 1084.86,
-      "OMXS30": 3119.76
+      "OMXSBGI": 2304.55
     },
     {
       "d": "2026-02-16",
       "nav": 83300653,
       "cash": 60750,
       "unit": 112.3716,
-      "OMXSPI": 1082.95,
-      "OMXS30": 3121.8
+      "OMXSBGI": 2304.55
     },
     {
       "d": "2026-02-17",
       "nav": 83463527,
       "cash": 60750,
       "unit": 112.5913,
-      "OMXSPI": 1085.95,
-      "OMXS30": 3130.12
+      "OMXSBGI": 2308.45
     },
     {
       "d": "2026-02-18",
       "nav": 84161622,
       "cash": 60750,
       "unit": 113.533,
-      "OMXSPI": 1095.12,
-      "OMXS30": 3166.11
+      "OMXSBGI": 2329.88
     },
     {
       "d": "2026-02-19",
       "nav": 84043933,
       "cash": 60750,
       "unit": 113.3742,
-      "OMXSPI": 1094.22,
-      "OMXS30": 3157.96
+      "OMXSBGI": 2327
     },
     {
       "d": "2026-02-20",
       "nav": 84788124,
       "cash": 60750,
       "unit": 114.3781,
-      "OMXSPI": 1102.78,
-      "OMXS30": 3180.46
+      "OMXSBGI": 2346.42
     },
     {
       "d": "2026-02-23",
       "nav": 84776027,
       "cash": 60750,
       "unit": 114.3618,
-      "OMXSPI": 1094.53,
-      "OMXS30": 3166.65
+      "OMXSBGI": 2333.88
     },
     {
       "d": "2026-02-24",
       "nav": 85256811,
       "cash": 60750,
       "unit": 115.0104,
-      "OMXSPI": 1102.91,
-      "OMXS30": 3190.87
+      "OMXSBGI": 2352.75
     },
     {
       "d": "2026-02-25",
       "nav": 85667640,
       "cash": 60750,
       "unit": 115.5646,
-      "OMXSPI": 1104.62,
-      "OMXS30": 3195.57
+      "OMXSBGI": 2355.49
     },
     {
       "d": "2026-02-26",
       "nav": 86102373,
       "cash": 60750,
       "unit": 116.151,
-      "OMXSPI": 1110.6,
-      "OMXS30": 3205.28
+      "OMXSBGI": 2365.12
     },
     {
       "d": "2026-02-27",
       "nav": 86401467,
       "cash": 60750,
       "unit": 116.5545,
-      "OMXSPI": 1115.91,
-      "OMXS30": 3222.75
+      "OMXSBGI": 2377.76
     },
     {
       "d": "2026-03-02",
       "nav": 84600158,
       "cash": 60750,
       "unit": 114.1246,
-      "OMXSPI": 1094.66,
-      "OMXS30": 3168.39
+      "OMXSBGI": 2333.71
     },
     {
       "d": "2026-03-03",
       "nav": 82387516,
       "cash": 60750,
       "unit": 111.1397,
-      "OMXSPI": 1065.46,
-      "OMXS30": 3082.97
+      "OMXSBGI": 2269.3
     },
     {
       "d": "2026-03-04",
       "nav": 83208914,
       "cash": 60750,
       "unit": 112.2478,
-      "OMXSPI": 1079.61,
-      "OMXS30": 3118.01
+      "OMXSBGI": 2297.65
     },
     {
       "d": "2026-03-05",
       "nav": 82450816,
       "cash": 60750,
       "unit": 111.2251,
-      "OMXSPI": 1068.41,
-      "OMXS30": 3077.21
+      "OMXSBGI": 2270.96
     },
     {
       "d": "2026-03-06",
       "nav": 81334046,
       "cash": 60750,
       "unit": 109.7186,
-      "OMXSPI": 1057.55,
-      "OMXS30": 3038.55
+      "OMXSBGI": 2244.69
     },
     {
       "d": "2026-03-09",
       "nav": 80264812,
       "cash": 60750,
       "unit": 108.2762,
-      "OMXSPI": 1039.96,
-      "OMXS30": 2992.86
+      "OMXSBGI": 2207.07
     },
     {
       "d": "2026-03-10",
       "nav": 82531602,
       "cash": 60750,
       "unit": 111.3341,
-      "OMXSPI": 1068.48,
-      "OMXS30": 3082.61
+      "OMXSBGI": 2271.09
     },
     {
       "d": "2026-03-11",
       "nav": 81862708,
       "cash": 60750,
       "unit": 110.4318,
-      "OMXSPI": 1060.01,
-      "OMXS30": 3058.96
+      "OMXSBGI": 2253.71
     },
     {
       "d": "2026-03-12",
       "nav": 81891445,
       "cash": 60750,
       "unit": 110.4705,
-      "OMXSPI": 1060.77,
-      "OMXS30": 3063.09
+      "OMXSBGI": 2255.45
     },
     {
       "d": "2026-03-13",
       "nav": 80840063,
       "cash": 60750,
       "unit": 109.0522,
-      "OMXSPI": 1047.14,
-      "OMXS30": 3018.72
+      "OMXSBGI": 2223.41
     },
     {
       "d": "2026-03-16",
       "nav": 80989861,
       "cash": 60750,
       "unit": 109.2543,
-      "OMXSPI": 1050.37,
-      "OMXS30": 3027.73
+      "OMXSBGI": 2229.76
     },
     {
       "d": "2026-03-17",
       "nav": 80695782,
       "cash": 60750,
       "unit": 108.8576,
-      "OMXSPI": 1049.77,
-      "OMXS30": 3023.59
+      "OMXSBGI": 2225.85
     },
     {
       "d": "2026-03-18",
       "nav": 80549343,
       "cash": 60750,
       "unit": 108.6601,
-      "OMXSPI": 1046.63,
-      "OMXS30": 3015.27
+      "OMXSBGI": 2219.08
     },
     {
       "d": "2026-03-19",
       "nav": 78083341,
       "cash": 60750,
       "unit": 105.3335,
-      "OMXSPI": 1012.22,
-      "OMXS30": 2908.97
+      "OMXSBGI": 2143
     },
     {
       "d": "2026-03-20",
       "nav": 76945108,
       "cash": 60750,
       "unit": 103.798,
-      "OMXSPI": 996.43,
-      "OMXS30": 2864.69
+      "OMXSBGI": 2110.97
     },
     {
       "d": "2026-03-23",
       "nav": 77359937,
       "cash": 60750,
       "unit": 104.3576,
-      "OMXSPI": 1003.57,
-      "OMXS30": 2892.19
+      "OMXSBGI": 2129.11
     },
     {
       "d": "2026-03-24",
       "nav": 77523677,
       "cash": 60750,
       "unit": 104.5785,
-      "OMXSPI": 1007.77,
-      "OMXS30": 2908.35
+      "OMXSBGI": 2139.06
     },
     {
       "d": "2026-03-25",
       "nav": 78999231,
       "cash": 830290,
       "unit": 106.569,
-      "OMXSPI": 1021.17,
-      "OMXS30": 2943.35
+      "OMXSBGI": 2178.32
     },
     {
       "d": "2026-03-26",
       "nav": 78361371,
       "cash": 1407790,
       "unit": 105.7085,
-      "OMXSPI": 1007.8,
-      "OMXS30": 2889.81
+      "OMXSBGI": 2151.16
     },
     {
       "d": "2026-03-27",
       "nav": 77957176,
       "cash": 1626531,
       "unit": 105.1633,
-      "OMXSPI": 997.42,
-      "OMXS30": 2863.92
+      "OMXSBGI": 2133.18
     },
     {
       "d": "2026-03-30",
       "nav": 78584698,
       "cash": 1626531,
       "unit": 106.0098,
-      "OMXSPI": 1007.8,
-      "OMXS30": 2890.29
+      "OMXSBGI": 2154.86
     },
     {
       "d": "2026-03-31",
       "nav": 79632008,
       "cash": 1626531,
       "unit": 107.4226,
-      "OMXSPI": 1022.26,
-      "OMXS30": 2929.33
+      "OMXSBGI": 2184.92
     },
     {
       "d": "2026-04-01",
       "nav": 81634966,
       "cash": 1685331,
       "unit": 110.1246,
-      "OMXSPI": 1048.77,
-      "OMXS30": 3006.37
+      "OMXSBGI": 2243.85
     },
     {
       "d": "2026-04-02",
       "nav": 80583641,
       "cash": 1685331,
       "unit": 108.7063,
-      "OMXSPI": 1034.3,
-      "OMXS30": 2965.69
+      "OMXSBGI": 2213.86
     },
     {
       "d": "2026-04-07",
       "nav": 80657503,
       "cash": 1685331,
       "unit": 108.806,
-      "OMXSPI": 1033.73,
-      "OMXS30": 2967.92
+      "OMXSBGI": 2214.43
     },
     {
       "d": "2026-04-08",
       "nav": 83821577,
       "cash": 1685331,
       "unit": 113.0743,
-      "OMXSPI": 1074.22,
-      "OMXS30": 3094.16
+      "OMXSBGI": 2306.08
     },
     {
       "d": "2026-04-09",
       "nav": 83566561,
       "cash": 1685331,
       "unit": 112.7303,
-      "OMXSPI": 1069.5,
-      "OMXS30": 3079.31
+      "OMXSBGI": 2300.67
     },
     {
       "d": "2026-04-10",
       "nav": 84691853,
       "cash": 1685331,
       "unit": 114.2483,
-      "OMXSPI": 1080.23,
-      "OMXS30": 3109.9
+      "OMXSBGI": 2324.8
     },
     {
       "d": "2026-04-13",
       "nav": 84429327,
       "cash": 1685331,
       "unit": 113.8941,
-      "OMXSPI": 1079.71,
-      "OMXS30": 3102.73
+      "OMXSBGI": 2321.18
     },
     {
       "d": "2026-04-14",
       "nav": 85411540,
       "cash": 1886581,
       "unit": 115.2191,
-      "OMXSPI": 1091.8,
-      "OMXS30": 3131.2
+      "OMXSBGI": 2346.79
     },
     {
       "d": "2026-04-15",
       "nav": 85385843,
       "cash": 1886581,
       "unit": 115.1844,
-      "OMXSPI": 1090.98,
-      "OMXS30": 3118.41
+      "OMXSBGI": 2340.79
     },
     {
       "d": "2026-04-16",
       "nav": 85378150,
       "cash": 1886581,
       "unit": 115.1741,
-      "OMXSPI": 1095.55,
-      "OMXS30": 3120.75
+      "OMXSBGI": 2349.11
     },
     {
       "d": "2026-04-17",
       "nav": 86948989,
       "cash": 1886581,
       "unit": 117.2931,
-      "OMXSPI": 1117.99,
-      "OMXS30": 3182.13
+      "OMXSBGI": 2397.63
     },
     {
       "d": "2026-04-20",
       "nav": 86016673,
       "cash": 1886581,
       "unit": 116.0354,
-      "OMXSPI": 1107.89,
-      "OMXS30": 3153.12
+      "OMXSBGI": 2374.71
     },
     {
       "d": "2026-04-21",
       "nav": 85664921,
       "cash": 1886581,
       "unit": 115.5609,
-      "OMXSPI": 1101.37,
-      "OMXS30": 3133.29
+      "OMXSBGI": 2360.55
     },
     {
       "d": "2026-04-22",
       "nav": 85330386,
       "cash": 1915081,
       "unit": 115.1096,
-      "OMXSPI": 1097.14,
-      "OMXS30": 3128.39
+      "OMXSBGI": 2355.64
     },
     {
       "d": "2026-04-23",
       "nav": 85284023,
       "cash": 2018581,
       "unit": 115.0471,
-      "OMXSPI": 1093.73,
-      "OMXS30": 3131.35
+      "OMXSBGI": 2355.71
     },
     {
       "d": "2026-04-24",
-      "nav": 106957762,
+      "nav": 105005482,
       "cash": 0,
       "unit": 113.8182,
-      "OMXSPI": 1083.16,
-      "OMXS30": 3101.08
+      "OMXSBGI": 2332.57
     },
     {
       "d": "2026-04-27",
-      "nav": 106397499,
+      "nav": 104467659,
       "cash": 34475,
-      "unit": 113.222,
-      "OMXSPI": 1074.2,
-      "OMXS30": 3079.76
+      "unit": 113.2353,
+      "OMXSBGI": 2316.52
     },
     {
       "d": "2026-04-28",
-      "nav": 105418884,
+      "nav": 103479694,
       "cash": 34475,
-      "unit": 112.1806,
-      "OMXSPI": 1064.25,
-      "OMXS30": 3056.01
+      "unit": 112.1644,
+      "OMXSBGI": 2294.45
     },
     {
       "d": "2026-04-29",
-      "nav": 105527635,
+      "nav": 103610885,
       "cash": 233225,
-      "unit": 112.2964,
-      "OMXSPI": 1058.07,
-      "OMXS30": 3040.54
+      "unit": 112.3066,
+      "OMXSBGI": 2290.19
     },
     {
       "d": "2026-04-30",
-      "nav": 106385854,
+      "nav": 104459754,
       "cash": 347528,
-      "unit": 113.2096,
-      "OMXSPI": 1064.23,
-      "OMXS30": 3060.49
+      "unit": 113.2267,
+      "OMXSBGI": 2304.59
     },
     {
       "d": "2026-05-04",
-      "nav": 104848880,
+      "nav": 102913430,
       "cash": 347528,
-      "unit": 111.5741,
-      "OMXSPI": 1057.28,
-      "OMXS30": 3035.49
+      "unit": 111.5506,
+      "OMXSBGI": 2287.03
     },
     {
       "d": "2026-05-05",
-      "nav": 106115952,
+      "nav": 104191722,
       "cash": 347528,
-      "unit": 112.9224,
-      "OMXSPI": 1069.07,
-      "OMXS30": 3072.42
+      "unit": 112.9362,
+      "OMXSBGI": 2314.15
     },
     {
       "d": "2026-05-06",
-      "nav": 109313244,
+      "nav": 107340394,
       "cash": 445288,
-      "unit": 116.3248,
-      "OMXSPI": 1097.97,
-      "OMXS30": 3159.33
+      "unit": 116.3491,
+      "OMXSBGI": 2381.43
     },
     {
       "d": "2026-05-07",
-      "nav": 107955093,
+      "nav": 105976633,
       "cash": 445288,
-      "unit": 114.8795,
-      "OMXSPI": 1085.39,
-      "OMXS30": 3111.32
+      "unit": 114.8709,
+      "OMXSBGI": 2350.51
     },
     {
       "d": "2026-05-08",
-      "nav": 106647444,
+      "nav": 104682074,
       "cash": 602488,
-      "unit": 113.488,
-      "OMXSPI": 1073.8,
-      "OMXS30": 3073.69
+      "unit": 113.4677,
+      "OMXSBGI": 2327.93
     },
     {
       "d": "2026-05-11",
-      "nav": 106634648,
+      "nav": 104674888,
       "cash": 602488,
-      "unit": 113.4744,
-      "OMXSPI": 1077.7,
-      "OMXS30": 3079.45
+      "unit": 113.4599,
+      "OMXSBGI": 2335.57
     },
     {
       "d": "2026-05-12",
-      "nav": 105362524,
+      "nav": 103440163,
       "cash": 689188,
-      "unit": 112.1207,
-      "OMXSPI": 1062.47,
-      "OMXS30": 3046.71
+      "unit": 112.1215,
+      "OMXSBGI": 2307.33
     },
     {
       "d": "2026-05-13",
-      "nav": 104896247,
+      "nav": 103332727,
       "cash": 689188,
-      "unit": 111.6245,
-      "OMXSPI": 1064.2,
-      "OMXS30": 3048.11
+      "unit": 112.0051,
+      "OMXSBGI": 2309.78
     },
     {
       "d": "2026-05-15",
-      "nav": 104671796,
+      "nav": 103121366,
       "cash": 689188,
-      "unit": 111.3856,
-      "OMXSPI": 1060.8,
-      "OMXS30": 3036.44
+      "unit": 111.776,
+      "OMXSBGI": 2301.32
     },
     {
       "d": "2026-05-18",
-      "nav": 105653771,
+      "nav": 104082771,
       "cash": 689188,
-      "unit": 112.4306,
-      "OMXSPI": 1065.26,
-      "OMXS30": 3055.52
+      "unit": 112.8181,
+      "OMXSBGI": 2312.75
     },
     {
       "d": "2026-05-19",
-      "nav": 106114198,
-      "cash": 736618,
-      "unit": 112.9206,
-      "OMXSPI": 1069.17,
-      "OMXS30": 3061.49
+      "nav": 104545068,
+      "cash": 719788,
+      "unit": 113.3192,
+      "OMXSBGI": 2319.8
     },
     {
       "d": "2026-05-20",
-      "nav": 107608492,
-      "cash": 736618,
-      "unit": 114.5107,
-      "OMXSPI": 1083.52,
-      "OMXS30": 3099.5
+      "nav": 106000092,
+      "cash": 719788,
+      "unit": 114.8963,
+      "OMXSBGI": 2349.43
     },
     {
       "d": "2026-05-21",
-      "nav": 108082678,
-      "cash": 736618,
-      "unit": 115.0153,
-      "OMXSPI": 1087.45,
-      "OMXS30": 3115.98
+      "nav": 106453708,
+      "cash": 719788,
+      "unit": 115.388,
+      "OMXSBGI": 2359.5
     },
     {
       "d": "2026-05-22",
-      "nav": 109199492,
-      "cash": 736618,
-      "unit": 116.2037,
-      "OMXSPI": 1097.74,
-      "OMXS30": 3146.13
+      "nav": 107540602,
+      "cash": 719788,
+      "unit": 116.5661,
+      "OMXSBGI": 2381.01
     },
     {
       "d": "2026-05-25",
-      "nav": 111571363,
-      "cash": 736618,
-      "unit": 118.7278,
-      "OMXSPI": 1114.13,
-      "OMXS30": 3192.83
+      "nav": 109473223,
+      "cash": 719788,
+      "unit": 118.6609,
+      "OMXSBGI": 2381.01
     },
     {
       "d": "2026-05-26",
-      "nav": 110328640,
-      "cash": 736618,
-      "unit": 117.4053,
-      "OMXSPI": 1103.44,
-      "OMXS30": 3162.19
+      "nav": 108256680,
+      "cash": 719788,
+      "unit": 117.3423,
+      "OMXSBGI": 2392.64
     },
     {
       "d": "2026-05-27",
-      "nav": 110578679,
-      "cash": 736618,
-      "unit": 117.6714,
-      "OMXSPI": 1101.57,
-      "OMXS30": 3156.18
+      "nav": 108422569,
+      "cash": 719788,
+      "unit": 117.5221,
+      "OMXSBGI": 2388.9
     },
     {
       "d": "2026-05-28",
-      "nav": 108339709,
-      "cash": 736618,
-      "unit": 115.2888,
-      "OMXSPI": 1089.85,
-      "OMXS30": 3124.05
+      "nav": 106269618,
+      "cash": 719788,
+      "unit": 115.1885,
+      "OMXSBGI": 2362.08
     },
     {
       "d": "2026-05-29",
-      "nav": 109053378,
-      "cash": 736618,
-      "unit": 116.0483,
-      "OMXSPI": 1095.31,
-      "OMXS30": 3138.09
+      "nav": 107013208,
+      "cash": 719788,
+      "unit": 115.9945,
+      "OMXSBGI": 2374.46
     },
     {
       "d": "2026-06-01",
-      "nav": 107394772,
-      "cash": 736618,
-      "unit": 114.2833,
-      "OMXSPI": 1078.29,
-      "OMXS30": 3094.5
+      "nav": 105403222,
+      "cash": 719788,
+      "unit": 114.2494,
+      "OMXSBGI": 2339.04
     },
     {
       "d": "2026-06-02",
-      "nav": 108981762,
-      "cash": 736618,
-      "unit": 115.9721,
-      "OMXSPI": 1094.56,
-      "OMXS30": 3149.92
+      "nav": 106984602,
+      "cash": 719788,
+      "unit": 115.9635,
+      "OMXSBGI": 2381.06
     },
     {
       "d": "2026-06-03",
-      "nav": 108746142,
-      "cash": 736618,
-      "unit": 115.7213,
-      "OMXSPI": 1089.39,
-      "OMXS30": 3134.46
+      "nav": 106780772,
+      "cash": 719788,
+      "unit": 115.7425,
+      "OMXSBGI": 2372.11
     },
     {
       "d": "2026-06-04",
-      "nav": 109153719,
-      "cash": 736618,
-      "unit": 116.155,
-      "OMXSPI": 1092.23,
-      "OMXS30": 3135.31
+      "nav": 107162169,
+      "cash": 719788,
+      "unit": 116.1559,
+      "OMXSBGI": 2374.95
     },
     {
       "d": "2026-06-05",
-      "nav": 108775964,
-      "cash": 736618,
-      "unit": 115.7531,
-      "OMXSPI": 1085.28,
-      "OMXS30": 3116.4
+      "nav": 106790024,
+      "cash": 719788,
+      "unit": 115.7525,
+      "OMXSBGI": 2359.63
     },
     {
       "d": "2026-06-08",
-      "nav": 108458334,
-      "cash": 736618,
-      "unit": 115.4151,
-      "OMXSPI": 1083.47,
-      "OMXS30": 3106.76
+      "nav": 106478004,
+      "cash": 719788,
+      "unit": 115.4143,
+      "OMXSBGI": 2355.98
     },
     {
       "d": "2026-06-09",
-      "nav": 107423164,
-      "cash": 736618,
-      "unit": 114.3135,
-      "OMXSPI": 1071.24,
-      "OMXS30": 3070.22
+      "nav": 105480234,
+      "cash": 719788,
+      "unit": 114.3328,
+      "OMXSBGI": 2329.02
     },
     {
       "d": "2026-06-10",
-      "nav": 107344469,
-      "cash": 736618,
-      "unit": 114.2297,
-      "OMXSPI": 1068.34,
-      "OMXS30": 3054.04
+      "nav": 105380969,
+      "cash": 719788,
+      "unit": 114.2252,
+      "OMXSBGI": 2320.68
     },
     {
       "d": "2026-06-11",
-      "nav": 107553993,
-      "cash": 736618,
-      "unit": 114.4527,
-      "OMXSPI": 1069.98,
-      "OMXS30": 3064.42
+      "nav": 105562443,
+      "cash": 719788,
+      "unit": 114.4219,
+      "OMXSBGI": 2326.03
     },
     {
       "d": "2026-06-12",
-      "nav": 109075139,
-      "cash": 736618,
-      "unit": 116.0714,
-      "OMXSPI": 1086.96,
-      "OMXS30": 3113.57
+      "nav": 107027489,
+      "cash": 719788,
+      "unit": 116.0099,
+      "OMXSBGI": 2362.07
     },
     {
       "d": "2026-06-15",
-      "nav": 109953208,
-      "cash": 736618,
-      "unit": 117.0058,
-      "OMXSPI": 1090.43,
-      "OMXS30": 3134.32
+      "nav": 107870028,
+      "cash": 719788,
+      "unit": 116.9232,
+      "OMXSBGI": 2373.98
     },
     {
       "d": "2026-06-16",
-      "nav": 110110169,
-      "cash": 736618,
-      "unit": 117.1728,
-      "OMXSPI": 1089.19,
-      "OMXS30": 3141.63
+      "nav": 108028859,
+      "cash": 719788,
+      "unit": 117.0953,
+      "OMXSBGI": 2373.26
     },
     {
       "d": "2026-06-17",
-      "nav": 110638777,
-      "cash": 736618,
-      "unit": 117.7354,
-      "OMXSPI": 1091.71,
-      "OMXS30": 3161.29
+      "nav": 108579907,
+      "cash": 719788,
+      "unit": 117.6926,
+      "OMXSBGI": 2382.84
     },
     {
       "d": "2026-06-18",
-      "nav": 111199083,
-      "cash": 736618,
-      "unit": 118.3316,
-      "OMXSPI": 1093.8,
-      "OMXS30": 3178.64
+      "nav": 109170133,
+      "cash": 719788,
+      "unit": 118.3324,
+      "OMXSBGI": 2391.54
     },
     {
       "d": "2026-06-22",
-      "nav": 111561474,
-      "cash": 736618,
-      "unit": 118.7172,
-      "OMXSPI": 1095.69,
-      "OMXS30": 3190.72
+      "nav": 109545614,
+      "cash": 719788,
+      "unit": 118.7394,
+      "OMXSBGI": 2399.1
     },
     {
       "d": "2026-06-23",
-      "nav": 109770467,
-      "cash": 736618,
-      "unit": 116.8113,
-      "OMXSPI": 1082.86,
-      "OMXS30": 3145.66
+      "nav": 107778918,
+      "cash": 719788,
+      "unit": 116.8244,
+      "OMXSBGI": 2368.31
     },
     {
       "d": "2026-06-24",
-      "nav": 110056279,
-      "cash": 736618,
-      "unit": 117.1155,
-      "OMXSPI": 1085.47,
-      "OMXS30": 3146.96
+      "nav": 108049769,
+      "cash": 719788,
+      "unit": 117.118,
+      "OMXSBGI": 2373.14
     },
     {
       "d": "2026-06-25",
-      "nav": 111025284,
-      "cash": 736618,
-      "unit": 118.1467,
-      "OMXSPI": 1094.7,
-      "OMXS30": 3180.88
+      "nav": 109018774,
+      "cash": 719788,
+      "unit": 118.1683,
+      "OMXSBGI": 2397.28
     },
     {
       "d": "2026-06-26",
-      "nav": 110430999,
-      "cash": 736618,
-      "unit": 117.5142,
-      "OMXSPI": 1086.53,
-      "OMXS30": 3153.55
+      "nav": 108417009,
+      "cash": 719788,
+      "unit": 117.5161,
+      "OMXSBGI": 2376.95
     },
     {
       "d": "2026-06-29",
-      "nav": 111067108,
-      "cash": 736618,
-      "unit": 118.1912,
-      "OMXSPI": 1090,
-      "OMXS30": 3166.78
+      "nav": 109066208,
+      "cash": 719788,
+      "unit": 118.2198,
+      "OMXSBGI": 2385.21
     },
     {
       "d": "2026-06-30",
-      "nav": 112439597,
-      "cash": 736618,
-      "unit": 119.6517,
-      "OMXSPI": 1101.54,
-      "OMXS30": 3203.22
+      "nav": 110451787,
+      "cash": 719788,
+      "unit": 119.7216,
+      "OMXSBGI": 2411.45
     },
     {
       "d": "2026-07-01",
-      "nav": 112027630,
-      "cash": 736618,
-      "unit": 119.2133,
-      "OMXSPI": 1098.94,
-      "OMXS30": 3184.91
+      "nav": 110032340,
+      "cash": 719788,
+      "unit": 119.267,
+      "OMXSBGI": 2401.3
     },
     {
       "d": "2026-07-02",
-      "nav": 113128464,
-      "cash": 736618,
-      "unit": 120.3847,
-      "OMXSPI": 1109.7,
-      "OMXS30": 3210.41
+      "nav": 111114474,
+      "cash": 719788,
+      "unit": 120.4399,
+      "OMXSBGI": 2420.34
     },
     {
       "d": "2026-07-03",
-      "nav": 114745112,
-      "cash": 736618,
-      "unit": 122.1051,
-      "OMXSPI": 1122.63,
-      "OMXS30": 3247.03
+      "nav": 112691852,
+      "cash": 719788,
+      "unit": 122.1497,
+      "OMXSBGI": 2420.34
     },
     {
       "d": "2026-07-06",
-      "nav": 114054088,
-      "cash": 736618,
-      "unit": 121.3697,
-      "OMXSPI": 1117.8,
-      "OMXS30": 3235.53
+      "nav": 112015788,
+      "cash": 719788,
+      "unit": 121.4169,
+      "OMXSBGI": 2438.78
     },
     {
       "d": "2026-07-07",
-      "nav": 112924558,
-      "cash": 736618,
-      "unit": 120.1677,
-      "OMXSPI": 1108.69,
-      "OMXS30": 3205.46
+      "nav": 110897478,
+      "cash": 719788,
+      "unit": 120.2047,
+      "OMXSBGI": 2416.03
     },
     {
       "d": "2026-07-08",
-      "nav": 110599863,
-      "cash": 736618,
-      "unit": 117.6939,
-      "OMXSPI": 1085.4,
-      "OMXS30": 3144.48
+      "nav": 108613923,
+      "cash": 719788,
+      "unit": 117.7295,
+      "OMXSBGI": 2366.95
     },
     {
       "d": "2026-07-09",
-      "nav": 112089188,
-      "cash": 736618,
-      "unit": 119.2788,
-      "OMXSPI": 1100.63,
-      "OMXS30": 3186.4
+      "nav": 110062108,
+      "cash": 719788,
+      "unit": 119.2992,
+      "OMXSBGI": 2399.76
     },
     {
       "d": "2026-07-10",
-      "nav": 112053092,
-      "cash": 736618,
-      "unit": 119.2404,
-      "OMXSPI": 1099.59,
-      "OMXS30": 3177.78
+      "nav": 110048451,
+      "cash": 719788,
+      "unit": 119.2844,
+      "OMXSBGI": 2396.77
     },
     {
       "d": "2026-07-13",
-      "nav": 111558390,
-      "cash": 736618,
-      "unit": 118.714,
-      "OMXSPI": 1096.64,
-      "OMXS30": 3167.16
+      "nav": 109561230,
+      "cash": 719788,
+      "unit": 118.7563,
+      "OMXSBGI": 2389.13
     },
     {
       "d": "2026-07-14",
-      "nav": 112100104,
-      "cash": 736618,
-      "unit": 119.2904,
-      "OMXSPI": 1097.3,
-      "OMXS30": 3162.79
+      "nav": 110052454,
+      "cash": 719788,
+      "unit": 119.2888,
+      "OMXSBGI": 2388.7
     },
     {
       "d": "2026-07-15",
-      "nav": 111819748,
-      "cash": 736618,
-      "unit": 118.9921,
-      "OMXSPI": 1095.84,
-      "OMXS30": 3150.86
+      "nav": 109744048,
+      "cash": 719788,
+      "unit": 118.9545,
+      "OMXSBGI": 2383.38
     },
     {
       "d": "2026-07-16",
-      "nav": 111928923,
-      "cash": 736618,
-      "unit": 119.1083,
-      "OMXSPI": 1099.98,
-      "OMXS30": 3149.52
+      "nav": 109843873,
+      "cash": 719788,
+      "unit": 119.0627,
+      "OMXSBGI": 2388.43
     },
     {
       "d": "2026-07-17",
-      "nav": 110821709,
-      "cash": 736618,
-      "unit": 117.93,
-      "OMXSPI": 1098.37,
-      "OMXS30": 3146.94
+      "nav": 108753489,
+      "cash": 719788,
+      "unit": 117.8808,
+      "OMXSBGI": 2383.07
     },
     {
       "d": "2026-07-20",
-      "nav": 110473533,
-      "cash": 736618,
-      "unit": 117.5595,
-      "OMXSPI": 1092.96,
-      "OMXS30": 3134
+      "nav": 108429623,
+      "cash": 719788,
+      "unit": 117.5297,
+      "OMXSBGI": 2372.03
     },
     {
       "d": "2026-07-21",
-      "nav": 110915824,
-      "cash": 736618,
-      "unit": 118.0302,
-      "OMXSPI": 1095.3,
-      "OMXS30": 3146.34
+      "nav": 108885004,
+      "cash": 719788,
+      "unit": 118.0233,
+      "OMXSBGI": 2379.92
     },
     {
       "d": "2026-07-22",
-      "nav": 112525723,
-      "cash": 736618,
-      "unit": 119.7433,
-      "OMXSPI": 1107.47,
-      "OMXS30": 3186.12
+      "nav": 110466853,
+      "cash": 719788,
+      "unit": 119.738,
+      "OMXSBGI": 2407.85
     },
     {
       "d": "2026-07-23",
-      "nav": 111346207,
-      "cash": 736618,
-      "unit": 118.4882,
-      "OMXSPI": 1098.28,
-      "OMXS30": 3167.1
+      "nav": 109311647,
+      "cash": 719788,
+      "unit": 118.4858,
+      "OMXSBGI": 2389.59
     },
     {
       "d": "2026-07-24",
-      "nav": 112336223,
-      "cash": 736618,
-      "unit": 119.5417,
-      "OMXSPI": 1108.74,
-      "OMXS30": 3199.62
+      "nav": 110258653,
+      "cash": 719788,
+      "unit": 119.5123,
+      "OMXSBGI": 2412.35
     },
     {
       "d": "2026-07-27",
-      "nav": 113208448,
-      "cash": 736618,
-      "unit": 120.4698,
-      "OMXSPI": 1116.28,
-      "OMXS30": 3217.89
+      "nav": 111104698,
+      "cash": 719788,
+      "unit": 120.4293,
+      "OMXSBGI": 2426.4
     },
     {
       "d": "2026-07-28",
-      "nav": 113176033,
-      "cash": 736618,
-      "unit": 120.4354,
-      "OMXSPI": 1121.09,
-      "OMXS30": 3224.22
+      "nav": 111047973,
+      "cash": 719788,
+      "unit": 120.3678,
+      "OMXSBGI": 2433.57
     },
     {
       "d": "2026-07-29",
-      "nav": 112768838,
-      "cash": 736618,
-      "unit": 120.002,
-      "OMXSPI": 1119.18,
-      "OMXS30": 3219.11
+      "nav": 110638908,
+      "cash": 719788,
+      "unit": 119.9245,
+      "OMXSBGI": 2428.72
     },
     {
       "d": "2026-07-30",
-      "nav": 113523068,
-      "cash": 736618,
-      "unit": 120.8046,
-      "OMXSPI": 1123.08,
-      "OMXS30": 3233.44
+      "nav": 111383788,
+      "cash": 719788,
+      "unit": 120.7318,
+      "OMXSBGI": 2439.19
     },
     {
       "d": "2026-07-31",
-      "nav": 113882874,
-      "cash": 736618,
-      "unit": 121.1875,
-      "OMXSPI": 1125.61,
-      "OMXS30": 3246.92
+      "nav": 111754814,
+      "cash": 719788,
+      "unit": 121.134,
+      "OMXSBGI": 2445.99
     },
     {
       "d": "2026-08-03",
-      "nav": 114825849,
-      "cash": 736618,
-      "unit": 122.191,
-      "OMXSPI": 1134.86,
-      "OMXS30": 3274.43
+      "nav": 112692179,
+      "cash": 719788,
+      "unit": 122.15,
+      "OMXSBGI": 2466.02
     },
     {
       "d": "2026-08-04",
-      "nav": 116240745,
-      "cash": 736618,
-      "unit": 123.6966,
-      "OMXSPI": 1150.18,
-      "OMXS30": 3326.28
+      "nav": 114093985,
+      "cash": 719788,
+      "unit": 123.6695,
+      "OMXSBGI": 2503.59
     },
     {
       "d": "2026-08-05",
-      "nav": 116271478,
-      "cash": 931848,
-      "unit": 123.7293,
-      "OMXSPI": 1149.13,
-      "OMXS30": 3326.93
+      "nav": 114137808,
+      "cash": 915018,
+      "unit": 123.717,
+      "OMXSBGI": 2504.56
     },
     {
       "d": "2026-08-06",
-      "nav": 116369238,
-      "cash": 931848,
-      "unit": 123.8334,
-      "OMXSPI": 1148.43,
-      "OMXS30": 3323.1
+      "nav": 114229958,
+      "cash": 915018,
+      "unit": 123.8169,
+      "OMXSBGI": 2502.24
     },
     {
       "d": "2026-08-07",
-      "nav": 116032938,
-      "cash": 931848,
-      "unit": 123.4755,
-      "OMXSPI": 1146.65,
-      "OMXS30": 3312.34
+      "nav": 113889918,
+      "cash": 915018,
+      "unit": 123.4483,
+      "OMXSBGI": 2497.1
     },
     {
       "d": "2026-08-10",
-      "nav": 115521459,
-      "cash": 931848,
-      "unit": 122.9312,
-      "OMXSPI": 1142.56,
-      "OMXS30": 3305.57
+      "nav": 113408359,
+      "cash": 915018,
+      "unit": 122.9263,
+      "OMXSBGI": 2490.46
     },
     {
       "d": "2026-08-11",
-      "nav": 114990603,
-      "cash": 931848,
-      "unit": 122.3663,
-      "OMXSPI": 1140.22,
-      "OMXS30": 3297
+      "nav": 112875633,
+      "cash": 915018,
+      "unit": 122.3489,
+      "OMXSBGI": 2484.1
     },
     {
       "d": "2026-08-12",
-      "nav": 114672692,
-      "cash": 931848,
-      "unit": 122.028,
-      "OMXSPI": 1139.14,
-      "OMXS30": 3291.39
+      "nav": 112553982,
+      "cash": 915018,
+      "unit": 122.0003,
+      "OMXSBGI": 2481.16
     },
     {
       "d": "2026-08-13",
-      "nav": 114011538,
-      "cash": 931848,
-      "unit": 121.3244,
-      "OMXSPI": 1137.51,
-      "OMXS30": 3281.46
+      "nav": 111889088,
+      "cash": 915018,
+      "unit": 121.2796,
+      "OMXSBGI": 2475.97
     },
     {
       "d": "2026-08-14",
-      "nav": 113766812,
-      "cash": 931848,
-      "unit": 121.064,
-      "OMXSPI": 1135.86,
-      "OMXS30": 3274.52
+      "nav": 111674282,
+      "cash": 915018,
+      "unit": 121.0467,
+      "OMXSBGI": 2470.46
     },
     {
       "d": "2026-08-17",
-      "nav": 113114122,
-      "cash": 931848,
-      "unit": 120.3695,
-      "OMXSPI": 1131.79,
-      "OMXS30": 3266.3
+      "nav": 111038422,
+      "cash": 915018,
+      "unit": 120.3575,
+      "OMXSBGI": 2462.71
     },
     {
       "d": "2026-08-18",
-      "nav": 112909488,
-      "cash": 931848,
-      "unit": 120.1517,
-      "OMXSPI": 1125.91,
-      "OMXS30": 3244.67
+      "nav": 110816958,
+      "cash": 915018,
+      "unit": 120.1174,
+      "OMXSBGI": 2447.38
     },
     {
       "d": "2026-08-19",
-      "nav": 112896598,
-      "cash": 979278,
-      "unit": 120.138,
-      "OMXSPI": 1125.85,
-      "OMXS30": 3243.81
+      "nav": 110813418,
+      "cash": 945618,
+      "unit": 120.1136,
+      "OMXSBGI": 2445.96
     },
     {
       "d": "2026-08-20",
-      "nav": 113671958,
-      "cash": 979278,
-      "unit": 120.9631,
-      "OMXSPI": 1129.03,
-      "OMXS30": 3258.33
+      "nav": 111556988,
+      "cash": 945618,
+      "unit": 120.9196,
+      "OMXSBGI": 2452.72
     },
     {
       "d": "2026-08-21",
-      "nav": 115010302,
-      "cash": 979278,
-      "unit": 122.3873,
-      "OMXSPI": 1139.67,
-      "OMXS30": 3292.34
+      "nav": 112900942,
+      "cash": 945618,
+      "unit": 122.3763,
+      "OMXSBGI": 2477.35
     },
     {
       "d": "2026-08-24",
-      "nav": 115410008,
-      "cash": 979278,
-      "unit": 122.8126,
-      "OMXSPI": 1138.66,
-      "OMXS30": 3290.84
+      "nav": 113319348,
+      "cash": 945618,
+      "unit": 122.8299,
+      "OMXSBGI": 2476.02
     },
     {
       "d": "2026-08-25",
-      "nav": 116414218,
-      "cash": 979278,
-      "unit": 123.8812,
-      "OMXSPI": 1147.88,
-      "OMXS30": 3318.26
+      "nav": 114301118,
+      "cash": 945618,
+      "unit": 123.894,
+      "OMXSBGI": 2496.11
     },
     {
       "d": "2026-08-26",
-      "nav": 116667422,
-      "cash": 979278,
-      "unit": 124.1507,
-      "OMXSPI": 1149.74,
-      "OMXS30": 3326.34
+      "nav": 114554322,
+      "cash": 945618,
+      "unit": 124.1685,
+      "OMXSBGI": 2502.87
     },
     {
       "d": "2026-08-27",
-      "nav": 117085223,
-      "cash": 979278,
-      "unit": 124.5953,
-      "OMXSPI": 1151.01,
-      "OMXS30": 3321.44
+      "nav": 114880493,
+      "cash": 945618,
+      "unit": 124.522,
+      "OMXSBGI": 2503.53
     },
     {
       "d": "2026-08-28",
-      "nav": 117441084,
-      "cash": 979278,
-      "unit": 124.974,
-      "OMXSPI": 1154.65,
-      "OMXS30": 3331.27
+      "nav": 115225134,
+      "cash": 945618,
+      "unit": 124.8956,
+      "OMXSBGI": 2510.63
     },
     {
       "d": "2026-08-31",
-      "nav": 116624213,
-      "cash": 979278,
-      "unit": 124.1047,
-      "OMXSPI": 1146,
-      "OMXS30": 3309.18
+      "nav": 114440053,
+      "cash": 945618,
+      "unit": 124.0446,
+      "OMXSBGI": 2492.21
     },
     {
       "d": "2026-09-01",
-      "nav": 115421673,
-      "cash": 979278,
-      "unit": 122.825,
-      "OMXSPI": 1133.4,
-      "OMXS30": 3266.43
+      "nav": 113265563,
+      "cash": 945618,
+      "unit": 122.7716,
+      "OMXSBGI": 2462.1
     },
     {
       "d": "2026-09-02",
-      "nav": 114568342,
-      "cash": 979278,
-      "unit": 121.917,
-      "OMXSPI": 1125.83,
-      "OMXS30": 3245.69
+      "nav": 112397272,
+      "cash": 945618,
+      "unit": 121.8304,
+      "OMXSBGI": 2446.17
     },
     {
       "d": "2026-09-03",
-      "nav": 116133198,
-      "cash": 979278,
-      "unit": 123.5822,
-      "OMXSPI": 1139.04,
-      "OMXS30": 3278.19
+      "nav": 113883588,
+      "cash": 945618,
+      "unit": 123.4414,
+      "OMXSBGI": 2473.56
     },
     {
       "d": "2026-09-04",
-      "nav": 116435321,
-      "cash": 1054878,
-      "unit": 123.9037,
-      "OMXSPI": 1140.85,
-      "OMXS30": 3284.08
+      "nav": 114172621,
+      "cash": 1021218,
+      "unit": 123.7547,
+      "OMXSBGI": 2478.09
     },
     {
       "d": "2026-09-07",
-      "nav": 116090938,
-      "cash": 1054878,
-      "unit": 123.5372,
-      "OMXSPI": 1141.26,
-      "OMXS30": 3291.84
+      "nav": 113850678,
+      "cash": 1021218,
+      "unit": 123.4058,
+      "OMXSBGI": 2478.09
     },
     {
       "d": "2026-09-08",
-      "nav": 116639648,
-      "cash": 1054878,
-      "unit": 124.1211,
-      "OMXSPI": 1145.05,
-      "OMXS30": 3312.12
+      "nav": 114391908,
+      "cash": 1021218,
+      "unit": 123.9924,
+      "OMXSBGI": 2494.04
     },
     {
       "d": "2026-09-09",
-      "nav": 115110068,
-      "cash": 1054878,
-      "unit": 122.4934,
-      "OMXSPI": 1129.42,
-      "OMXS30": 3258.36
+      "nav": 112882898,
+      "cash": 1021218,
+      "unit": 122.3568,
+      "OMXSBGI": 2457.09
     },
     {
       "d": "2026-09-10",
-      "nav": 114528508,
-      "cash": 1054878,
-      "unit": 121.8746,
-      "OMXSPI": 1123.73,
-      "OMXS30": 3244.98
+      "nav": 112321908,
+      "cash": 1021218,
+      "unit": 121.7487,
+      "OMXSBGI": 2444.63
     },
     {
       "d": "2026-09-11",
-      "nav": 114601017,
-      "cash": 1054878,
-      "unit": 121.9517,
-      "OMXSPI": 1125.5,
-      "OMXS30": 3255.23
+      "nav": 112407507,
+      "cash": 1021218,
+      "unit": 121.8415,
+      "OMXSBGI": 2450.46
     },
     {
       "d": "2026-09-14",
-      "nav": 113536864,
-      "cash": 1054878,
-      "unit": 120.8193,
-      "OMXSPI": 1114.8,
-      "OMXS30": 3219.82
+      "nav": 111360184,
+      "cash": 1021218,
+      "unit": 120.7063,
+      "OMXSBGI": 2425.12
     },
     {
       "d": "2026-09-15",
-      "nav": 113813962,
-      "cash": 5510777,
-      "unit": 121.1142,
-      "OMXSPI": 1113.96,
-      "OMXS30": 3218.94
+      "nav": 111627932,
+      "cash": 5477117,
+      "unit": 120.9965,
+      "OMXSBGI": 2423.61
     },
     {
       "d": "2026-09-16",
-      "nav": 114668876,
-      "cash": 5510777,
-      "unit": 122.024,
-      "OMXSPI": 1123.86,
-      "OMXS30": 3250.63
+      "nav": 112473497,
+      "cash": 5477117,
+      "unit": 121.913,
+      "OMXSBGI": 2446.16
     },
     {
       "d": "2026-09-17",
-      "nav": 115595512,
-      "cash": 5510777,
-      "unit": 123.01,
-      "OMXSPI": 1135.77,
-      "OMXS30": 3291.3
+      "nav": 113368342,
+      "cash": 5477117,
+      "unit": 122.883,
+      "OMXSBGI": 2474.52
     },
     {
       "d": "2026-09-18",
-      "nav": 114856722,
-      "cash": 5510777,
-      "unit": 122.2238,
-      "OMXSPI": 1124.84,
-      "OMXS30": 3264.33
+      "nav": 112631422,
+      "cash": 5477117,
+      "unit": 122.0842,
+      "OMXSBGI": 2453.16
     },
     {
       "d": "2026-09-21",
-      "nav": 116384263,
-      "cash": 5510777,
-      "unit": 123.8494,
-      "OMXSPI": 1138.57,
-      "OMXS30": 3307.02
+      "nav": 114115953,
+      "cash": 5477117,
+      "unit": 123.6933,
+      "OMXSBGI": 2484.54
     },
     {
       "d": "2026-09-22",
-      "nav": 117342403,
-      "cash": 5510777,
-      "unit": 124.869,
-      "OMXSPI": 1148.16,
-      "OMXS30": 3335.94
+      "nav": 115089053,
+      "cash": 5477117,
+      "unit": 124.7481,
+      "OMXSBGI": 2507.96
     },
     {
       "d": "2026-09-23",
-      "nav": 116833077,
-      "cash": 5510777,
-      "unit": 124.327,
-      "OMXSPI": 1141.55,
-      "OMXS30": 3316.9
+      "nav": 114589077,
+      "cash": 5477117,
+      "unit": 124.2061,
+      "OMXSBGI": 2494.45
     },
     {
       "d": "2026-09-24",
-      "nav": 115439561,
-      "cash": 5510777,
-      "unit": 122.8441,
-      "OMXSPI": 1125.55,
-      "OMXS30": 3271.26
+      "nav": 113216131,
+      "cash": 5477117,
+      "unit": 122.718,
+      "OMXSBGI": 2460.27
     },
     {
       "d": "2026-09-25",
-      "nav": 116134138,
-      "cash": 5510777,
-      "unit": 123.5832,
-      "OMXSPI": 1131.96,
-      "OMXS30": 3295.03
+      "nav": 113877048,
+      "cash": 5477117,
+      "unit": 123.4344,
+      "OMXSBGI": 2475.18
     },
     {
       "d": "2026-09-28",
-      "nav": 116001978,
-      "cash": 5510777,
-      "unit": 123.4426,
-      "OMXSPI": 1128.32,
-      "OMXS30": 3280.15
+      "nav": 113757978,
+      "cash": 5477117,
+      "unit": 123.3053,
+      "OMXSBGI": 2467.45
     },
     {
       "d": "2026-09-29",
-      "nav": 116132417,
-      "cash": 5510777,
-      "unit": 123.5814,
-      "OMXSPI": 1129.09,
-      "OMXS30": 3286.19
+      "nav": 113890287,
+      "cash": 5477117,
+      "unit": 123.4487,
+      "OMXSBGI": 2471.72
     },
     {
       "d": "2026-09-30",
-      "nav": 115976617,
-      "cash": 5510777,
-      "unit": 123.4156,
-      "OMXSPI": 1125.99,
-      "OMXS30": 3268.98
+      "nav": 113712047,
+      "cash": 5477117,
+      "unit": 123.2555,
+      "OMXSBGI": 2461.47
     },
     {
       "d": "2026-10-01",
-      "nav": 114054352,
-      "cash": 5510777,
-      "unit": 121.37,
-      "OMXSPI": 1112.86,
-      "OMXS30": 3226.59
+      "nav": 111825312,
+      "cash": 5477117,
+      "unit": 121.2104,
+      "OMXSBGI": 2431.06
     },
     {
       "d": "2026-10-02",
-      "nav": 114821502,
-      "cash": 5510777,
-      "unit": 122.1864,
-      "OMXSPI": 1121.49,
-      "OMXS30": 3260.51
+      "nav": 112599942,
+      "cash": 5477117,
+      "unit": 122.0501,
+      "OMXSBGI": 2453.56
     },
     {
       "d": "2026-10-05",
-      "nav": 115091437,
-      "cash": 5510777,
-      "unit": 122.4736,
-      "OMXSPI": 1121.51,
-      "OMXS30": 3257.59
+      "nav": 112892317,
+      "cash": 5477117,
+      "unit": 122.367,
+      "OMXSBGI": 2454.43
     },
     {
       "d": "2026-10-06",
-      "nav": 116225443,
-      "cash": 5510777,
-      "unit": 123.6804,
-      "OMXSPI": 1130.24,
-      "OMXS30": 3282.94
+      "nav": 114013233,
+      "cash": 5477117,
+      "unit": 123.582,
+      "OMXSBGI": 2474.86
     },
     {
       "d": "2026-10-07",
-      "nav": 114245068,
-      "cash": 5510777,
-      "unit": 121.573,
-      "OMXSPI": 1112.14,
-      "OMXS30": 3226.82
+      "nav": 112059038,
+      "cash": 5477117,
+      "unit": 121.4638,
+      "OMXSBGI": 2433.33
     },
     {
       "d": "2026-10-08",
-      "nav": 113405102,
-      "cash": 13974822,
-      "unit": 120.6791,
-      "OMXSPI": 1104.05,
-      "OMXS30": 3202.44
+      "nav": 111213462,
+      "cash": 1976552,
+      "unit": 120.5472,
+      "OMXSBGI": 2415.04
     },
     {
       "d": "2026-10-09",
-      "nav": 115300347,
-      "cash": 13974822,
-      "unit": 122.6959,
-      "OMXSPI": 1122.11,
-      "OMXS30": 3258.14
+      "nav": 113263947,
+      "cash": 1976552,
+      "unit": 122.7698,
+      "OMXSBGI": 2455.08
     }
   ],
   "news": [
@@ -3392,7 +3132,7 @@
       "url": "https://morgonbladet.se/ekonomi/kungahuset-salde-investor-aktier-for-drygt-16-miljoner-kronor",
       "date": "2026-10-11",
       "published": "2026-10-11T13:58:58.000Z",
-      "firstSeen": "2026-10-11T16:45:49.319Z",
+      "firstSeen": "2026-10-11T18:29:32.728Z",
       "status": "redan känd",
       "notes": [
         "Sälj INVE-B.ST: samma affär redan bokförd (Placera)"
@@ -3407,7 +3147,7 @@
       "url": "https://omni.se/kungen-dumpar-wallenberg-forsta-gangen-sedan-2005/a/8G9egx",
       "date": "2026-10-11",
       "published": "2026-10-11T13:50:58.000Z",
-      "firstSeen": "2026-10-11T16:45:49.172Z",
+      "firstSeen": "2026-10-11T18:29:32.561Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
@@ -3422,13 +3162,13 @@
       "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
       "date": "2026-10-09",
       "published": "2026-10-09T13:26:57.000Z",
-      "firstSeen": "2026-10-11T16:45:48.287Z",
+      "firstSeen": "2026-10-11T18:29:31.443Z",
       "status": "redan känd",
       "notes": [
-        "Innehavstabell (9 bolag) – redan inlagd från Placera"
+        "Innehavstabell (21 bolag) – redan inlagd från Placera"
       ],
       "eventIds": [],
-      "summary": "Innehavslista med 9 bolag som redan finns i albumet."
+      "summary": "Innehavslista med 21 bolag som redan finns i albumet."
     },
     {
       "id": "22e607d88f4d",
@@ -3437,7 +3177,7 @@
       "url": "https://www.affarsvarlden.se/artikel/kungliga-forvaltaren-saljer-investor-kungen-och-jag-kan-prata-aktier",
       "date": "2026-10-09",
       "published": "2026-10-09T13:09:12.000Z",
-      "firstSeen": "2026-10-11T16:45:39.579Z",
+      "firstSeen": "2026-10-11T18:29:26.929Z",
       "status": "redan känd",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
@@ -3453,7 +3193,7 @@
       "url": "https://efn.se/kungahuset-har-investerat-i-hajpade-chip-bolaget",
       "date": "2026-06-24",
       "published": "2026-06-24T12:59:07.000Z",
-      "firstSeen": "2026-10-11T16:45:38.699Z",
+      "firstSeen": "2026-10-11T18:29:26.668Z",
       "status": "ingen affär",
       "notes": [],
       "eventIds": [],
@@ -3466,7 +3206,7 @@
       "url": "https://bulletin.nu/kungens-aktieportfolj-vaxer-har-ar-innehaven-2",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:32.157Z",
+      "firstSeen": "2026-10-11T18:29:23.863Z",
       "status": "redan känd",
       "notes": [
         "Sälj VOLV-B.ST: före startdatum – ignoreras"
@@ -3475,28 +3215,13 @@
       "summary": "Gäller Volvo – affären gjordes före albumets start."
     },
     {
-      "id": "9ff6a751dc12",
-      "title": "Så går det för kungens portfölj – dumpade folkaktien",
-      "publisher": "DI",
-      "url": "https://www.di.se/nyheter/sa-gar-det-for-kungens-portfolj-dumpade-folkaktien/",
-      "date": "2026-04-30",
-      "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:33.203Z",
-      "status": "endast rubrik",
-      "notes": [
-        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
-      ],
-      "eventIds": [],
-      "summary": "Artikeln är låst och rubriken nämner inget bolag."
-    },
-    {
       "id": "a4c5b488b19a",
       "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
       "publisher": "Börskollen",
       "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:33.504Z",
+      "firstSeen": "2026-10-11T18:29:24.247Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (10 bolag) – redan inlagd från Börskollen / DI"
@@ -3505,13 +3230,28 @@
       "summary": "Innehavslista med 10 bolag som redan finns i albumet."
     },
     {
+      "id": "9ff6a751dc12",
+      "title": "Så går det för kungens portfölj – dumpade folkaktien",
+      "publisher": "DI",
+      "url": "https://www.di.se/nyheter/sa-gar-det-for-kungens-portfolj-dumpade-folkaktien/",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T18:29:24.736Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
+      "eventIds": [],
+      "summary": "Artikeln är låst och rubriken nämner inget bolag."
+    },
+    {
       "id": "a79f7bbf27cc",
       "title": "Kungens aktier har rusat",
       "publisher": "Göteborgs-Posten",
       "url": "https://www.gp.se/ekonomi/kungens-aktier-har-rusat.25e3c7b3-816b-54bb-9542-349941d8b83d",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:34.638Z",
+      "firstSeen": "2026-10-11T18:29:24.890Z",
       "status": "ingen affär",
       "notes": [],
       "eventIds": [],
@@ -3524,7 +3264,7 @@
       "url": "https://www.dagensps.se/bors-finans/80-arspresenten-rally-i-kungens-aktier-upp-73-procent/",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:35.801Z",
+      "firstSeen": "2026-10-11T18:29:25.293Z",
       "status": "redan känd",
       "notes": [
         "Sälj ELUX-B.ST: före startdatum – ignoreras"
@@ -3539,7 +3279,7 @@
       "url": "https://omni.se/avkastningen-haller-hov-kungens-portfolj-upp-73-procent/a/pBMO76",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:36.218Z",
+      "firstSeen": "2026-10-11T18:29:25.619Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
@@ -3554,7 +3294,7 @@
       "url": "https://cornucopia.se/2026/04/borsfall-avslutar-manaden-i-asien-halvdag-i-sverige-kronfall-och-stigande-oljepris-kungen-kung-pa-borsen-73-pa-ett-ar-musk-gar-inte-att-avsatta-som-vd-for-spacex/",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:36.495Z",
+      "firstSeen": "2026-10-11T18:29:25.743Z",
       "status": "ingen affär",
       "notes": [],
       "eventIds": [],
@@ -3567,7 +3307,7 @@
       "url": "https://www.affarsvarlden.se/artikel/kungens-forvaltare-oppnar-for-att-investera-i-forsvar-gor-en-oversyn",
       "date": "2025-11-12",
       "published": "2025-11-12T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:27.145Z",
+      "firstSeen": "2026-10-11T18:29:17.521Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
@@ -3582,7 +3322,7 @@
       "url": "https://www.dagensps.se/bors-finans/uppat-for-kungens-aktier-tajmade-forsaljning-perfekt/",
       "date": "2025-11-12",
       "published": "2025-11-12T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:31.574Z",
+      "firstSeen": "2026-10-11T18:29:23.392Z",
       "status": "redan känd",
       "notes": [
         "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08"
@@ -3597,13 +3337,13 @@
       "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
       "date": "2025-11-10",
       "published": "2025-11-10T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "redan känd",
       "notes": [
-        "Innehavstabell (19 bolag) – redan inlagd från Placera"
+        "Innehavstabell (17 bolag) – redan inlagd från Placera"
       ],
       "eventIds": [],
-      "summary": "Innehavslista med 19 bolag som redan finns i albumet."
+      "summary": "Innehavslista med 17 bolag som redan finns i albumet."
     },
     {
       "id": "fcbc16c802ca",
@@ -3612,7 +3352,7 @@
       "url": "https://www.affarsvarlden.se/artikel/kungen-ager-alla-storbankerna-utom-swedbank",
       "date": "2025-11-10",
       "published": "2025-11-10T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:18.371Z",
+      "firstSeen": "2026-10-11T18:29:12.019Z",
       "status": "redan känd",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
@@ -3629,7 +3369,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR0hjTGdhLWExM0ZzZmZfRW5pSFdPUE1kTUtHR1RhT3RXNVNiY25KNVRRYkZqQjMxNmJHUGVkSUY4dkNuN29mUGVldzV4cWVoejJITzY1TDhHTVBqcmpKZU5TM1BjQlFEVEh4T2hjTGk0ejAtd0RoN01iS1lRVlhLRVZPYXROM3JKZGNxb0FnZzNDeE9nMTkwbTFDMDU0OTVESHZvazNMTVF2R1o0aHpVbjVpZEZESlBsUnFZYmp0bWdxQQ?oc=5",
       "date": "2025-10-26",
       "published": "2025-10-26T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3642,7 +3382,7 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU01KVk9XZDhsRWdLSEtxYzZ3bVo5Z2lzVFBhaDFjWHJHRm1WYk13S3MtUUNwemVFamFxRFd6bUl3SDdQZnoweTk0bE5qYTRKRXgtWXRSc19kUFhzaW1KcFNHb2hRR3VpbVhUbHNBTlI0cnhrZGtRc3dqOFd0aE5hUWozTXI?oc=5",
       "date": "2025-05-05",
       "published": "2025-05-05T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3655,7 +3395,7 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRFpwcDBUUDB6dmdOWmlpVUFaOWotaWY1MFUybFlQWmFUMlIxV2wtZTJVdk1aaWJZeERUUzBtY25qRGVYQnlVdS1OT1hBazBoRGEzQVRIbXlQQjViQlFWcTZVeUlFSXJHbkhtXy01eEFKQmRiZUpHVndMTTB4Mkk2elZGbjYtNXdBckxLNUJGVm1VZG9UZDBEcWpB?oc=5",
       "date": "2024-12-20",
       "published": "2024-12-20T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3668,7 +3408,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3dWN3k3eUxlR0pZaEhibHlKbVFodWJWTjdIVFlPTXVLUVRNTVV0V041SXBBOU0zUjJZZGR6clc4WGF4c2Via3BEQ3RKcWp2LVdnNnRIRXJZdGhxWG1YM2NZZ3JjX3ZkMC01ZVN5Q3R4NGtBYzd6X3kxZjZwWVVTeFBDREhnQQ?oc=5",
       "date": "2024-12-19",
       "published": "2024-12-19T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3681,7 +3421,7 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsMnppWGNuVnNKQU1LVUR2Ymhna3AyaUlZNV9mRmRKVUF4dmtlRzd1ME5XY3FYYk80LUh0TlphNk9XT0taRzdNcGZjaUJMZTduUlFTQjUxMlZrMEx1OUhrN3VDeFpYQ0lkeFdRbHdRRVRWZVlia05takZYUVpYOEU?oc=5",
       "date": "2024-12-19",
       "published": "2024-12-19T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3694,7 +3434,7 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0xV0xmeGpudW5YdS1FaW8xTDd0dUsxcTFXbGg0a1NjZkd0Ymd6bkk5MzZ3bldGY2xnOS1lWUFKZlBPT0lYenJrX25lWi1ROUdIdk9Bd1EtYURyVWVpUGwxZlJYZ1VZalpw?oc=5",
       "date": "2024-12-19",
       "published": "2024-12-19T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3707,7 +3447,7 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZE9aOUYzaXdnaHZkZi04eC1rS1ZBcHJKTERQQ0wtNFJQOEl6eVc2VVIyb21nU2pSemx4UkIxdXduU0JFMG9rbDhkeVFsZ0h4ZnhLQlA0OEhlaVJ2LVdONU5NY3lSSE8tbHdodHg5Nkx5R1ZMdjdnbDBMdGhUckRjWWVxSQ?oc=5",
       "date": "2024-07-26",
       "published": "2024-07-26T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3720,7 +3460,7 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdE1SNEpYWmRTUXNRTFowc05YeHNlTi15S0JuaHg3ajY5eWZhckdPQ3JWVko2c2EtVFhGZ3RUdEd6TVNTYVpCWGYyTmtBMXhwNXNlcnYzVGJHaHllWWNkXzVDSWdBc2xEWUVZQWVNZDhRX0otYU1HTVlOZGtQUU1uazhraFlRUURwYkdWa0lUbWt6a3ZVUWR4YzNIS25BX0ZF?oc=5",
       "date": "2023-12-25",
       "published": "2023-12-25T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3733,7 +3473,7 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMHJVZU9XUzJTMVVWREQycEhuWVdqbWhNclRCRnE1enJmYmhURXp0TTc1Qm1wb0NLUEFKS25wTDg5cHl3ZGhyc0NIZmplYWZ3YU1GM1FSLWMtaHZPWHR0Vkp6cmFJcHNSWWN0dFBUR2wtRFZ4UXAwdDZyMUJIOXRrdHFQUQ?oc=5",
       "date": "2023-09-16",
       "published": "2023-09-16T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3746,7 +3486,7 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3SnVERWdkUGNtcms3RWRUOTFDNVFGMExESG4yQy1vOVRndldTRXJlSEE5MjJRYlpSMkJfTW9BNWN4V3ltN0JNeEZOcjUxanJ5ZTRudGpPZGtsSmh5cjNtcFVOdHh1UXB5OUZvZzB3MA?oc=5",
       "date": "2023-09-14",
       "published": "2023-09-14T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3759,7 +3499,7 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sM2J5MGEyZkkwRml5Wm10b2VaUDhHS1ppSjlkTENyWjM3bHFJcEt5VXNlNUhmNWllV29UbFdjOUNONGdJQ190eGdCYzdjaV9zLUIxTEJpaDV5bVdTbVktWE5YNkQ1N19OMUIzWUhrMy15LV9I?oc=5",
       "date": "2023-09-13",
       "published": "2023-09-13T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3772,7 +3512,7 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4WHlQQ0o4UWUxUHNmejBnd2NpbjR5Qk5rYnNVTXkyd3N2eUVhTEM1NVdWTmlKRDdELVl4c1pqTnY4NWxReWdyX0tndEpVTk1WMlQzNElzUERWalB4cl9KQU4zWC1jYmJkYVF1SWs1QTBLbGxvSmc?oc=5",
       "date": "2023-09-12",
       "published": "2023-09-12T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.224Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3785,7 +3525,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZGRvVHBRUXBqcWFjS3l3VURKMW5pdGZVeEtvSlB5NXRGSk1hYVZmd3VsTzlLZDJQdHJhendON05NZjBSbkduSmVFZUtwemh1VEdnb0d4b3BDQTZNTS1rSE5FRktuTjhJRTFWaUxVWlZxdy1uaEw0bHEtRjJTdmwxOFNBY1E1Zw?oc=5",
       "date": "2023-09-10",
       "published": "2023-09-10T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3798,7 +3538,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdHNLSEJwOW9WUFBDOEEzenR4a0N2aXJiY1pMRjExQS1IX1VxOXNuUmgyazN5akFWY25NQUozRThabnRReGpCVHJHTDJCdU9RU3I0eUYwTF9oMF9LZXJjMHEwa1RBM3p4SXN5VVJRUWJfZ2VoWEdVRFJNZ1R3RXRmeW8wQU16WjkxU0JybzhOWEt6aURENVZCMmQ2b1BNdlI3ZmxsZi1SLVNNYS0xU3N6bXhFRE5aNUl4bTZF?oc=5",
       "date": "2022-11-22",
       "published": "2022-11-22T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3811,7 +3551,7 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQnA3YWJMYjhnYjdBZ1YySXd6LTNCSGJOc0tkbWtjZS1DdDRCOENBNGxTdlE3OFFLazRuZk9IaHVnajRkdEdnQUtmYTRmanVGcV9ESlFQaXltVFZSV0tHWVE4YU0wdFo4NnZzTHI2WG1SaTB1cEMtN2VJZHdxejJwWl93?oc=5",
       "date": "2022-01-14",
       "published": "2022-01-14T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3824,7 +3564,7 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTmgxV2p5X3g3Q3Btd2R0OUU4Y05oUmNFdnBJNGg5bTU1ak95Um1Jb25wb1hsVVp2bjVrMVhxY25xdnB0QjBuVDRCbG5SVWxfbjMyaTVzeDdFbk9KVW5YcTdMaEk5Vmd3UlA2czlQTHVrU2lyaklNSkZhQm40b3VtRFd4VDR2YS1NUFJWRDFGZ2VzZ2NJNmozZG4tWG1BVjQ?oc=5",
       "date": "2021-03-03",
       "published": "2021-03-03T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3837,7 +3577,7 @@
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWDFRWWVSU3NFVW9zaXcwMU1SLUt4WVhZNnc2UC1HNGtUcXQtcm5lc1VhNU5RRjl1c1NTdTI1RDk2cHNWMGZyQUJVVGJBWHZ2OUV3LTBZZkdjckJ1X0pCX190T2R2c2pfX3NUakt5VUl3MzhXVXMzQjVxYXhnRk1UM1pOVnFackZhNFNvaFJZb0tXZlNvYmxfbA?oc=5",
       "date": "2020-02-13",
       "published": "2020-02-13T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3850,7 +3590,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORElWV1d5YURYUWZKbGNtM1JqRlRKS2RXVjJzNWZXeDJjblpIVHk1dzc3WFVHRGExZUNPeXgydVR4YlBwckVvZUtKTzFVNmQwSVZycXZqcXB0MEJXNDFKTkw2YVpPa2tsZ1JVdW42MDh4Ykhia1dkUFpvVFh4US1qOVVNbVBoUQ?oc=5",
       "date": "2019-12-04",
       "published": "2019-12-04T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3863,7 +3603,7 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYktmQVU4a2FBX2RfTmlwU1lINjBhRUd3a3FmR1pCM2xhcGFiQ2h5NVBRd1pwTVRFMlFSYnM4aGYwZVZVbjZUSU9tNXJUODdVWTlVc2Zxa2NsbTVWcEduVFZmZEY4c0c3MTFMREFwb1pBN05yNjFXcjloU09QSHB2QkhlTUdoTUNzOWZKLTU4TE1OZw?oc=5",
       "date": "2017-04-20",
       "published": "2017-04-20T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3876,7 +3616,7 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52aGpzZTlxRE9PaFNGRmFteW55bENxWFJlZFc3Mll3aTJJV2RFaXBra1pPVWNDWkNacFFrajlxbFlpMjktTGJsc1JOUmZaYnFubGxobkRQYm9QRTNaazRMQmNBMjVIOFBxZkE?oc=5",
       "date": "2016-09-29",
       "published": "2016-09-29T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3889,7 +3629,7 @@
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qMXItQ1hEclNzeHpUZDFFQjVhM1drTFEtMi04YXR0OTZscFQ0Rl9zZWpPWWFpcmo0TEF4OGxmaE41YnFDR3Nrd3lGSjdxa0Zfa2ZVQ1NKcV9LRGdvdVRRcjRqQXJrT1hCZkpaSXlwZkxXSndlaXJLcnZaUQ?oc=5",
       "date": "2016-09-28",
       "published": "2016-09-28T07:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3902,7 +3642,7 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0yM3paM2xiOEJhNGJLeHgtVFpEM0pWbGlnYkFfaTBPX1FxVjh4SDd6Y0tTS3d2bi1zMDc3bXZhbmJYSEF0bEZsbXpLeWRPMXZqTlY5YW03VUdkTk9ETW1faVdwM2xhbVliN2JNN3ExaVlQS3BSU2c?oc=5",
       "date": "2009-02-07",
       "published": "2009-02-07T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],
@@ -3915,7 +3655,7 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kdGlUNFdBREpRNlh6UWQ0YnF6YU5TUk94TjFVX0RLM2NZRmJSWHNISFdUMmdBVUhkOHZ0WW85LUtxLVZfZHVFRkQ2aV9RdmZjbHhBejY0N3lkWjZ0QzBpWVdhLUl4SUxSZkpKTUxnNUhhQ3B1N3RZbjVpc0lIZw?oc=5",
       "date": "2000-11-27",
       "published": "2000-11-27T08:00:00.000Z",
-      "firstSeen": "2026-10-11T16:45:17.223Z",
+      "firstSeen": "2026-10-11T18:29:10.961Z",
       "status": "före start",
       "notes": [],
       "eventIds": [],

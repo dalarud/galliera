@@ -70,3 +70,47 @@ test('innehavstabell från HTML-rader', () => {
   assert.equal(t.get('INVE-B.ST'), 31300);
   assert.equal(t.get('NDA-SE.ST'), 51300);
 });
+
+test('två tabeller sida vid sida: Gallierafondens kolumner väljs, inte Gluonens', () => {
+  const rows = [
+    ['GLUONEN', '', '', '', 'GALLIERAFONDEN', '', ''],
+    ['Bolag', 'Aktier', 'Värde i Mkr', '', 'Bolag', 'Aktier', 'Värde i Mkr'],
+    ['Investor', '51 000', '20,6', '', 'Investor', '31 300', '12,9'],
+    ['Volvo', '30 350', '9,6', '', 'Nordea Bank', '51 300', '9,6'],
+    ['Atlas Copco', '50 800', '9,3', '', 'Epiroc', '38 000', '8,5'],
+    ['Hexagon', '84 000', '8,8', '', 'Sandvik', '20 500', '7,4'],
+    ['Alfa Laval', '10 500', '6', '', 'Alfa Laval', '10 950', '6,3'],
+    ['', '', '', '', 'Essity', '21 500', '5,7'],
+  ];
+  const t = extractHoldingsTable({ tables: [{ context: 'Kungafamiljens innehav', rows }] }, aliasIndex);
+  assert.equal(t.get('INVE-B.ST'), 31300);
+  assert.equal(t.get('ALFA.ST'), 10950);
+  assert.equal(t.get('ESSITY-B.ST'), 21500);
+  assert.ok(!t.has('VOLV-B.ST'));
+});
+
+test('tabell med rubriken Gluonen hoppas över', () => {
+  const body = [['Bolag', 'Aktier'], ['Investor', '58 400'], ['Volvo', '30 350'], ['Securitas', '50 000'], ['Atlas Copco', '50 800'], ['Medicover', '25 900']];
+  const galliera = [['Bolag', 'Aktier'], ['Investor', '43 300'], ['Industrivärden', '23 000'], ['Nordea Bank', '45 000'], ['Essity', '24 999'], ['Sandvik', '18 000']];
+  const t = extractHoldingsTable({ tables: [
+    { context: 'Gallierafondens innehav', rows: galliera },
+    { context: 'Gluonens innehav', rows: body },
+  ] }, aliasIndex);
+  assert.equal(t.get('INVE-B.ST'), 43300);
+  assert.ok(!t.has('VOLV-B.ST'));
+});
+
+test('topplista markeras som delvis', () => {
+  const rows = [['#', 'Bolag', 'Antal aktier', 'Värde (Mkr)'], ['1', 'Investor', '39 300', '14,6'], ['2', 'Industrivärden', '26 200', '12,6'], ['3', 'Nordea Bank', '51 300', '8,7'], ['4', 'Epiroc', '38 000', '8,2'], ['5', 'Sandvik', '20 500', '8,1']];
+  const t = extractHoldingsTable({ tables: [{ context: 'Kung Carl XVI Gustafs topp 10 innehav i Gallierafonden:', rows }] }, aliasIndex);
+  assert.equal(t.size, 5);
+  assert.equal(t.partial, true);
+});
+
+test('flera omärkta tabeller ger ingen avstämning', () => {
+  const a = [['Bolag', 'Aktier'], ['Investor', '1 000'], ['SEB', '2 000'], ['Nordea', '3 000'], ['Sandvik', '4 000'], ['Epiroc', '5 000']];
+  const b = [['Bolag', 'Aktier'], ['Volvo', '1 000'], ['SKF', '2 000'], ['Saab', '3 000'], ['ABB', '4 000'], ['Telia', '5 000']];
+  const t = extractHoldingsTable({ tables: [{ context: 'Innehav', rows: a }, { context: 'Innehav', rows: b }] }, aliasIndex);
+  assert.equal(t.size, 0);
+  assert.equal(t.ambiguous, true);
+});

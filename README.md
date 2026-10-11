@@ -2,7 +2,8 @@
 
 En fiktiv skuggportfölj som följer **Gallierafonden**, H.M. Konungens egen aktieportfölj. Sidan läser
 nyheter om fondens köp och sälj, gör samma affärer i en fiktiv fond och visar uppskattade innehav,
-kassa och utveckling (andelsvärde) mot OMX Stockholm PI eller OMXS30.
+kassa och utveckling (andelsvärde) mot OMX Stockholm Benchmark GI, det index svenska aktiefonder brukar
+jämföras med. Både fonden och indexet räknar med utdelningar.
 
 > Underhållning och utbildning. Ingen koppling till Kungliga Hovstaterna och inte investeringsrådgivning.
 
@@ -27,6 +28,7 @@ data/ledger.json ◄───────── nya händelser ◄────�
        │
        ▼
 Yahoo Finance (kurser + utdelningar) ──► replikeringsmotor ──► data/portfolio.json ──► index.html
+                                                          └──► data/feed.xml (Atom-flöde med affärerna)
 ```
 
 1. **Nyhetsbevakning** (`scripts/lib/news.mjs`): söker med ett tiotal svenska frågor ("Gallierafonden",
@@ -34,6 +36,9 @@ Yahoo Finance (kurser + utdelningar) ──► replikeringsmotor ──► data/
    publicistens URL och läser artikeln. Är sidan låst tolkas rubrik och ingress.
 2. **Tolkning** (`scripts/lib/parse.mjs`):
    - *Innehavstabeller* (≥ 5 bolag med antal aktier) blir en avstämning som skriver över innehaven.
+     Rubriken närmast före tabellen avgör vilken portfölj den gäller, och när två tabeller står sida
+     vid sida (Gluonen och Gallierafonden) läses bara Gallierafondens kolumner. Topplistor ("topp 10")
+     stäms av utan att övriga innehav nollas.
    - *Meningar* som "sålt hela innehavet i Handelsbanken", "halverat Industrivärden" eller "tagit in
      29 000 aktier i Beijer Ref" blir affärer. Antal aktier och belopp läses ut, liksom månad ("i september").
    - Meningar om Gluonen eller kungabarnens portföljer, rena kursnyheter och fall där ett bolag självt
@@ -75,6 +80,7 @@ Intervallen kan ändras med `PORT`, `PRICE_MINUTES` och `NEWS_MINUTES`. Sidan sj
 | `data/securities.json` | Bolag, Yahoo-ticker och namnvarianter som skannern känner igen. Lägg till fler här. |
 | `data/news.json` | Alla skannade artiklar och hur de tolkades. |
 | `data/portfolio.json` | Genererad: tidsserie, innehav, affärer, kassaflöden och nyheter. |
+| `data/feed.xml` | Genererat Atom-flöde med de senaste affärerna, för den som vill prenumerera. |
 
 ### Startdata (verifierade källor)
 
@@ -82,10 +88,14 @@ Intervallen kan ändras med `PORT`, `PRICE_MINUTES` och `NEWS_MINUTES`. Sidan sj
 - **25 apr 2026**: tio största innehaven, portföljen ≈ 107 Mkr ([Börskollen/DI](https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier)).
   Antal i nytillkomna Latour, Elekta och Sweco är uppskattade, och Svolder är kalibrerad mot totalen.
 - **Sep 2026**: Investor −8 000, Industrivärden −15 100, Handelsbanken ut, EQT +25 600, Beijer Ref +29 000;
-  **8 okt 2026**: fullständig lista med 19 bolag ([Placera](https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09)).
+  **8 okt 2026**: fullständig lista med 21 bolag ([Placera](https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09)).
 
 ### Begränsningar
 
 - Fondens verkliga kassa är inte offentlig. Kassan är en modell som startar på 0 kr.
 - Holdings-data publiceras med fördröjning och exakta affärsdatum saknas ofta (då används den 15:e i månaden).
 - Kurser kommer från Yahoo Finances öppna API, som kan vara fördröjt eller ändras.
+- Mellan två innehavslistor syns affärer ofta först i nästa lista och bokförs då på listans datum.
+  Köpen enligt aprillistan var större än kassan; mellanskillnaden (≈ 21 Mkr) räknas som nytt kapital.
+- Låsta artiklar (t.ex. DI, Omni, Affärsvärlden) kan bara tolkas utifrån rubrik och ingress.
+  Sådana nyheter markeras "Endast rubrik" och kan behöva läggas in för hand i `data/ledger.json`.
