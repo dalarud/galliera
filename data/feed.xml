@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>urn:som-kungen:gallierafonden</id>
+  <title>Som kungen – Gallierafondens affärer</title>
+  <subtitle>Köp och försäljningar i kungens Gallierafond, så som de rapporterats i medier. Fiktiv kopia, inte investeringsrådgivning.</subtitle>
+  <updated>2026-10-09T08:00:00Z</updated>
+  <link href="../"/>
+  <entry>
+    <id>urn:som-kungen:seed-2026-09-beij:BEIJ-B.ST</id>
+    <title>Kungen har köpt 29 000 aktier i Beijer Ref (3,9 Mkr)</title>
+    <updated>2026-10-09T08:00:00Z</updated>
+    <link href="https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09"/>
+    <summary>Nytt innehav: 29 000 aktier i kylteknikbolaget Beijer Ref. Källa: Placera.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:seed-2026-09-eqt:EQT.ST</id>
+    <title>Kungen har köpt 25 600 aktier i EQT (7,7 Mkr)</title>
+    <updated>2026-10-09T08:00:00Z</updated>
+    <link href="https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09"/>
+    <summary>EQT, som plockades bort i augusti, är tillbaka med 25 600 aktier. Källa: Placera.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:seed-2026-09-shb:SHB-A.ST</id>
+    <title>Kungen har sålt 33 000 aktier i Handelsbanken (5 Mkr)</title>
+    <updated>2026-10-09T08:00:00Z</updated>
+    <link href="https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09"/>
+    <summary>Hela innehavet i Handelsbanken sålt. Källa: Placera.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:seed-2026-09-indu:INDU-C.ST</id>
+    <title>Kungen har sålt 15 100 aktier i Industrivärden (7,9 Mkr)</title>
+    <updated>2026-10-09T08:00:00Z</updated>
+    <link href="https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09"/>
+    <summary>Innehavet i Industrivärden mer än halverades (26 200 → 11 100). Källa: Placera.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:seed-2026-09-inve:INVE-B.ST</id>
+    <title>Kungen har sålt 8 000 aktier i Investor (3,2 Mkr)</title>
+    <updated>2026-10-09T08:00:00Z</updated>
+    <link href="https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09"/>
+    <summary>Investor-aktier fördes ut ur Gallierafonden i september (39 300 → 31 300). Exakt datum ej publicerat. Källa: Placera.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:seed-2026-05-octave:OCTV-SDB.ST</id>
+    <title>Kungen har fått (avknoppning) ≈ 2 500 aktier i Octave Intelligence (≈ 0,4 Mkr)</title>
+    <updated>2026-10-09T08:00:00Z</updated>
+    <link href="https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09"/>
+    <summary>Octave Intelligence knoppades av från Hexagon (x-dag 13 maj 2026, notering 25 maj). Antalet (2 500) är det som senare rapporterades. Fram till noteringen värderas aktierna till första noterade kurs. Källa: Placera.</summary>
+  </entry>
+</feed>

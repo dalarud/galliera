@@ -90,30 +90,77 @@ export function splitSentences(text) {
     .filter((s) => s.length > 15);
 }
 
-/** Försök läsa en innehavstabell: rader med bolagsnamn + antal aktier. */
-export function extractHoldingsTable({ rows = [], text = '' }, aliasIndex) {
+const GALLIERA_LABEL = /(galliera|kungens|kung carl|kungen)/i;
+const OTHER_LABEL = /(gluonen|kungabarn|kronprinsess|prinsess|victoria|madeleine|carl philip)/i;
+
+/** Läs bolag + antal aktier ur rader (cellerna för en kolumngrupp). */
+function readRows(rows, aliasIndex) {
   const found = new Map();
-  const consider = (cells) => {
-    if (cells.length < 2) return;
+  for (const cells of rows) {
+    if (cells.length < 2) continue;
     const comp = findCompanies(cells[0], aliasIndex)[0] ?? findCompanies(cells.slice(0, 2).join(' '), aliasIndex)[0];
-    if (!comp) return;
+    if (!comp) continue;
     // Första heltalscellen ≥ 100 utan decimaler tolkas som antal aktier.
     for (const c of cells.slice(1)) {
-      const t = c.replace(/[  ]/g, ' ').trim();
+      const t = c.replace(/[\u00a0\u202f]/g, ' ').trim();
       if (/^\d{1,3}( \d{3})+$|^\d{3,7}$/.test(t)) {
         const n = parseInteger(t);
         if (n >= 100 && !found.has(comp.ticker)) found.set(comp.ticker, n);
-        return;
+        break;
       }
     }
-  };
-  rows.forEach(consider);
-  // Tabeller återgivna som text: "Investor 31 300 12,9"
-  for (const line of text.split('\n')) {
-    const m = line.match(/^([A-ZÅÄÖ][\p{L}&.\- ]{1,40}?)\s+(\d{1,3}(?:[   ]\d{3})+)\s+\d+[,.]\d/u);
-    if (m) consider([m[1], m[2]]);
   }
   return found;
+}
+
+/** Dela en tabell i kolumngrupper (två tabeller sida vid sida) med varsin etikett. */
+function tableGroups({ context = '', rows }) {
+  const hi = rows.findIndex((r) => r.some((c) => /^bolag$/i.test(c.trim())));
+  const starts = hi >= 0 ? rows[hi].map((c, i) => (/^bolag$/i.test(c.trim()) ? i : -1)).filter((i) => i >= 0) : [0];
+  const width = Math.max(...rows.map((r) => r.length));
+  return starts.map((st, gi) => {
+    const end = starts[gi + 1] ?? width;
+    // Rubrikceller ovanför rubrikraden, inom gruppens kolumner ("GALLIERAFONDEN", "GLUONEN").
+    const title = (hi > 0 ? rows.slice(0, hi) : []).map((r) => r.slice(st, end).join(' ')).join(' ');
+    const label = starts.length > 1 ? title : `${title} ${context.slice(-120)}`;
+    const body = rows.slice(hi + 1).map((r) => r.slice(st, end));
+    return { label, body };
+  });
+}
+
+/**
+ * Försök läsa Gallierafondens innehavstabell: bolag + antal aktier.
+ * Tabeller som rör andra portföljer (t.ex. Gluonen) väljs bort med hjälp av rubriken
+ * ovanför tabellen eller rubrikcellen i kolumngruppen.
+ * Returnerar en Map ticker → antal; `.partial` = listan är uttryckligen en topplista,
+ * `.ambiguous` = flera omärkta tabeller, inget valt.
+ */
+export function extractHoldingsTable({ rows = [], text = '', tables }, aliasIndex) {
+  tables = tables ?? (rows.length ? [{ context: '', rows }] : []);
+  const cands = [];
+  for (const t of tables) {
+    for (const g of tableGroups(t)) {
+      const found = readRows(g.body, aliasIndex);
+      if (found.size < 5) continue;
+      const score = (GALLIERA_LABEL.test(g.label) ? 2 : 0) + (OTHER_LABEL.test(g.label) ? -5 : 0);
+      cands.push({ found, score, label: g.label });
+    }
+  }
+  let best = null;
+  const labelled = cands.filter((c) => c.score > 0).sort((a, b) => b.score - a.score || b.found.size - a.found.size);
+  const neutral = cands.filter((c) => c.score === 0);
+  if (labelled.length) best = labelled[0];
+  else if (neutral.length === 1) best = neutral[0];
+  if (!best && !tables.length) {
+    // Tabeller återgivna som text: "Investor 31 300 12,9"
+    const lines = text.split('\n').map((line) => line.match(/^([A-ZÅÄÖ][\p{L}&.\- ]{1,40}?)\s+(\d{1,3}(?:[ \u00a0\u202f]\d{3})+)\s+\d+[,.]\d/u)).filter(Boolean).map((m) => [m[1], m[2]]);
+    const found = readRows(lines, aliasIndex);
+    if (found.size >= 5) best = { found, label: '' };
+  }
+  const out = best ? best.found : new Map();
+  out.partial = !!best && /(topp|största|tio)/i.test(best.label);
+  out.ambiguous = !best && neutral.length > 1;
+  return out;
 }
 
 /**

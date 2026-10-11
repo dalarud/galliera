@@ -5,7 +5,7 @@ const NEW_MS = 24 * 3600_000;
 
 const $ = (s) => document.querySelector(s);
 const S = {
-  data: null, generatedAt: null, view: 'return', omx30: false, hover: null, pick: null,
+  data: null, generatedAt: null, view: 'return', hover: null, pick: null,
   amount: 10000, topN: null, keepCash: true, fetchError: false, tableOpen: false,
 };
 const mobileMq = matchMedia('(max-width: 639px)');
@@ -45,6 +45,8 @@ const GROUP = {
 };
 const inkOf = (sector) => INK[GROUP[sector] ?? 'ind'];
 const isEst = (basis) => /uppskatt/.test(basis ?? '');
+// Mjuka bindestreck i långa sammansatta bolagsnamn (webbläsare saknar ofta svensk avstavning).
+const soft = (name) => esc(name).replace(/^(Industri|Handels|Investment|Medi|Kinne)(\p{Ll}{4,})/u, '$1&shy;$2');
 
 // ---------- Tema ----------
 const isDark = () => (document.documentElement.dataset.theme
@@ -106,9 +108,12 @@ function verdictText(k, b) {
   return 'Börsens valör är högre än kungens.';
 }
 
+// Ett jämförelseindex (totalavkastning, inklusive utdelningar).
+const BK = () => Object.keys(S.data.benchmarks)[0];
+const benchLabel = () => S.data.benchmarks[BK()];
 function benchSince() {
-  const sr = S.data.series;
-  return (sr[sr.length - 1].OMXSPI / sr[0].OMXSPI - 1) * 100;
+  const sr = S.data.series, k = BK();
+  return (sr[sr.length - 1][k] / sr[0][k] - 1) * 100;
 }
 
 function shortPublisher(p) {
@@ -220,7 +225,7 @@ function renderHero(changed) {
   $('#cmp-king-v').innerHTML = `${sgn(k)}<small>%</small>`;
   $('#cmp-bench-v').innerHTML = `${sgn(b)}<small>%</small>`;
   $('#verdict').textContent = verdictText(k, b);
-  $('#cmp-note').textContent = `Avkastning sedan ${dLong(d.baseline)} mot ${d.benchmarks.OMXSPI}. Märkenas höjd följer avkastningen.`;
+  $('#cmp-note').textContent = `Avkastning med utdelningar sedan ${dLong(d.baseline)}, jämfört med ${benchLabel()}. Märkenas höjd följer avkastningen.`;
   renderIncoming();
 }
 
@@ -264,6 +269,9 @@ function renderIncoming() {
     <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>`;
   el.hidden = false;
 }
+function d_inflowOn(date) {
+  return S.data.cashflows.find((c) => c.type === 'kapitaltillskott' && c.date === date)?.amount ?? 0;
+}
 function d_sector(ticker) {
   return S.data.positions.find((p) => p.ticker === ticker)?.sector ?? S.data.sectors?.[ticker] ?? '';
 }
@@ -276,15 +284,17 @@ function niceStep(span, n) {
 
 function chartModel() {
   const sr = S.data.series;
-  const u0 = sr[0].unit, b0 = sr[0].OMXSPI, c0 = sr[0].OMXS30;
+  const k = BK();
+  const u0 = sr[0].unit, b0 = sr[0][k];
   const ret = S.view === 'return';
   const fund = sr.map((r) => (r.unit / u0 - 1) * 100);
-  const idx = sr.map((r) => (r.OMXSPI / b0 - 1) * 100);
-  const idx2 = c0 ? sr.map((r) => (r.OMXS30 / c0 - 1) * 100) : null;
+  const idx = sr.map((r) => (r[k] / b0 - 1) * 100);
   const total = sr.map((r) => r.nav / 1e6);
   const cash = sr.map((r) => r.cash / 1e6);
   const stocks = total.map((v, i) => v - cash[i]);
-  return { sr, ret, fund, idx, idx2: S.omx30 ? idx2 : null, total, cash, stocks };
+  // Nytt kapital per dag (köp större än kassan), för att förklara språng i värdegrafen.
+  const inflow = new Map(S.data.cashflows.filter((c) => c.type === 'kapitaltillskott').map((c) => [c.date, c.amount]));
+  return { sr, ret, fund, idx, total, cash, stocks, inflow };
 }
 
 function renderChart() {
@@ -295,7 +305,7 @@ function renderChart() {
   if (!W || !H) return;
   let lo, hi, step;
   if (m.ret) {
-    const all = [...m.fund, ...m.idx, ...(m.idx2 ?? [])];
+    const all = [...m.fund, ...m.idx];
     const span = Math.max(...all) - Math.min(...all);
     step = span > 30 ? 10 : 5;
     lo = Math.floor((Math.min(0, ...all) - 1) / step) * step;
@@ -318,9 +328,8 @@ function renderChart() {
   let paths;
   const ends = [];
   if (m.ret) {
-    paths = `${m.idx2 ? `<path class="l-idx2" d="${line(m.idx2)}"/>` : ''}<path class="l-idx" d="${line(m.idx)}"/><path class="l-fund" d="${line(m.fund)}"/>`;
+    paths = `<path class="l-idx" d="${line(m.idx)}"/><path class="l-fund" d="${line(m.fund)}"/>`;
     ends.push({ y: Y(m.fund[N - 1]), label: `${sgn(m.fund[N - 1])} %` }, { y: Y(m.idx[N - 1]), label: `${sgn(m.idx[N - 1])} %` });
-    if (m.idx2) ends.push({ y: Y(m.idx2[N - 1]), label: `${sgn(m.idx2[N - 1])} %` });
   } else {
     const back = m.stocks.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
     paths = `<path class="a-stocks" d="${line(m.stocks)}L${W} ${H}L0 ${H}Z"/><path class="a-cash" d="${line(m.total)}${back}Z"/>
@@ -336,17 +345,17 @@ function renderChart() {
   if (hv != null) {
     const x = X(hv);
     const dots = m.ret
-      ? [[m.fund[hv], 'var(--accent)'], [m.idx[hv], 'var(--index)'], ...(m.idx2 ? [[m.idx2[hv], 'var(--index)']] : [])]
+      ? [[m.fund[hv], 'var(--accent)'], [m.idx[hv], 'var(--index)']]
       : [[m.total[hv], 'var(--ink)'], [m.stocks[hv], 'var(--accent)']];
     const r = m.sr[hv];
     const p = parts(r.d);
     const rows = m.ret
-      ? [['#9E1B32', 3, 'Kungens fond', `${sgn(m.fund[hv])} %`], ['#7D7A88', 2, S.data.benchmarks.OMXSPI, `${sgn(m.idx[hv])} %`],
-        ...(m.idx2 ? [['repeating-linear-gradient(90deg,#7D7A88 0 4px,transparent 4px 7px)', 2, S.data.benchmarks.OMXS30, `${sgn(m.idx2[hv])} %`]] : [])]
+      ? [['#9E1B32', 3, 'Kungens fond', `${sgn(m.fund[hv])} %`], ['#7D7A88', 2, 'Börsen', `${sgn(m.idx[hv])} %`]]
       : [['rgba(158,27,50,.3)', 10, 'Aktier', `${f1(m.stocks[hv])} Mkr`], ['repeating-linear-gradient(-66deg,#4B2A86 0 1.3px,transparent 1.3px 5px)', 10, 'Kassa, uppskattad', `≈ ${f1(m.cash[hv])} Mkr`]];
     const sum = m.ret ? ['Kungens försprång', `${sgn(m.fund[hv] - m.idx[hv])} pe`] : ['Totalt', `${f1(m.total[hv])} Mkr`];
     const prev = hv ? m.sr[hv - 1].d : '0000';
     const dayTrades = S.data.trades.filter((t) => t.date > prev && t.date <= r.d && t.date !== S.data.baseline);
+    const inflow = !m.ret && m.inflow.get(r.d);
     const right = hv > N * 0.6;
     hover = `<div class="cross" style="left:${x}px"></div>
       ${dots.map(([v, c]) => `<span class="dot" style="left:${x}px;top:${Y(v)}px;background:${c}"></span>`).join('')}
@@ -354,6 +363,7 @@ function renderChart() {
         <div class="tip-d">${dStamp(r.d)} · ${DAY[p.wd].toUpperCase()}</div>
         ${rows.map(([sw, h, l, v]) => `<div class="tip-r"><span class="sw" style="height:${h}px;background:${sw}"></span><span class="l">${esc(l)}</span><b>${v}</b></div>`).join('')}
         <div class="tip-r sum"><span class="sw"></span><span class="l">${sum[0]}</span><b>${sum[1]}</b></div>
+        ${inflow ? `<div class="tip-trades">Köpen enligt innehavslistan var större än kassan: ${mkr(inflow)} räknas som nytt kapital.</div>` : ''}
         ${dayTrades.length ? `<div class="tip-trades">${dayTrades.slice(0, 4).map((t) => `${t.side === 'buy' ? '▲ Köpt' : t.side === 'sell' ? '▼ Sålt' : '◆'} ${esc(t.name)}`).join('<br>')}${dayTrades.length > 4 ? `<br>+ ${dayTrades.length - 4} till` : ''}</div>` : ''}
       </div>`;
   }
@@ -388,15 +398,13 @@ function renderChart() {
   const d = S.data;
   $('#legend').innerHTML = m.ret
     ? `<span class="lg"><span class="sw" style="height:3px;background:var(--accent)"></span>Kungens fond (vår kopia)</span>
-       <span class="lg"><span class="sw" style="height:2px;background:var(--index)"></span>${esc(d.benchmarks.OMXSPI)}</span>
-       ${m.idx2 ? `<span class="lg"><span class="sw" style="height:0;border-top:2px dashed var(--index)"></span>${esc(d.benchmarks.OMXS30)}</span>` : ''}
-       ${d.benchmarks.OMXS30 ? `<button type="button" class="toggle" id="omx30" aria-pressed="${S.omx30}">${S.omx30 ? '− OMXS30' : '+ OMXS30'}</button>` : ''}`
+       <span class="lg"><span class="sw" style="height:2px;background:var(--index)"></span>Börsen: ${esc(benchLabel())}</span>`
     : `<span class="lg"><span class="sw" style="height:12px;background:var(--accent-soft)"></span>Aktier</span>
        <span class="lg"><span class="sw" style="height:12px;background:repeating-linear-gradient(-66deg,var(--pm) 0 1.3px,transparent 1.3px 5px)"></span>Kassa, uppskattad</span>`;
   $('#chart-title').textContent = m.ret ? 'Kungens fond mot börsen' : 'Fondens värde – aktier och kassa';
   $('#chart-foot').textContent = m.ret
-    ? 'Andelsvärdet är tidsviktat och räknar med utdelningar. Insatt kapital påverkar det inte.'
-    : 'Kassan är uppskattad ur rapporterade affärer och utdelningar.';
+    ? 'Både fonden och indexet räknar med utdelningar. Andelsvärdet är tidsviktat, så nytt kapital påverkar det inte.'
+    : 'Kassan är uppskattad ur rapporterade affärer och utdelningar. Språnget i april är köp ur nytt kapital.';
   if (S.tableOpen) renderTable();
 }
 
@@ -404,7 +412,7 @@ function renderTable() {
   const m = chartModel();
   const rows = m.sr.map((r, i) => ({ r, i })).filter(({ r, i }) => i === m.sr.length - 1 || m.sr[i + 1].d.slice(0, 7) !== r.d.slice(0, 7));
   const d = S.data;
-  $('#chart-table').innerHTML = `<table><thead><tr><th scope="col">Datum</th><th scope="col">Kungens fond</th><th scope="col">${esc(d.benchmarks.OMXSPI)}</th><th scope="col">Fondvärde</th><th scope="col">Kassa ≈</th></tr></thead>
+  $('#chart-table').innerHTML = `<table><thead><tr><th scope="col">Datum</th><th scope="col">Kungens fond</th><th scope="col">${esc(benchLabel())}</th><th scope="col">Fondvärde</th><th scope="col">Kassa ≈</th></tr></thead>
     <tbody>${rows.map(({ r, i }) => `<tr><td>${dLong(r.d)}</td><td>${sgn(m.fund[i])} %</td><td>${sgn(m.idx[i])} %</td><td>${f1(m.total[i])} Mkr</td><td>${f1(m.cash[i])} Mkr</td></tr>`).join('')}</tbody></table>`;
 }
 
@@ -431,7 +439,6 @@ chartEl.addEventListener('keydown', (e) => {
   renderChart();
 });
 chartEl.addEventListener('blur', () => { S.hover = null; renderChart(); });
-$('#legend').addEventListener('click', (e) => { if (e.target.closest('#omx30')) { S.omx30 = !S.omx30; renderChart(); } });
 const setView = (v) => {
   S.view = v; S.hover = null;
   $('#tab-return').setAttribute('aria-selected', String(v === 'return'));
@@ -481,13 +488,13 @@ function renderAlbum() {
     return `<button type="button" class="st" data-pick="${esc(p.ticker)}" aria-pressed="${S.pick === p.ticker}" aria-label="${esc(`${p.name}, ${p.sector}, ${f1(p.weight)} procent av fonden`)}" style="height:${Math.round(base + p.weight * k)}px">
       <span class="perf perf-t" aria-hidden="true"></span><span class="perf perf-b" aria-hidden="true"></span><span class="perf perf-l" aria-hidden="true"></span><span class="perf perf-r" aria-hidden="true"></span>
       <span class="st-in" style="background:${inkOf(p.sector)}">
-        <span class="st-n">${esc(p.name)}</span>
+        <span class="st-n">${soft(p.name)}</span>
         <span class="st-v"><span class="st-p">${f1(p.weight)} %</span><span class="st-k">${val}</span></span>
       </span>
       ${pm ? `<span class="st-pm" style="--c:${pm[2]}" aria-hidden="true"><span>${pm[0]}</span><span>${pm[1]}</span></span>` : ''}
     </button>`;
   });
-  stamps.push(`<button type="button" class="st st-cash" data-pick="cash" aria-pressed="${S.pick === 'cash'}" aria-label="Kassa, uppskattad, ${f1(s.cashPct)} procent av fonden" style="height:${Math.round(base + s.cashPct * k)}px">
+  stamps.push(`<button type="button" class="st st-cash" data-pick="cash" aria-pressed="${S.pick === 'cash'}" aria-label="Kassa, uppskattad, ${f1(s.cashPct)} procent av fonden" style="height:${Math.max(base + 28, Math.round(base + s.cashPct * k))}px">
       <span class="perf perf-t" aria-hidden="true"></span><span class="perf perf-b" aria-hidden="true"></span><span class="perf perf-l" aria-hidden="true"></span><span class="perf perf-r" aria-hidden="true"></span>
       <span class="st-in"><span class="st-n">Kassa</span><span class="st-v"><span class="st-p">${f1(s.cashPct)} %</span><span class="st-k">≈ ${f1(s.cash / 1e6)} Mkr</span></span><span class="over" aria-hidden="true">UPPSKATTAD</span></span>
     </button>`);
@@ -524,7 +531,7 @@ function renderBack() {
       <div class="back-grid">
         <div><div>Utdelningar hittills</div><div>${mkr(s.dividends)}</div></div>
         <div><div>Realiserat resultat</div><div>${sgn(s.realized / 1e6)} Mkr</div></div>
-        <div><div>Insatt kapital</div><div>${mkr(s.injected)}</div></div>
+        <div><div>Nytt kapital</div><div>${mkr(s.injected)}</div></div>
         <div><div>Senaste kassaflöde</div><div>${lastFlow ? dShort(lastFlow.date) : '–'}</div></div>
       </div>
       <p class="back-note">Uppskattad ur rapporterade affärer och utdelningar. Hovet redovisar inte fondens kassa.</p>`;
@@ -556,7 +563,7 @@ function renderCash() {
     ? `<strong>Kassan är fondens största post</strong> – ${f1(s.cashPct)} procent, mer än något enskilt innehav.`
     : `<strong>Kassan motsvarar ${f1(s.cashPct)} procent av fonden.</strong>`;
   const flows = d.cashflows.map((c) => {
-    const label = c.type === 'utdelning' ? `Utdelning ${c.name}` : c.type === 'kapitaltillskott' ? 'Insatt kapital' : cap(c.type);
+    const label = c.type === 'utdelning' ? `Utdelning ${c.name}` : c.type === 'kapitaltillskott' ? 'Nytt kapital (köp större än kassan)' : cap(c.type);
     return `<li><span>${dShort(c.date)} · ${esc(label)}</span><span>${c.amount >= 0 ? '+' : '−'}${money(Math.abs(c.amount))}</span></li>`;
   }).join('');
   $('#cash').innerHTML = `
@@ -604,8 +611,18 @@ function reportHtml(g, ids) {
   else if (g.spinoff) sum = 'Aktierna delades ut till befintliga ägare och påverkar inte kassan.';
   sum += nEst ? ` ${nEst === g.trades.length ? 'Alla' : `${nEst} av ${g.trades.length}`} är uppskattade.` : g.trades.length > 1 ? ` Alla ${COUNT[g.trades.length] ?? g.trades.length} är rapporterade uppgifter.` : ' Rapporterad uppgift.';
   const pmTxt = shortPublisher(src?.publisher).slice(0, 9);
+  const stamp = `<span class="pm-round" aria-hidden="true"><span>${esc(pmTxt)}</span><span>${src?.date ? dStamp(src.date) : ''}</span></span>`;
+  if (g.snapshot) {
+    // Avstämningar är justeringar, inte nyheter: sammanfattning först, raderna på begäran.
+    const inflow = d_inflowOn(g.trades[0]?.date);
+    return `<article class="report">
+      <div class="rep-head">${stamp}<p>${head}</p></div>
+      <p class="rep-sum">${sum}${inflow ? ` Köpen var större än kassan, så ${mkr(inflow)} räknas som nytt kapital.` : ''}</p>
+      <details class="more"><summary>Visa ${COUNT[g.trades.length] ?? g.trades.length} justeringar</summary>${rows}</details>
+    </article>`;
+  }
   return `<article class="report">
-    <div class="rep-head"><span class="pm-round" aria-hidden="true"><span>${esc(pmTxt)}</span><span>${src?.date ? dStamp(src.date) : ''}</span></span><p>${head}</p></div>
+    <div class="rep-head">${stamp}<p>${head}</p></div>
     ${rows}
     <p class="rep-sum">${sum}</p>
   </article>`;
@@ -645,7 +662,7 @@ function renderPost() {
     </li>`;
   });
   $('#sort').innerHTML = items.slice(0, 3).join('') + (items.length > 3 ? `<li style="list-style:none"><details class="more"><summary>Fler artiklar (${items.length - 3})</summary><ol class="sort" style="margin-top:14px">${items.slice(3).join('')}</ol></details></li>` : '');
-  $('#scanline').textContent = d.lastNewsScan ? `Senast läst ${hhmm(new Date(d.lastNewsScan).getTime())} · ${sthlm(new Date(d.lastNewsScan).getTime(), { weekday: 'long' })}` : '';
+  $('#scanline').innerHTML = `<span>${d.lastNewsScan ? `Senast läst ${sthlm(new Date(d.lastNewsScan).getTime(), { weekday: 'short' }).replace('.', '')} ${hhmm(new Date(d.lastNewsScan).getTime())}` : ''}</span><a href="data/feed.xml">Följ affärerna via RSS</a>`;
 }
 
 // ---------- Ditt album ----------

@@ -114,13 +114,24 @@ export function extractArticle(html) {
     .replace(/<noscript[\s\S]*?<\/noscript>/gi, ' ')
     .replace(/<!--[\s\S]*?-->/g, ' ');
   const clean = (s) => decodeEntities(s.replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
-  const rows = [...html.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map(([tr]) =>
+  const rowsOf = (frag) => [...frag.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map(([tr]) =>
     [...tr.matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/gi)].map(([, c]) => clean(c)));
+  const rows = rowsOf(html);
+  // Varje tabell med texten närmast före den (där står ofta "Gallierafondens innehav" eller "Gluonens innehav").
+  const tables = [];
+  const seen = new Set();
+  for (const m of html.matchAll(/<table[\s\S]*?<\/table>/gi)) {
+    const trs = rowsOf(m[0]).filter((r) => r.length >= 2);
+    const key = JSON.stringify(trs);
+    if (!trs.length || seen.has(key)) continue; // samma tabell renderas ibland två gånger (mobil/desktop)
+    seen.add(key);
+    tables.push({ context: clean(html.slice(Math.max(0, m.index - 3000), m.index)).slice(-200), rows: trs });
+  }
   const blocks = [...html.matchAll(/<(p|li|h1|h2|h3|figcaption|blockquote)[^>]*>([\s\S]*?)<\/\1>/gi)]
     .map(([, , inner]) => clean(inner))
     .filter((t) => t.length > 1);
   // Om sidan saknar <p>-struktur (t.ex. JSON-renderad), fall tillbaka på JSON-LD articleBody.
   const ld = html.match(/"articleBody"\s*:\s*"((?:[^"\\]|\\.)*)"/)?.[1];
   if (ld) blocks.push(JSON.parse(`"${ld}"`));
-  return { text: blocks.join('\n'), rows: rows.filter((r) => r.length >= 2) };
+  return { text: blocks.join('\n'), rows: rows.filter((r) => r.length >= 2), tables };
 }
