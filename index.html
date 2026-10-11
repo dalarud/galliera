@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Investera som kungen</title>
+  <meta name="description" content="En fiktiv skuggportfölj som följer H.M. Konungens Gallierafond: läser nyheter om köp och sälj i realtid, replikerar affärerna och visar innehav, kassa och utveckling mot börsindex.">
+  <link rel="icon" href="assets/crown.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#">
+        <svg class="brand-crown" viewBox="0 0 64 48" aria-hidden="true"><use href="#crown"/></svg>
+        <span>Kungens Portfölj</span>
+      </a>
+      <div class="topbar-right">
+        <span class="live" id="live" title="Sidan hämtar nya data automatiskt">
+          <span class="live-dot"></span><span id="live-text">Ansluter…</span>
+        </span>
+        <button class="theme-btn" id="theme-btn" type="button" aria-label="Byt färgtema">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">H.M. Konungens Gallierafond &middot; skuggportfölj</p>
+          <h1>Vill du investera <em>som kungen?</em></h1>
+          <p class="lede">
+            Gallierafonden är kungens egen aktieportfölj, förvaltad av Kungliga Hovstaterna och med rötter i ett
+            arv från 1837. Den här sidan läser varje nyhet om fondens köp och sälj, gör samma affärer i en
+            fiktiv fond och räknar ut innehav, kassa och utveckling, jämfört med Stockholmsbörsen.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-gold" href="#kopiera">Köp som kungen</a>
+            <a class="btn btn-ghost" href="#affarer">Se de kungliga affärerna</a>
+          </div>
+        </div>
+
+        <aside class="crest" aria-label="Fondens värde just nu">
+          <div class="crest-top">
+            <svg class="crest-crown" viewBox="0 0 64 48" aria-hidden="true"><use href="#crown"/></svg>
+            <span>Estimerat fondvärde</span>
+          </div>
+          <div class="crest-value" id="nav">–</div>
+          <div class="crest-day" id="day">–</div>
+          <dl class="crest-stats">
+            <div><dt>Sedan start</dt><dd id="since">–</dd></div>
+            <div><dt id="bench-label-short">OMXSPI</dt><dd id="since-bench">–</dd></div>
+            <div><dt>Kassa</dt><dd id="cash">–</dd></div>
+            <div><dt>Innehav</dt><dd id="count">–</dd></div>
+          </dl>
+          <p class="crest-foot" id="asof">–</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="chart-title">
+      <div class="card chart-card">
+        <div class="card-head">
+          <div>
+            <h2 id="chart-title">Kungens fond mot börsen</h2>
+            <p class="sub" id="chart-sub">Andelsvärdets utveckling (tidsviktad, inklusive utdelningar) mot jämförelseindex.</p>
+          </div>
+          <div class="controls">
+            <div class="seg" role="group" aria-label="Visa" id="mode-seg">
+              <button type="button" data-mode="pct" aria-pressed="true">Utveckling %</button>
+              <button type="button" data-mode="kr" aria-pressed="false">Värde kr</button>
+            </div>
+            <div class="seg" role="group" aria-label="Tidsperiod" id="range-seg">
+              <button type="button" data-range="1M">1M</button>
+              <button type="button" data-range="3M">3M</button>
+              <button type="button" data-range="6M">6M</button>
+              <button type="button" data-range="YTD">I år</button>
+              <button type="button" data-range="MAX" aria-pressed="true">Max</button>
+            </div>
+            <label class="select">
+              <span class="visually-hidden">Jämförelseindex</span>
+              <select id="bench-select"></select>
+            </label>
+          </div>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="chart" id="chart" role="img" aria-label="Linjediagram över fondens utveckling mot index"></div>
+        <p class="chart-note">
+          <span class="k"><span class="mk mk-buy" aria-hidden="true"></span>köp</span>
+          <span class="k"><span class="mk mk-sell" aria-hidden="true"></span>sälj</span>
+          <span>Markeringarna visar dagar då fonden handlade enligt nyheterna.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap section two-col">
+      <div class="card" aria-labelledby="holdings-title">
+        <div class="card-head">
+          <div>
+            <h2 id="holdings-title">Skattkammaren</h2>
+            <p class="sub">Uppskattade innehav just nu, värderade till senaste kurs.</p>
+          </div>
+        </div>
+        <div class="weights" id="weights" aria-hidden="true"></div>
+        <div class="table-scroll">
+          <table class="table" id="holdings">
+            <thead>
+              <tr>
+                <th scope="col">Bolag</th>
+                <th scope="col" class="num">Antal</th>
+                <th scope="col" class="num">Kurs</th>
+                <th scope="col" class="num">Idag</th>
+                <th scope="col" class="num">Värde</th>
+                <th scope="col" class="num">Andel</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" id="affarer" aria-labelledby="trades-title">
+        <div class="card-head">
+          <div>
+            <h2 id="trades-title">Kungliga affärer</h2>
+            <p class="sub">Köp och sälj som replikerats från nyheterna.</p>
+          </div>
+        </div>
+        <ol class="feed" id="trades"></ol>
+      </div>
+    </section>
+
+    <section class="wrap section" id="kopiera" aria-labelledby="copy-title">
+      <div class="card copy-card">
+        <div class="card-head">
+          <div>
+            <h2 id="copy-title">Köp som kungen</h2>
+            <p class="sub">Ange ett belopp så räknar vi ut hur många aktier i varje bolag du behöver för att få samma fördelning som Gallierafonden, inklusive kassan.</p>
+          </div>
+        </div>
+        <form class="copy-form" id="copy-form" onsubmit="return false">
+          <label for="amount">Ditt belopp</label>
+          <div class="amount">
+            <input id="amount" inputmode="numeric" value="100 000" autocomplete="off">
+            <span>kr</span>
+          </div>
+          <label class="check"><input type="checkbox" id="keep-cash" checked> Håll samma kassaandel som kungen</label>
+        </form>
+        <div class="copy-out" id="copy-out"></div>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="news-title">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h2 id="news-title">Hovrapporter</h2>
+            <p class="sub" id="news-sub">Nyheter som skannats automatiskt och hur de tolkats.</p>
+          </div>
+        </div>
+        <ul class="news" id="news"></ul>
+      </div>
+    </section>
+
+    <section class="wrap section method" aria-labelledby="method-title">
+      <h2 id="method-title">Så räknar vi</h2>
+      <div class="method-grid">
+        <div>
+          <h3>1. Bevakning</h3>
+          <p>En skanner söker kontinuerligt i svenska nyhetsflöden efter artiklar om kungens aktieaffärer och läser dem: innehavstabeller, antal aktier, belopp och ord som <i>sålt hela innehavet</i>, <i>halverat</i> eller <i>tagit in</i>.</p>
+        </div>
+        <div>
+          <h3>2. Viktning</h3>
+          <p>När antal aktier eller belopp saknas uppskattas affären utifrån innehavets vikt: en minskning motsvarar en tredjedel av positionen och ett nytt bolag fondens medianvikt. Publicerade innehavstabeller skriver alltid över uppskattningarna.</p>
+        </div>
+        <div>
+          <h3>3. Kassa</h3>
+          <p>Försäljningslikvider och utdelningar går till kassan och köp dras därifrån. Räcker inte kassan räknas mellanskillnaden som kapitaltillskott. Den verkliga kassan redovisas inte, så siffran är en modell.</p>
+        </div>
+        <div>
+          <h3>4. Utveckling</h3>
+          <p>Fonden räknas i andelar som börjar på 100 kr, precis som en riktig fond. Kapitaltillskott påverkar därför inte avkastningen, och den kan jämföras rakt av med indexet.</p>
+        </div>
+      </div>
+      <ul class="notes" id="notes"></ul>
+      <p class="disclaimer">
+        Fiktiv portfölj för underhållning och utbildning. Sidan har ingen koppling till Kungliga Hovstaterna eller
+        Gallierafonden, och innehållet är inte investeringsrådgivning. Innehav och affärer bygger på offentliga
+        uppgifter från ägardatatjänsten Holdings via medierna, kurser från Yahoo Finance, och kan avvika från verkligheten.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <svg class="footer-crown" viewBox="0 0 64 48" aria-hidden="true"><use href="#crown"/></svg>
+      <p>Kungens Portfölj &middot; senast beräknad <span id="generated">–</span></p>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="status" aria-live="polite" hidden></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="crown" viewBox="0 0 64 48">
+      <path fill="currentColor" d="M6 40h52l-1.6 6H7.6zM4 14l14 10 14-18 14 18 14-10-4 23H8z"/>
+      <circle fill="currentColor" cx="4" cy="12" r="4"/><circle fill="currentColor" cx="32" cy="4" r="4"/><circle fill="currentColor" cx="60" cy="12" r="4"/>
+    </symbol>
+  </svg>
+
+  <script src="assets/app.js" type="module"></script>
+</body>
+</html>

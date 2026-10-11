@@ -1,0 +1,3803 @@
+{
+  "generatedAt": "2026-10-11T16:46:17.434Z",
+  "lastNewsScan": "2026-10-11T16:46:17.426Z",
+  "fund": "Gallierafonden",
+  "baseline": "2025-11-07",
+  "notes": [
+    "Startpunkten är den fullständiga innehavstabellen från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
+    "Fondens faktiska kassa redovisas inte offentligt. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som kapitaltillskott, vilket inte påverkar andelsvärdet.",
+    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen."
+  ],
+  "benchmarks": {
+    "OMXSPI": "OMX Stockholm PI",
+    "OMXS30": "OMX Stockholm 30"
+  },
+  "asOf": "2026-10-09",
+  "summary": {
+    "nav": 115300347,
+    "cash": 13974822,
+    "cashPct": 12.12,
+    "invested": 101325525,
+    "unit": 122.6959,
+    "dayChangePct": 1.67,
+    "dayChangeKr": 1895245,
+    "sinceStartPct": 22.7,
+    "positions": 19,
+    "dividends": 3073459,
+    "realized": 3755088,
+    "startCapital": 74129663,
+    "injected": 22584692
+  },
+  "positions": [
+    {
+      "ticker": "INVE-B.ST",
+      "name": "Investor",
+      "sector": "Investmentbolag",
+      "shares": 31300,
+      "price": 412.05,
+      "prevClose": 406.55,
+      "dayChangePct": 1.35,
+      "value": 12897165,
+      "weight": 11.19,
+      "avgCost": 312.6,
+      "gainPct": 31.81,
+      "since": "2025-11-07",
+      "quoteTime": 1791559774
+    },
+    {
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "sector": "Bank",
+      "shares": 51300,
+      "price": 187.3,
+      "prevClose": 187,
+      "dayChangePct": 0.16,
+      "value": 9608490,
+      "weight": 8.33,
+      "avgCost": 160.452,
+      "gainPct": 16.73,
+      "since": "2025-11-07",
+      "quoteTime": 1791559773
+    },
+    {
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "sector": "Verkstad",
+      "shares": 38000,
+      "price": 224,
+      "prevClose": 218.6,
+      "dayChangePct": 2.47,
+      "value": 8512000,
+      "weight": 7.38,
+      "avgCost": 204.278,
+      "gainPct": 9.65,
+      "since": "2025-11-07",
+      "quoteTime": 1791559791
+    },
+    {
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "sector": "Verkstad",
+      "shares": 20500,
+      "price": 360.9,
+      "prevClose": 352.4,
+      "dayChangePct": 2.41,
+      "value": 7398450,
+      "weight": 6.42,
+      "avgCost": 299.227,
+      "gainPct": 20.61,
+      "since": "2025-11-07",
+      "quoteTime": 1791559770
+    },
+    {
+      "ticker": "EQT.ST",
+      "name": "EQT",
+      "sector": "Investmentbolag",
+      "shares": 25600,
+      "price": 284.1,
+      "prevClose": 276,
+      "dayChangePct": 2.93,
+      "value": 7272960,
+      "weight": 6.31,
+      "avgCost": 302.6,
+      "gainPct": -6.11,
+      "since": "2026-09-15",
+      "quoteTime": 1791559785
+    },
+    {
+      "ticker": "SEB-A.ST",
+      "name": "SEB",
+      "sector": "Bank",
+      "shares": 29600,
+      "price": 228,
+      "prevClose": 223.6,
+      "dayChangePct": 1.97,
+      "value": 6748800,
+      "weight": 5.85,
+      "avgCost": 180.502,
+      "gainPct": 26.31,
+      "since": "2025-11-07",
+      "quoteTime": 1791559785
+    },
+    {
+      "ticker": "ALFA.ST",
+      "name": "Alfa Laval",
+      "sector": "Verkstad",
+      "shares": 10500,
+      "price": 577.6,
+      "prevClose": 560.4,
+      "dayChangePct": 3.07,
+      "value": 6064800,
+      "weight": 5.26,
+      "avgCost": 453.008,
+      "gainPct": 27.5,
+      "since": "2025-11-07",
+      "quoteTime": 1791559779
+    },
+    {
+      "ticker": "INDU-C.ST",
+      "name": "Industrivärden",
+      "sector": "Investmentbolag",
+      "shares": 11100,
+      "price": 501,
+      "prevClose": 495.4,
+      "dayChangePct": 1.13,
+      "value": 5561100,
+      "weight": 4.82,
+      "avgCost": 405.104,
+      "gainPct": 23.67,
+      "since": "2025-11-07",
+      "quoteTime": 1791559786
+    },
+    {
+      "ticker": "ATCO-B.ST",
+      "name": "Atlas Copco",
+      "sector": "Verkstad",
+      "shares": 30300,
+      "price": 182.95,
+      "prevClose": 179.7,
+      "dayChangePct": 1.81,
+      "value": 5543385,
+      "weight": 4.81,
+      "avgCost": 141.709,
+      "gainPct": 29.1,
+      "since": "2025-11-07",
+      "quoteTime": 1791559797
+    },
+    {
+      "ticker": "HEXA-B.ST",
+      "name": "Hexagon",
+      "sector": "Teknik",
+      "shares": 48300,
+      "price": 104.15,
+      "prevClose": 101.25,
+      "dayChangePct": 2.86,
+      "value": 5030445,
+      "weight": 4.36,
+      "avgCost": 107.399,
+      "gainPct": -3.03,
+      "since": "2025-11-07",
+      "quoteTime": 1791559781
+    },
+    {
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "sector": "Tjänster",
+      "shares": 30800,
+      "price": 157.4,
+      "prevClose": 154.6,
+      "dayChangePct": 1.81,
+      "value": 4847920,
+      "weight": 4.2,
+      "avgCost": 146.709,
+      "gainPct": 7.29,
+      "since": "2025-11-07",
+      "quoteTime": 1791559791
+    },
+    {
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "sector": "Hälsovård",
+      "shares": 16600,
+      "price": 263.5,
+      "prevClose": 260,
+      "dayChangePct": 1.35,
+      "value": 4374100,
+      "weight": 3.79,
+      "avgCost": 237.572,
+      "gainPct": 10.91,
+      "since": "2025-11-07",
+      "quoteTime": 1791559782
+    },
+    {
+      "ticker": "BEIJ-B.ST",
+      "name": "Beijer Ref",
+      "sector": "Verkstad",
+      "shares": 29000,
+      "price": 141,
+      "prevClose": 138.2,
+      "dayChangePct": 2.03,
+      "value": 4089000,
+      "weight": 3.55,
+      "avgCost": 133.6,
+      "gainPct": 5.54,
+      "since": "2026-09-15",
+      "quoteTime": 1791559776
+    },
+    {
+      "ticker": "LATO-B.ST",
+      "name": "Latour",
+      "sector": "Investmentbolag",
+      "shares": 17000,
+      "price": 204.2,
+      "prevClose": 199.6,
+      "dayChangePct": 2.3,
+      "value": 3471400,
+      "weight": 3.01,
+      "avgCost": 224.1,
+      "gainPct": -8.88,
+      "since": "2026-04-24",
+      "quoteTime": 1791559777
+    },
+    {
+      "ticker": "EKTA-B.ST",
+      "name": "Elekta",
+      "sector": "Medicinteknik",
+      "shares": 63000,
+      "price": 54.45,
+      "prevClose": 52.9,
+      "dayChangePct": 2.93,
+      "value": 3430350,
+      "weight": 2.98,
+      "avgCost": 54.7,
+      "gainPct": -0.46,
+      "since": "2026-04-24",
+      "quoteTime": 1791559788
+    },
+    {
+      "ticker": "SWEC-B.ST",
+      "name": "Sweco",
+      "sector": "Konsult",
+      "shares": 26000,
+      "price": 128.5,
+      "prevClose": 126.9,
+      "dayChangePct": 1.26,
+      "value": 3341000,
+      "weight": 2.9,
+      "avgCost": 140.8,
+      "gainPct": -8.74,
+      "since": "2026-04-24",
+      "quoteTime": 1791559799
+    },
+    {
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "sector": "Detaljhandel",
+      "shares": 8200,
+      "price": 165.6,
+      "prevClose": 162.65,
+      "dayChangePct": 1.81,
+      "value": 1357920,
+      "weight": 1.18,
+      "avgCost": 171.562,
+      "gainPct": -3.48,
+      "since": "2025-11-07",
+      "quoteTime": 1791559795
+    },
+    {
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "sector": "Bygg",
+      "shares": 4800,
+      "price": 263.8,
+      "prevClose": 258.4,
+      "dayChangePct": 2.09,
+      "value": 1266240,
+      "weight": 1.1,
+      "avgCost": 244.138,
+      "gainPct": 8.05,
+      "since": "2025-11-07",
+      "quoteTime": 1791559778
+    },
+    {
+      "ticker": "OCTV-SDB.ST",
+      "name": "Octave Intelligence",
+      "sector": "Teknik",
+      "shares": 2500,
+      "price": 204,
+      "prevClose": 197.5,
+      "dayChangePct": 3.29,
+      "value": 510000,
+      "weight": 0.44,
+      "avgCost": 157,
+      "gainPct": 29.94,
+      "since": "2026-05-25",
+      "quoteTime": 1791559784
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-10-08",
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "side": "buy",
+      "shares": 600,
+      "price": 258.4,
+      "value": 155040,
+      "positionAfter": 4800,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "side": "buy",
+      "shares": 1000,
+      "price": 162.65,
+      "value": 162650,
+      "positionAfter": 8200,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "side": "buy",
+      "shares": 2000,
+      "price": 260,
+      "value": 520000,
+      "positionAfter": 16600,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "HEXA-B.ST",
+      "name": "Hexagon",
+      "side": "buy",
+      "shares": 26300,
+      "price": 101.25,
+      "value": 2662875,
+      "positionAfter": 48300,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "SVOL-B.ST",
+      "name": "Svolder",
+      "side": "sell",
+      "shares": 105400,
+      "price": 57.7,
+      "value": 6081580,
+      "positionAfter": 0,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "ESSITY-B.ST",
+      "name": "Essity",
+      "side": "sell",
+      "shares": 21500,
+      "price": 261.9,
+      "value": 5630850,
+      "positionAfter": 0,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "ALFA.ST",
+      "name": "Alfa Laval",
+      "side": "sell",
+      "shares": 450,
+      "price": 560.4,
+      "value": 252180,
+      "positionAfter": 10500,
+      "eventId": "seed-2026-10-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings (19 bolag). Skillnader mot tidigare uppskattning bokförs som affärer.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "BEIJ-B.ST",
+      "name": "Beijer Ref",
+      "side": "buy",
+      "shares": 29000,
+      "price": 133.6,
+      "value": 3874400,
+      "positionAfter": 29000,
+      "eventId": "seed-2026-09-beij",
+      "basis": "rapporterad",
+      "note": "Nytt innehav: 29 000 aktier i kylteknikbolaget Beijer Ref.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": false
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "EQT.ST",
+      "name": "EQT",
+      "side": "buy",
+      "shares": 25600,
+      "price": 302.6,
+      "value": 7746560,
+      "positionAfter": 25600,
+      "eventId": "seed-2026-09-eqt",
+      "basis": "rapporterad",
+      "note": "EQT, som plockades bort i augusti, är tillbaka med 25 600 aktier.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": false
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "SHB-A.ST",
+      "name": "Handelsbanken",
+      "side": "sell",
+      "shares": 33000,
+      "price": 151.6,
+      "value": 5002800,
+      "positionAfter": 0,
+      "eventId": "seed-2026-09-shb",
+      "basis": "rapporterad",
+      "note": "Hela innehavet i Handelsbanken sålt.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": false
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "INDU-C.ST",
+      "name": "Industrivärden",
+      "side": "sell",
+      "shares": 15100,
+      "price": 522.6,
+      "value": 7891260,
+      "positionAfter": 11100,
+      "eventId": "seed-2026-09-indu",
+      "basis": "rapporterad",
+      "note": "Innehavet i Industrivärden mer än halverades (26 200 → 11 100).",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": false
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "INVE-B.ST",
+      "name": "Investor",
+      "side": "sell",
+      "shares": 8000,
+      "price": 397.85,
+      "value": 3182800,
+      "positionAfter": 31300,
+      "eventId": "seed-2026-09-inve",
+      "basis": "rapporterad",
+      "note": "Investor-aktier fördes ut ur Gallierafonden i september (39 300 → 31 300). Exakt datum ej publicerat.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": false
+    },
+    {
+      "date": "2026-05-25",
+      "ticker": "OCTV-SDB.ST",
+      "name": "Octave Intelligence",
+      "side": "spinoff",
+      "shares": 2500,
+      "price": 157,
+      "value": 392500,
+      "positionAfter": 2500,
+      "eventId": "seed-2026-05-octave",
+      "basis": "uppskattad",
+      "note": "Octave Intelligence knoppades av från Hexagon och noterades 25 maj 2026. Antalet (2 500) är det som senare rapporterades.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungafamiljen minskar i Investor – tar in EQT",
+        "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+        "date": "2026-10-09"
+      },
+      "auto": false,
+      "implied": false
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "SVOL-B.ST",
+      "name": "Svolder",
+      "side": "buy",
+      "shares": 105400,
+      "price": 52.2,
+      "value": 5501880,
+      "positionAfter": 105400,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "uppskattad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "SWEC-B.ST",
+      "name": "Sweco",
+      "side": "buy",
+      "shares": 26000,
+      "price": 140.8,
+      "value": 3660800,
+      "positionAfter": 26000,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "uppskattad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "EKTA-B.ST",
+      "name": "Elekta",
+      "side": "buy",
+      "shares": 63000,
+      "price": 54.7,
+      "value": 3446100,
+      "positionAfter": 63000,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "uppskattad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "LATO-B.ST",
+      "name": "Latour",
+      "side": "buy",
+      "shares": 17000,
+      "price": 224.1,
+      "value": 3809700,
+      "positionAfter": 17000,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "uppskattad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "ATCO-B.ST",
+      "name": "Atlas Copco",
+      "side": "buy",
+      "shares": 3700,
+      "price": 165.5,
+      "value": 612350,
+      "positionAfter": 30300,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "side": "buy",
+      "shares": 3800,
+      "price": 165.6,
+      "value": 629280,
+      "positionAfter": 30800,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "SEB-A.ST",
+      "name": "SEB",
+      "side": "buy",
+      "shares": 3600,
+      "price": 178.35,
+      "value": 642060,
+      "positionAfter": 29600,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "ALFA.ST",
+      "name": "Alfa Laval",
+      "side": "buy",
+      "shares": 1350,
+      "price": 538.4,
+      "value": 726840,
+      "positionAfter": 10950,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "side": "buy",
+      "shares": 2500,
+      "price": 395.9,
+      "value": 989750,
+      "positionAfter": 20500,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "side": "buy",
+      "shares": 27500,
+      "price": 215.8,
+      "value": 5934500,
+      "positionAfter": 38000,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "side": "buy",
+      "shares": 6300,
+      "price": 169.75,
+      "value": 1069425,
+      "positionAfter": 51300,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "INDU-C.ST",
+      "name": "Industrivärden",
+      "side": "buy",
+      "shares": 3200,
+      "price": 480.6,
+      "value": 1537920,
+      "positionAfter": 26200,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "ARJO-B.ST",
+      "name": "Arjo",
+      "side": "sell",
+      "shares": 18000,
+      "price": 24.96,
+      "value": 449280,
+      "positionAfter": 0,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "GETI-B.ST",
+      "name": "Getinge",
+      "side": "sell",
+      "shares": 6000,
+      "price": 192.05,
+      "value": 1152300,
+      "positionAfter": 0,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "ESSITY-B.ST",
+      "name": "Essity",
+      "side": "sell",
+      "shares": 3499,
+      "price": 247.6,
+      "value": 866352,
+      "positionAfter": 21500,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2026-04-24",
+      "ticker": "INVE-B.ST",
+      "name": "Investor",
+      "side": "sell",
+      "shares": 4000,
+      "price": 372.35,
+      "value": 1489400,
+      "positionAfter": 39300,
+      "eventId": "seed-2026-04-snapshot",
+      "basis": "rapporterad",
+      "note": "Tio största innehaven per 25 april 2026 enligt DI/Holdings. Getinge och Arjo uppges sålda; Svolder, Elekta, Sweco och Latour nya. Antal i de nya bolagen saknas och är uppskattade utifrån senare rapporterat antal; Svolder uppskattad så att portföljvärdet blir cirka 107 Mkr.",
+      "source": {
+        "publisher": "Börskollen / DI",
+        "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+        "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+        "date": "2026-04-30"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "ARJO-B.ST",
+      "name": "Arjo",
+      "side": "buy",
+      "shares": 18000,
+      "price": 30.76,
+      "value": 553680,
+      "positionAfter": 18000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "side": "buy",
+      "shares": 4200,
+      "price": 242.1,
+      "value": 1016820,
+      "positionAfter": 4200,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "side": "buy",
+      "shares": 7200,
+      "price": 172.8,
+      "value": 1244160,
+      "positionAfter": 7200,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "GETI-B.ST",
+      "name": "Getinge",
+      "side": "buy",
+      "shares": 6000,
+      "price": 217.3,
+      "value": 1303800,
+      "positionAfter": 6000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "side": "buy",
+      "shares": 10500,
+      "price": 174.1,
+      "value": 1828050,
+      "positionAfter": 10500,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "HEXA-B.ST",
+      "name": "Hexagon",
+      "side": "buy",
+      "shares": 22000,
+      "price": 114.75,
+      "value": 2524500,
+      "positionAfter": 22000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "side": "buy",
+      "shares": 14600,
+      "price": 234.5,
+      "value": 3423700,
+      "positionAfter": 14600,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "ATCO-B.ST",
+      "name": "Atlas Copco",
+      "side": "buy",
+      "shares": 26600,
+      "price": 138.4,
+      "value": 3681440,
+      "positionAfter": 26600,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "side": "buy",
+      "shares": 27000,
+      "price": 144.05,
+      "value": 3889350,
+      "positionAfter": 27000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "SHB-A.ST",
+      "name": "Handelsbanken",
+      "side": "buy",
+      "shares": 33000,
+      "price": 125,
+      "value": 4125000,
+      "positionAfter": 33000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "ALFA.ST",
+      "name": "Alfa Laval",
+      "side": "buy",
+      "shares": 9600,
+      "price": 441,
+      "value": 4233600,
+      "positionAfter": 9600,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "SEB-A.ST",
+      "name": "SEB",
+      "side": "buy",
+      "shares": 26000,
+      "price": 180.8,
+      "value": 4700800,
+      "positionAfter": 26000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "side": "buy",
+      "shares": 18000,
+      "price": 285.8,
+      "value": 5144400,
+      "positionAfter": 18000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "ESSITY-B.ST",
+      "name": "Essity",
+      "side": "buy",
+      "shares": 24999,
+      "price": 267.5,
+      "value": 6687233,
+      "positionAfter": 24999,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "side": "buy",
+      "shares": 45000,
+      "price": 159.15,
+      "value": 7161750,
+      "positionAfter": 45000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "INDU-C.ST",
+      "name": "Industrivärden",
+      "side": "buy",
+      "shares": 23000,
+      "price": 394.6,
+      "value": 9075800,
+      "positionAfter": 23000,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    },
+    {
+      "date": "2025-11-07",
+      "ticker": "INVE-B.ST",
+      "name": "Investor",
+      "side": "buy",
+      "shares": 43300,
+      "price": 312.6,
+      "value": 13535580,
+      "positionAfter": 43300,
+      "eventId": "seed-2025-11-snapshot",
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista enligt Holdings, 17 bolag till ett värde av 74,7 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "auto": false,
+      "implied": true
+    }
+  ],
+  "cashflows": [
+    {
+      "date": "2026-09-04",
+      "type": "utdelning",
+      "ticker": "EKTA-B.ST",
+      "name": "Elekta",
+      "perShare": 1.2,
+      "shares": 63000,
+      "amount": 75600
+    },
+    {
+      "date": "2026-08-19",
+      "type": "utdelning",
+      "ticker": "SVOL-B.ST",
+      "name": "Svolder",
+      "perShare": 0.45,
+      "shares": 105400,
+      "amount": 47430
+    },
+    {
+      "date": "2026-08-05",
+      "type": "utdelning",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "perShare": 3.8056405,
+      "shares": 51300,
+      "amount": 195229
+    },
+    {
+      "date": "2026-05-19",
+      "type": "utdelning",
+      "ticker": "SVOL-B.ST",
+      "name": "Svolder",
+      "perShare": 0.45,
+      "shares": 105400,
+      "amount": 47430
+    },
+    {
+      "date": "2026-05-12",
+      "type": "utdelning",
+      "ticker": "LATO-B.ST",
+      "name": "Latour",
+      "perShare": 5.1,
+      "shares": 17000,
+      "amount": 86700
+    },
+    {
+      "date": "2026-05-08",
+      "type": "utdelning",
+      "ticker": "INVE-B.ST",
+      "name": "Investor",
+      "perShare": 4,
+      "shares": 39300,
+      "amount": 157200
+    },
+    {
+      "date": "2026-05-06",
+      "type": "utdelning",
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "perShare": 3.55,
+      "shares": 7200,
+      "amount": 25560
+    },
+    {
+      "date": "2026-05-06",
+      "type": "utdelning",
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "perShare": 1.9,
+      "shares": 38000,
+      "amount": 72200
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 2.238612,
+      "shares": 14600,
+      "amount": 32684
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "perShare": 2.65,
+      "shares": 30800,
+      "amount": 81620
+    },
+    {
+      "date": "2026-04-29",
+      "type": "utdelning",
+      "ticker": "ATCO-B.ST",
+      "name": "Atlas Copco",
+      "perShare": 2.5,
+      "shares": 30300,
+      "amount": 75750
+    },
+    {
+      "date": "2026-04-29",
+      "type": "utdelning",
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "perShare": 6,
+      "shares": 20500,
+      "amount": 123000
+    },
+    {
+      "date": "2026-04-27",
+      "type": "utdelning",
+      "ticker": "HEXA-B.ST",
+      "name": "Hexagon",
+      "perShare": 1.5670284,
+      "shares": 22000,
+      "amount": 34475
+    },
+    {
+      "date": "2026-04-24",
+      "type": "kapitaltillskott",
+      "amount": 22584692
+    },
+    {
+      "date": "2026-04-23",
+      "type": "utdelning",
+      "ticker": "ARJO-B.ST",
+      "name": "Arjo",
+      "perShare": 0.95,
+      "shares": 18000,
+      "amount": 17100
+    },
+    {
+      "date": "2026-04-23",
+      "type": "utdelning",
+      "ticker": "ALFA.ST",
+      "name": "Alfa Laval",
+      "perShare": 9,
+      "shares": 9600,
+      "amount": 86400
+    },
+    {
+      "date": "2026-04-22",
+      "type": "utdelning",
+      "ticker": "GETI-B.ST",
+      "name": "Getinge",
+      "perShare": 4.75,
+      "shares": 6000,
+      "amount": 28500
+    },
+    {
+      "date": "2026-04-14",
+      "type": "utdelning",
+      "ticker": "INDU-C.ST",
+      "name": "Industrivärden",
+      "perShare": 8.75,
+      "shares": 23000,
+      "amount": 201250
+    },
+    {
+      "date": "2026-04-01",
+      "type": "utdelning",
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "perShare": 14,
+      "shares": 4200,
+      "amount": 58800
+    },
+    {
+      "date": "2026-03-27",
+      "type": "utdelning",
+      "ticker": "ESSITY-B.ST",
+      "name": "Essity",
+      "perShare": 8.75,
+      "shares": 24999,
+      "amount": 218741
+    },
+    {
+      "date": "2026-03-26",
+      "type": "utdelning",
+      "ticker": "SHB-A.ST",
+      "name": "Handelsbanken",
+      "perShare": 17.5,
+      "shares": 33000,
+      "amount": 577500
+    },
+    {
+      "date": "2026-03-25",
+      "type": "utdelning",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "perShare": 10.7453375,
+      "shares": 45000,
+      "amount": 483540
+    },
+    {
+      "date": "2026-03-25",
+      "type": "utdelning",
+      "ticker": "SEB-A.ST",
+      "name": "SEB",
+      "perShare": 11,
+      "shares": 26000,
+      "amount": 286000
+    },
+    {
+      "date": "2025-11-19",
+      "type": "utdelning",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "perShare": 2.25,
+      "shares": 27000,
+      "amount": 60750
+    }
+  ],
+  "series": [
+    {
+      "d": "2025-11-07",
+      "nav": 74129663,
+      "cash": 0,
+      "unit": 100,
+      "OMXSPI": 1004.78,
+      "OMXS30": 2733.11
+    },
+    {
+      "d": "2025-11-10",
+      "nav": 74679401,
+      "cash": 0,
+      "unit": 100.7416,
+      "OMXSPI": 1013.91,
+      "OMXS30": 2759.94
+    },
+    {
+      "d": "2025-11-11",
+      "nav": 75747609,
+      "cash": 0,
+      "unit": 102.1826,
+      "OMXSPI": 1025.46,
+      "OMXS30": 2790.98
+    },
+    {
+      "d": "2025-11-12",
+      "nav": 76150018,
+      "cash": 0,
+      "unit": 102.7254,
+      "OMXSPI": 1031.49,
+      "OMXS30": 2806.05
+    },
+    {
+      "d": "2025-11-13",
+      "nav": 75633555,
+      "cash": 0,
+      "unit": 102.0287,
+      "OMXSPI": 1022.09,
+      "OMXS30": 2780.58
+    },
+    {
+      "d": "2025-11-14",
+      "nav": 74954859,
+      "cash": 0,
+      "unit": 101.1132,
+      "OMXSPI": 1013.5,
+      "OMXS30": 2757.12
+    },
+    {
+      "d": "2025-11-17",
+      "nav": 74247328,
+      "cash": 0,
+      "unit": 100.1587,
+      "OMXSPI": 1005.54,
+      "OMXS30": 2736.13
+    },
+    {
+      "d": "2025-11-18",
+      "nav": 72588303,
+      "cash": 0,
+      "unit": 97.9207,
+      "OMXSPI": 983.86,
+      "OMXS30": 2673.73
+    },
+    {
+      "d": "2025-11-19",
+      "nav": 72854937,
+      "cash": 60750,
+      "unit": 98.2804,
+      "OMXSPI": 987.96,
+      "OMXS30": 2685.84
+    },
+    {
+      "d": "2025-11-20",
+      "nav": 73235913,
+      "cash": 60750,
+      "unit": 98.7943,
+      "OMXSPI": 990.95,
+      "OMXS30": 2701.95
+    },
+    {
+      "d": "2025-11-21",
+      "nav": 73335729,
+      "cash": 60750,
+      "unit": 98.929,
+      "OMXSPI": 989.84,
+      "OMXS30": 2699.35
+    },
+    {
+      "d": "2025-11-24",
+      "nav": 74068965,
+      "cash": 60750,
+      "unit": 99.9181,
+      "OMXSPI": 1000.35,
+      "OMXS30": 2725.35
+    },
+    {
+      "d": "2025-11-25",
+      "nav": 74974348,
+      "cash": 60750,
+      "unit": 101.1395,
+      "OMXSPI": 1011.3,
+      "OMXS30": 2758.16
+    },
+    {
+      "d": "2025-11-26",
+      "nav": 75335088,
+      "cash": 60750,
+      "unit": 101.6261,
+      "OMXSPI": 1018.46,
+      "OMXS30": 2779.44
+    },
+    {
+      "d": "2025-11-27",
+      "nav": 75467118,
+      "cash": 60750,
+      "unit": 101.8042,
+      "OMXSPI": 1023.34,
+      "OMXS30": 2789.44
+    },
+    {
+      "d": "2025-11-28",
+      "nav": 75384729,
+      "cash": 60750,
+      "unit": 101.6931,
+      "OMXSPI": 1022.63,
+      "OMXS30": 2787.77
+    },
+    {
+      "d": "2025-12-01",
+      "nav": 75554856,
+      "cash": 60750,
+      "unit": 101.9226,
+      "OMXSPI": 1019.44,
+      "OMXS30": 2784.53
+    },
+    {
+      "d": "2025-12-02",
+      "nav": 75513344,
+      "cash": 60750,
+      "unit": 101.8666,
+      "OMXSPI": 1016.39,
+      "OMXS30": 2783.53
+    },
+    {
+      "d": "2025-12-03",
+      "nav": 75384460,
+      "cash": 60750,
+      "unit": 101.6927,
+      "OMXSPI": 1013.34,
+      "OMXS30": 2779.82
+    },
+    {
+      "d": "2025-12-04",
+      "nav": 75975359,
+      "cash": 60750,
+      "unit": 102.4898,
+      "OMXSPI": 1027.28,
+      "OMXS30": 2813.61
+    },
+    {
+      "d": "2025-12-05",
+      "nav": 76137417,
+      "cash": 60750,
+      "unit": 102.7084,
+      "OMXSPI": 1030.5,
+      "OMXS30": 2826.62
+    },
+    {
+      "d": "2025-12-08",
+      "nav": 75746636,
+      "cash": 60750,
+      "unit": 102.1813,
+      "OMXSPI": 1027.28,
+      "OMXS30": 2823.91
+    },
+    {
+      "d": "2025-12-09",
+      "nav": 75450632,
+      "cash": 60750,
+      "unit": 101.782,
+      "OMXSPI": 1020.74,
+      "OMXS30": 2808.73
+    },
+    {
+      "d": "2025-12-10",
+      "nav": 75750687,
+      "cash": 60750,
+      "unit": 102.1867,
+      "OMXSPI": 1021.11,
+      "OMXS30": 2810.59
+    },
+    {
+      "d": "2025-12-11",
+      "nav": 76032206,
+      "cash": 60750,
+      "unit": 102.5665,
+      "OMXSPI": 1026.77,
+      "OMXS30": 2829.04
+    },
+    {
+      "d": "2025-12-12",
+      "nav": 75828958,
+      "cash": 60750,
+      "unit": 102.2923,
+      "OMXSPI": 1026.02,
+      "OMXS30": 2821.01
+    },
+    {
+      "d": "2025-12-15",
+      "nav": 75999338,
+      "cash": 60750,
+      "unit": 102.5222,
+      "OMXSPI": 1027.66,
+      "OMXS30": 2832.71
+    },
+    {
+      "d": "2025-12-16",
+      "nav": 75697044,
+      "cash": 60750,
+      "unit": 102.1144,
+      "OMXSPI": 1021.26,
+      "OMXS30": 2812.83
+    },
+    {
+      "d": "2025-12-17",
+      "nav": 75358236,
+      "cash": 60750,
+      "unit": 101.6573,
+      "OMXSPI": 1015.21,
+      "OMXS30": 2794.95
+    },
+    {
+      "d": "2025-12-18",
+      "nav": 76226569,
+      "cash": 60750,
+      "unit": 102.8287,
+      "OMXSPI": 1026.3,
+      "OMXS30": 2827.91
+    },
+    {
+      "d": "2025-12-19",
+      "nav": 76498186,
+      "cash": 60750,
+      "unit": 103.1951,
+      "OMXSPI": 1029.09,
+      "OMXS30": 2841.27
+    },
+    {
+      "d": "2025-12-22",
+      "nav": 76615637,
+      "cash": 60750,
+      "unit": 103.3535,
+      "OMXSPI": 1031.67,
+      "OMXS30": 2845.06
+    },
+    {
+      "d": "2025-12-23",
+      "nav": 76694466,
+      "cash": 60750,
+      "unit": 103.4599,
+      "OMXSPI": 1033.3,
+      "OMXS30": 2849.09
+    },
+    {
+      "d": "2025-12-29",
+      "nav": 77045506,
+      "cash": 60750,
+      "unit": 103.9334,
+      "OMXSPI": 1040.24,
+      "OMXS30": 2863.64
+    },
+    {
+      "d": "2025-12-30",
+      "nav": 77570975,
+      "cash": 60750,
+      "unit": 104.6423,
+      "OMXSPI": 1045.68,
+      "OMXS30": 2882.97
+    },
+    {
+      "d": "2026-01-02",
+      "nav": 77309523,
+      "cash": 60750,
+      "unit": 104.2896,
+      "OMXSPI": 1041.83,
+      "OMXS30": 2881.19
+    },
+    {
+      "d": "2026-01-05",
+      "nav": 77558774,
+      "cash": 60750,
+      "unit": 104.6258,
+      "OMXSPI": 1046.19,
+      "OMXS30": 2901.78
+    },
+    {
+      "d": "2026-01-07",
+      "nav": 79072871,
+      "cash": 60750,
+      "unit": 106.6683,
+      "OMXSPI": 1069.68,
+      "OMXS30": 2963.31
+    },
+    {
+      "d": "2026-01-08",
+      "nav": 78661808,
+      "cash": 60750,
+      "unit": 106.1138,
+      "OMXSPI": 1059.86,
+      "OMXS30": 2937.94
+    },
+    {
+      "d": "2026-01-09",
+      "nav": 79412907,
+      "cash": 60750,
+      "unit": 107.127,
+      "OMXSPI": 1072.31,
+      "OMXS30": 2974.6
+    },
+    {
+      "d": "2026-01-12",
+      "nav": 79338382,
+      "cash": 60750,
+      "unit": 107.0265,
+      "OMXSPI": 1072.09,
+      "OMXS30": 2984.21
+    },
+    {
+      "d": "2026-01-13",
+      "nav": 79668294,
+      "cash": 60750,
+      "unit": 107.4715,
+      "OMXSPI": 1071.31,
+      "OMXS30": 2983.9
+    },
+    {
+      "d": "2026-01-14",
+      "nav": 79970887,
+      "cash": 60750,
+      "unit": 107.8797,
+      "OMXSPI": 1069.81,
+      "OMXS30": 2983.91
+    },
+    {
+      "d": "2026-01-15",
+      "nav": 81031279,
+      "cash": 60750,
+      "unit": 109.3102,
+      "OMXSPI": 1087.67,
+      "OMXS30": 3036.64
+    },
+    {
+      "d": "2026-01-16",
+      "nav": 81151062,
+      "cash": 60750,
+      "unit": 109.4718,
+      "OMXSPI": 1087.42,
+      "OMXS30": 3039.09
+    },
+    {
+      "d": "2026-01-19",
+      "nav": 79189853,
+      "cash": 60750,
+      "unit": 106.8261,
+      "OMXSPI": 1064.62,
+      "OMXS30": 2984.58
+    },
+    {
+      "d": "2026-01-20",
+      "nav": 79229068,
+      "cash": 60750,
+      "unit": 106.879,
+      "OMXSPI": 1060.99,
+      "OMXS30": 2976.37
+    },
+    {
+      "d": "2026-01-21",
+      "nav": 79578309,
+      "cash": 60750,
+      "unit": 107.3502,
+      "OMXSPI": 1063.24,
+      "OMXS30": 2988.02
+    },
+    {
+      "d": "2026-01-22",
+      "nav": 79859379,
+      "cash": 60750,
+      "unit": 107.7293,
+      "OMXSPI": 1071.6,
+      "OMXS30": 3003.06
+    },
+    {
+      "d": "2026-01-23",
+      "nav": 79690899,
+      "cash": 60750,
+      "unit": 107.502,
+      "OMXSPI": 1073.82,
+      "OMXS30": 3013.63
+    },
+    {
+      "d": "2026-01-26",
+      "nav": 80157779,
+      "cash": 60750,
+      "unit": 108.1319,
+      "OMXSPI": 1074.52,
+      "OMXS30": 3024.15
+    },
+    {
+      "d": "2026-01-27",
+      "nav": 80748099,
+      "cash": 60750,
+      "unit": 108.9282,
+      "OMXSPI": 1078.45,
+      "OMXS30": 3043.95
+    },
+    {
+      "d": "2026-01-28",
+      "nav": 80309642,
+      "cash": 60750,
+      "unit": 108.3367,
+      "OMXSPI": 1074.71,
+      "OMXS30": 3027.47
+    },
+    {
+      "d": "2026-01-29",
+      "nav": 80077195,
+      "cash": 60750,
+      "unit": 108.0231,
+      "OMXSPI": 1071.3,
+      "OMXS30": 3031.39
+    },
+    {
+      "d": "2026-01-30",
+      "nav": 80212238,
+      "cash": 60750,
+      "unit": 108.2053,
+      "OMXSPI": 1068.47,
+      "OMXS30": 3026.57
+    },
+    {
+      "d": "2026-02-02",
+      "nav": 81339637,
+      "cash": 60750,
+      "unit": 109.7262,
+      "OMXSPI": 1080.35,
+      "OMXS30": 3066.86
+    },
+    {
+      "d": "2026-02-03",
+      "nav": 81916306,
+      "cash": 60750,
+      "unit": 110.5041,
+      "OMXSPI": 1082.62,
+      "OMXS30": 3087.35
+    },
+    {
+      "d": "2026-02-04",
+      "nav": 83247821,
+      "cash": 60750,
+      "unit": 112.3003,
+      "OMXSPI": 1093.05,
+      "OMXS30": 3117.93
+    },
+    {
+      "d": "2026-02-05",
+      "nav": 82841059,
+      "cash": 60750,
+      "unit": 111.7516,
+      "OMXSPI": 1081.99,
+      "OMXS30": 3089.67
+    },
+    {
+      "d": "2026-02-06",
+      "nav": 83620226,
+      "cash": 60750,
+      "unit": 112.8027,
+      "OMXSPI": 1092.96,
+      "OMXS30": 3120.45
+    },
+    {
+      "d": "2026-02-09",
+      "nav": 83831843,
+      "cash": 60750,
+      "unit": 113.0881,
+      "OMXSPI": 1098.22,
+      "OMXS30": 3136.56
+    },
+    {
+      "d": "2026-02-10",
+      "nav": 84165142,
+      "cash": 60750,
+      "unit": 113.5377,
+      "OMXSPI": 1100.13,
+      "OMXS30": 3136.54
+    },
+    {
+      "d": "2026-02-11",
+      "nav": 84096888,
+      "cash": 60750,
+      "unit": 113.4457,
+      "OMXSPI": 1096.79,
+      "OMXS30": 3145.48
+    },
+    {
+      "d": "2026-02-12",
+      "nav": 83453336,
+      "cash": 60750,
+      "unit": 112.5775,
+      "OMXSPI": 1085.93,
+      "OMXS30": 3123.65
+    },
+    {
+      "d": "2026-02-13",
+      "nav": 83074663,
+      "cash": 60750,
+      "unit": 112.0667,
+      "OMXSPI": 1084.86,
+      "OMXS30": 3119.76
+    },
+    {
+      "d": "2026-02-16",
+      "nav": 83300653,
+      "cash": 60750,
+      "unit": 112.3716,
+      "OMXSPI": 1082.95,
+      "OMXS30": 3121.8
+    },
+    {
+      "d": "2026-02-17",
+      "nav": 83463527,
+      "cash": 60750,
+      "unit": 112.5913,
+      "OMXSPI": 1085.95,
+      "OMXS30": 3130.12
+    },
+    {
+      "d": "2026-02-18",
+      "nav": 84161622,
+      "cash": 60750,
+      "unit": 113.533,
+      "OMXSPI": 1095.12,
+      "OMXS30": 3166.11
+    },
+    {
+      "d": "2026-02-19",
+      "nav": 84043933,
+      "cash": 60750,
+      "unit": 113.3742,
+      "OMXSPI": 1094.22,
+      "OMXS30": 3157.96
+    },
+    {
+      "d": "2026-02-20",
+      "nav": 84788124,
+      "cash": 60750,
+      "unit": 114.3781,
+      "OMXSPI": 1102.78,
+      "OMXS30": 3180.46
+    },
+    {
+      "d": "2026-02-23",
+      "nav": 84776027,
+      "cash": 60750,
+      "unit": 114.3618,
+      "OMXSPI": 1094.53,
+      "OMXS30": 3166.65
+    },
+    {
+      "d": "2026-02-24",
+      "nav": 85256811,
+      "cash": 60750,
+      "unit": 115.0104,
+      "OMXSPI": 1102.91,
+      "OMXS30": 3190.87
+    },
+    {
+      "d": "2026-02-25",
+      "nav": 85667640,
+      "cash": 60750,
+      "unit": 115.5646,
+      "OMXSPI": 1104.62,
+      "OMXS30": 3195.57
+    },
+    {
+      "d": "2026-02-26",
+      "nav": 86102373,
+      "cash": 60750,
+      "unit": 116.151,
+      "OMXSPI": 1110.6,
+      "OMXS30": 3205.28
+    },
+    {
+      "d": "2026-02-27",
+      "nav": 86401467,
+      "cash": 60750,
+      "unit": 116.5545,
+      "OMXSPI": 1115.91,
+      "OMXS30": 3222.75
+    },
+    {
+      "d": "2026-03-02",
+      "nav": 84600158,
+      "cash": 60750,
+      "unit": 114.1246,
+      "OMXSPI": 1094.66,
+      "OMXS30": 3168.39
+    },
+    {
+      "d": "2026-03-03",
+      "nav": 82387516,
+      "cash": 60750,
+      "unit": 111.1397,
+      "OMXSPI": 1065.46,
+      "OMXS30": 3082.97
+    },
+    {
+      "d": "2026-03-04",
+      "nav": 83208914,
+      "cash": 60750,
+      "unit": 112.2478,
+      "OMXSPI": 1079.61,
+      "OMXS30": 3118.01
+    },
+    {
+      "d": "2026-03-05",
+      "nav": 82450816,
+      "cash": 60750,
+      "unit": 111.2251,
+      "OMXSPI": 1068.41,
+      "OMXS30": 3077.21
+    },
+    {
+      "d": "2026-03-06",
+      "nav": 81334046,
+      "cash": 60750,
+      "unit": 109.7186,
+      "OMXSPI": 1057.55,
+      "OMXS30": 3038.55
+    },
+    {
+      "d": "2026-03-09",
+      "nav": 80264812,
+      "cash": 60750,
+      "unit": 108.2762,
+      "OMXSPI": 1039.96,
+      "OMXS30": 2992.86
+    },
+    {
+      "d": "2026-03-10",
+      "nav": 82531602,
+      "cash": 60750,
+      "unit": 111.3341,
+      "OMXSPI": 1068.48,
+      "OMXS30": 3082.61
+    },
+    {
+      "d": "2026-03-11",
+      "nav": 81862708,
+      "cash": 60750,
+      "unit": 110.4318,
+      "OMXSPI": 1060.01,
+      "OMXS30": 3058.96
+    },
+    {
+      "d": "2026-03-12",
+      "nav": 81891445,
+      "cash": 60750,
+      "unit": 110.4705,
+      "OMXSPI": 1060.77,
+      "OMXS30": 3063.09
+    },
+    {
+      "d": "2026-03-13",
+      "nav": 80840063,
+      "cash": 60750,
+      "unit": 109.0522,
+      "OMXSPI": 1047.14,
+      "OMXS30": 3018.72
+    },
+    {
+      "d": "2026-03-16",
+      "nav": 80989861,
+      "cash": 60750,
+      "unit": 109.2543,
+      "OMXSPI": 1050.37,
+      "OMXS30": 3027.73
+    },
+    {
+      "d": "2026-03-17",
+      "nav": 80695782,
+      "cash": 60750,
+      "unit": 108.8576,
+      "OMXSPI": 1049.77,
+      "OMXS30": 3023.59
+    },
+    {
+      "d": "2026-03-18",
+      "nav": 80549343,
+      "cash": 60750,
+      "unit": 108.6601,
+      "OMXSPI": 1046.63,
+      "OMXS30": 3015.27
+    },
+    {
+      "d": "2026-03-19",
+      "nav": 78083341,
+      "cash": 60750,
+      "unit": 105.3335,
+      "OMXSPI": 1012.22,
+      "OMXS30": 2908.97
+    },
+    {
+      "d": "2026-03-20",
+      "nav": 76945108,
+      "cash": 60750,
+      "unit": 103.798,
+      "OMXSPI": 996.43,
+      "OMXS30": 2864.69
+    },
+    {
+      "d": "2026-03-23",
+      "nav": 77359937,
+      "cash": 60750,
+      "unit": 104.3576,
+      "OMXSPI": 1003.57,
+      "OMXS30": 2892.19
+    },
+    {
+      "d": "2026-03-24",
+      "nav": 77523677,
+      "cash": 60750,
+      "unit": 104.5785,
+      "OMXSPI": 1007.77,
+      "OMXS30": 2908.35
+    },
+    {
+      "d": "2026-03-25",
+      "nav": 78999231,
+      "cash": 830290,
+      "unit": 106.569,
+      "OMXSPI": 1021.17,
+      "OMXS30": 2943.35
+    },
+    {
+      "d": "2026-03-26",
+      "nav": 78361371,
+      "cash": 1407790,
+      "unit": 105.7085,
+      "OMXSPI": 1007.8,
+      "OMXS30": 2889.81
+    },
+    {
+      "d": "2026-03-27",
+      "nav": 77957176,
+      "cash": 1626531,
+      "unit": 105.1633,
+      "OMXSPI": 997.42,
+      "OMXS30": 2863.92
+    },
+    {
+      "d": "2026-03-30",
+      "nav": 78584698,
+      "cash": 1626531,
+      "unit": 106.0098,
+      "OMXSPI": 1007.8,
+      "OMXS30": 2890.29
+    },
+    {
+      "d": "2026-03-31",
+      "nav": 79632008,
+      "cash": 1626531,
+      "unit": 107.4226,
+      "OMXSPI": 1022.26,
+      "OMXS30": 2929.33
+    },
+    {
+      "d": "2026-04-01",
+      "nav": 81634966,
+      "cash": 1685331,
+      "unit": 110.1246,
+      "OMXSPI": 1048.77,
+      "OMXS30": 3006.37
+    },
+    {
+      "d": "2026-04-02",
+      "nav": 80583641,
+      "cash": 1685331,
+      "unit": 108.7063,
+      "OMXSPI": 1034.3,
+      "OMXS30": 2965.69
+    },
+    {
+      "d": "2026-04-07",
+      "nav": 80657503,
+      "cash": 1685331,
+      "unit": 108.806,
+      "OMXSPI": 1033.73,
+      "OMXS30": 2967.92
+    },
+    {
+      "d": "2026-04-08",
+      "nav": 83821577,
+      "cash": 1685331,
+      "unit": 113.0743,
+      "OMXSPI": 1074.22,
+      "OMXS30": 3094.16
+    },
+    {
+      "d": "2026-04-09",
+      "nav": 83566561,
+      "cash": 1685331,
+      "unit": 112.7303,
+      "OMXSPI": 1069.5,
+      "OMXS30": 3079.31
+    },
+    {
+      "d": "2026-04-10",
+      "nav": 84691853,
+      "cash": 1685331,
+      "unit": 114.2483,
+      "OMXSPI": 1080.23,
+      "OMXS30": 3109.9
+    },
+    {
+      "d": "2026-04-13",
+      "nav": 84429327,
+      "cash": 1685331,
+      "unit": 113.8941,
+      "OMXSPI": 1079.71,
+      "OMXS30": 3102.73
+    },
+    {
+      "d": "2026-04-14",
+      "nav": 85411540,
+      "cash": 1886581,
+      "unit": 115.2191,
+      "OMXSPI": 1091.8,
+      "OMXS30": 3131.2
+    },
+    {
+      "d": "2026-04-15",
+      "nav": 85385843,
+      "cash": 1886581,
+      "unit": 115.1844,
+      "OMXSPI": 1090.98,
+      "OMXS30": 3118.41
+    },
+    {
+      "d": "2026-04-16",
+      "nav": 85378150,
+      "cash": 1886581,
+      "unit": 115.1741,
+      "OMXSPI": 1095.55,
+      "OMXS30": 3120.75
+    },
+    {
+      "d": "2026-04-17",
+      "nav": 86948989,
+      "cash": 1886581,
+      "unit": 117.2931,
+      "OMXSPI": 1117.99,
+      "OMXS30": 3182.13
+    },
+    {
+      "d": "2026-04-20",
+      "nav": 86016673,
+      "cash": 1886581,
+      "unit": 116.0354,
+      "OMXSPI": 1107.89,
+      "OMXS30": 3153.12
+    },
+    {
+      "d": "2026-04-21",
+      "nav": 85664921,
+      "cash": 1886581,
+      "unit": 115.5609,
+      "OMXSPI": 1101.37,
+      "OMXS30": 3133.29
+    },
+    {
+      "d": "2026-04-22",
+      "nav": 85330386,
+      "cash": 1915081,
+      "unit": 115.1096,
+      "OMXSPI": 1097.14,
+      "OMXS30": 3128.39
+    },
+    {
+      "d": "2026-04-23",
+      "nav": 85284023,
+      "cash": 2018581,
+      "unit": 115.0471,
+      "OMXSPI": 1093.73,
+      "OMXS30": 3131.35
+    },
+    {
+      "d": "2026-04-24",
+      "nav": 106957762,
+      "cash": 0,
+      "unit": 113.8182,
+      "OMXSPI": 1083.16,
+      "OMXS30": 3101.08
+    },
+    {
+      "d": "2026-04-27",
+      "nav": 106397499,
+      "cash": 34475,
+      "unit": 113.222,
+      "OMXSPI": 1074.2,
+      "OMXS30": 3079.76
+    },
+    {
+      "d": "2026-04-28",
+      "nav": 105418884,
+      "cash": 34475,
+      "unit": 112.1806,
+      "OMXSPI": 1064.25,
+      "OMXS30": 3056.01
+    },
+    {
+      "d": "2026-04-29",
+      "nav": 105527635,
+      "cash": 233225,
+      "unit": 112.2964,
+      "OMXSPI": 1058.07,
+      "OMXS30": 3040.54
+    },
+    {
+      "d": "2026-04-30",
+      "nav": 106385854,
+      "cash": 347528,
+      "unit": 113.2096,
+      "OMXSPI": 1064.23,
+      "OMXS30": 3060.49
+    },
+    {
+      "d": "2026-05-04",
+      "nav": 104848880,
+      "cash": 347528,
+      "unit": 111.5741,
+      "OMXSPI": 1057.28,
+      "OMXS30": 3035.49
+    },
+    {
+      "d": "2026-05-05",
+      "nav": 106115952,
+      "cash": 347528,
+      "unit": 112.9224,
+      "OMXSPI": 1069.07,
+      "OMXS30": 3072.42
+    },
+    {
+      "d": "2026-05-06",
+      "nav": 109313244,
+      "cash": 445288,
+      "unit": 116.3248,
+      "OMXSPI": 1097.97,
+      "OMXS30": 3159.33
+    },
+    {
+      "d": "2026-05-07",
+      "nav": 107955093,
+      "cash": 445288,
+      "unit": 114.8795,
+      "OMXSPI": 1085.39,
+      "OMXS30": 3111.32
+    },
+    {
+      "d": "2026-05-08",
+      "nav": 106647444,
+      "cash": 602488,
+      "unit": 113.488,
+      "OMXSPI": 1073.8,
+      "OMXS30": 3073.69
+    },
+    {
+      "d": "2026-05-11",
+      "nav": 106634648,
+      "cash": 602488,
+      "unit": 113.4744,
+      "OMXSPI": 1077.7,
+      "OMXS30": 3079.45
+    },
+    {
+      "d": "2026-05-12",
+      "nav": 105362524,
+      "cash": 689188,
+      "unit": 112.1207,
+      "OMXSPI": 1062.47,
+      "OMXS30": 3046.71
+    },
+    {
+      "d": "2026-05-13",
+      "nav": 104896247,
+      "cash": 689188,
+      "unit": 111.6245,
+      "OMXSPI": 1064.2,
+      "OMXS30": 3048.11
+    },
+    {
+      "d": "2026-05-15",
+      "nav": 104671796,
+      "cash": 689188,
+      "unit": 111.3856,
+      "OMXSPI": 1060.8,
+      "OMXS30": 3036.44
+    },
+    {
+      "d": "2026-05-18",
+      "nav": 105653771,
+      "cash": 689188,
+      "unit": 112.4306,
+      "OMXSPI": 1065.26,
+      "OMXS30": 3055.52
+    },
+    {
+      "d": "2026-05-19",
+      "nav": 106114198,
+      "cash": 736618,
+      "unit": 112.9206,
+      "OMXSPI": 1069.17,
+      "OMXS30": 3061.49
+    },
+    {
+      "d": "2026-05-20",
+      "nav": 107608492,
+      "cash": 736618,
+      "unit": 114.5107,
+      "OMXSPI": 1083.52,
+      "OMXS30": 3099.5
+    },
+    {
+      "d": "2026-05-21",
+      "nav": 108082678,
+      "cash": 736618,
+      "unit": 115.0153,
+      "OMXSPI": 1087.45,
+      "OMXS30": 3115.98
+    },
+    {
+      "d": "2026-05-22",
+      "nav": 109199492,
+      "cash": 736618,
+      "unit": 116.2037,
+      "OMXSPI": 1097.74,
+      "OMXS30": 3146.13
+    },
+    {
+      "d": "2026-05-25",
+      "nav": 111571363,
+      "cash": 736618,
+      "unit": 118.7278,
+      "OMXSPI": 1114.13,
+      "OMXS30": 3192.83
+    },
+    {
+      "d": "2026-05-26",
+      "nav": 110328640,
+      "cash": 736618,
+      "unit": 117.4053,
+      "OMXSPI": 1103.44,
+      "OMXS30": 3162.19
+    },
+    {
+      "d": "2026-05-27",
+      "nav": 110578679,
+      "cash": 736618,
+      "unit": 117.6714,
+      "OMXSPI": 1101.57,
+      "OMXS30": 3156.18
+    },
+    {
+      "d": "2026-05-28",
+      "nav": 108339709,
+      "cash": 736618,
+      "unit": 115.2888,
+      "OMXSPI": 1089.85,
+      "OMXS30": 3124.05
+    },
+    {
+      "d": "2026-05-29",
+      "nav": 109053378,
+      "cash": 736618,
+      "unit": 116.0483,
+      "OMXSPI": 1095.31,
+      "OMXS30": 3138.09
+    },
+    {
+      "d": "2026-06-01",
+      "nav": 107394772,
+      "cash": 736618,
+      "unit": 114.2833,
+      "OMXSPI": 1078.29,
+      "OMXS30": 3094.5
+    },
+    {
+      "d": "2026-06-02",
+      "nav": 108981762,
+      "cash": 736618,
+      "unit": 115.9721,
+      "OMXSPI": 1094.56,
+      "OMXS30": 3149.92
+    },
+    {
+      "d": "2026-06-03",
+      "nav": 108746142,
+      "cash": 736618,
+      "unit": 115.7213,
+      "OMXSPI": 1089.39,
+      "OMXS30": 3134.46
+    },
+    {
+      "d": "2026-06-04",
+      "nav": 109153719,
+      "cash": 736618,
+      "unit": 116.155,
+      "OMXSPI": 1092.23,
+      "OMXS30": 3135.31
+    },
+    {
+      "d": "2026-06-05",
+      "nav": 108775964,
+      "cash": 736618,
+      "unit": 115.7531,
+      "OMXSPI": 1085.28,
+      "OMXS30": 3116.4
+    },
+    {
+      "d": "2026-06-08",
+      "nav": 108458334,
+      "cash": 736618,
+      "unit": 115.4151,
+      "OMXSPI": 1083.47,
+      "OMXS30": 3106.76
+    },
+    {
+      "d": "2026-06-09",
+      "nav": 107423164,
+      "cash": 736618,
+      "unit": 114.3135,
+      "OMXSPI": 1071.24,
+      "OMXS30": 3070.22
+    },
+    {
+      "d": "2026-06-10",
+      "nav": 107344469,
+      "cash": 736618,
+      "unit": 114.2297,
+      "OMXSPI": 1068.34,
+      "OMXS30": 3054.04
+    },
+    {
+      "d": "2026-06-11",
+      "nav": 107553993,
+      "cash": 736618,
+      "unit": 114.4527,
+      "OMXSPI": 1069.98,
+      "OMXS30": 3064.42
+    },
+    {
+      "d": "2026-06-12",
+      "nav": 109075139,
+      "cash": 736618,
+      "unit": 116.0714,
+      "OMXSPI": 1086.96,
+      "OMXS30": 3113.57
+    },
+    {
+      "d": "2026-06-15",
+      "nav": 109953208,
+      "cash": 736618,
+      "unit": 117.0058,
+      "OMXSPI": 1090.43,
+      "OMXS30": 3134.32
+    },
+    {
+      "d": "2026-06-16",
+      "nav": 110110169,
+      "cash": 736618,
+      "unit": 117.1728,
+      "OMXSPI": 1089.19,
+      "OMXS30": 3141.63
+    },
+    {
+      "d": "2026-06-17",
+      "nav": 110638777,
+      "cash": 736618,
+      "unit": 117.7354,
+      "OMXSPI": 1091.71,
+      "OMXS30": 3161.29
+    },
+    {
+      "d": "2026-06-18",
+      "nav": 111199083,
+      "cash": 736618,
+      "unit": 118.3316,
+      "OMXSPI": 1093.8,
+      "OMXS30": 3178.64
+    },
+    {
+      "d": "2026-06-22",
+      "nav": 111561474,
+      "cash": 736618,
+      "unit": 118.7172,
+      "OMXSPI": 1095.69,
+      "OMXS30": 3190.72
+    },
+    {
+      "d": "2026-06-23",
+      "nav": 109770467,
+      "cash": 736618,
+      "unit": 116.8113,
+      "OMXSPI": 1082.86,
+      "OMXS30": 3145.66
+    },
+    {
+      "d": "2026-06-24",
+      "nav": 110056279,
+      "cash": 736618,
+      "unit": 117.1155,
+      "OMXSPI": 1085.47,
+      "OMXS30": 3146.96
+    },
+    {
+      "d": "2026-06-25",
+      "nav": 111025284,
+      "cash": 736618,
+      "unit": 118.1467,
+      "OMXSPI": 1094.7,
+      "OMXS30": 3180.88
+    },
+    {
+      "d": "2026-06-26",
+      "nav": 110430999,
+      "cash": 736618,
+      "unit": 117.5142,
+      "OMXSPI": 1086.53,
+      "OMXS30": 3153.55
+    },
+    {
+      "d": "2026-06-29",
+      "nav": 111067108,
+      "cash": 736618,
+      "unit": 118.1912,
+      "OMXSPI": 1090,
+      "OMXS30": 3166.78
+    },
+    {
+      "d": "2026-06-30",
+      "nav": 112439597,
+      "cash": 736618,
+      "unit": 119.6517,
+      "OMXSPI": 1101.54,
+      "OMXS30": 3203.22
+    },
+    {
+      "d": "2026-07-01",
+      "nav": 112027630,
+      "cash": 736618,
+      "unit": 119.2133,
+      "OMXSPI": 1098.94,
+      "OMXS30": 3184.91
+    },
+    {
+      "d": "2026-07-02",
+      "nav": 113128464,
+      "cash": 736618,
+      "unit": 120.3847,
+      "OMXSPI": 1109.7,
+      "OMXS30": 3210.41
+    },
+    {
+      "d": "2026-07-03",
+      "nav": 114745112,
+      "cash": 736618,
+      "unit": 122.1051,
+      "OMXSPI": 1122.63,
+      "OMXS30": 3247.03
+    },
+    {
+      "d": "2026-07-06",
+      "nav": 114054088,
+      "cash": 736618,
+      "unit": 121.3697,
+      "OMXSPI": 1117.8,
+      "OMXS30": 3235.53
+    },
+    {
+      "d": "2026-07-07",
+      "nav": 112924558,
+      "cash": 736618,
+      "unit": 120.1677,
+      "OMXSPI": 1108.69,
+      "OMXS30": 3205.46
+    },
+    {
+      "d": "2026-07-08",
+      "nav": 110599863,
+      "cash": 736618,
+      "unit": 117.6939,
+      "OMXSPI": 1085.4,
+      "OMXS30": 3144.48
+    },
+    {
+      "d": "2026-07-09",
+      "nav": 112089188,
+      "cash": 736618,
+      "unit": 119.2788,
+      "OMXSPI": 1100.63,
+      "OMXS30": 3186.4
+    },
+    {
+      "d": "2026-07-10",
+      "nav": 112053092,
+      "cash": 736618,
+      "unit": 119.2404,
+      "OMXSPI": 1099.59,
+      "OMXS30": 3177.78
+    },
+    {
+      "d": "2026-07-13",
+      "nav": 111558390,
+      "cash": 736618,
+      "unit": 118.714,
+      "OMXSPI": 1096.64,
+      "OMXS30": 3167.16
+    },
+    {
+      "d": "2026-07-14",
+      "nav": 112100104,
+      "cash": 736618,
+      "unit": 119.2904,
+      "OMXSPI": 1097.3,
+      "OMXS30": 3162.79
+    },
+    {
+      "d": "2026-07-15",
+      "nav": 111819748,
+      "cash": 736618,
+      "unit": 118.9921,
+      "OMXSPI": 1095.84,
+      "OMXS30": 3150.86
+    },
+    {
+      "d": "2026-07-16",
+      "nav": 111928923,
+      "cash": 736618,
+      "unit": 119.1083,
+      "OMXSPI": 1099.98,
+      "OMXS30": 3149.52
+    },
+    {
+      "d": "2026-07-17",
+      "nav": 110821709,
+      "cash": 736618,
+      "unit": 117.93,
+      "OMXSPI": 1098.37,
+      "OMXS30": 3146.94
+    },
+    {
+      "d": "2026-07-20",
+      "nav": 110473533,
+      "cash": 736618,
+      "unit": 117.5595,
+      "OMXSPI": 1092.96,
+      "OMXS30": 3134
+    },
+    {
+      "d": "2026-07-21",
+      "nav": 110915824,
+      "cash": 736618,
+      "unit": 118.0302,
+      "OMXSPI": 1095.3,
+      "OMXS30": 3146.34
+    },
+    {
+      "d": "2026-07-22",
+      "nav": 112525723,
+      "cash": 736618,
+      "unit": 119.7433,
+      "OMXSPI": 1107.47,
+      "OMXS30": 3186.12
+    },
+    {
+      "d": "2026-07-23",
+      "nav": 111346207,
+      "cash": 736618,
+      "unit": 118.4882,
+      "OMXSPI": 1098.28,
+      "OMXS30": 3167.1
+    },
+    {
+      "d": "2026-07-24",
+      "nav": 112336223,
+      "cash": 736618,
+      "unit": 119.5417,
+      "OMXSPI": 1108.74,
+      "OMXS30": 3199.62
+    },
+    {
+      "d": "2026-07-27",
+      "nav": 113208448,
+      "cash": 736618,
+      "unit": 120.4698,
+      "OMXSPI": 1116.28,
+      "OMXS30": 3217.89
+    },
+    {
+      "d": "2026-07-28",
+      "nav": 113176033,
+      "cash": 736618,
+      "unit": 120.4354,
+      "OMXSPI": 1121.09,
+      "OMXS30": 3224.22
+    },
+    {
+      "d": "2026-07-29",
+      "nav": 112768838,
+      "cash": 736618,
+      "unit": 120.002,
+      "OMXSPI": 1119.18,
+      "OMXS30": 3219.11
+    },
+    {
+      "d": "2026-07-30",
+      "nav": 113523068,
+      "cash": 736618,
+      "unit": 120.8046,
+      "OMXSPI": 1123.08,
+      "OMXS30": 3233.44
+    },
+    {
+      "d": "2026-07-31",
+      "nav": 113882874,
+      "cash": 736618,
+      "unit": 121.1875,
+      "OMXSPI": 1125.61,
+      "OMXS30": 3246.92
+    },
+    {
+      "d": "2026-08-03",
+      "nav": 114825849,
+      "cash": 736618,
+      "unit": 122.191,
+      "OMXSPI": 1134.86,
+      "OMXS30": 3274.43
+    },
+    {
+      "d": "2026-08-04",
+      "nav": 116240745,
+      "cash": 736618,
+      "unit": 123.6966,
+      "OMXSPI": 1150.18,
+      "OMXS30": 3326.28
+    },
+    {
+      "d": "2026-08-05",
+      "nav": 116271478,
+      "cash": 931848,
+      "unit": 123.7293,
+      "OMXSPI": 1149.13,
+      "OMXS30": 3326.93
+    },
+    {
+      "d": "2026-08-06",
+      "nav": 116369238,
+      "cash": 931848,
+      "unit": 123.8334,
+      "OMXSPI": 1148.43,
+      "OMXS30": 3323.1
+    },
+    {
+      "d": "2026-08-07",
+      "nav": 116032938,
+      "cash": 931848,
+      "unit": 123.4755,
+      "OMXSPI": 1146.65,
+      "OMXS30": 3312.34
+    },
+    {
+      "d": "2026-08-10",
+      "nav": 115521459,
+      "cash": 931848,
+      "unit": 122.9312,
+      "OMXSPI": 1142.56,
+      "OMXS30": 3305.57
+    },
+    {
+      "d": "2026-08-11",
+      "nav": 114990603,
+      "cash": 931848,
+      "unit": 122.3663,
+      "OMXSPI": 1140.22,
+      "OMXS30": 3297
+    },
+    {
+      "d": "2026-08-12",
+      "nav": 114672692,
+      "cash": 931848,
+      "unit": 122.028,
+      "OMXSPI": 1139.14,
+      "OMXS30": 3291.39
+    },
+    {
+      "d": "2026-08-13",
+      "nav": 114011538,
+      "cash": 931848,
+      "unit": 121.3244,
+      "OMXSPI": 1137.51,
+      "OMXS30": 3281.46
+    },
+    {
+      "d": "2026-08-14",
+      "nav": 113766812,
+      "cash": 931848,
+      "unit": 121.064,
+      "OMXSPI": 1135.86,
+      "OMXS30": 3274.52
+    },
+    {
+      "d": "2026-08-17",
+      "nav": 113114122,
+      "cash": 931848,
+      "unit": 120.3695,
+      "OMXSPI": 1131.79,
+      "OMXS30": 3266.3
+    },
+    {
+      "d": "2026-08-18",
+      "nav": 112909488,
+      "cash": 931848,
+      "unit": 120.1517,
+      "OMXSPI": 1125.91,
+      "OMXS30": 3244.67
+    },
+    {
+      "d": "2026-08-19",
+      "nav": 112896598,
+      "cash": 979278,
+      "unit": 120.138,
+      "OMXSPI": 1125.85,
+      "OMXS30": 3243.81
+    },
+    {
+      "d": "2026-08-20",
+      "nav": 113671958,
+      "cash": 979278,
+      "unit": 120.9631,
+      "OMXSPI": 1129.03,
+      "OMXS30": 3258.33
+    },
+    {
+      "d": "2026-08-21",
+      "nav": 115010302,
+      "cash": 979278,
+      "unit": 122.3873,
+      "OMXSPI": 1139.67,
+      "OMXS30": 3292.34
+    },
+    {
+      "d": "2026-08-24",
+      "nav": 115410008,
+      "cash": 979278,
+      "unit": 122.8126,
+      "OMXSPI": 1138.66,
+      "OMXS30": 3290.84
+    },
+    {
+      "d": "2026-08-25",
+      "nav": 116414218,
+      "cash": 979278,
+      "unit": 123.8812,
+      "OMXSPI": 1147.88,
+      "OMXS30": 3318.26
+    },
+    {
+      "d": "2026-08-26",
+      "nav": 116667422,
+      "cash": 979278,
+      "unit": 124.1507,
+      "OMXSPI": 1149.74,
+      "OMXS30": 3326.34
+    },
+    {
+      "d": "2026-08-27",
+      "nav": 117085223,
+      "cash": 979278,
+      "unit": 124.5953,
+      "OMXSPI": 1151.01,
+      "OMXS30": 3321.44
+    },
+    {
+      "d": "2026-08-28",
+      "nav": 117441084,
+      "cash": 979278,
+      "unit": 124.974,
+      "OMXSPI": 1154.65,
+      "OMXS30": 3331.27
+    },
+    {
+      "d": "2026-08-31",
+      "nav": 116624213,
+      "cash": 979278,
+      "unit": 124.1047,
+      "OMXSPI": 1146,
+      "OMXS30": 3309.18
+    },
+    {
+      "d": "2026-09-01",
+      "nav": 115421673,
+      "cash": 979278,
+      "unit": 122.825,
+      "OMXSPI": 1133.4,
+      "OMXS30": 3266.43
+    },
+    {
+      "d": "2026-09-02",
+      "nav": 114568342,
+      "cash": 979278,
+      "unit": 121.917,
+      "OMXSPI": 1125.83,
+      "OMXS30": 3245.69
+    },
+    {
+      "d": "2026-09-03",
+      "nav": 116133198,
+      "cash": 979278,
+      "unit": 123.5822,
+      "OMXSPI": 1139.04,
+      "OMXS30": 3278.19
+    },
+    {
+      "d": "2026-09-04",
+      "nav": 116435321,
+      "cash": 1054878,
+      "unit": 123.9037,
+      "OMXSPI": 1140.85,
+      "OMXS30": 3284.08
+    },
+    {
+      "d": "2026-09-07",
+      "nav": 116090938,
+      "cash": 1054878,
+      "unit": 123.5372,
+      "OMXSPI": 1141.26,
+      "OMXS30": 3291.84
+    },
+    {
+      "d": "2026-09-08",
+      "nav": 116639648,
+      "cash": 1054878,
+      "unit": 124.1211,
+      "OMXSPI": 1145.05,
+      "OMXS30": 3312.12
+    },
+    {
+      "d": "2026-09-09",
+      "nav": 115110068,
+      "cash": 1054878,
+      "unit": 122.4934,
+      "OMXSPI": 1129.42,
+      "OMXS30": 3258.36
+    },
+    {
+      "d": "2026-09-10",
+      "nav": 114528508,
+      "cash": 1054878,
+      "unit": 121.8746,
+      "OMXSPI": 1123.73,
+      "OMXS30": 3244.98
+    },
+    {
+      "d": "2026-09-11",
+      "nav": 114601017,
+      "cash": 1054878,
+      "unit": 121.9517,
+      "OMXSPI": 1125.5,
+      "OMXS30": 3255.23
+    },
+    {
+      "d": "2026-09-14",
+      "nav": 113536864,
+      "cash": 1054878,
+      "unit": 120.8193,
+      "OMXSPI": 1114.8,
+      "OMXS30": 3219.82
+    },
+    {
+      "d": "2026-09-15",
+      "nav": 113813962,
+      "cash": 5510777,
+      "unit": 121.1142,
+      "OMXSPI": 1113.96,
+      "OMXS30": 3218.94
+    },
+    {
+      "d": "2026-09-16",
+      "nav": 114668876,
+      "cash": 5510777,
+      "unit": 122.024,
+      "OMXSPI": 1123.86,
+      "OMXS30": 3250.63
+    },
+    {
+      "d": "2026-09-17",
+      "nav": 115595512,
+      "cash": 5510777,
+      "unit": 123.01,
+      "OMXSPI": 1135.77,
+      "OMXS30": 3291.3
+    },
+    {
+      "d": "2026-09-18",
+      "nav": 114856722,
+      "cash": 5510777,
+      "unit": 122.2238,
+      "OMXSPI": 1124.84,
+      "OMXS30": 3264.33
+    },
+    {
+      "d": "2026-09-21",
+      "nav": 116384263,
+      "cash": 5510777,
+      "unit": 123.8494,
+      "OMXSPI": 1138.57,
+      "OMXS30": 3307.02
+    },
+    {
+      "d": "2026-09-22",
+      "nav": 117342403,
+      "cash": 5510777,
+      "unit": 124.869,
+      "OMXSPI": 1148.16,
+      "OMXS30": 3335.94
+    },
+    {
+      "d": "2026-09-23",
+      "nav": 116833077,
+      "cash": 5510777,
+      "unit": 124.327,
+      "OMXSPI": 1141.55,
+      "OMXS30": 3316.9
+    },
+    {
+      "d": "2026-09-24",
+      "nav": 115439561,
+      "cash": 5510777,
+      "unit": 122.8441,
+      "OMXSPI": 1125.55,
+      "OMXS30": 3271.26
+    },
+    {
+      "d": "2026-09-25",
+      "nav": 116134138,
+      "cash": 5510777,
+      "unit": 123.5832,
+      "OMXSPI": 1131.96,
+      "OMXS30": 3295.03
+    },
+    {
+      "d": "2026-09-28",
+      "nav": 116001978,
+      "cash": 5510777,
+      "unit": 123.4426,
+      "OMXSPI": 1128.32,
+      "OMXS30": 3280.15
+    },
+    {
+      "d": "2026-09-29",
+      "nav": 116132417,
+      "cash": 5510777,
+      "unit": 123.5814,
+      "OMXSPI": 1129.09,
+      "OMXS30": 3286.19
+    },
+    {
+      "d": "2026-09-30",
+      "nav": 115976617,
+      "cash": 5510777,
+      "unit": 123.4156,
+      "OMXSPI": 1125.99,
+      "OMXS30": 3268.98
+    },
+    {
+      "d": "2026-10-01",
+      "nav": 114054352,
+      "cash": 5510777,
+      "unit": 121.37,
+      "OMXSPI": 1112.86,
+      "OMXS30": 3226.59
+    },
+    {
+      "d": "2026-10-02",
+      "nav": 114821502,
+      "cash": 5510777,
+      "unit": 122.1864,
+      "OMXSPI": 1121.49,
+      "OMXS30": 3260.51
+    },
+    {
+      "d": "2026-10-05",
+      "nav": 115091437,
+      "cash": 5510777,
+      "unit": 122.4736,
+      "OMXSPI": 1121.51,
+      "OMXS30": 3257.59
+    },
+    {
+      "d": "2026-10-06",
+      "nav": 116225443,
+      "cash": 5510777,
+      "unit": 123.6804,
+      "OMXSPI": 1130.24,
+      "OMXS30": 3282.94
+    },
+    {
+      "d": "2026-10-07",
+      "nav": 114245068,
+      "cash": 5510777,
+      "unit": 121.573,
+      "OMXSPI": 1112.14,
+      "OMXS30": 3226.82
+    },
+    {
+      "d": "2026-10-08",
+      "nav": 113405102,
+      "cash": 13974822,
+      "unit": 120.6791,
+      "OMXSPI": 1104.05,
+      "OMXS30": 3202.44
+    },
+    {
+      "d": "2026-10-09",
+      "nav": 115300347,
+      "cash": 13974822,
+      "unit": 122.6959,
+      "OMXSPI": 1122.11,
+      "OMXS30": 3258.14
+    }
+  ],
+  "news": [
+    {
+      "id": "1adbbf286203",
+      "title": "Kungahuset sålde Investor-aktier för drygt 16 miljoner kronor",
+      "publisher": "https://morgonbladet.se/",
+      "url": "https://morgonbladet.se/ekonomi/kungahuset-salde-investor-aktier-for-drygt-16-miljoner-kronor",
+      "date": "2026-10-11",
+      "published": "2026-10-11T13:58:58.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Sälj INVE-B.ST: samma affär redan bokförd (Placera)"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "5f161813b6cc",
+      "title": "Kungen dumpar Wallenberg – första gången sedan 2005",
+      "publisher": "Omni – Alla nyheter. Alla perspektiv.",
+      "url": "https://omni.se/kungen-dumpar-wallenberg-forsta-gangen-sedan-2005/a/8G9egx",
+      "date": "2026-10-11",
+      "published": "2026-10-11T13:50:58.000Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "a5684244fb9e",
+      "title": "Kungafamiljen minskar i Investor – tar in EQT",
+      "publisher": "Placera.se",
+      "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
+      "date": "2026-10-09",
+      "published": "2026-10-09T13:26:57.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Innehavstabell (9 bolag) – redan inlagd från Placera"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "22e607d88f4d",
+      "title": "Kungliga förvaltaren säljer Investor: \"Kungen och jag kan prata aktier\"",
+      "publisher": "Affärsvärlden",
+      "url": "https://www.affarsvarlden.se/artikel/kungliga-forvaltaren-saljer-investor-kungen-och-jag-kan-prata-aktier",
+      "date": "2026-10-09",
+      "published": "2026-10-09T13:09:12.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
+        "Sälj INVE-B.ST: samma affär redan bokförd (Placera)"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "e07376e46138",
+      "title": "Kungahusets investering – köpt i hajpade AI-bolaget",
+      "publisher": "EFN",
+      "url": "https://efn.se/kungahuset-har-investerat-i-hajpade-chip-bolaget",
+      "date": "2026-06-24",
+      "published": "2026-06-24T12:59:07.000Z",
+      "status": "ingen affär",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "669e3a9f89dd",
+      "title": "Kungens aktieportfölj växer – här är innehaven",
+      "publisher": "Bulletin",
+      "url": "https://bulletin.nu/kungens-aktieportfolj-vaxer-har-ar-innehaven-2",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Sälj VOLV-B.ST: före startdatum – ignoreras"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "9ff6a751dc12",
+      "title": "Så går det för kungens portfölj – dumpade folkaktien",
+      "publisher": "DI",
+      "url": "https://www.di.se/nyheter/sa-gar-det-for-kungens-portfolj-dumpade-folkaktien/",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "a4c5b488b19a",
+      "title": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier",
+      "publisher": "Börskollen",
+      "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Innehavstabell (10 bolag) – redan inlagd från Börskollen / DI"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "a79f7bbf27cc",
+      "title": "Kungens aktier har rusat",
+      "publisher": "Göteborgs-Posten",
+      "url": "https://www.gp.se/ekonomi/kungens-aktier-har-rusat.25e3c7b3-816b-54bb-9542-349941d8b83d",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "ingen affär",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "39013245f7ff",
+      "title": "80-årspresenten: Rally i kungens aktier – upp 73 procent",
+      "publisher": "Dagens PS",
+      "url": "https://www.dagensps.se/bors-finans/80-arspresenten-rally-i-kungens-aktier-upp-73-procent/",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Sälj ELUX-B.ST: före startdatum – ignoreras"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "6e832dff1df6",
+      "title": "Avkastningen håller hov – kungens portfölj upp 73 procent",
+      "publisher": "Omni – Alla nyheter. Alla perspektiv.",
+      "url": "https://omni.se/avkastningen-haller-hov-kungens-portfolj-upp-73-procent/a/pBMO76",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "4a42ed16e19f",
+      "title": "Börsfall avslutar månaden i Asien, halvdag i Sverige, kronfall och stigande oljepris – Kungen kung på börsen, +73% på ett år – Musk går inte att avsätta som VD för SpaceX",
+      "publisher": "Cornucopia?",
+      "url": "https://cornucopia.se/2026/04/borsfall-avslutar-manaden-i-asien-halvdag-i-sverige-kronfall-och-stigande-oljepris-kungen-kung-pa-borsen-73-pa-ett-ar-musk-gar-inte-att-avsatta-som-vd-for-spacex/",
+      "date": "2026-04-30",
+      "published": "2026-04-30T07:00:00.000Z",
+      "status": "ingen affär",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "543ac50e2c7f",
+      "title": "Kungens förvaltare öppnar för att investera i försvar: ”Gör en översyn”",
+      "publisher": "Affärsvärlden",
+      "url": "https://www.affarsvarlden.se/artikel/kungens-forvaltare-oppnar-for-att-investera-i-forsvar-gor-en-oversyn",
+      "date": "2025-11-12",
+      "published": "2025-11-12T08:00:00.000Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "eb31c4f5df93",
+      "title": "Uppåt för kungens aktier – tajmade försäljning perfekt",
+      "publisher": "Dagens PS",
+      "url": "https://www.dagensps.se/bors-finans/uppat-for-kungens-aktier-tajmade-forsaljning-perfekt/",
+      "date": "2025-11-12",
+      "published": "2025-11-12T08:00:00.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "aa6bb2b25e54",
+      "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+      "publisher": "Placera.se",
+      "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+      "date": "2025-11-10",
+      "published": "2025-11-10T08:00:00.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Innehavstabell (19 bolag) – redan inlagd från Placera"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "fcbc16c802ca",
+      "title": "Kungen dumpar Volvo – Handelsbanken tillbaka i värmen",
+      "publisher": "Affärsvärlden",
+      "url": "https://www.affarsvarlden.se/artikel/kungen-ager-alla-storbankerna-utom-swedbank",
+      "date": "2025-11-10",
+      "published": "2025-11-10T08:00:00.000Z",
+      "status": "redan känd",
+      "notes": [
+        "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
+        "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj SHB-A.ST: redan fångad av innehavstabell 2026-10-08"
+      ],
+      "eventIds": []
+    },
+    {
+      "id": "d15e36bca8e4",
+      "title": "King-grundarens nya superliga, draget bakom miljardklippet – och AI-kungens tunga portfölj",
+      "publisher": "Breakit",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR0hjTGdhLWExM0ZzZmZfRW5pSFdPUE1kTUtHR1RhT3RXNVNiY25KNVRRYkZqQjMxNmJHUGVkSUY4dkNuN29mUGVldzV4cWVoejJITzY1TDhHTVBqcmpKZU5TM1BjQlFEVEh4T2hjTGk0ejAtd0RoN01iS1lRVlhLRVZPYXROM3JKZGNxb0FnZzNDeE9nMTkwbTFDMDU0OTVESHZvazNMTVF2R1o0aHpVbjVpZEZESlBsUnFZYmp0bWdxQQ?oc=5",
+      "date": "2025-10-26",
+      "published": "2025-10-26T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "2de7e0c5e794",
+      "title": "Så går kungafamiljens portföljer – bolagen som petats",
+      "publisher": "DI",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU01KVk9XZDhsRWdLSEtxYzZ3bVo5Z2lzVFBhaDFjWHJHRm1WYk13S3MtUUNwemVFamFxRFd6bUl3SDdQZnoweTk0bE5qYTRKRXgtWXRSc19kUFhzaW1KcFNHb2hRR3VpbVhUbHNBTlI0cnhrZGtRc3dqOFd0aE5hUWozTXI?oc=5",
+      "date": "2025-05-05",
+      "published": "2025-05-05T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "743e27198023",
+      "title": "Kungen stuvade om i portföljen 2024 – Investor favorit",
+      "publisher": "Placera.se",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRFpwcDBUUDB6dmdOWmlpVUFaOWotaWY1MFUybFlQWmFUMlIxV2wtZTJVdk1aaWJZeERUUzBtY25qRGVYQnlVdS1OT1hBazBoRGEzQVRIbXlQQjViQlFWcTZVeUlFSXJHbkhtXy01eEFKQmRiZUpHVndMTTB4Mkk2elZGbjYtNXdBckxLNUJGVm1VZG9UZDBEcWpB?oc=5",
+      "date": "2024-12-20",
+      "published": "2024-12-20T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "4deb46bb9576",
+      "title": "Kungens succeår på börsen – Investor draglok",
+      "publisher": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3dWN3k3eUxlR0pZaEhibHlKbVFodWJWTjdIVFlPTXVLUVRNTVV0V041SXBBOU0zUjJZZGR6clc4WGF4c2Via3BEQ3RKcWp2LVdnNnRIRXJZdGhxWG1YM2NZZ3JjX3ZkMC01ZVN5Q3R4NGtBYzd6X3kxZjZwWVVTeFBDREhnQQ?oc=5",
+      "date": "2024-12-19",
+      "published": "2024-12-19T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "9fcbfb57c28e",
+      "title": "Kungafamiljens börssuccé – Investor agerar draglok",
+      "publisher": "Omni – Alla nyheter. Alla perspektiv.",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsMnppWGNuVnNKQU1LVUR2Ymhna3AyaUlZNV9mRmRKVUF4dmtlRzd1ME5XY3FYYk80LUh0TlphNk9XT0taRzdNcGZjaUJMZTduUlFTQjUxMlZrMEx1OUhrN3VDeFpYQ0lkeFdRbHdRRVRWZVlia05takZYUVpYOEU?oc=5",
+      "date": "2024-12-19",
+      "published": "2024-12-19T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "46ede681d303",
+      "title": "Nyckeln bakom kungliga börssuccén: Investor",
+      "publisher": "EFN",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0xV0xmeGpudW5YdS1FaW8xTDd0dUsxcTFXbGg0a1NjZkd0Ymd6bkk5MzZ3bldGY2xnOS1lWUFKZlBPT0lYenJrX25lWi1ROUdIdk9Bd1EtYURyVWVpUGwxZlJYZ1VZalpw?oc=5",
+      "date": "2024-12-19",
+      "published": "2024-12-19T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "bfb9804404cf",
+      "title": "Kungliga miljonportföljerna – så investeras pengarna",
+      "publisher": "DI",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZE9aOUYzaXdnaHZkZi04eC1rS1ZBcHJKTERQQ0wtNFJQOEl6eVc2VVIyb21nU2pSemx4UkIxdXduU0JFMG9rbDhkeVFsZ0h4ZnhLQlA0OEhlaVJ2LVdONU5NY3lSSE8tbHdodHg5Nkx5R1ZMdjdnbDBMdGhUckRjWWVxSQ?oc=5",
+      "date": "2024-07-26",
+      "published": "2024-07-26T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "b66575e77026",
+      "title": "Kungens spartanska portfölj på Djurgården",
+      "publisher": "Fastighetsnytt",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdE1SNEpYWmRTUXNRTFowc05YeHNlTi15S0JuaHg3ajY5eWZhckdPQ3JWVko2c2EtVFhGZ3RUdEd6TVNTYVpCWGYyTmtBMXhwNXNlcnYzVGJHaHllWWNkXzVDSWdBc2xEWUVZQWVNZDhRX0otYU1HTVlOZGtQUU1uazhraFlRUURwYkdWa0lUbWt6a3ZVUWR4YzNIS25BX0ZF?oc=5",
+      "date": "2023-12-25",
+      "published": "2023-12-25T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "4f78eccde686",
+      "title": "Kungens förvaltare utklassar börsen: ”Vi tradar inte”",
+      "publisher": "DI",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMHJVZU9XUzJTMVVWREQycEhuWVdqbWhNclRCRnE1enJmYmhURXp0TTc1Qm1wb0NLUEFKS25wTDg5cHl3ZGhyc0NIZmplYWZ3YU1GM1FSLWMtaHZPWHR0Vkp6cmFJcHNSWWN0dFBUR2wtRFZ4UXAwdDZyMUJIOXRrdHFQUQ?oc=5",
+      "date": "2023-09-16",
+      "published": "2023-09-16T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "9d8c94c1a223",
+      "title": "Så investerar du som kungafamiljen",
+      "publisher": "e55.se",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3SnVERWdkUGNtcms3RWRUOTFDNVFGMExESG4yQy1vOVRndldTRXJlSEE5MjJRYlpSMkJfTW9BNWN4V3ltN0JNeEZOcjUxanJ5ZTRudGpPZGtsSmh5cjNtcFVOdHh1UXB5OUZvZzB3MA?oc=5",
+      "date": "2023-09-14",
+      "published": "2023-09-14T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "8c4ccbd594c7",
+      "title": "Kungens börsutfall ”sådär”: ”Men vi överlever”",
+      "publisher": "Omni – Alla nyheter. Alla perspektiv.",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sM2J5MGEyZkkwRml5Wm10b2VaUDhHS1ppSjlkTENyWjM3bHFJcEt5VXNlNUhmNWllV29UbFdjOUNONGdJQ190eGdCYzdjaV9zLUIxTEJpaDV5bVdTbVktWE5YNkQ1N19OMUIzWUhrMy15LV9I?oc=5",
+      "date": "2023-09-13",
+      "published": "2023-09-13T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "2723862ecf04",
+      "title": "Skugga kungafamiljen på börsen",
+      "publisher": "Dagens PS",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4WHlQQ0o4UWUxUHNmejBnd2NpbjR5Qk5rYnNVTXkyd3N2eUVhTEM1NVdWTmlKRDdELVl4c1pqTnY4NWxReWdyX0tndEpVTk1WMlQzNElzUERWalB4cl9KQU4zWC1jYmJkYVF1SWs1QTBLbGxvSmc?oc=5",
+      "date": "2023-09-12",
+      "published": "2023-09-12T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "75396f0dbf80",
+      "title": "Kungafamiljen ratar Lundbergbolaget – här är innehaven",
+      "publisher": "DI",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZGRvVHBRUXBqcWFjS3l3VURKMW5pdGZVeEtvSlB5NXRGSk1hYVZmd3VsTzlLZDJQdHJhendON05NZjBSbkduSmVFZUtwemh1VEdnb0d4b3BDQTZNTS1rSE5FRktuTjhJRTFWaUxVWlZxdy1uaEw0bHEtRjJTdmwxOFNBY1E1Zw?oc=5",
+      "date": "2023-09-10",
+      "published": "2023-09-10T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "ae9224076167",
+      "title": "Hovet om prinsens aktier: ”Kungafamiljen har en långsiktig syn på sina investeringar”",
+      "publisher": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdHNLSEJwOW9WUFBDOEEzenR4a0N2aXJiY1pMRjExQS1IX1VxOXNuUmgyazN5akFWY25NQUozRThabnRReGpCVHJHTDJCdU9RU3I0eUYwTF9oMF9LZXJjMHEwa1RBM3p4SXN5VVJRUWJfZ2VoWEdVRFJNZ1R3RXRmeW8wQU16WjkxU0JybzhOWEt6aURENVZCMmQ2b1BNdlI3ZmxsZi1SLVNNYS0xU3N6bXhFRE5aNUl4bTZF?oc=5",
+      "date": "2022-11-22",
+      "published": "2022-11-22T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "40fd162edcf9",
+      "title": "Aktien som älskas av adeln – och kungen",
+      "publisher": "Affärsvärlden",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQnA3YWJMYjhnYjdBZ1YySXd6LTNCSGJOc0tkbWtjZS1DdDRCOENBNGxTdlE3OFFLazRuZk9IaHVnajRkdEdnQUtmYTRmanVGcV9ESlFQaXltVFZSV0tHWVE4YU0wdFo4NnZzTHI2WG1SaTB1cEMtN2VJZHdxejJwWl93?oc=5",
+      "date": "2022-01-14",
+      "published": "2022-01-14T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "c1e167a9df6c",
+      "title": "Här är kungafamiljens aktieportfölj",
+      "publisher": "Göteborgs-Posten",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTmgxV2p5X3g3Q3Btd2R0OUU4Y05oUmNFdnBJNGg5bTU1ak95Um1Jb25wb1hsVVp2bjVrMVhxY25xdnB0QjBuVDRCbG5SVWxfbjMyaTVzeDdFbk9KVW5YcTdMaEk5Vmd3UlA2czlQTHVrU2lyaklNSkZhQm40b3VtRFd4VDR2YS1NUFJWRDFGZ2VzZ2NJNmozZG4tWG1BVjQ?oc=5",
+      "date": "2021-03-03",
+      "published": "2021-03-03T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "c9cbc15a7df7",
+      "title": "Snus-kungen om jätteförsäljningen: ”Jag behövde frigöra lite kapital”",
+      "publisher": "DI",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWDFRWWVSU3NFVW9zaXcwMU1SLUt4WVhZNnc2UC1HNGtUcXQtcm5lc1VhNU5RRjl1c1NTdTI1RDk2cHNWMGZyQUJVVGJBWHZ2OUV3LTBZZkdjckJ1X0pCX190T2R2c2pfX3NUakt5VUl3MzhXVXMzQjVxYXhnRk1UM1pOVnFackZhNFNvaFJZb0tXZlNvYmxfbA?oc=5",
+      "date": "2020-02-13",
+      "published": "2020-02-13T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "525991faa294",
+      "title": "Kungen bar sin egen portfölj – hyllas i Indien",
+      "publisher": "Dagens Nyheter",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORElWV1d5YURYUWZKbGNtM1JqRlRKS2RXVjJzNWZXeDJjblpIVHk1dzc3WFVHRGExZUNPeXgydVR4YlBwckVvZUtKTzFVNmQwSVZycXZqcXB0MEJXNDFKTkw2YVpPa2tsZ1JVdW42MDh4Ykhia1dkUFpvVFh4US1qOVVNbVBoUQ?oc=5",
+      "date": "2019-12-04",
+      "published": "2019-12-04T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "010133cf0fc5",
+      "title": "Börshajen får stipendium från Kungen: \"Jag är så stolt\"",
+      "publisher": "Breakit",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYktmQVU4a2FBX2RfTmlwU1lINjBhRUd3a3FmR1pCM2xhcGFiQ2h5NVBRd1pwTVRFMlFSYnM4aGYwZVZVbjZUSU9tNXJUODdVWTlVc2Zxa2NsbTVWcEduVFZmZEY4c0c3MTFMREFwb1pBN05yNjFXcjloU09QSHB2QkhlTUdoTUNzOWZKLTU4TE1OZw?oc=5",
+      "date": "2017-04-20",
+      "published": "2017-04-20T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "b89fa2d7554f",
+      "title": "Kungahusets bästa aktieklippare",
+      "publisher": "DI",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52aGpzZTlxRE9PaFNGRmFteW55bENxWFJlZFc3Mll3aTJJV2RFaXBra1pPVWNDWkNacFFrajlxbFlpMjktTGJsc1JOUmZaYnFubGxobkRQYm9QRTNaazRMQmNBMjVIOFBxZkE?oc=5",
+      "date": "2016-09-29",
+      "published": "2016-09-29T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "27326e42ba0a",
+      "title": "Här är kungahusets stora aktievinnare – hela kungafamiljen",
+      "publisher": "Expressen",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qMXItQ1hEclNzeHpUZDFFQjVhM1drTFEtMi04YXR0OTZscFQ0Rl9zZWpPWWFpcmo0TEF4OGxmaE41YnFDR3Nrd3lGSjdxa0Zfa2ZVQ1NKcV9LRGdvdVRRcjRqQXJrT1hCZkpaSXlwZkxXSndlaXJLcnZaUQ?oc=5",
+      "date": "2016-09-28",
+      "published": "2016-09-28T07:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "a6937f14c4e6",
+      "title": "Kungen säljer sina svenska aktier",
+      "publisher": "Expressen",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0yM3paM2xiOEJhNGJLeHgtVFpEM0pWbGlnYkFfaTBPX1FxVjh4SDd6Y0tTS3d2bi1zMDc3bXZhbmJYSEF0bEZsbXpLeWRPMXZqTlY5YW03VUdkTk9ETW1faVdwM2xhbVliN2JNN3ExaVlQS3BSU2c?oc=5",
+      "date": "2009-02-07",
+      "published": "2009-02-07T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    },
+    {
+      "id": "154ad42acca8",
+      "title": "Kungen gjorde årets börsklipp",
+      "publisher": "Aftonbladet",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kdGlUNFdBREpRNlh6UWQ0YnF6YU5TUk94TjFVX0RLM2NZRmJSWHNISFdUMmdBVUhkOHZ0WW85LUtxLVZfZHVFRkQ2aV9RdmZjbHhBejY0N3lkWjZ0QzBpWVdhLUl4SUxSZkpKTUxnNUhhQ3B1N3RZbjVpc0lIZw?oc=5",
+      "date": "2000-11-27",
+      "published": "2000-11-27T08:00:00.000Z",
+      "status": "före start",
+      "notes": [],
+      "eventIds": []
+    }
+  ],
+  "errors": []
+}
