@@ -16,7 +16,7 @@
   "HM-B.ST":     { "name": "H&M",             "sector": "Detaljhandel",    "aliases": ["Hennes & Mauritz", "H&M", "H&amp;M"] },
   "SKA-B.ST":    { "name": "Skanska",         "sector": "Bygg",            "aliases": ["Skanska"] },
   "ARJO-B.ST":   { "name": "Arjo",            "sector": "Medicinteknik",   "aliases": ["Arjo"] },
-  "EQT.ST":      { "name": "EQT",             "sector": "Investmentbolag", "aliases": ["EQT"] },
+  "EQT.ST":      { "name": "EQT",             "sector": "Kapitalförvaltning", "aliases": ["EQT"] },
   "BEIJ-B.ST":   { "name": "Beijer Ref",      "sector": "Verkstad",        "aliases": ["Beijer Ref"] },
   "LATO-B.ST":   { "name": "Latour",          "sector": "Investmentbolag", "aliases": ["Investment AB Latour", "Latour"] },
   "EKTA-B.ST":   { "name": "Elekta",          "sector": "Medicinteknik",   "aliases": ["Elekta"] },

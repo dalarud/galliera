@@ -6,6 +6,18 @@ kassa och utveckling (andelsvärde) mot OMX Stockholm PI eller OMXS30.
 
 > Underhållning och utbildning. Ingen koppling till Kungliga Hovstaterna och inte investeringsrådgivning.
 
+## Design: Frimärket
+
+Sidan följer designkonceptet *Frimärket* från Claude Design: fonden är ett frimärksalbum. Fondens värde
+står på ett perforerat kungamärke med ett karmintonat porträtt, innehaven är märken vars höjd följer
+andelen av fonden, och tid och källa visas som violetta poststämplar. Uppskattade siffror får ett violett
+påtryck (≈ / UPPSKATTAD). Typsnitt: DM Serif Display, IBM Plex Mono och Hanken Grotesk.
+
+**Kungabilden:** `assets/kungen.jpg` är ett foto av Metsavend (Tallinn, 2 maj 2023) från
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Carl_XVI_Gustaf_Tallinnas_2023_(cropped).jpg),
+licens [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Bilden tonas med CSS. Byts den mot
+en annan bild måste fotobylinen i `index.html` (figcaption och panelen "Bildrättigheter") uppdateras.
+
 ## Så fungerar det
 
 ```

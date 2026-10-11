@@ -166,6 +166,34 @@ async function scanNews({ ledger, securities, newsDb, result }) {
   return added;
 }
 
+/** En mening om hur skannern tolkade artikeln, för besökaren. */
+function summarizeNews(rec, ledger, securities) {
+  const name = (t) => securities[t]?.name ?? t;
+  const list = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} och ${xs[xs.length - 1]}` : xs[0] ?? '');
+  const table = (rec.notes ?? []).map((n) => n.match(/Innehavstabell[^\d]*(\d+) bolag/)).find(Boolean);
+  switch (rec.status) {
+    case 'ny affär': {
+      const evs = (rec.eventIds ?? []).map((id) => ledger.events.find((e) => e.id === id)).filter(Boolean);
+      const parts = evs.map((e) => `${e.side === 'buy' ? 'köp av' : 'försäljning av'} ${name(e.ticker)}`);
+      return `${evs.length === 1 ? 'En affär' : `${evs.length} affärer`}: ${list(parts)}.`;
+    }
+    case 'innehavstabell':
+      return `Innehavslista med ${table?.[1] ?? 'flera'} bolag – albumet stäms av mot den.`;
+    case 'redan känd': {
+      if (table) return `Innehavslista med ${table[1]} bolag som redan finns i albumet.`;
+      const names = [...new Set((rec.signals ?? []).map((s) => name(s.ticker)))];
+      const old = (rec.notes ?? []).filter((n) => /: /.test(n) && !/kunde inte läsas/i.test(n)).every((n) => /före startdatum/.test(n));
+      if (names.length && old) return `Gäller ${list(names)} – affären gjordes före albumets start.`;
+      return names.length ? `Gäller ${list(names)} – affären finns redan i postgången.` : 'Gäller affärer som redan finns i postgången.';
+    }
+    case 'ingen affär': return 'Handlar om fonden men nämner inga köp eller försäljningar.';
+    case 'endast rubrik': return 'Artikeln är låst och rubriken nämner inget bolag.';
+    case 'ej läsbar': return 'Artikeln gick inte att läsa.';
+    case 'före start': return 'Publicerad före albumets startdatum.';
+    default: return '';
+  }
+}
+
 async function main() {
   const securities = await readJson(DATA('securities.json'));
   const ledger = await readJson(DATA('ledger.json'));
@@ -189,8 +217,11 @@ async function main() {
   const news = Object.values(newsDb.items)
     .sort((a, b) => b.published.localeCompare(a.published))
     .slice(0, 40)
-    .map(({ id, title, publisher, url, gnLink, date, published, status, notes, eventIds }) =>
-      ({ id, title, publisher, url: url ?? gnLink, date, published, status, notes, eventIds }));
+    .map((rec) => ({
+      id: rec.id, title: rec.title, publisher: rec.publisher, url: rec.url ?? rec.gnLink, date: rec.date,
+      published: rec.published, firstSeen: rec.firstSeen ?? null, status: rec.status, notes: rec.notes,
+      eventIds: rec.eventIds, summary: summarizeNews(rec, ledger, securities),
+    }));
 
   const out = {
     generatedAt: new Date().toISOString(),
@@ -199,6 +230,7 @@ async function main() {
     baseline: ledger.baseline,
     notes: ledger.notes,
     benchmarks: Object.fromEntries(Object.entries(benchmarks).map(([k, b]) => [k, b.label])),
+    sectors: Object.fromEntries(ledgerTickers(ledger).map((t) => [t, securities[t]?.sector ?? ''])),
     ...result,
     news,
     errors,

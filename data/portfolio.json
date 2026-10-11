@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T16:46:17.434Z",
-  "lastNewsScan": "2026-10-11T16:46:17.426Z",
+  "generatedAt": "2026-10-11T18:02:41.681Z",
+  "lastNewsScan": "2026-10-11T18:02:41.674Z",
   "fund": "Gallierafonden",
   "baseline": "2025-11-07",
   "notes": [
@@ -11,6 +11,32 @@
   "benchmarks": {
     "OMXSPI": "OMX Stockholm PI",
     "OMXS30": "OMX Stockholm 30"
+  },
+  "sectors": {
+    "INVE-B.ST": "Investmentbolag",
+    "INDU-C.ST": "Investmentbolag",
+    "NDA-SE.ST": "Bank",
+    "ESSITY-B.ST": "Hygien",
+    "SAND.ST": "Verkstad",
+    "SEB-A.ST": "Bank",
+    "ALFA.ST": "Verkstad",
+    "SHB-A.ST": "Bank",
+    "SECU-B.ST": "Tjänster",
+    "ATCO-B.ST": "Verkstad",
+    "MCOV-B.ST": "Hälsovård",
+    "HEXA-B.ST": "Teknik",
+    "EPI-B.ST": "Verkstad",
+    "GETI-B.ST": "Medicinteknik",
+    "HM-B.ST": "Detaljhandel",
+    "SKA-B.ST": "Bygg",
+    "ARJO-B.ST": "Medicinteknik",
+    "LATO-B.ST": "Investmentbolag",
+    "EKTA-B.ST": "Medicinteknik",
+    "SWEC-B.ST": "Konsult",
+    "SVOL-B.ST": "Investmentbolag",
+    "OCTV-SDB.ST": "Teknik",
+    "EQT.ST": "Kapitalförvaltning",
+    "BEIJ-B.ST": "Verkstad"
   },
   "asOf": "2026-10-09",
   "summary": {
@@ -42,6 +68,7 @@
       "avgCost": 312.6,
       "gainPct": 31.81,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559774
     },
     {
@@ -57,6 +84,7 @@
       "avgCost": 160.452,
       "gainPct": 16.73,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559773
     },
     {
@@ -72,6 +100,7 @@
       "avgCost": 204.278,
       "gainPct": 9.65,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559791
     },
     {
@@ -87,12 +116,13 @@
       "avgCost": 299.227,
       "gainPct": 20.61,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559770
     },
     {
       "ticker": "EQT.ST",
       "name": "EQT",
-      "sector": "Investmentbolag",
+      "sector": "Kapitalförvaltning",
       "shares": 25600,
       "price": 284.1,
       "prevClose": 276,
@@ -102,6 +132,7 @@
       "avgCost": 302.6,
       "gainPct": -6.11,
       "since": "2026-09-15",
+      "basis": "rapporterad",
       "quoteTime": 1791559785
     },
     {
@@ -117,6 +148,7 @@
       "avgCost": 180.502,
       "gainPct": 26.31,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559785
     },
     {
@@ -132,6 +164,7 @@
       "avgCost": 453.008,
       "gainPct": 27.5,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559779
     },
     {
@@ -147,6 +180,7 @@
       "avgCost": 405.104,
       "gainPct": 23.67,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559786
     },
     {
@@ -162,6 +196,7 @@
       "avgCost": 141.709,
       "gainPct": 29.1,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559797
     },
     {
@@ -177,6 +212,7 @@
       "avgCost": 107.399,
       "gainPct": -3.03,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559781
     },
     {
@@ -192,6 +228,7 @@
       "avgCost": 146.709,
       "gainPct": 7.29,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559791
     },
     {
@@ -207,6 +244,7 @@
       "avgCost": 237.572,
       "gainPct": 10.91,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559782
     },
     {
@@ -222,6 +260,7 @@
       "avgCost": 133.6,
       "gainPct": 5.54,
       "since": "2026-09-15",
+      "basis": "rapporterad",
       "quoteTime": 1791559776
     },
     {
@@ -237,6 +276,7 @@
       "avgCost": 224.1,
       "gainPct": -8.88,
       "since": "2026-04-24",
+      "basis": "rapporterad",
       "quoteTime": 1791559777
     },
     {
@@ -252,6 +292,7 @@
       "avgCost": 54.7,
       "gainPct": -0.46,
       "since": "2026-04-24",
+      "basis": "rapporterad",
       "quoteTime": 1791559788
     },
     {
@@ -267,6 +308,7 @@
       "avgCost": 140.8,
       "gainPct": -8.74,
       "since": "2026-04-24",
+      "basis": "rapporterad",
       "quoteTime": 1791559799
     },
     {
@@ -282,6 +324,7 @@
       "avgCost": 171.562,
       "gainPct": -3.48,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559795
     },
     {
@@ -297,6 +340,7 @@
       "avgCost": 244.138,
       "gainPct": 8.05,
       "since": "2025-11-07",
+      "basis": "rapporterad",
       "quoteTime": 1791559778
     },
     {
@@ -312,6 +356,7 @@
       "avgCost": 157,
       "gainPct": 29.94,
       "since": "2026-05-25",
+      "basis": "rapporterad",
       "quoteTime": 1791559784
     }
   ],
@@ -1359,20 +1404,20 @@
     {
       "date": "2026-04-30",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 2.238612,
-      "shares": 14600,
-      "amount": 32684
-    },
-    {
-      "date": "2026-04-30",
-      "type": "utdelning",
       "ticker": "SECU-B.ST",
       "name": "Securitas",
       "perShare": 2.65,
       "shares": 30800,
       "amount": 81620
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 2.238612,
+      "shares": 14600,
+      "amount": 32684
     },
     {
       "date": "2026-04-29",
@@ -1472,20 +1517,20 @@
     {
       "date": "2026-03-25",
       "type": "utdelning",
-      "ticker": "NDA-SE.ST",
-      "name": "Nordea Bank",
-      "perShare": 10.7453375,
-      "shares": 45000,
-      "amount": 483540
-    },
-    {
-      "date": "2026-03-25",
-      "type": "utdelning",
       "ticker": "SEB-A.ST",
       "name": "SEB",
       "perShare": 11,
       "shares": 26000,
       "amount": 286000
+    },
+    {
+      "date": "2026-03-25",
+      "type": "utdelning",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "perShare": 10.7453375,
+      "shares": 45000,
+      "amount": 483540
     },
     {
       "date": "2025-11-19",
@@ -3347,11 +3392,13 @@
       "url": "https://morgonbladet.se/ekonomi/kungahuset-salde-investor-aktier-for-drygt-16-miljoner-kronor",
       "date": "2026-10-11",
       "published": "2026-10-11T13:58:58.000Z",
+      "firstSeen": "2026-10-11T16:45:49.319Z",
       "status": "redan känd",
       "notes": [
         "Sälj INVE-B.ST: samma affär redan bokförd (Placera)"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Gäller Investor – affären finns redan i postgången."
     },
     {
       "id": "5f161813b6cc",
@@ -3360,11 +3407,13 @@
       "url": "https://omni.se/kungen-dumpar-wallenberg-forsta-gangen-sedan-2005/a/8G9egx",
       "date": "2026-10-11",
       "published": "2026-10-11T13:50:58.000Z",
+      "firstSeen": "2026-10-11T16:45:49.172Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Artikeln är låst och rubriken nämner inget bolag."
     },
     {
       "id": "a5684244fb9e",
@@ -3373,11 +3422,13 @@
       "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
       "date": "2026-10-09",
       "published": "2026-10-09T13:26:57.000Z",
+      "firstSeen": "2026-10-11T16:45:48.287Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (9 bolag) – redan inlagd från Placera"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Innehavslista med 9 bolag som redan finns i albumet."
     },
     {
       "id": "22e607d88f4d",
@@ -3386,12 +3437,14 @@
       "url": "https://www.affarsvarlden.se/artikel/kungliga-forvaltaren-saljer-investor-kungen-och-jag-kan-prata-aktier",
       "date": "2026-10-09",
       "published": "2026-10-09T13:09:12.000Z",
+      "firstSeen": "2026-10-11T16:45:39.579Z",
       "status": "redan känd",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
         "Sälj INVE-B.ST: samma affär redan bokförd (Placera)"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Gäller Investor – affären finns redan i postgången."
     },
     {
       "id": "e07376e46138",
@@ -3400,9 +3453,11 @@
       "url": "https://efn.se/kungahuset-har-investerat-i-hajpade-chip-bolaget",
       "date": "2026-06-24",
       "published": "2026-06-24T12:59:07.000Z",
+      "firstSeen": "2026-10-11T16:45:38.699Z",
       "status": "ingen affär",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Handlar om fonden men nämner inga köp eller försäljningar."
     },
     {
       "id": "669e3a9f89dd",
@@ -3411,11 +3466,13 @@
       "url": "https://bulletin.nu/kungens-aktieportfolj-vaxer-har-ar-innehaven-2",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:32.157Z",
       "status": "redan känd",
       "notes": [
         "Sälj VOLV-B.ST: före startdatum – ignoreras"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Gäller Volvo – affären gjordes före albumets start."
     },
     {
       "id": "9ff6a751dc12",
@@ -3424,11 +3481,13 @@
       "url": "https://www.di.se/nyheter/sa-gar-det-for-kungens-portfolj-dumpade-folkaktien/",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:33.203Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Artikeln är låst och rubriken nämner inget bolag."
     },
     {
       "id": "a4c5b488b19a",
@@ -3437,11 +3496,13 @@
       "url": "https://www.borskollen.se/nyheter/27/kungens-portfolj-upp-73-procent-pa-ett-ar-har-ar-hans-favoritaktier",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:33.504Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (10 bolag) – redan inlagd från Börskollen / DI"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Innehavslista med 10 bolag som redan finns i albumet."
     },
     {
       "id": "a79f7bbf27cc",
@@ -3450,9 +3511,11 @@
       "url": "https://www.gp.se/ekonomi/kungens-aktier-har-rusat.25e3c7b3-816b-54bb-9542-349941d8b83d",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:34.638Z",
       "status": "ingen affär",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Handlar om fonden men nämner inga köp eller försäljningar."
     },
     {
       "id": "39013245f7ff",
@@ -3461,11 +3524,13 @@
       "url": "https://www.dagensps.se/bors-finans/80-arspresenten-rally-i-kungens-aktier-upp-73-procent/",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:35.801Z",
       "status": "redan känd",
       "notes": [
         "Sälj ELUX-B.ST: före startdatum – ignoreras"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Gäller Electrolux – affären gjordes före albumets start."
     },
     {
       "id": "6e832dff1df6",
@@ -3474,11 +3539,13 @@
       "url": "https://omni.se/avkastningen-haller-hov-kungens-portfolj-upp-73-procent/a/pBMO76",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:36.218Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Artikeln är låst och rubriken nämner inget bolag."
     },
     {
       "id": "4a42ed16e19f",
@@ -3487,9 +3554,11 @@
       "url": "https://cornucopia.se/2026/04/borsfall-avslutar-manaden-i-asien-halvdag-i-sverige-kronfall-och-stigande-oljepris-kungen-kung-pa-borsen-73-pa-ett-ar-musk-gar-inte-att-avsatta-som-vd-for-spacex/",
       "date": "2026-04-30",
       "published": "2026-04-30T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:36.495Z",
       "status": "ingen affär",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Handlar om fonden men nämner inga köp eller försäljningar."
     },
     {
       "id": "543ac50e2c7f",
@@ -3498,11 +3567,13 @@
       "url": "https://www.affarsvarlden.se/artikel/kungens-forvaltare-oppnar-for-att-investera-i-forsvar-gor-en-oversyn",
       "date": "2025-11-12",
       "published": "2025-11-12T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:27.145Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Artikeln är låst och rubriken nämner inget bolag."
     },
     {
       "id": "eb31c4f5df93",
@@ -3511,11 +3582,13 @@
       "url": "https://www.dagensps.se/bors-finans/uppat-for-kungens-aktier-tajmade-forsaljning-perfekt/",
       "date": "2025-11-12",
       "published": "2025-11-12T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:31.574Z",
       "status": "redan känd",
       "notes": [
         "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Gäller Volvo – affären finns redan i postgången."
     },
     {
       "id": "aa6bb2b25e54",
@@ -3524,11 +3597,13 @@
       "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
       "date": "2025-11-10",
       "published": "2025-11-10T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (19 bolag) – redan inlagd från Placera"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Innehavslista med 19 bolag som redan finns i albumet."
     },
     {
       "id": "fcbc16c802ca",
@@ -3537,13 +3612,15 @@
       "url": "https://www.affarsvarlden.se/artikel/kungen-ager-alla-storbankerna-utom-swedbank",
       "date": "2025-11-10",
       "published": "2025-11-10T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:18.371Z",
       "status": "redan känd",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
         "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08",
         "Sälj SHB-A.ST: redan fångad av innehavstabell 2026-10-08"
       ],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Gäller Volvo och Handelsbanken – affären finns redan i postgången."
     },
     {
       "id": "d15e36bca8e4",
@@ -3552,9 +3629,11 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR0hjTGdhLWExM0ZzZmZfRW5pSFdPUE1kTUtHR1RhT3RXNVNiY25KNVRRYkZqQjMxNmJHUGVkSUY4dkNuN29mUGVldzV4cWVoejJITzY1TDhHTVBqcmpKZU5TM1BjQlFEVEh4T2hjTGk0ejAtd0RoN01iS1lRVlhLRVZPYXROM3JKZGNxb0FnZzNDeE9nMTkwbTFDMDU0OTVESHZvazNMTVF2R1o0aHpVbjVpZEZESlBsUnFZYmp0bWdxQQ?oc=5",
       "date": "2025-10-26",
       "published": "2025-10-26T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "2de7e0c5e794",
@@ -3563,9 +3642,11 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU01KVk9XZDhsRWdLSEtxYzZ3bVo5Z2lzVFBhaDFjWHJHRm1WYk13S3MtUUNwemVFamFxRFd6bUl3SDdQZnoweTk0bE5qYTRKRXgtWXRSc19kUFhzaW1KcFNHb2hRR3VpbVhUbHNBTlI0cnhrZGtRc3dqOFd0aE5hUWozTXI?oc=5",
       "date": "2025-05-05",
       "published": "2025-05-05T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "743e27198023",
@@ -3574,9 +3655,11 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRFpwcDBUUDB6dmdOWmlpVUFaOWotaWY1MFUybFlQWmFUMlIxV2wtZTJVdk1aaWJZeERUUzBtY25qRGVYQnlVdS1OT1hBazBoRGEzQVRIbXlQQjViQlFWcTZVeUlFSXJHbkhtXy01eEFKQmRiZUpHVndMTTB4Mkk2elZGbjYtNXdBckxLNUJGVm1VZG9UZDBEcWpB?oc=5",
       "date": "2024-12-20",
       "published": "2024-12-20T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "4deb46bb9576",
@@ -3585,9 +3668,11 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOX3dWN3k3eUxlR0pZaEhibHlKbVFodWJWTjdIVFlPTXVLUVRNTVV0V041SXBBOU0zUjJZZGR6clc4WGF4c2Via3BEQ3RKcWp2LVdnNnRIRXJZdGhxWG1YM2NZZ3JjX3ZkMC01ZVN5Q3R4NGtBYzd6X3kxZjZwWVVTeFBDREhnQQ?oc=5",
       "date": "2024-12-19",
       "published": "2024-12-19T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "9fcbfb57c28e",
@@ -3596,9 +3681,11 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsMnppWGNuVnNKQU1LVUR2Ymhna3AyaUlZNV9mRmRKVUF4dmtlRzd1ME5XY3FYYk80LUh0TlphNk9XT0taRzdNcGZjaUJMZTduUlFTQjUxMlZrMEx1OUhrN3VDeFpYQ0lkeFdRbHdRRVRWZVlia05takZYUVpYOEU?oc=5",
       "date": "2024-12-19",
       "published": "2024-12-19T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "46ede681d303",
@@ -3607,9 +3694,11 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0xV0xmeGpudW5YdS1FaW8xTDd0dUsxcTFXbGg0a1NjZkd0Ymd6bkk5MzZ3bldGY2xnOS1lWUFKZlBPT0lYenJrX25lWi1ROUdIdk9Bd1EtYURyVWVpUGwxZlJYZ1VZalpw?oc=5",
       "date": "2024-12-19",
       "published": "2024-12-19T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "bfb9804404cf",
@@ -3618,9 +3707,11 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZE9aOUYzaXdnaHZkZi04eC1rS1ZBcHJKTERQQ0wtNFJQOEl6eVc2VVIyb21nU2pSemx4UkIxdXduU0JFMG9rbDhkeVFsZ0h4ZnhLQlA0OEhlaVJ2LVdONU5NY3lSSE8tbHdodHg5Nkx5R1ZMdjdnbDBMdGhUckRjWWVxSQ?oc=5",
       "date": "2024-07-26",
       "published": "2024-07-26T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "b66575e77026",
@@ -3629,9 +3720,11 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdE1SNEpYWmRTUXNRTFowc05YeHNlTi15S0JuaHg3ajY5eWZhckdPQ3JWVko2c2EtVFhGZ3RUdEd6TVNTYVpCWGYyTmtBMXhwNXNlcnYzVGJHaHllWWNkXzVDSWdBc2xEWUVZQWVNZDhRX0otYU1HTVlOZGtQUU1uazhraFlRUURwYkdWa0lUbWt6a3ZVUWR4YzNIS25BX0ZF?oc=5",
       "date": "2023-12-25",
       "published": "2023-12-25T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "4f78eccde686",
@@ -3640,9 +3733,11 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMHJVZU9XUzJTMVVWREQycEhuWVdqbWhNclRCRnE1enJmYmhURXp0TTc1Qm1wb0NLUEFKS25wTDg5cHl3ZGhyc0NIZmplYWZ3YU1GM1FSLWMtaHZPWHR0Vkp6cmFJcHNSWWN0dFBUR2wtRFZ4UXAwdDZyMUJIOXRrdHFQUQ?oc=5",
       "date": "2023-09-16",
       "published": "2023-09-16T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "9d8c94c1a223",
@@ -3651,9 +3746,11 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3SnVERWdkUGNtcms3RWRUOTFDNVFGMExESG4yQy1vOVRndldTRXJlSEE5MjJRYlpSMkJfTW9BNWN4V3ltN0JNeEZOcjUxanJ5ZTRudGpPZGtsSmh5cjNtcFVOdHh1UXB5OUZvZzB3MA?oc=5",
       "date": "2023-09-14",
       "published": "2023-09-14T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "8c4ccbd594c7",
@@ -3662,9 +3759,11 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sM2J5MGEyZkkwRml5Wm10b2VaUDhHS1ppSjlkTENyWjM3bHFJcEt5VXNlNUhmNWllV29UbFdjOUNONGdJQ190eGdCYzdjaV9zLUIxTEJpaDV5bVdTbVktWE5YNkQ1N19OMUIzWUhrMy15LV9I?oc=5",
       "date": "2023-09-13",
       "published": "2023-09-13T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "2723862ecf04",
@@ -3673,9 +3772,11 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4WHlQQ0o4UWUxUHNmejBnd2NpbjR5Qk5rYnNVTXkyd3N2eUVhTEM1NVdWTmlKRDdELVl4c1pqTnY4NWxReWdyX0tndEpVTk1WMlQzNElzUERWalB4cl9KQU4zWC1jYmJkYVF1SWs1QTBLbGxvSmc?oc=5",
       "date": "2023-09-12",
       "published": "2023-09-12T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.224Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "75396f0dbf80",
@@ -3684,9 +3785,11 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZGRvVHBRUXBqcWFjS3l3VURKMW5pdGZVeEtvSlB5NXRGSk1hYVZmd3VsTzlLZDJQdHJhendON05NZjBSbkduSmVFZUtwemh1VEdnb0d4b3BDQTZNTS1rSE5FRktuTjhJRTFWaUxVWlZxdy1uaEw0bHEtRjJTdmwxOFNBY1E1Zw?oc=5",
       "date": "2023-09-10",
       "published": "2023-09-10T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "ae9224076167",
@@ -3695,9 +3798,11 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdHNLSEJwOW9WUFBDOEEzenR4a0N2aXJiY1pMRjExQS1IX1VxOXNuUmgyazN5akFWY25NQUozRThabnRReGpCVHJHTDJCdU9RU3I0eUYwTF9oMF9LZXJjMHEwa1RBM3p4SXN5VVJRUWJfZ2VoWEdVRFJNZ1R3RXRmeW8wQU16WjkxU0JybzhOWEt6aURENVZCMmQ2b1BNdlI3ZmxsZi1SLVNNYS0xU3N6bXhFRE5aNUl4bTZF?oc=5",
       "date": "2022-11-22",
       "published": "2022-11-22T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "40fd162edcf9",
@@ -3706,9 +3811,11 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQnA3YWJMYjhnYjdBZ1YySXd6LTNCSGJOc0tkbWtjZS1DdDRCOENBNGxTdlE3OFFLazRuZk9IaHVnajRkdEdnQUtmYTRmanVGcV9ESlFQaXltVFZSV0tHWVE4YU0wdFo4NnZzTHI2WG1SaTB1cEMtN2VJZHdxejJwWl93?oc=5",
       "date": "2022-01-14",
       "published": "2022-01-14T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "c1e167a9df6c",
@@ -3717,9 +3824,11 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTmgxV2p5X3g3Q3Btd2R0OUU4Y05oUmNFdnBJNGg5bTU1ak95Um1Jb25wb1hsVVp2bjVrMVhxY25xdnB0QjBuVDRCbG5SVWxfbjMyaTVzeDdFbk9KVW5YcTdMaEk5Vmd3UlA2czlQTHVrU2lyaklNSkZhQm40b3VtRFd4VDR2YS1NUFJWRDFGZ2VzZ2NJNmozZG4tWG1BVjQ?oc=5",
       "date": "2021-03-03",
       "published": "2021-03-03T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "c9cbc15a7df7",
@@ -3728,9 +3837,11 @@
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWDFRWWVSU3NFVW9zaXcwMU1SLUt4WVhZNnc2UC1HNGtUcXQtcm5lc1VhNU5RRjl1c1NTdTI1RDk2cHNWMGZyQUJVVGJBWHZ2OUV3LTBZZkdjckJ1X0pCX190T2R2c2pfX3NUakt5VUl3MzhXVXMzQjVxYXhnRk1UM1pOVnFackZhNFNvaFJZb0tXZlNvYmxfbA?oc=5",
       "date": "2020-02-13",
       "published": "2020-02-13T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "525991faa294",
@@ -3739,9 +3850,11 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORElWV1d5YURYUWZKbGNtM1JqRlRKS2RXVjJzNWZXeDJjblpIVHk1dzc3WFVHRGExZUNPeXgydVR4YlBwckVvZUtKTzFVNmQwSVZycXZqcXB0MEJXNDFKTkw2YVpPa2tsZ1JVdW42MDh4Ykhia1dkUFpvVFh4US1qOVVNbVBoUQ?oc=5",
       "date": "2019-12-04",
       "published": "2019-12-04T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "010133cf0fc5",
@@ -3750,9 +3863,11 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYktmQVU4a2FBX2RfTmlwU1lINjBhRUd3a3FmR1pCM2xhcGFiQ2h5NVBRd1pwTVRFMlFSYnM4aGYwZVZVbjZUSU9tNXJUODdVWTlVc2Zxa2NsbTVWcEduVFZmZEY4c0c3MTFMREFwb1pBN05yNjFXcjloU09QSHB2QkhlTUdoTUNzOWZKLTU4TE1OZw?oc=5",
       "date": "2017-04-20",
       "published": "2017-04-20T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "b89fa2d7554f",
@@ -3761,9 +3876,11 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52aGpzZTlxRE9PaFNGRmFteW55bENxWFJlZFc3Mll3aTJJV2RFaXBra1pPVWNDWkNacFFrajlxbFlpMjktTGJsc1JOUmZaYnFubGxobkRQYm9QRTNaazRMQmNBMjVIOFBxZkE?oc=5",
       "date": "2016-09-29",
       "published": "2016-09-29T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "27326e42ba0a",
@@ -3772,9 +3889,11 @@
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5qMXItQ1hEclNzeHpUZDFFQjVhM1drTFEtMi04YXR0OTZscFQ0Rl9zZWpPWWFpcmo0TEF4OGxmaE41YnFDR3Nrd3lGSjdxa0Zfa2ZVQ1NKcV9LRGdvdVRRcjRqQXJrT1hCZkpaSXlwZkxXSndlaXJLcnZaUQ?oc=5",
       "date": "2016-09-28",
       "published": "2016-09-28T07:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "a6937f14c4e6",
@@ -3783,9 +3902,11 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0yM3paM2xiOEJhNGJLeHgtVFpEM0pWbGlnYkFfaTBPX1FxVjh4SDd6Y0tTS3d2bi1zMDc3bXZhbmJYSEF0bEZsbXpLeWRPMXZqTlY5YW03VUdkTk9ETW1faVdwM2xhbVliN2JNN3ExaVlQS3BSU2c?oc=5",
       "date": "2009-02-07",
       "published": "2009-02-07T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     },
     {
       "id": "154ad42acca8",
@@ -3794,9 +3915,11 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1kdGlUNFdBREpRNlh6UWQ0YnF6YU5TUk94TjFVX0RLM2NZRmJSWHNISFdUMmdBVUhkOHZ0WW85LUtxLVZfZHVFRkQ2aV9RdmZjbHhBejY0N3lkWjZ0QzBpWVdhLUl4SUxSZkpKTUxnNUhhQ3B1N3RZbjVpc0lIZw?oc=5",
       "date": "2000-11-27",
       "published": "2000-11-27T08:00:00.000Z",
+      "firstSeen": "2026-10-11T16:45:17.223Z",
       "status": "före start",
       "notes": [],
-      "eventIds": []
+      "eventIds": [],
+      "summary": "Publicerad före albumets startdatum."
     }
   ],
   "errors": []

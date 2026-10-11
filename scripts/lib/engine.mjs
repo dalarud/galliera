@@ -97,6 +97,7 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = '
       h.cost += shares * p;
       cash -= shares * p;
     }
+    h.basis = meta.basis;
     holdings.set(ticker, h);
     trades.push({
       date: day, ticker, name: nameOf(ticker), side, shares, price: round(p, 3), value: round(shares * p, 0),
@@ -147,6 +148,8 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = '
         const diffs = [...targets].map(([t, { shares, basis }]) => ({ t, basis, diff: shares - (holdings.get(t)?.shares ?? 0) }));
         for (const { t, basis, diff } of diffs.filter((x) => x.diff < 0)) execute(day, t, 'sell', -diff, sourceMeta(e, { basis, implied: true }));
         for (const { t, basis, diff } of diffs.filter((x) => x.diff > 0)) execute(day, t, 'buy', diff, sourceMeta(e, { basis, implied: true }));
+        // En innehavslista bekräftar även oförändrade innehav.
+        for (const [t, { shares, basis }] of targets) { const h = holdings.get(t); if (h && shares > 0) h.basis = basis ?? 'rapporterad'; }
       } else if (e.type === 'trade') {
         const held = holdings.get(e.ticker)?.shares ?? 0;
         let shares = e.shares;
@@ -163,6 +166,7 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = '
         const p = price(e.ticker, day);
         if (h.shares === 0) h.first = day;
         h.shares += e.shares;
+        h.basis = e.basis ?? 'rapporterad';
         h.cost += e.shares * p;
         holdings.set(e.ticker, h);
         trades.push({ date: day, ticker: e.ticker, name: nameOf(e.ticker), side: 'spinoff', shares: e.shares, price: round(p, 3), value: round(e.shares * p, 0), positionAfter: h.shares, ...sourceMeta(e) });
@@ -219,6 +223,7 @@ export function replay({ ledger, securities, prices, benchmarks, calendarKey = '
         value: round(value, 0), weight: round((value / last.nav) * 100, 2),
         avgCost: round(h.cost / h.shares, 3), gainPct: round((p / (h.cost / h.shares) - 1) * 100, 2),
         since: h.first,
+        basis: h.basis ?? 'rapporterad',
         quoteTime: prices.get(t)?.last?.time ?? null,
       };
     })
