@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T18:02:41.681Z",
-  "lastNewsScan": "2026-10-11T18:02:41.674Z",
+  "generatedAt": "2026-10-11T18:08:06.037Z",
+  "lastNewsScan": "2026-10-11T18:08:06.034Z",
   "fund": "Gallierafonden",
   "baseline": "2025-11-07",
   "notes": [
@@ -1404,20 +1404,20 @@
     {
       "date": "2026-04-30",
       "type": "utdelning",
-      "ticker": "SECU-B.ST",
-      "name": "Securitas",
-      "perShare": 2.65,
-      "shares": 30800,
-      "amount": 81620
-    },
-    {
-      "date": "2026-04-30",
-      "type": "utdelning",
       "ticker": "MCOV-B.ST",
       "name": "Medicover",
       "perShare": 2.238612,
       "shares": 14600,
       "amount": 32684
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "perShare": 2.65,
+      "shares": 30800,
+      "amount": 81620
     },
     {
       "date": "2026-04-29",
@@ -1517,20 +1517,20 @@
     {
       "date": "2026-03-25",
       "type": "utdelning",
-      "ticker": "SEB-A.ST",
-      "name": "SEB",
-      "perShare": 11,
-      "shares": 26000,
-      "amount": 286000
-    },
-    {
-      "date": "2026-03-25",
-      "type": "utdelning",
       "ticker": "NDA-SE.ST",
       "name": "Nordea Bank",
       "perShare": 10.7453375,
       "shares": 45000,
       "amount": 483540
+    },
+    {
+      "date": "2026-03-25",
+      "type": "utdelning",
+      "ticker": "SEB-A.ST",
+      "name": "SEB",
+      "perShare": 11,
+      "shares": 26000,
+      "amount": 286000
     },
     {
       "date": "2025-11-19",
