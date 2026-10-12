@@ -82,6 +82,17 @@ Intervallen kan ändras med `PORT`, `PRICE_MINUTES` och `NEWS_MINUTES`. Sidan sj
 | `data/portfolio.json` | Genererad: tidsserie, innehav, affärer, kassaflöden och nyheter. |
 | `data/feed.xml` | Genererat Atom-flöde med de senaste affärerna, för den som vill prenumerera. |
 
+### Historik från 2018
+
+Kopian börjar med Gallierafondens fullständiga innehavslista för första kvartalet 2018 (Holdings för
+Ekot Extra och DI, publicerad av [Aktiespararna](https://www.aktiespararna.se/nyheter/kungafamiljen-satsar-pa-handelsbanken)).
+Därefter används listan från september 2023 ([Placera](https://www.placera.se/kommentar/sa-investerar-du-kungligt-2023-09-08), värden),
+topplistorna från december 2024 och juli 2025 samt daterade affärer 2024–2025. Mellan 2018 och 2023 finns
+ingen lista med antal aktier, så den perioden är ungefärlig och markeras i grafen. Äldre uppgifter i medier
+gäller kungens direktägda aktier och inte fonden, och används inte.
+
+Yahoos kurser och utdelningar är splitjusterade; äldre aktieantal räknas om med splitfaktorerna.
+
 ### Startdata (verifierade källor)
 
 - **7 nov 2025**: fullständig lista med 17 bolag, 74,7 Mkr ([Placera](https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10)).

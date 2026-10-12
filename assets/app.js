@@ -338,7 +338,8 @@ function renderChart() {
   if (m.ret) {
     const all = [...m.fund, ...m.idx];
     const span = Math.max(...all) - Math.min(...all);
-    step = span > 30 ? 10 : 5;
+    const mob = mobileMq.matches;
+    step = span > 120 ? (mob ? 50 : 25) : span > 60 ? (mob ? 25 : 20) : span > 30 ? 10 : 5;
     lo = Math.floor((Math.min(0, ...all) - 1) / step) * step;
     hi = Math.ceil((Math.max(...all) + 1) / step) * step;
   } else {
@@ -362,12 +363,12 @@ function renderChart() {
     const upper = m.fund.map((v, i) => Math.max(v, m.idx[i]));
     const back = m.idx.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
     paths = `<path class="band" d="${line(upper)}${back}Z"/><path class="l-idx" d="${line(m.idx)}"/><path class="l-fund" d="${line(m.fund)}"/>`;
-    ends.push({ y: Y(m.fund[N - 1]), label: `${sgn(m.fund[N - 1])} %` }, { y: Y(m.idx[N - 1]), label: `${sgn(m.idx[N - 1])} %` });
+    ends.push({ y: Y(m.fund[N - 1]), label: `${sgn(m.fund[N - 1])} %`, sw: 'var(--accent)', h: 3, name: 'Kungen' }, { y: Y(m.idx[N - 1]), label: `${sgn(m.idx[N - 1])} %`, sw: 'var(--index)', h: 2, name: 'Börsen' });
   } else {
     const back = m.stocks.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
     paths = `<path class="a-stocks" d="${line(m.stocks)}L${W} ${H}L0 ${H}Z"/><path class="a-cash" d="${line(m.total)}${back}Z"/>
       <path class="l-fund" d="${line(m.stocks)}"/><path class="l-total" d="${line(m.total)}"/>`;
-    ends.push({ y: Y(m.total[N - 1]), label: f1(m.total[N - 1]) });
+    ends.push({ y: Y(m.total[N - 1]), label: f1(m.total[N - 1]), sw: 'var(--ink)', h: 2, name: 'Totalt' });
   }
   // Undvik krockande slutetiketter
   ends.sort((a, b) => a.y - b.y);
@@ -407,7 +408,7 @@ function renderChart() {
       <path class="grid" d="${grid}"/><path class="base" d="${base}"/>${paths}
     </svg>
     ${ticks.map((t) => `<span class="tick" style="top:${t.y}px">${t.label}</span>`).join('')}
-    ${ends.map((e) => `<span class="end" style="top:${e.y}px">${e.label}</span>`).join('')}
+    ${ends.map((e) => `<span class="end" style="top:${e.y}px" title="${e.name}"><i style="height:${e.h}px;background:${e.sw}"></i>${e.label}</span>`).join('')}
     ${hover}
     <div class="hit"></div>`;
 
