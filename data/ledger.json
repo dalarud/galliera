@@ -563,6 +563,60 @@
         "SKA-B.ST": 4800,
         "OCTV-SDB.ST": 2500
       }
+    },
+    {
+      "id": "auto-ad65379fb099-HEXA-B.ST-sell",
+      "date": "2026-10-12",
+      "type": "trade",
+      "ticker": "HEXA-B.ST",
+      "side": "sell",
+      "auto": true,
+      "source": {
+        "publisher": "HurBra.se",
+        "title": "Kungafamiljens aktier 2026 – köp och försäljningar",
+        "url": "https://hurbra.se/kungafamiljens-aktier-september-2026/",
+        "date": "2026-10-12"
+      },
+      "quote": "Totalt har 15 400 Investor-aktier sålts, samtidigt som nya miljonbelopp placerats i bland annat Hexagon, EQT och Beijer Ref.",
+      "fraction": 0.3333333333333333,
+      "basis": "uppskattad",
+      "note": "Automatiskt tolkat: \"sålts\" → sälj 33 % av innehavet (datum = publicering)."
+    },
+    {
+      "id": "auto-ad65379fb099-EQT.ST-sell",
+      "date": "2026-10-12",
+      "type": "trade",
+      "ticker": "EQT.ST",
+      "side": "sell",
+      "auto": true,
+      "source": {
+        "publisher": "HurBra.se",
+        "title": "Kungafamiljens aktier 2026 – köp och försäljningar",
+        "url": "https://hurbra.se/kungafamiljens-aktier-september-2026/",
+        "date": "2026-10-12"
+      },
+      "quote": "Totalt har 15 400 Investor-aktier sålts, samtidigt som nya miljonbelopp placerats i bland annat Hexagon, EQT och Beijer Ref.",
+      "fraction": 0.3333333333333333,
+      "basis": "uppskattad",
+      "note": "Automatiskt tolkat: \"sålts\" → sälj 33 % av innehavet (datum = publicering)."
+    },
+    {
+      "id": "auto-ad65379fb099-BEIJ-B.ST-sell",
+      "date": "2026-10-12",
+      "type": "trade",
+      "ticker": "BEIJ-B.ST",
+      "side": "sell",
+      "auto": true,
+      "source": {
+        "publisher": "HurBra.se",
+        "title": "Kungafamiljens aktier 2026 – köp och försäljningar",
+        "url": "https://hurbra.se/kungafamiljens-aktier-september-2026/",
+        "date": "2026-10-12"
+      },
+      "quote": "Totalt har 15 400 Investor-aktier sålts, samtidigt som nya miljonbelopp placerats i bland annat Hexagon, EQT och Beijer Ref.",
+      "fraction": 0.3333333333333333,
+      "basis": "uppskattad",
+      "note": "Automatiskt tolkat: \"sålts\" → sälj 33 % av innehavet (datum = publicering)."
     }
   ],
   "denseFrom": "2023-09-07"

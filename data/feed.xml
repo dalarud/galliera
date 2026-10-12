@@ -3,8 +3,29 @@
   <id>urn:som-kungen:gallierafonden</id>
   <title>Som kungen – Gallierafondens affärer</title>
   <subtitle>Köp och försäljningar i kungens Gallierafond, så som de rapporterats i medier. Fiktiv kopia, inte investeringsrådgivning.</subtitle>
-  <updated>2026-10-09T08:00:00Z</updated>
+  <updated>2026-10-12T08:00:00Z</updated>
   <link href="../"/>
+  <entry>
+    <id>urn:som-kungen:auto-ad65379fb099-BEIJ-B.ST-sell:BEIJ-B.ST</id>
+    <title>Kungen har sålt ≈ 9 700 aktier i Beijer Ref (≈ 1,4 Mkr)</title>
+    <updated>2026-10-12T08:00:00Z</updated>
+    <link href="https://hurbra.se/kungafamiljens-aktier-september-2026/"/>
+    <summary>Automatiskt tolkat: &quot;sålts&quot; → sälj 33 % av innehavet (datum = publicering). Källa: HurBra.se.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:auto-ad65379fb099-EQT.ST-sell:EQT.ST</id>
+    <title>Kungen har sålt ≈ 8 500 aktier i EQT (≈ 2,4 Mkr)</title>
+    <updated>2026-10-12T08:00:00Z</updated>
+    <link href="https://hurbra.se/kungafamiljens-aktier-september-2026/"/>
+    <summary>Automatiskt tolkat: &quot;sålts&quot; → sälj 33 % av innehavet (datum = publicering). Källa: HurBra.se.</summary>
+  </entry>
+  <entry>
+    <id>urn:som-kungen:auto-ad65379fb099-HEXA-B.ST-sell:HEXA-B.ST</id>
+    <title>Kungen har sålt ≈ 16 100 aktier i Hexagon (≈ 1,7 Mkr)</title>
+    <updated>2026-10-12T08:00:00Z</updated>
+    <link href="https://hurbra.se/kungafamiljens-aktier-september-2026/"/>
+    <summary>Automatiskt tolkat: &quot;sålts&quot; → sälj 33 % av innehavet (datum = publicering). Källa: HurBra.se.</summary>
+  </entry>
   <entry>
     <id>urn:som-kungen:seed-2026-09-beij:BEIJ-B.ST</id>
     <title>Kungen har köpt 29 000 aktier i Beijer Ref (3,9 Mkr)</title>
