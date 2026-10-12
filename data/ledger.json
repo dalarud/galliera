@@ -1,16 +1,359 @@
 {
   "fund": "Gallierafonden",
-  "baseline": "2025-11-07",
+  "baseline": "2018-03-29",
   "startUnitValue": 100,
   "startCash": 0,
   "notes": [
-    "Startpunkten är den fullständiga innehavslistan från ägardatatjänsten Holdings som Placera publicerade 2025-11-10 (17 bolag, 74,7 Mkr).",
-    "Fondens faktiska kassa redovisas inte. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som nytt kapital, vilket inte påverkar andelsvärdet. Fanns det redan en kassa vid start blir den verkliga kassan större.",
-    "Köp och försäljningar mellan två innehavslistor syns ofta först i nästa lista. De bokförs då på listans datum, vilket gör att kursutvecklingen däremellan blir ungefärlig.",
-    "Affärer utan exakt datum läggs på den 15:e i den månad artikeln anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen.",
+    "Kopian börjar med Gallierafondens innehavslista från första kvartalet 2018. Äldre uppgifter i medier gäller kungens direktägda aktier, inte fonden.",
+    "Mellan mars 2018 och september 2023 finns ingen innehavslista med antal aktier. Där hålls 2018 års innehav oförändrat, och förändringarna bokförs när listan från september 2023 kommer. Den perioden är därför ungefärlig.",
+    "Fondens faktiska kassa redovisas inte. Den fiktiva fonden startar med 0 kr i kassa; därefter bokförs likvider från försäljningar och utdelningar, och köp dras från kassan. Räcker inte kassan bokförs mellanskillnaden som nytt kapital, vilket inte påverkar andelsvärdet.",
+    "Kurser är justerade för splitar och vissa utdelningar av aktier (t.ex. Epiroc, Alleima). Äldre aktieantal räknas om till dagens aktier, och kronvärden före sådana händelser blir något lägre än de var då, men avkastningen påverkas inte.",
+    "Affärer utan exakt datum läggs på den 15:e i den månad källan anger. Affärer utan antal aktier uppskattas utifrån innehavets vikt i portföljen.",
     "Artiklar om kungabarnens portfölj Gluonen räknas inte. När två tabeller står sida vid sida används bara Gallierafondens."
   ],
   "events": [
+    {
+      "id": "hist-2018-q1-snapshot",
+      "date": "2018-03-29",
+      "type": "snapshot",
+      "full": true,
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista för Gallierafonden per första kvartalet 2018 (Holdings för Ekot Extra, även i DI), 13 bolag. Capio (1,8 %) saknas i kursdatan och är utelämnat.",
+      "source": {
+        "publisher": "Aktiespararna",
+        "title": "Kungafamiljen satsar på Handelsbanken",
+        "url": "https://www.aktiespararna.se/nyheter/kungafamiljen-satsar-pa-handelsbanken",
+        "date": "2018-05-21"
+      },
+      "holdings": {
+        "ESSITY-B.ST": 31799,
+        "ARJO-B.ST": 180000,
+        "INVE-B.ST": 13700,
+        "SEB-A.ST": 60800,
+        "KINV-B.ST": 12000,
+        "SHB-A.ST": 37000,
+        "ASSA-B.ST": 18000,
+        "ATCO-A.ST": 7000,
+        "SWED-A.ST": 13000,
+        "TELIA.ST": 55000,
+        "SAND.ST": 12000,
+        "NDA-SE.ST": 20000
+      }
+    },
+    {
+      "id": "hist-2023-09-snapshot",
+      "date": "2023-09-07",
+      "type": "snapshot",
+      "full": true,
+      "basis": "rapporterad",
+      "note": "Fullständig innehavslista med värden (18 bolag, 51,7 Mkr) enligt Holdings. Antal aktier är räknade ur värdena. Förändringar sedan 2018 (bland annat sålda Swedbank, Kinnevik och Nordea; nya Industrivärden, Volvo, Medicover och Securitas) bokförs här.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Så investerar du kungligt",
+        "url": "https://www.placera.se/kommentar/sa-investerar-du-kungligt-2023-09-08",
+        "date": "2023-09-08"
+      },
+      "holdings": {
+        "INVE-B.ST": {
+          "value": 9199085
+        },
+        "INDU-C.ST": {
+          "value": 6630900
+        },
+        "SHB-A.ST": {
+          "value": 4414080
+        },
+        "SEB-A.ST": {
+          "value": 3291600
+        },
+        "ESSITY-B.ST": {
+          "value": 3277395
+        },
+        "VOLV-B.ST": {
+          "value": 3058300
+        },
+        "SAND.ST": {
+          "value": 2775760
+        },
+        "ALFA.ST": {
+          "value": 2310000
+        },
+        "SKA-B.ST": {
+          "value": 2279600
+        },
+        "ELUX-B.ST": {
+          "value": 2136550
+        },
+        "HEXA-B.ST": {
+          "value": 2107160
+        },
+        "ATCO-B.ST": {
+          "value": 2101070
+        },
+        "ALIG.ST": {
+          "value": 1833000
+        },
+        "MCOV-B.ST": {
+          "value": 1700600
+        },
+        "SECU-B.ST": {
+          "value": 1551240
+        },
+        "HM-B.ST": {
+          "value": 1197504
+        },
+        "GETI-B.ST": {
+          "value": 1122300
+        },
+        "ARJO-B.ST": {
+          "value": 745920
+        }
+      }
+    },
+    {
+      "id": "hist-2024-02-sand",
+      "date": "2024-02-15",
+      "type": "trade",
+      "ticker": "SAND.ST",
+      "side": "sell",
+      "basis": "rapporterad",
+      "note": "Hela innehavet i Sandvik såldes i början av 2024. Exakt datum ej publicerat.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen stuvade om i portföljen 2024 – Investor favorit",
+        "url": "https://www.placera.se/nyheter/kungen-stuvade-om-i-portfoljen-2024-investor-favorit-2024-12-20",
+        "date": "2024-12-20"
+      },
+      "fraction": 1
+    },
+    {
+      "id": "hist-2024-02-epi",
+      "date": "2024-02-15",
+      "type": "trade",
+      "ticker": "EPI-B.ST",
+      "side": "buy",
+      "basis": "uppskattad",
+      "note": "Likviden från Sandvik gick till Epiroc. Antalet är det som rapporterades i december 2024.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen stuvade om i portföljen 2024 – Investor favorit",
+        "url": "https://www.placera.se/nyheter/kungen-stuvade-om-i-portfoljen-2024-investor-favorit-2024-12-20",
+        "date": "2024-12-20"
+      },
+      "shares": 21500
+    },
+    {
+      "id": "hist-2024-03-volv",
+      "date": "2024-03-15",
+      "type": "trade",
+      "ticker": "VOLV-B.ST",
+      "side": "sell",
+      "basis": "rapporterad belopp",
+      "note": "En del av Volvoinnehavet såldes i mars 2024 för drygt en miljon kronor.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen stuvade om i portföljen 2024 – Investor favorit",
+        "url": "https://www.placera.se/nyheter/kungen-stuvade-om-i-portfoljen-2024-investor-favorit-2024-12-20",
+        "date": "2024-12-20"
+      },
+      "value": 1100000
+    },
+    {
+      "id": "hist-2024-03-shb",
+      "date": "2024-03-15",
+      "type": "trade",
+      "ticker": "SHB-A.ST",
+      "side": "sell",
+      "basis": "rapporterad",
+      "note": "I mars 2024 såldes hela innehavet i Handelsbanken.",
+      "source": {
+        "publisher": "Aktiespararna / DI",
+        "title": "Så sparar kungafamiljen på börsen",
+        "url": "https://www.aktiespararna.se/nyheter/sa-sparar-kungafamiljen-pa-borsen",
+        "date": "2024-07-26"
+      },
+      "fraction": 1
+    },
+    {
+      "id": "hist-2024-03-nda",
+      "date": "2024-03-15",
+      "type": "trade",
+      "ticker": "NDA-SE.ST",
+      "side": "buy",
+      "basis": "uppskattad",
+      "note": "Nordea köptes i mars 2024. Antalet är det som rapporterades i december 2024.",
+      "source": {
+        "publisher": "Aktiespararna / DI",
+        "title": "Så sparar kungafamiljen på börsen",
+        "url": "https://www.aktiespararna.se/nyheter/sa-sparar-kungafamiljen-pa-borsen",
+        "date": "2024-07-26"
+      },
+      "shares": 45000
+    },
+    {
+      "id": "hist-2024-06-skf",
+      "date": "2024-06-15",
+      "type": "trade",
+      "ticker": "SKF-B.ST",
+      "side": "buy",
+      "basis": "uppskattad",
+      "note": "SKF togs in igen före sommaren 2024. Datum och antal (från december 2024) är uppskattade.",
+      "source": {
+        "publisher": "Aktiespararna / DI",
+        "title": "Så sparar kungafamiljen på börsen",
+        "url": "https://www.aktiespararna.se/nyheter/sa-sparar-kungafamiljen-pa-borsen",
+        "date": "2024-07-26"
+      },
+      "shares": 14500
+    },
+    {
+      "id": "hist-2024-08-alig",
+      "date": "2024-08-15",
+      "type": "trade",
+      "ticker": "ALIG.ST",
+      "side": "sell",
+      "basis": "rapporterad",
+      "note": "Hela innehavet i Alimak såldes i augusti 2024, värt cirka 2,8 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen stuvade om i portföljen 2024 – Investor favorit",
+        "url": "https://www.placera.se/nyheter/kungen-stuvade-om-i-portfoljen-2024-investor-favorit-2024-12-20",
+        "date": "2024-12-20"
+      },
+      "fraction": 1
+    },
+    {
+      "id": "hist-2024-12-snapshot",
+      "date": "2024-12-18",
+      "type": "snapshot",
+      "full": false,
+      "basis": "rapporterad",
+      "note": "Gallierafondens tio största innehav enligt Holdings (18 bolag, 57 Mkr).",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen stuvade om i portföljen 2024 – Investor favorit",
+        "url": "https://www.placera.se/nyheter/kungen-stuvade-om-i-portfoljen-2024-investor-favorit-2024-12-20",
+        "date": "2024-12-20"
+      },
+      "holdings": {
+        "INVE-B.ST": 43300,
+        "INDU-C.ST": 23000,
+        "NDA-SE.ST": 45000,
+        "ESSITY-B.ST": 17399,
+        "SEB-A.ST": 26000,
+        "EPI-B.ST": 21500,
+        "SECU-B.ST": 27000,
+        "SKF-B.ST": 14500,
+        "MCOV-B.ST": 14600,
+        "VOLV-B.ST": 9300
+      }
+    },
+    {
+      "id": "hist-2025-01-elux",
+      "date": "2025-01-15",
+      "type": "trade",
+      "ticker": "ELUX-B.ST",
+      "side": "sell",
+      "basis": "rapporterad",
+      "note": "Electrolux såldes i januari 2025 för 1,1 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "fraction": 1
+    },
+    {
+      "id": "hist-2025-01-sand",
+      "date": "2025-01-15",
+      "type": "trade",
+      "ticker": "SAND.ST",
+      "side": "buy",
+      "basis": "rapporterad",
+      "note": "Sandvik togs tillbaka med 18 000 aktier i januari 2025.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "shares": 18000
+    },
+    {
+      "id": "hist-2025-03-skf",
+      "date": "2025-03-15",
+      "type": "trade",
+      "ticker": "SKF-B.ST",
+      "side": "sell",
+      "basis": "rapporterad",
+      "note": "De sista SKF-aktierna såldes i mars 2025 för 3,8 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "fraction": 1
+    },
+    {
+      "id": "hist-2025-06-shb",
+      "date": "2025-06-15",
+      "type": "trade",
+      "ticker": "SHB-A.ST",
+      "side": "buy",
+      "basis": "rapporterad",
+      "note": "Handelsbanken tillbaka i juni 2025: 33 000 aktier för 4,14 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "shares": 33000
+    },
+    {
+      "id": "hist-2025-07-snapshot",
+      "date": "2025-07-11",
+      "type": "snapshot",
+      "full": false,
+      "basis": "rapporterad",
+      "note": "Gallierafondens tio största innehav enligt Holdings (18 bolag, cirka 70 Mkr).",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kronprinsessans födelsedagspresent – Alfa Laval ny i portföljen",
+        "url": "https://www.placera.se/nyheter/kronprinessans-fodelsdagspresent--alfa-laval-ny-i-portfoljen-2025-07-14",
+        "date": "2025-07-14"
+      },
+      "holdings": {
+        "INVE-B.ST": 43300,
+        "INDU-C.ST": 23000,
+        "ESSITY-B.ST": 24999,
+        "NDA-SE.ST": 45000,
+        "SEB-A.ST": 26000,
+        "SHB-A.ST": 33000,
+        "SAND.ST": 18000,
+        "SECU-B.ST": 27000,
+        "MCOV-B.ST": 14600,
+        "ALFA.ST": 6400
+      }
+    },
+    {
+      "id": "hist-2025-08-volv",
+      "date": "2025-08-15",
+      "type": "trade",
+      "ticker": "VOLV-B.ST",
+      "side": "sell",
+      "basis": "rapporterad",
+      "note": "Hela Volvoinnehavet, 9 300 aktier, såldes i augusti 2025 för 2,46 Mkr.",
+      "source": {
+        "publisher": "Placera",
+        "title": "Kungen äger alla storbanker utom en – Investor familjens favorit",
+        "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
+        "date": "2025-11-10"
+      },
+      "fraction": 1
+    },
     {
       "id": "seed-2025-11-snapshot",
       "date": "2025-11-07",
@@ -221,5 +564,6 @@
         "OCTV-SDB.ST": 2500
       }
     }
-  ]
+  ],
+  "denseFrom": "2023-09-07"
 }

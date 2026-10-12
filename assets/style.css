@@ -209,6 +209,10 @@ button { font: inherit; color: inherit; }
 .sheet-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; }
 .sheet-head h2 { font: 700 15px/1.3 var(--sans); }
 .tabs { display: flex; gap: 4px; padding: 3px; border: 1px solid var(--rule2); }
+.ranges { display: flex; flex-wrap: wrap; gap: 2px; margin-left: auto; }
+.ranges button { min-height: 44px; min-width: 44px; padding: 0 10px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--ink2); font: 600 12px var(--mono); letter-spacing: .04em; cursor: pointer; }
+.ranges button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+@media (max-width: 639px) { .ranges { margin-left: 0; width: 100%; justify-content: space-between; } .ranges button { padding: 0 4px; } }
 .tabs button { min-height: 44px; padding: 0 18px; border: 0; font-size: 14px; font-weight: 600; cursor: pointer; background: transparent; color: var(--ink2); }
 .tabs button[aria-selected="true"] { background: var(--tab-on); color: var(--tab-on-fg); }
 .legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin-top: 14px; font-size: 13px; color: var(--ink2); }
@@ -226,7 +230,8 @@ button { font: inherit; color: inherit; }
 .chart .a-cash { fill: url(#kassaRaster); }
 .chart .hatch { stroke: var(--pm); stroke-width: 1.3px; }
 .chart .tick { position: absolute; left: -52px; width: 44px; text-align: right; transform: translateY(-50%); font: 11px var(--mono); color: var(--muted); pointer-events: none; }
-.chart .end { position: absolute; left: calc(100% + 10px); transform: translateY(-50%); font-size: 13px; font-weight: 700; white-space: nowrap; pointer-events: none; }
+.chart .end { position: absolute; left: calc(100% + 6px); transform: translateY(-50%); font-size: 13px; font-weight: 700; white-space: nowrap; pointer-events: none; display: flex; align-items: center; gap: 5px; }
+.chart .end i { display: inline-block; width: 8px; border-radius: 1px; }
 .chart .cross { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--ink2); pointer-events: none; }
 .chart .dot { position: absolute; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; box-shadow: 0 0 0 2px var(--page); pointer-events: none; }
 .chart .hit { position: absolute; inset: 0; cursor: crosshair; touch-action: pan-y; }

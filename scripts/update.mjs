@@ -60,7 +60,8 @@ function planEvents(article, { table, signals }, { ledger, result }) {
 
   if (table.ambiguous) notes.push('Flera tabeller utan rubrik – oklart vilken som är Gallierafonden, ingen avstämning gjord');
   if (table.size >= 5) {
-    const near = ledger.events.find((e) => e.type === 'snapshot' && Math.abs(new Date(e.date) - new Date(article.date)) < 12 * 864e5);
+    const near = ledger.events.find((e) => e.type === 'snapshot'
+      && (e.source?.url === article.url || Math.abs(new Date(e.date) - new Date(article.date)) < 12 * 864e5));
     if (near) {
       notes.push(`Innehavstabell (${table.size} bolag) – redan inlagd från ${near.source?.publisher ?? 'tidigare källa'}`);
     } else {
@@ -262,6 +263,7 @@ async function main() {
     lastNewsScan: newsDb.lastScan ?? null,
     fund: ledger.fund,
     baseline: ledger.baseline,
+    denseFrom: ledger.denseFrom ?? null,
     notes: ledger.notes,
     benchmarks: Object.fromEntries(Object.entries(benchmarks).map(([k, b]) => [k, b.label])),
     sectors: Object.fromEntries(ledgerTickers(ledger).map((t) => [t, securities[t]?.sector ?? ''])),

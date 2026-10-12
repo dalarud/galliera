@@ -11,11 +11,10 @@
       "queries": [
         "kungens aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
+      "firstSeen": "2026-10-12T00:29:14.397Z",
       "status": "före start",
       "notes": [],
-      "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "eventIds": []
     },
     "a6937f14c4e6": {
       "id": "a6937f14c4e6",
@@ -29,11 +28,10 @@
         "kungens aktier",
         "kungen säljer aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
+      "firstSeen": "2026-10-12T00:29:14.397Z",
       "status": "före start",
       "notes": [],
-      "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "eventIds": []
     },
     "27326e42ba0a": {
       "id": "27326e42ba0a",
@@ -49,11 +47,10 @@
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
+      "firstSeen": "2026-10-12T00:29:14.397Z",
       "status": "före start",
       "notes": [],
-      "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "eventIds": []
     },
     "b89fa2d7554f": {
       "id": "b89fa2d7554f",
@@ -71,11 +68,10 @@
         "kungen köper aktier",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
+      "firstSeen": "2026-10-12T00:29:14.397Z",
       "status": "före start",
       "notes": [],
-      "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "eventIds": []
     },
     "010133cf0fc5": {
       "id": "010133cf0fc5",
@@ -88,11 +84,10 @@
       "queries": [
         "kungens aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
+      "firstSeen": "2026-10-12T00:29:14.397Z",
       "status": "före start",
       "notes": [],
-      "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "eventIds": []
     },
     "525991faa294": {
       "id": "525991faa294",
@@ -105,11 +100,16 @@
       "queries": [
         "kungens portfölj"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:14.397Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "url": "https://www.dn.se/nyheter/varlden/kungen-bar-sin-egen-portfolj-hyllas-i-indien/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "c9cbc15a7df7": {
       "id": "c9cbc15a7df7",
@@ -123,11 +123,16 @@
         "kungens aktier",
         "kungen säljer aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:14.861Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "url": "https://www.di.se/nyheter/snus-kungen-om-jatteforsaljningen-jag-behovde-frigora-lite-kapital/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "c1e167a9df6c": {
       "id": "c1e167a9df6c",
@@ -140,11 +145,13 @@
       "queries": [
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
+      "firstSeen": "2026-10-12T00:29:15.099Z",
+      "status": "ingen affär",
       "notes": [],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "url": "https://www.gp.se/ekonomi/har-ar-kungafamiljens-aktieportfolj.9f5cb5cb-1542-44cd-a083-84041c1f4abc",
+      "chars": 2029,
+      "signals": []
     },
     "40fd162edcf9": {
       "id": "40fd162edcf9",
@@ -158,11 +165,16 @@
         "kungens aktier",
         "kungen säljer aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:15.807Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "url": "https://www.affarsvarlden.se/fastighet/aktien-som-alskas-av-adeln-och-kungen",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "ae9224076167": {
       "id": "ae9224076167",
@@ -174,17 +186,21 @@
       "description": "Hovet om prinsens aktier: ”Kungafamiljen har en långsiktig syn på sina investeringar” Affärsvärlden",
       "queries": [
         "kungens aktier",
-        "kungen säljer aktier",
         "kungen köper aktier",
         "kungafamiljen aktier Holdings",
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:22.877Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "url": "https://www.affarsvarlden.se/artikel/hovet-om-prinsens-aktier-kungafamiljen-har-en-langsiktig-syn-pa-sina-investeringar",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "75396f0dbf80": {
       "id": "75396f0dbf80",
@@ -197,11 +213,16 @@
       "queries": [
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:28.349Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.882Z"
+      "url": "https://www.di.se/nyheter/kungafamiljen-ratar-lundbergbolaget-har-ar-innehaven/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "2723862ecf04": {
       "id": "2723862ecf04",
@@ -214,11 +235,112 @@
       "queries": [
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:28.528Z",
+      "status": "redan känd",
+      "notes": [
+        "Köp ALIG.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj SWED-A.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj ERIC-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj AFRY.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj NCC-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj ALLEI.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj KINV-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj ALFA.ST: redan fångad av innehavstabell 2026-10-08",
+        "Köp MCOV-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Köp SECU-B.ST: redan fångad av innehavstabell 2026-10-08"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.dagensps.se/bors-finans/skugga-kungafamiljen-pa-borsen/",
+      "chars": 6186,
+      "signals": [
+        {
+          "ticker": "ALIG.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "investerat",
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SWED-A.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ERIC-B.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "AFRY.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "NCC-B.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ALLEI.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "KINV-B.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ALFA.ST",
+          "side": "sell",
+          "kind": "half",
+          "verb": "halverat",
+          "fraction": 0.5,
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "MCOV-B.ST",
+          "side": "buy",
+          "kind": "new",
+          "verb": "Nya innehav",
+          "date": "2023-09-12",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SECU-B.ST",
+          "side": "buy",
+          "kind": "new",
+          "verb": "Nya innehav",
+          "date": "2023-09-12",
+          "precision": "publicering"
+        }
+      ]
     },
     "8c4ccbd594c7": {
       "id": "8c4ccbd594c7",
@@ -233,11 +355,16 @@
         "kungen säljer aktier",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:29.280Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://omni.se/kungens-borsutfall-sadar-men-vi-overlever/a/APV205",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "9d8c94c1a223": {
       "id": "9d8c94c1a223",
@@ -250,11 +377,111 @@
       "queries": [
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:29.599Z",
+      "status": "redan känd",
+      "notes": [
+        "Sälj ALLEI.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj ALIG.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj SWED-A.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj AFRY.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj NCC-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj KINV-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Sälj ERIC-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Köp ALIG.ST: redan fångad av innehavstabell 2026-10-08",
+        "Köp MCOV-B.ST: redan fångad av innehavstabell 2026-10-08",
+        "Köp SECU-B.ST: redan fångad av innehavstabell 2026-10-08"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.e55.se/ekonomi/sa-investerar-du-som-kungafamiljen/",
+      "chars": 2552,
+      "signals": [
+        {
+          "ticker": "ALLEI.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "dumpa hela",
+          "fraction": 1,
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ALIG.ST",
+          "side": "sell",
+          "kind": "reduce",
+          "verb": "säljer",
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SWED-A.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "dumpat",
+          "fraction": 1,
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "AFRY.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "dumpat",
+          "fraction": 1,
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "NCC-B.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "dumpat",
+          "fraction": 1,
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "KINV-B.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "dumpat",
+          "fraction": 1,
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ERIC-B.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "dumpat",
+          "fraction": 1,
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ALIG.ST",
+          "side": "buy",
+          "kind": "new",
+          "verb": "Nya innehav",
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "MCOV-B.ST",
+          "side": "buy",
+          "kind": "new",
+          "verb": "Nya innehav",
+          "date": "2023-09-14",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SECU-B.ST",
+          "side": "buy",
+          "kind": "new",
+          "verb": "Nya innehav",
+          "date": "2023-09-14",
+          "precision": "publicering"
+        }
+      ]
     },
     "4f78eccde686": {
       "id": "4f78eccde686",
@@ -273,11 +500,16 @@
         "kungliga förvaltaren aktier",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:30.236Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.di.se/nyheter/kungens-forvaltare-utklassar-borsen-vi-tradar-inte/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "b66575e77026": {
       "id": "b66575e77026",
@@ -292,11 +524,16 @@
         "kungen köper aktier",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:30.344Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.fastighetsnytt.se/karnverksamhet/forvaltning/kungens-spartanska-portfolj-pa-djurgarden/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "bfb9804404cf": {
       "id": "bfb9804404cf",
@@ -313,11 +550,16 @@
         "kungliga förvaltaren aktier",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:30.583Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.di.se/nyheter/kungliga-miljonportfoljerna-sa-investeras-pengarna/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "4deb46bb9576": {
       "id": "4deb46bb9576",
@@ -330,11 +572,16 @@
       "queries": [
         "Galliera kungen aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:30.711Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.affarsvarlden.se/artikel/kungens-succear-pa-borsen-investor-draglok",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "9fcbfb57c28e": {
       "id": "9fcbfb57c28e",
@@ -348,11 +595,16 @@
         "kungens portfölj",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:35.119Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://omni.se/kungafamiljens-succear-pa-borsen-investor-draglok/a/JbRR8m",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "46ede681d303": {
       "id": "46ede681d303",
@@ -366,11 +618,13 @@
         "kungens portfölj",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
+      "firstSeen": "2026-10-12T00:29:35.296Z",
+      "status": "ingen affär",
       "notes": [],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://efn.se/nyckeln-bakom-kungliga-borssuccen-investor",
+      "chars": 2969,
+      "signals": []
     },
     "743e27198023": {
       "id": "743e27198023",
@@ -389,11 +643,185 @@
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:35.850Z",
+      "status": "redan känd",
+      "notes": [
+        "Innehavstabell (10 bolag) – redan inlagd från Placera"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.placera.se/nyheter/kungen-stuvade-om-i-portfoljen-2024-investor-favorit-2024-12-20",
+      "chars": 18104,
+      "signals": [
+        {
+          "ticker": "HEXA-B.ST",
+          "side": "sell",
+          "kind": "reduce",
+          "verb": "såldes",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "VOLV-B.ST",
+          "side": "sell",
+          "kind": "reduce",
+          "verb": "såldes",
+          "date": "2024-03-15",
+          "precision": "månad"
+        },
+        {
+          "ticker": "INVE-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "INDU-C.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "NDA-SE.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ESSITY-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SEB-A.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "EPI-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SECU-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SKF-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "MCOV-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "VOLV-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SAND.ST",
+          "side": "sell",
+          "kind": "exit",
+          "verb": "sålde hela",
+          "fraction": 1,
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "BEIJ-B.ST",
+          "side": "sell",
+          "kind": "reduce",
+          "verb": "minskar",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "INVE-B.ST",
+          "side": "sell",
+          "kind": "reduce",
+          "verb": "minskar",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "EQT.ST",
+          "side": "buy",
+          "kind": "new",
+          "verb": "tar in",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SAAB-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köpa",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SHB-A.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "köpa",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "SAND.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "Köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "ALIG.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "Köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        },
+        {
+          "ticker": "HEXA-B.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "Köp",
+          "date": "2024-12-20",
+          "precision": "publicering"
+        }
+      ]
     },
     "2de7e0c5e794": {
       "id": "2de7e0c5e794",
@@ -412,11 +840,16 @@
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
-      "notes": [],
+      "firstSeen": "2026-10-12T00:29:36.921Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.di.se/nyheter/sa-gar-kungafamiljens-portfoljer-bolagen-som-petats/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "d15e36bca8e4": {
       "id": "d15e36bca8e4",
@@ -429,11 +862,13 @@
       "queries": [
         "kungens portfölj"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
-      "status": "före start",
+      "firstSeen": "2026-10-12T00:29:37.056Z",
+      "status": "ingen affär",
       "notes": [],
       "eventIds": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "url": "https://www.breakit.se/artikel/44553/king-grundarens-nya-superliga-draget-bakom-miljardklippet-och-ai-kungens-tunga-portfolj",
+      "chars": 71,
+      "signals": []
     },
     "aa6bb2b25e54": {
       "id": "aa6bb2b25e54",
@@ -454,14 +889,14 @@
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:10.961Z",
+      "firstSeen": "2026-10-12T00:29:37.792Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (17 bolag) – redan inlagd från Placera"
       ],
       "eventIds": [],
       "url": "https://www.placera.se/nyheter/kungen-ager-alla-storbanker-utom-en--investor-familjens-favorit-2025-11-10",
-      "chars": 17798,
+      "chars": 17850,
       "signals": [
         {
           "ticker": "INVE-B.ST",
@@ -651,6 +1086,14 @@
           "precision": "publicering"
         },
         {
+          "ticker": "ATCO-A.ST",
+          "side": "buy",
+          "kind": "buy",
+          "verb": "Köp",
+          "date": "2025-11-10",
+          "precision": "publicering"
+        },
+        {
           "ticker": "MCOV-B.ST",
           "side": "buy",
           "kind": "buy",
@@ -738,8 +1181,7 @@
           "date": "2025-11-10",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "fcbc16c802ca": {
       "id": "fcbc16c802ca",
@@ -752,7 +1194,7 @@
       "queries": [
         "Galliera kungen aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:12.019Z",
+      "firstSeen": "2026-10-12T00:29:38.391Z",
       "status": "redan känd",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
@@ -780,8 +1222,7 @@
           "date": "2025-11-10",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "543ac50e2c7f": {
       "id": "543ac50e2c7f",
@@ -799,7 +1240,7 @@
         "kungafamiljens portföljer",
         "kungliga förvaltaren aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:17.521Z",
+      "firstSeen": "2026-10-12T00:29:43.431Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress"
@@ -808,8 +1249,7 @@
       "url": "https://www.affarsvarlden.se/artikel/kungens-forvaltare-oppnar-for-att-investera-i-forsvar-gor-en-oversyn",
       "headlineOnly": true,
       "chars": 0,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "signals": []
     },
     "eb31c4f5df93": {
       "id": "eb31c4f5df93",
@@ -826,7 +1266,7 @@
         "kungen säljer aktier",
         "kungen köper aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:23.392Z",
+      "firstSeen": "2026-10-12T00:29:48.478Z",
       "status": "redan känd",
       "notes": [
         "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08"
@@ -843,8 +1283,7 @@
           "date": "2025-11-12",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "669e3a9f89dd": {
       "id": "669e3a9f89dd",
@@ -859,10 +1298,10 @@
         "kungens aktieportfölj",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:23.863Z",
+      "firstSeen": "2026-10-12T00:29:48.959Z",
       "status": "redan känd",
       "notes": [
-        "Sälj VOLV-B.ST: före startdatum – ignoreras"
+        "Sälj VOLV-B.ST: redan fångad av innehavstabell 2026-10-08"
       ],
       "eventIds": [],
       "url": "https://bulletin.nu/kungens-aktieportfolj-vaxer-har-ar-innehaven-2",
@@ -877,8 +1316,35 @@
           "date": "2025-08-15",
           "precision": "månad"
         }
+      ]
+    },
+    "9ff6a751dc12": {
+      "id": "9ff6a751dc12",
+      "title": "Så går det för kungens portfölj – dumpade folkaktien",
+      "publisher": "DI",
+      "gnLink": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSk9OczJqM3FkZ1FTWlN5SkNzR3V4ZHMtTGhvclJPUFdlVWJpd29VcGV6b3RRdkxKNDBtU1k0UDNHUnZ2TVpfaUl5UXRQUkJWNGhPWElLNGpPZ0Rud1haNTBBdFNpWVV3RElVYTZWNHJSNnc1cXU3V2pfMXZRaXBkNEtLUQ?oc=5",
+      "published": "2026-04-30T07:00:00.000Z",
+      "date": "2026-04-30",
+      "description": "Så går det för kungens portfölj – dumpade folkaktien DI",
+      "queries": [
+        "Galliera kungen aktier",
+        "kungens aktier",
+        "kungens portfölj",
+        "kungens aktieportfölj",
+        "kungen säljer aktier",
+        "kungafamiljens portföljer",
+        "Carl XVI Gustaf aktier"
       ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "firstSeen": "2026-10-12T00:29:49.862Z",
+      "status": "endast rubrik",
+      "notes": [
+        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
+      ],
+      "eventIds": [],
+      "url": "https://www.di.se/nyheter/sa-gar-det-for-kungens-portfolj-dumpade-folkaktien/",
+      "headlineOnly": true,
+      "chars": 0,
+      "signals": []
     },
     "a4c5b488b19a": {
       "id": "a4c5b488b19a",
@@ -889,7 +1355,6 @@
       "date": "2026-04-30",
       "description": "Kungens portfölj upp 73 procent på ett år – här är hans favoritaktier Börskollen",
       "queries": [
-        "Gallierafonden",
         "kungens aktier",
         "kungens portfölj",
         "kungens aktieportfölj",
@@ -899,7 +1364,7 @@
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:24.247Z",
+      "firstSeen": "2026-10-12T00:29:49.981Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (10 bolag) – redan inlagd från Börskollen / DI"
@@ -966,37 +1431,7 @@
           "date": "2026-04-30",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
-    },
-    "9ff6a751dc12": {
-      "id": "9ff6a751dc12",
-      "title": "Så går det för kungens portfölj – dumpade folkaktien",
-      "publisher": "DI",
-      "gnLink": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSk9OczJqM3FkZ1FTWlN5SkNzR3V4ZHMtTGhvclJPUFdlVWJpd29VcGV6b3RRdkxKNDBtU1k0UDNHUnZ2TVpfaUl5UXRQUkJWNGhPWElLNGpPZ0Rud1haNTBBdFNpWVV3RElVYTZWNHJSNnc1cXU3V2pfMXZRaXBkNEtLUQ?oc=5",
-      "published": "2026-04-30T07:00:00.000Z",
-      "date": "2026-04-30",
-      "description": "Så går det för kungens portfölj – dumpade folkaktien DI",
-      "queries": [
-        "Galliera kungen aktier",
-        "kungens aktier",
-        "kungens portfölj",
-        "kungens aktieportfölj",
-        "kungen säljer aktier",
-        "kungafamiljens portföljer",
-        "Carl XVI Gustaf aktier"
-      ],
-      "firstSeen": "2026-10-11T18:29:24.736Z",
-      "status": "endast rubrik",
-      "notes": [
-        "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
-      ],
-      "eventIds": [],
-      "url": "https://www.di.se/nyheter/sa-gar-det-for-kungens-portfolj-dumpade-folkaktien/",
-      "headlineOnly": true,
-      "chars": 0,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "a79f7bbf27cc": {
       "id": "a79f7bbf27cc",
@@ -1014,14 +1449,13 @@
         "kungen säljer aktier",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:24.890Z",
+      "firstSeen": "2026-10-12T00:29:50.737Z",
       "status": "ingen affär",
       "notes": [],
       "eventIds": [],
       "url": "https://www.gp.se/ekonomi/kungens-aktier-har-rusat.25e3c7b3-816b-54bb-9542-349941d8b83d",
-      "chars": 3095,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "chars": 3075,
+      "signals": []
     },
     "39013245f7ff": {
       "id": "39013245f7ff",
@@ -1040,7 +1474,7 @@
         "kungafamiljen aktier Holdings",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:25.293Z",
+      "firstSeen": "2026-10-12T00:29:51.024Z",
       "status": "redan känd",
       "notes": [
         "Sälj ELUX-B.ST: före startdatum – ignoreras"
@@ -1058,8 +1492,7 @@
           "precision": "år",
           "old": true
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "6e832dff1df6": {
       "id": "6e832dff1df6",
@@ -1078,7 +1511,7 @@
         "kungafamiljens portföljer",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:25.619Z",
+      "firstSeen": "2026-10-12T00:29:51.345Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
@@ -1087,8 +1520,7 @@
       "url": "https://omni.se/avkastningen-haller-hov-kungens-portfolj-upp-73-procent/a/pBMO76",
       "headlineOnly": true,
       "chars": 0,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "signals": []
     },
     "4a42ed16e19f": {
       "id": "4a42ed16e19f",
@@ -1101,14 +1533,13 @@
       "queries": [
         "kungens portfölj"
       ],
-      "firstSeen": "2026-10-11T18:29:25.743Z",
+      "firstSeen": "2026-10-12T00:29:51.490Z",
       "status": "ingen affär",
       "notes": [],
       "eventIds": [],
       "url": "https://cornucopia.se/2026/04/borsfall-avslutar-manaden-i-asien-halvdag-i-sverige-kronfall-och-stigande-oljepris-kungen-kung-pa-borsen-73-pa-ett-ar-musk-gar-inte-att-avsatta-som-vd-for-spacex/",
-      "chars": 37849,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "chars": 37828,
+      "signals": []
     },
     "e07376e46138": {
       "id": "e07376e46138",
@@ -1126,14 +1557,13 @@
         "kungafamiljen aktier Holdings",
         "kungafamiljens portföljer"
       ],
-      "firstSeen": "2026-10-11T18:29:26.668Z",
+      "firstSeen": "2026-10-12T00:29:52.671Z",
       "status": "ingen affär",
       "notes": [],
       "eventIds": [],
       "url": "https://efn.se/kungahuset-har-investerat-i-hajpade-chip-bolaget",
       "chars": 4588,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "signals": []
     },
     "22e607d88f4d": {
       "id": "22e607d88f4d",
@@ -1144,9 +1574,10 @@
       "date": "2026-10-09",
       "description": "Kungliga förvaltaren säljer Investor: \"Kungen och jag kan prata aktier\" Affärsvärlden",
       "queries": [
+        "Gallierafonden",
         "kungliga förvaltaren aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:26.929Z",
+      "firstSeen": "2026-10-12T00:29:53.172Z",
       "status": "redan känd",
       "notes": [
         "Artikeln kunde inte läsas (fetch failed) – tolkar rubrik och ingress",
@@ -1165,8 +1596,7 @@
           "date": "2026-10-09",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "a5684244fb9e": {
       "id": "a5684244fb9e",
@@ -1183,14 +1613,14 @@
         "kungafamiljen aktier Holdings",
         "Carl XVI Gustaf aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:31.443Z",
+      "firstSeen": "2026-10-12T00:29:59.238Z",
       "status": "redan känd",
       "notes": [
         "Innehavstabell (21 bolag) – redan inlagd från Placera"
       ],
       "eventIds": [],
       "url": "https://www.placera.se/nyheter/kungafamiljen-minskar-i-investor--tar-in-eqt--2026-10-09",
-      "chars": 15163,
+      "chars": 15215,
       "signals": [
         {
           "ticker": "INVE-B.ST",
@@ -1436,8 +1866,7 @@
           "date": "2026-10-09",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     },
     "5f161813b6cc": {
       "id": "5f161813b6cc",
@@ -1451,7 +1880,7 @@
         "kungens aktier",
         "kungen säljer aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:32.561Z",
+      "firstSeen": "2026-10-12T00:30:00.140Z",
       "status": "endast rubrik",
       "notes": [
         "Artikeln kunde inte läsas (HTTP 403) – tolkar rubrik och ingress"
@@ -1460,8 +1889,7 @@
       "url": "https://omni.se/kungen-dumpar-wallenberg-forsta-gangen-sedan-2005/a/8G9egx",
       "headlineOnly": true,
       "chars": 0,
-      "signals": [],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      "signals": []
     },
     "1adbbf286203": {
       "id": "1adbbf286203",
@@ -1475,14 +1903,14 @@
         "kungens aktier",
         "kungen säljer aktier"
       ],
-      "firstSeen": "2026-10-11T18:29:32.728Z",
+      "firstSeen": "2026-10-12T00:30:00.293Z",
       "status": "redan känd",
       "notes": [
         "Sälj INVE-B.ST: samma affär redan bokförd (Placera)"
       ],
       "eventIds": [],
       "url": "https://morgonbladet.se/ekonomi/kungahuset-salde-investor-aktier-for-drygt-16-miljoner-kronor",
-      "chars": 1980,
+      "chars": 1969,
       "signals": [
         {
           "ticker": "INVE-B.ST",
@@ -1493,10 +1921,9 @@
           "date": "2026-10-11",
           "precision": "publicering"
         }
-      ],
-      "lastSeen": "2026-10-11T22:07:48.883Z"
+      ]
     }
   },
-  "lastScan": "2026-10-11T22:07:48.883Z",
+  "lastScan": "2026-10-12T00:30:01.405Z",
   "errors": []
 }

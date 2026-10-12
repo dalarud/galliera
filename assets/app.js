@@ -5,7 +5,7 @@ const NEW_MS = 24 * 3600_000;
 
 const $ = (s) => document.querySelector(s);
 const S = {
-  data: null, generatedAt: null, view: 'return', hover: null, pick: null,
+  data: null, generatedAt: null, view: 'return', range: null, hover: null, pick: null,
   amount: 10000, topN: null, keepCash: true, fetchError: false, tableOpen: false,
 };
 const mobileMq = matchMedia('(max-width: 639px)');
@@ -116,6 +116,32 @@ function benchSince() {
   return (sr[sr.length - 1][k] / sr[0][k] - 1) * 100;
 }
 
+// Tidsperioder i grafen. Perioder längre än datan visas inte.
+const RANGES = [['1M', '1 mån', 1], ['3M', '3 mån', 3], ['1Y', '1 år', 12], ['5Y', '5 år', 60], ['10Y', '10 år', 120], ['MAX', 'Från start', null]];
+function cutoffFor(months) {
+  const sr = S.data.series;
+  const dt = new Date(sr[sr.length - 1].d + 'T00:00:00Z');
+  dt.setUTCMonth(dt.getUTCMonth() - months);
+  return dt.toISOString().slice(0, 10);
+}
+function availableRanges() {
+  const first = S.data.series[0].d;
+  return RANGES.filter(([, , mo]) => mo == null || cutoffFor(mo) >= first);
+}
+/** Index för periodens bas: sista handelsdagen före perioden (så att första punkten blir 0 %). */
+function rangeStart(key) {
+  const def = RANGES.find((r) => r[0] === key);
+  if (!def || def[2] == null) return 0;
+  const cut = cutoffFor(def[2]);
+  const i = S.data.series.findIndex((r) => r.d >= cut);
+  return Math.max(0, i - 1);
+}
+/** Avkastning för fond och index över en period. */
+function periodReturns(key) {
+  const sr = S.data.series, k = BK(), i0 = rangeStart(key), n = sr.length - 1;
+  return { fund: (sr[n].unit / sr[i0].unit - 1) * 100, bench: (sr[n][k] / sr[i0][k] - 1) * 100, from: sr[i0].d };
+}
+
 function shortPublisher(p) {
   if (!p) return '';
   if (/^https?:/.test(p)) { try { return new URL(p).hostname.replace(/^www\./, '').split('.')[0].toUpperCase(); } catch { return p; } }
@@ -217,7 +243,9 @@ function renderHero(changed) {
   $('#pm-date').textContent = dStamp(d.asOf);
   $('#pm-day').textContent = `${sgn(s.dayChangePct, 2)} %`;
 
-  const k = s.sinceStartPct, b = benchSince();
+  const heroKey = availableRanges().some((r) => r[0] === '1Y') ? '1Y' : 'MAX';
+  const pr = periodReturns(heroKey);
+  const k = pr.fund, b = pr.bench;
   const mob = mobileMq.matches;
   const cap0 = mob ? 125 : 200, minH = mob ? 64 : 90;
   const scale = Math.min(mob ? 5.5 : 8.8, cap0 / Math.max(k, b, 1));
@@ -226,7 +254,7 @@ function renderHero(changed) {
   $('#cmp-king-v').innerHTML = `${sgn(k)}<small>%</small>`;
   $('#cmp-bench-v').innerHTML = `${sgn(b)}<small>%</small>`;
   $('#verdict').textContent = verdictText(k, b);
-  $('#cmp-note').textContent = `Avkastning med utdelningar sedan ${dLong(d.baseline)}, jämfört med ${benchLabel()}. Märkenas höjd följer avkastningen.`;
+  $('#cmp-note').textContent = `${heroKey === '1Y' ? 'Senaste året' : `Sedan ${dLong(pr.from)}`}, med utdelningar, jämfört med ${benchLabel()}. Märkenas höjd följer avkastningen.`;
   renderIncoming();
 }
 
@@ -284,7 +312,9 @@ function niceStep(span, n) {
 }
 
 function chartModel() {
-  const sr = S.data.series;
+  const all = S.data.series;
+  if (!S.range || !availableRanges().some((r) => r[0] === S.range)) S.range = availableRanges().some((r) => r[0] === '1Y') ? '1Y' : 'MAX';
+  const sr = all.slice(rangeStart(S.range));
   const k = BK();
   const u0 = sr[0].unit, b0 = sr[0][k];
   const ret = S.view === 'return';
@@ -308,7 +338,8 @@ function renderChart() {
   if (m.ret) {
     const all = [...m.fund, ...m.idx];
     const span = Math.max(...all) - Math.min(...all);
-    step = span > 30 ? 10 : 5;
+    const mob = mobileMq.matches;
+    step = span > 120 ? (mob ? 50 : 25) : span > 60 ? (mob ? 25 : 20) : span > 30 ? 10 : 5;
     lo = Math.floor((Math.min(0, ...all) - 1) / step) * step;
     hi = Math.ceil((Math.max(...all) + 1) / step) * step;
   } else {
@@ -332,12 +363,12 @@ function renderChart() {
     const upper = m.fund.map((v, i) => Math.max(v, m.idx[i]));
     const back = m.idx.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
     paths = `<path class="band" d="${line(upper)}${back}Z"/><path class="l-idx" d="${line(m.idx)}"/><path class="l-fund" d="${line(m.fund)}"/>`;
-    ends.push({ y: Y(m.fund[N - 1]), label: `${sgn(m.fund[N - 1])} %` }, { y: Y(m.idx[N - 1]), label: `${sgn(m.idx[N - 1])} %` });
+    ends.push({ y: Y(m.fund[N - 1]), label: `${sgn(m.fund[N - 1])} %`, sw: 'var(--accent)', h: 3, name: 'Kungen' }, { y: Y(m.idx[N - 1]), label: `${sgn(m.idx[N - 1])} %`, sw: 'var(--index)', h: 2, name: 'Börsen' });
   } else {
     const back = m.stocks.map((v, i) => `L${X(i).toFixed(1)} ${Y(v).toFixed(1)}`).reverse().join('');
     paths = `<path class="a-stocks" d="${line(m.stocks)}L${W} ${H}L0 ${H}Z"/><path class="a-cash" d="${line(m.total)}${back}Z"/>
       <path class="l-fund" d="${line(m.stocks)}"/><path class="l-total" d="${line(m.total)}"/>`;
-    ends.push({ y: Y(m.total[N - 1]), label: f1(m.total[N - 1]) });
+    ends.push({ y: Y(m.total[N - 1]), label: f1(m.total[N - 1]), sw: 'var(--ink)', h: 2, name: 'Totalt' });
   }
   // Undvik krockande slutetiketter
   ends.sort((a, b) => a.y - b.y);
@@ -377,25 +408,33 @@ function renderChart() {
       <path class="grid" d="${grid}"/><path class="base" d="${base}"/>${paths}
     </svg>
     ${ticks.map((t) => `<span class="tick" style="top:${t.y}px">${t.label}</span>`).join('')}
-    ${ends.map((e) => `<span class="end" style="top:${e.y}px">${e.label}</span>`).join('')}
+    ${ends.map((e) => `<span class="end" style="top:${e.y}px" title="${e.name}"><i style="height:${e.h}px;background:${e.sw}"></i>${e.label}</span>`).join('')}
     ${hover}
     <div class="hit"></div>`;
 
   // x-axel
   const xs = [];
-  let prevM = '';
+  const spanDays = (new Date(m.sr[N - 1].d) - new Date(m.sr[0].d)) / 864e5;
+  const unit = spanDays > 800 ? 'year' : spanDays > 70 ? 'month' : 'week';
+  const keyOf = (d) => (unit === 'year' ? d.slice(0, 4) : unit === 'month' ? d.slice(0, 7) : String(Math.floor(new Date(d) / 6048e5)));
+  const minGap = mobileMq.matches ? 24 : 7;
+  let prevK = '';
   m.sr.forEach((r, i) => {
-    const mo = r.d.slice(0, 7);
-    if (mo === prevM) return;
-    prevM = mo;
+    const key = keyOf(r.d);
+    if (key === prevK) return;
+    prevK = key;
+    if (i === 0) return; // första (ofullständiga) perioden får ingen etikett
     const p = parts(r.d);
     const L = (X(i) / W) * 100;
     if (L > 94) return;
-    if (mobileMq.matches && (p.m - 2) % 3 !== 0 && i !== 0) return;
-    if (xs.length && L - xs[xs.length - 1].L < (mobileMq.matches ? 28 : 6)) return;
-    xs.push({ L, text: `${MON3[p.m - 1]}${p.m === 1 || i === 0 ? ` ${p.y}` : ''}` });
+    if (xs.length && L - xs[xs.length - 1].L < minGap) return;
+    const text = unit === 'year' ? String(p.y) : unit === 'month' ? `${MON3[p.m - 1]}${p.m === 1 ? ` ${p.y}` : ''}` : `${p.d} ${MON3[p.m - 1]}`;
+    xs.push({ L, text });
   });
   $('#xaxis').innerHTML = xs.map((x) => `<span style="left:${x.L.toFixed(2)}%">${x.text}</span>`).join('');
+
+  // Tidsperioder
+  $('#ranges').innerHTML = availableRanges().map(([key, label]) => `<button type="button" data-range="${key}" aria-pressed="${S.range === key}">${label}</button>`).join('');
 
   // Legend och fot
   const d = S.data;
@@ -407,14 +446,16 @@ function renderChart() {
        <span class="lg"><span class="sw" style="height:12px;background:repeating-linear-gradient(-66deg,var(--pm) 0 1.3px,transparent 1.3px 5px)"></span>Kassa, uppskattad</span>`;
   $('#chart-title').textContent = m.ret ? 'Kungens fond mot börsen' : 'Fondens värde – aktier och kassa';
   $('#chart-foot').textContent = m.ret
-    ? 'Både fonden och indexet räknar med utdelningar. Andelsvärdet är tidsviktat, så nytt kapital påverkar det inte.'
+    ? `Både fonden och indexet räknar med utdelningar. Andelsvärdet är tidsviktat, så nytt kapital påverkar det inte.${S.data.denseFrom && m.sr[0].d < S.data.denseFrom ? ` Före ${dShort(S.data.denseFrom)} ${S.data.denseFrom.slice(0, 4)} bygger kopian på enstaka innehavslistor, så affärer däremellan syns först i nästa lista.` : ''}`
     : 'Kassan är uppskattad ur rapporterade affärer och utdelningar. Språnget i april är köp ur nytt kapital.';
   if (S.tableOpen) renderTable();
 }
 
 function renderTable() {
   const m = chartModel();
-  const rows = m.sr.map((r, i) => ({ r, i })).filter(({ r, i }) => i === m.sr.length - 1 || m.sr[i + 1].d.slice(0, 7) !== r.d.slice(0, 7));
+  const span = (new Date(m.sr[m.sr.length - 1].d) - new Date(m.sr[0].d)) / 864e5;
+  const key = (d) => (span > 1100 ? d.slice(0, 4) : span > 100 ? d.slice(0, 7) : String(Math.floor(new Date(d) / 6048e5)));
+  const rows = m.sr.map((r, i) => ({ r, i })).filter(({ r, i }) => i === m.sr.length - 1 || key(m.sr[i + 1].d) !== key(r.d));
   const d = S.data;
   $('#chart-table').innerHTML = `<table><thead><tr><th scope="col">Datum</th><th scope="col">Kungens fond</th><th scope="col">${esc(benchLabel())}</th><th scope="col">Fondvärde</th><th scope="col">Kassa ≈</th></tr></thead>
     <tbody>${rows.map(({ r, i }) => `<tr><td>${dLong(r.d)}</td><td>${sgn(m.fund[i])} %</td><td>${sgn(m.idx[i])} %</td><td>${f1(m.total[i])} Mkr</td><td>${f1(m.cash[i])} Mkr</td></tr>`).join('')}</tbody></table>`;
@@ -424,7 +465,7 @@ function renderTable() {
 const chartEl = $('#chart');
 const hoverAt = (clientX) => {
   const r = chartEl.getBoundingClientRect();
-  const N = S.data.series.length;
+  const N = chartModel().sr.length;
   const i = Math.max(0, Math.min(N - 1, Math.round(((clientX - r.left) / r.width) * (N - 1))));
   if (i !== S.hover) { S.hover = i; renderChart(); }
 };
@@ -433,7 +474,7 @@ chartEl.addEventListener('pointerdown', (e) => S.data && hoverAt(e.clientX));
 chartEl.addEventListener('pointerleave', () => { if (document.activeElement !== chartEl) { S.hover = null; renderChart(); } });
 chartEl.addEventListener('keydown', (e) => {
   if (!S.data) return;
-  const N = S.data.series.length;
+  const N = chartModel().sr.length;
   const cur = S.hover ?? N - 1;
   const next = { ArrowLeft: cur - 1, ArrowRight: cur + 1, Home: 0, End: N - 1 }[e.key];
   if (e.key === 'Escape') { S.hover = null; renderChart(); return; }
@@ -450,6 +491,12 @@ const setView = (v) => {
   renderChart();
 };
 $('#tab-return').addEventListener('click', () => setView('return'));
+$('#ranges').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-range]');
+  if (!b) return;
+  S.range = b.dataset.range; S.hover = null;
+  renderChart();
+});
 $('#tab-value').addEventListener('click', () => setView('value'));
 $('#table-toggle').addEventListener('click', (e) => {
   S.tableOpen = !S.tableOpen;
