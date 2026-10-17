@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T17:18:30.377Z",
-  "lastNewsScan": "2026-10-17T17:18:30.375Z",
+  "generatedAt": "2026-10-17T19:29:54.634Z",
+  "lastNewsScan": "2026-10-17T19:29:54.631Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2423,20 +2423,20 @@
     {
       "date": "2026-04-30",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 2.22787,
-      "shares": 14600,
-      "amount": 32527
-    },
-    {
-      "date": "2026-04-30",
-      "type": "utdelning",
       "ticker": "SECU-B.ST",
       "name": "Securitas",
       "perShare": 2.65,
       "shares": 30800,
       "amount": 81620
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 2.22787,
+      "shares": 14600,
+      "amount": 32527
     },
     {
       "date": "2026-04-29",
