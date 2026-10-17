@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T14:16:30.285Z",
-  "lastNewsScan": "2026-10-17T14:16:30.282Z",
+  "generatedAt": "2026-10-17T17:18:30.377Z",
+  "lastNewsScan": "2026-10-17T17:18:30.375Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2405,15 +2405,6 @@
     {
       "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "HM-B.ST",
-      "name": "H&M",
-      "perShare": 3.55,
-      "shares": 7200,
-      "amount": 25560
-    },
-    {
-      "date": "2026-05-06",
-      "type": "utdelning",
       "ticker": "EPI-B.ST",
       "name": "Epiroc",
       "perShare": 1.9,
@@ -2421,13 +2412,13 @@
       "amount": 72200
     },
     {
-      "date": "2026-04-30",
+      "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "SECU-B.ST",
-      "name": "Securitas",
-      "perShare": 2.65,
-      "shares": 30800,
-      "amount": 81620
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "perShare": 3.55,
+      "shares": 7200,
+      "amount": 25560
     },
     {
       "date": "2026-04-30",
@@ -2437,6 +2428,15 @@
       "perShare": 2.22787,
       "shares": 14600,
       "amount": 32527
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "perShare": 2.65,
+      "shares": 30800,
+      "amount": 81620
     },
     {
       "date": "2026-04-29",
@@ -2905,20 +2905,20 @@
     {
       "date": "2024-03-28",
       "type": "utdelning",
-      "ticker": "SKA-B.ST",
-      "name": "Skanska",
-      "perShare": 5.5,
-      "shares": 13900,
-      "amount": 76450
-    },
-    {
-      "date": "2024-03-28",
-      "type": "utdelning",
       "ticker": "VOLV-B.ST",
       "name": "Volvo",
       "perShare": 18,
       "shares": 10327,
       "amount": 185886
+    },
+    {
+      "date": "2024-03-28",
+      "type": "utdelning",
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "perShare": 5.5,
+      "shares": 13900,
+      "amount": 76450
     },
     {
       "date": "2024-03-22",
@@ -3544,20 +3544,20 @@
     {
       "date": "2019-05-08",
       "type": "utdelning",
-      "ticker": "ARJO-B.ST",
-      "name": "Arjo",
-      "perShare": 0.55,
-      "shares": 180000,
-      "amount": 99000
-    },
-    {
-      "date": "2019-05-08",
-      "type": "utdelning",
       "ticker": "KINV-B.ST",
       "name": "Kinnevik",
       "perShare": 4.25,
       "shares": 12000,
       "amount": 51000
+    },
+    {
+      "date": "2019-05-08",
+      "type": "utdelning",
+      "ticker": "ARJO-B.ST",
+      "name": "Arjo",
+      "perShare": 0.55,
+      "shares": 180000,
+      "amount": 99000
     },
     {
       "date": "2019-04-30",
