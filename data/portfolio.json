@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T05:41:12.947Z",
-  "lastNewsScan": "2026-10-17T05:41:12.944Z",
+  "generatedAt": "2026-10-17T10:56:10.933Z",
+  "lastNewsScan": "2026-10-17T10:56:10.931Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -3544,20 +3544,20 @@
     {
       "date": "2019-05-08",
       "type": "utdelning",
-      "ticker": "KINV-B.ST",
-      "name": "Kinnevik",
-      "perShare": 4.25,
-      "shares": 12000,
-      "amount": 51000
-    },
-    {
-      "date": "2019-05-08",
-      "type": "utdelning",
       "ticker": "ARJO-B.ST",
       "name": "Arjo",
       "perShare": 0.55,
       "shares": 180000,
       "amount": 99000
+    },
+    {
+      "date": "2019-05-08",
+      "type": "utdelning",
+      "ticker": "KINV-B.ST",
+      "name": "Kinnevik",
+      "perShare": 4.25,
+      "shares": 12000,
+      "amount": 51000
     },
     {
       "date": "2019-04-30",
