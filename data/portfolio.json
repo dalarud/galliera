@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T01:11:39.846Z",
-  "lastNewsScan": "2026-10-18T01:11:39.843Z",
+  "generatedAt": "2026-10-18T06:03:18.173Z",
+  "lastNewsScan": "2026-10-18T06:03:18.170Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -3571,20 +3571,20 @@
     {
       "date": "2019-04-26",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 0.7875,
-      "shares": 28000,
-      "amount": 22050
-    },
-    {
-      "date": "2019-04-26",
-      "type": "utdelning",
       "ticker": "ASSA-B.ST",
       "name": "Assa Abloy",
       "perShare": 3.5,
       "shares": 18000,
       "amount": 63000
+    },
+    {
+      "date": "2019-04-26",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 0.7875,
+      "shares": 28000,
+      "amount": 22050
     },
     {
       "date": "2019-04-11",
@@ -3607,20 +3607,20 @@
     {
       "date": "2019-03-29",
       "type": "utdelning",
-      "ticker": "NDA-SE.ST",
-      "name": "Nordea Bank",
-      "perShare": 7.6861515,
-      "shares": 20000,
-      "amount": 153723
-    },
-    {
-      "date": "2019-03-29",
-      "type": "utdelning",
       "ticker": "SWED-A.ST",
       "name": "Swedbank",
       "perShare": 14.2,
       "shares": 13000,
       "amount": 184600
+    },
+    {
+      "date": "2019-03-29",
+      "type": "utdelning",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "perShare": 7.6861515,
+      "shares": 20000,
+      "amount": 153723
     },
     {
       "date": "2019-03-28",
