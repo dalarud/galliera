@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-18T11:22:28.545Z",
-  "lastNewsScan": "2026-10-18T11:22:28.537Z",
+  "generatedAt": "2026-10-18T14:42:01.053Z",
+  "lastNewsScan": "2026-10-18T14:42:01.051Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2644,20 +2644,20 @@
     {
       "date": "2025-04-30",
       "type": "utdelning",
-      "ticker": "ATCO-B.ST",
-      "name": "Atlas Copco",
-      "perShare": 1.5,
-      "shares": 16300,
-      "amount": 24450
-    },
-    {
-      "date": "2025-04-30",
-      "type": "utdelning",
       "ticker": "MCOV-B.ST",
       "name": "Medicover",
       "perShare": 1.6709026,
       "shares": 14600,
       "amount": 24395
+    },
+    {
+      "date": "2025-04-30",
+      "type": "utdelning",
+      "ticker": "ATCO-B.ST",
+      "name": "Atlas Copco",
+      "perShare": 1.5,
+      "shares": 16300,
+      "amount": 24450
     },
     {
       "date": "2025-04-30",
@@ -3544,20 +3544,20 @@
     {
       "date": "2019-05-08",
       "type": "utdelning",
-      "ticker": "KINV-B.ST",
-      "name": "Kinnevik",
-      "perShare": 4.25,
-      "shares": 12000,
-      "amount": 51000
-    },
-    {
-      "date": "2019-05-08",
-      "type": "utdelning",
       "ticker": "ARJO-B.ST",
       "name": "Arjo",
       "perShare": 0.55,
       "shares": 180000,
       "amount": 99000
+    },
+    {
+      "date": "2019-05-08",
+      "type": "utdelning",
+      "ticker": "KINV-B.ST",
+      "name": "Kinnevik",
+      "perShare": 4.25,
+      "shares": 12000,
+      "amount": 51000
     },
     {
       "date": "2019-04-30",
