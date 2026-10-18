@@ -2173,6 +2173,51 @@
       "lastSeen": "2026-10-18T20:54:01.510Z"
     }
   },
-  "lastScan": "2026-10-18T20:54:01.510Z",
-  "errors": []
+  "lastScan": "2026-10-18T23:23:13.463Z",
+  "errors": [
+    {
+      "query": "Gallierafonden",
+      "error": "Google News 503"
+    },
+    {
+      "query": "Galliera kungen aktier",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungens aktier",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungens portfölj",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungens aktieportfölj",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungen säljer aktier",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungen köper aktier",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungafamiljen aktier Holdings",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungafamiljens portföljer",
+      "error": "Google News 503"
+    },
+    {
+      "query": "kungliga förvaltaren aktier",
+      "error": "Google News 503"
+    },
+    {
+      "query": "Carl XVI Gustaf aktier",
+      "error": "Google News 503"
+    }
+  ]
 }
