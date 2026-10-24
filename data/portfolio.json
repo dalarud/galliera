@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T00:50:27.580Z",
-  "lastNewsScan": "2026-10-24T00:50:27.577Z",
+  "generatedAt": "2026-10-24T06:00:10.191Z",
+  "lastNewsScan": "2026-10-24T06:00:10.188Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2414,20 +2414,20 @@
     {
       "date": "2026-05-06",
       "type": "utdelning",
-      "ticker": "HM-B.ST",
-      "name": "H&M",
-      "perShare": 3.55,
-      "shares": 7200,
-      "amount": 25560
-    },
-    {
-      "date": "2026-05-06",
-      "type": "utdelning",
       "ticker": "EPI-B.ST",
       "name": "Epiroc",
       "perShare": 1.9,
       "shares": 38000,
       "amount": 72200
+    },
+    {
+      "date": "2026-05-06",
+      "type": "utdelning",
+      "ticker": "HM-B.ST",
+      "name": "H&M",
+      "perShare": 3.55,
+      "shares": 7200,
+      "amount": 25560
     },
     {
       "date": "2026-04-30",
@@ -3013,20 +3013,20 @@
     {
       "date": "2023-04-28",
       "type": "utdelning",
-      "ticker": "SAND.ST",
-      "name": "Sandvik",
-      "perShare": 5,
-      "shares": 12000,
-      "amount": 60000
-    },
-    {
-      "date": "2023-04-28",
-      "type": "utdelning",
       "ticker": "ATCO-A.ST",
       "name": "Atlas Copco A",
       "perShare": 1.15,
       "shares": 28000,
       "amount": 32200
+    },
+    {
+      "date": "2023-04-28",
+      "type": "utdelning",
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "perShare": 5,
+      "shares": 12000,
+      "amount": 60000
     },
     {
       "date": "2023-04-27",
@@ -3319,20 +3319,20 @@
     {
       "date": "2021-04-28",
       "type": "utdelning",
-      "ticker": "SAND.ST",
-      "name": "Sandvik",
-      "perShare": 6.5,
-      "shares": 12000,
-      "amount": 78000
-    },
-    {
-      "date": "2021-04-28",
-      "type": "utdelning",
       "ticker": "ATCO-A.ST",
       "name": "Atlas Copco A",
       "perShare": 0.9125,
       "shares": 28000,
       "amount": 25550
+    },
+    {
+      "date": "2021-04-28",
+      "type": "utdelning",
+      "ticker": "SAND.ST",
+      "name": "Sandvik",
+      "perShare": 6.5,
+      "shares": 12000,
+      "amount": 78000
     },
     {
       "date": "2021-04-28",
@@ -3553,20 +3553,20 @@
     {
       "date": "2019-05-08",
       "type": "utdelning",
-      "ticker": "ARJO-B.ST",
-      "name": "Arjo",
-      "perShare": 0.55,
-      "shares": 180000,
-      "amount": 99000
-    },
-    {
-      "date": "2019-05-08",
-      "type": "utdelning",
       "ticker": "KINV-B.ST",
       "name": "Kinnevik",
       "perShare": 4.25,
       "shares": 12000,
       "amount": 51000
+    },
+    {
+      "date": "2019-05-08",
+      "type": "utdelning",
+      "ticker": "ARJO-B.ST",
+      "name": "Arjo",
+      "perShare": 0.55,
+      "shares": 180000,
+      "amount": 99000
     },
     {
       "date": "2019-04-30",
@@ -3580,20 +3580,20 @@
     {
       "date": "2019-04-26",
       "type": "utdelning",
-      "ticker": "ASSA-B.ST",
-      "name": "Assa Abloy",
-      "perShare": 3.5,
-      "shares": 18000,
-      "amount": 63000
-    },
-    {
-      "date": "2019-04-26",
-      "type": "utdelning",
       "ticker": "ATCO-A.ST",
       "name": "Atlas Copco A",
       "perShare": 0.7875,
       "shares": 28000,
       "amount": 22050
+    },
+    {
+      "date": "2019-04-26",
+      "type": "utdelning",
+      "ticker": "ASSA-B.ST",
+      "name": "Assa Abloy",
+      "perShare": 3.5,
+      "shares": 18000,
+      "amount": 63000
     },
     {
       "date": "2019-04-11",
