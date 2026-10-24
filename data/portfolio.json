@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T11:16:07.880Z",
-  "lastNewsScan": "2026-10-24T11:16:07.878Z",
+  "generatedAt": "2026-10-24T14:39:23.670Z",
+  "lastNewsScan": "2026-10-24T14:39:23.668Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2608,20 +2608,20 @@
     {
       "date": "2025-05-09",
       "type": "utdelning",
-      "ticker": "SECU-B.ST",
-      "name": "Securitas",
-      "perShare": 2.25,
-      "shares": 27000,
-      "amount": 60750
-    },
-    {
-      "date": "2025-05-09",
-      "type": "utdelning",
       "ticker": "EPI-B.ST",
       "name": "Epiroc",
       "perShare": 1.9,
       "shares": 21500,
       "amount": 40850
+    },
+    {
+      "date": "2025-05-09",
+      "type": "utdelning",
+      "ticker": "SECU-B.ST",
+      "name": "Securitas",
+      "perShare": 2.25,
+      "shares": 27000,
+      "amount": 60750
     },
     {
       "date": "2025-05-08",
@@ -2653,20 +2653,20 @@
     {
       "date": "2025-04-30",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 1.668288,
-      "shares": 14600,
-      "amount": 24357
-    },
-    {
-      "date": "2025-04-30",
-      "type": "utdelning",
       "ticker": "ATCO-B.ST",
       "name": "Atlas Copco",
       "perShare": 1.5,
       "shares": 16300,
       "amount": 24450
+    },
+    {
+      "date": "2025-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 1.668288,
+      "shares": 14600,
+      "amount": 24357
     },
     {
       "date": "2025-04-30",
