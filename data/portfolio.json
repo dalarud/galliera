@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T14:39:23.670Z",
-  "lastNewsScan": "2026-10-24T14:39:23.668Z",
+  "generatedAt": "2026-10-24T18:14:07.811Z",
+  "lastNewsScan": "2026-10-24T18:14:07.808Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2653,20 +2653,20 @@
     {
       "date": "2025-04-30",
       "type": "utdelning",
-      "ticker": "ATCO-B.ST",
-      "name": "Atlas Copco",
-      "perShare": 1.5,
-      "shares": 16300,
-      "amount": 24450
-    },
-    {
-      "date": "2025-04-30",
-      "type": "utdelning",
       "ticker": "MCOV-B.ST",
       "name": "Medicover",
       "perShare": 1.668288,
       "shares": 14600,
       "amount": 24357
+    },
+    {
+      "date": "2025-04-30",
+      "type": "utdelning",
+      "ticker": "ATCO-B.ST",
+      "name": "Atlas Copco",
+      "perShare": 1.5,
+      "shares": 16300,
+      "amount": 24450
     },
     {
       "date": "2025-04-30",
@@ -3616,20 +3616,20 @@
     {
       "date": "2019-03-29",
       "type": "utdelning",
-      "ticker": "NDA-SE.ST",
-      "name": "Nordea Bank",
-      "perShare": 7.6741247,
-      "shares": 20000,
-      "amount": 153482
-    },
-    {
-      "date": "2019-03-29",
-      "type": "utdelning",
       "ticker": "SWED-A.ST",
       "name": "Swedbank",
       "perShare": 14.2,
       "shares": 13000,
       "amount": 184600
+    },
+    {
+      "date": "2019-03-29",
+      "type": "utdelning",
+      "ticker": "NDA-SE.ST",
+      "name": "Nordea Bank",
+      "perShare": 7.6741247,
+      "shares": 20000,
+      "amount": 153482
     },
     {
       "date": "2019-03-28",
