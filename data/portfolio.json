@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T22:21:31.937Z",
-  "lastNewsScan": "2026-10-23T22:21:31.934Z",
+  "generatedAt": "2026-10-24T00:50:27.580Z",
+  "lastNewsScan": "2026-10-24T00:50:27.577Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2432,20 +2432,20 @@
     {
       "date": "2026-04-30",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 2.224384,
-      "shares": 14600,
-      "amount": 32476
-    },
-    {
-      "date": "2026-04-30",
-      "type": "utdelning",
       "ticker": "SECU-B.ST",
       "name": "Securitas",
       "perShare": 2.65,
       "shares": 30800,
       "amount": 81620
+    },
+    {
+      "date": "2026-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 2.224384,
+      "shares": 14600,
+      "amount": 32476
     },
     {
       "date": "2026-04-29",
@@ -2608,20 +2608,20 @@
     {
       "date": "2025-05-09",
       "type": "utdelning",
-      "ticker": "EPI-B.ST",
-      "name": "Epiroc",
-      "perShare": 1.9,
-      "shares": 21500,
-      "amount": 40850
-    },
-    {
-      "date": "2025-05-09",
-      "type": "utdelning",
       "ticker": "SECU-B.ST",
       "name": "Securitas",
       "perShare": 2.25,
       "shares": 27000,
       "amount": 60750
+    },
+    {
+      "date": "2025-05-09",
+      "type": "utdelning",
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "perShare": 1.9,
+      "shares": 21500,
+      "amount": 40850
     },
     {
       "date": "2025-05-08",
@@ -2914,20 +2914,20 @@
     {
       "date": "2024-03-28",
       "type": "utdelning",
-      "ticker": "VOLV-B.ST",
-      "name": "Volvo",
-      "perShare": 18,
-      "shares": 10327,
-      "amount": 185886
-    },
-    {
-      "date": "2024-03-28",
-      "type": "utdelning",
       "ticker": "SKA-B.ST",
       "name": "Skanska",
       "perShare": 5.5,
       "shares": 13900,
       "amount": 76450
+    },
+    {
+      "date": "2024-03-28",
+      "type": "utdelning",
+      "ticker": "VOLV-B.ST",
+      "name": "Volvo",
+      "perShare": 18,
+      "shares": 10327,
+      "amount": 185886
     },
     {
       "date": "2024-03-22",
@@ -3013,20 +3013,20 @@
     {
       "date": "2023-04-28",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 1.15,
-      "shares": 28000,
-      "amount": 32200
-    },
-    {
-      "date": "2023-04-28",
-      "type": "utdelning",
       "ticker": "SAND.ST",
       "name": "Sandvik",
       "perShare": 5,
       "shares": 12000,
       "amount": 60000
+    },
+    {
+      "date": "2023-04-28",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 1.15,
+      "shares": 28000,
+      "amount": 32200
     },
     {
       "date": "2023-04-27",
@@ -3319,20 +3319,20 @@
     {
       "date": "2021-04-28",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 0.9125,
-      "shares": 28000,
-      "amount": 25550
-    },
-    {
-      "date": "2021-04-28",
-      "type": "utdelning",
       "ticker": "SAND.ST",
       "name": "Sandvik",
       "perShare": 6.5,
       "shares": 12000,
       "amount": 78000
+    },
+    {
+      "date": "2021-04-28",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 0.9125,
+      "shares": 28000,
+      "amount": 25550
     },
     {
       "date": "2021-04-28",
@@ -3580,20 +3580,20 @@
     {
       "date": "2019-04-26",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 0.7875,
-      "shares": 28000,
-      "amount": 22050
-    },
-    {
-      "date": "2019-04-26",
-      "type": "utdelning",
       "ticker": "ASSA-B.ST",
       "name": "Assa Abloy",
       "perShare": 3.5,
       "shares": 18000,
       "amount": 63000
+    },
+    {
+      "date": "2019-04-26",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 0.7875,
+      "shares": 28000,
+      "amount": 22050
     },
     {
       "date": "2019-04-11",
