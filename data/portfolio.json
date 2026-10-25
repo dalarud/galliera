@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T23:22:48.241Z",
-  "lastNewsScan": "2026-10-24T23:22:48.238Z",
+  "generatedAt": "2026-10-25T01:21:16.710Z",
+  "lastNewsScan": "2026-10-25T01:21:16.708Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -3616,20 +3616,20 @@
     {
       "date": "2019-03-29",
       "type": "utdelning",
-      "ticker": "SWED-A.ST",
-      "name": "Swedbank",
-      "perShare": 14.2,
-      "shares": 13000,
-      "amount": 184600
-    },
-    {
-      "date": "2019-03-29",
-      "type": "utdelning",
       "ticker": "NDA-SE.ST",
       "name": "Nordea Bank",
       "perShare": 7.6741247,
       "shares": 20000,
       "amount": 153482
+    },
+    {
+      "date": "2019-03-29",
+      "type": "utdelning",
+      "ticker": "SWED-A.ST",
+      "name": "Swedbank",
+      "perShare": 14.2,
+      "shares": 13000,
+      "amount": 184600
     },
     {
       "date": "2019-03-28",
