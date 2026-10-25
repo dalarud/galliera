@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-25T01:21:16.710Z",
-  "lastNewsScan": "2026-10-25T01:21:16.708Z",
+  "generatedAt": "2026-10-25T06:18:39.455Z",
+  "lastNewsScan": "2026-10-25T06:18:39.453Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -3580,20 +3580,20 @@
     {
       "date": "2019-04-26",
       "type": "utdelning",
-      "ticker": "ASSA-B.ST",
-      "name": "Assa Abloy",
-      "perShare": 3.5,
-      "shares": 18000,
-      "amount": 63000
-    },
-    {
-      "date": "2019-04-26",
-      "type": "utdelning",
       "ticker": "ATCO-A.ST",
       "name": "Atlas Copco A",
       "perShare": 0.7875,
       "shares": 28000,
       "amount": 22050
+    },
+    {
+      "date": "2019-04-26",
+      "type": "utdelning",
+      "ticker": "ASSA-B.ST",
+      "name": "Assa Abloy",
+      "perShare": 3.5,
+      "shares": 18000,
+      "amount": 63000
     },
     {
       "date": "2019-04-11",
