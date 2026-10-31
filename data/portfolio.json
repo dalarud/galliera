@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-31T12:46:45.338Z",
-  "lastNewsScan": "2026-10-31T12:46:45.336Z",
+  "generatedAt": "2026-10-31T17:48:41.253Z",
+  "lastNewsScan": "2026-10-31T17:48:41.250Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -113,7 +113,7 @@
       "gainPct": 1.7,
       "since": "2024-02-15",
       "basis": "rapporterad",
-      "quoteTime": 1793361575
+      "quoteTime": 1793361576
     },
     {
       "ticker": "SAND.ST",
@@ -321,7 +321,7 @@
       "gainPct": 0.14,
       "since": "2026-04-24",
       "basis": "rapporterad",
-      "quoteTime": 1793361594
+      "quoteTime": 1793361593
     },
     {
       "ticker": "HEXA-B.ST",
@@ -2662,20 +2662,20 @@
     {
       "date": "2025-04-30",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 1.6444261,
-      "shares": 14600,
-      "amount": 24009
-    },
-    {
-      "date": "2025-04-30",
-      "type": "utdelning",
       "ticker": "ATCO-B.ST",
       "name": "Atlas Copco",
       "perShare": 1.5,
       "shares": 16300,
       "amount": 24450
+    },
+    {
+      "date": "2025-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 1.6444261,
+      "shares": 14600,
+      "amount": 24009
     },
     {
       "date": "2025-04-30",
@@ -2923,20 +2923,20 @@
     {
       "date": "2024-03-28",
       "type": "utdelning",
-      "ticker": "SKA-B.ST",
-      "name": "Skanska",
-      "perShare": 5.5,
-      "shares": 13900,
-      "amount": 76450
-    },
-    {
-      "date": "2024-03-28",
-      "type": "utdelning",
       "ticker": "VOLV-B.ST",
       "name": "Volvo",
       "perShare": 18,
       "shares": 10327,
       "amount": 185886
+    },
+    {
+      "date": "2024-03-28",
+      "type": "utdelning",
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "perShare": 5.5,
+      "shares": 13900,
+      "amount": 76450
     },
     {
       "date": "2024-03-22",
@@ -3562,20 +3562,20 @@
     {
       "date": "2019-05-08",
       "type": "utdelning",
-      "ticker": "KINV-B.ST",
-      "name": "Kinnevik",
-      "perShare": 4.25,
-      "shares": 12000,
-      "amount": 51000
-    },
-    {
-      "date": "2019-05-08",
-      "type": "utdelning",
       "ticker": "ARJO-B.ST",
       "name": "Arjo",
       "perShare": 0.55,
       "shares": 180000,
       "amount": 99000
+    },
+    {
+      "date": "2019-05-08",
+      "type": "utdelning",
+      "ticker": "KINV-B.ST",
+      "name": "Kinnevik",
+      "perShare": 4.25,
+      "shares": 12000,
+      "amount": 51000
     },
     {
       "date": "2019-04-30",
