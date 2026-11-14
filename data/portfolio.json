@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T06:43:01.576Z",
-  "lastNewsScan": "2026-11-14T06:43:01.573Z",
+  "generatedAt": "2026-11-14T14:17:41.658Z",
+  "lastNewsScan": "2026-11-14T14:17:41.655Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2635,20 +2635,20 @@
     {
       "date": "2025-05-09",
       "type": "utdelning",
-      "ticker": "EPI-B.ST",
-      "name": "Epiroc",
-      "perShare": 1.9,
-      "shares": 21500,
-      "amount": 40850
-    },
-    {
-      "date": "2025-05-09",
-      "type": "utdelning",
       "ticker": "SECU-B.ST",
       "name": "Securitas",
       "perShare": 2.25,
       "shares": 27000,
       "amount": 60750
+    },
+    {
+      "date": "2025-05-09",
+      "type": "utdelning",
+      "ticker": "EPI-B.ST",
+      "name": "Epiroc",
+      "perShare": 1.9,
+      "shares": 21500,
+      "amount": 40850
     },
     {
       "date": "2025-05-08",
