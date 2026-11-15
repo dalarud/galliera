@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T02:49:00.100Z",
-  "lastNewsScan": "2026-11-15T02:49:00.097Z",
+  "generatedAt": "2026-11-15T11:13:17.457Z",
+  "lastNewsScan": "2026-11-15T11:13:17.454Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2680,20 +2680,20 @@
     {
       "date": "2025-04-30",
       "type": "utdelning",
-      "ticker": "MCOV-B.ST",
-      "name": "Medicover",
-      "perShare": 1.6656001,
-      "shares": 14600,
-      "amount": 24318
-    },
-    {
-      "date": "2025-04-30",
-      "type": "utdelning",
       "ticker": "ATCO-B.ST",
       "name": "Atlas Copco",
       "perShare": 1.5,
       "shares": 16300,
       "amount": 24450
+    },
+    {
+      "date": "2025-04-30",
+      "type": "utdelning",
+      "ticker": "MCOV-B.ST",
+      "name": "Medicover",
+      "perShare": 1.6656001,
+      "shares": 14600,
+      "amount": 24318
     },
     {
       "date": "2025-04-30",
@@ -3607,20 +3607,20 @@
     {
       "date": "2019-04-26",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 0.7875,
-      "shares": 28000,
-      "amount": 22050
-    },
-    {
-      "date": "2019-04-26",
-      "type": "utdelning",
       "ticker": "ASSA-B.ST",
       "name": "Assa Abloy",
       "perShare": 3.5,
       "shares": 18000,
       "amount": 63000
+    },
+    {
+      "date": "2019-04-26",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 0.7875,
+      "shares": 28000,
+      "amount": 22050
     },
     {
       "date": "2019-04-11",
