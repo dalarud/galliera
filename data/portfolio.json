@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-21T11:24:23.763Z",
-  "lastNewsScan": "2026-11-21T11:24:23.761Z",
+  "generatedAt": "2026-11-21T19:28:34.339Z",
+  "lastNewsScan": "2026-11-21T19:28:34.335Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -113,7 +113,7 @@
       "gainPct": -4.92,
       "since": "2024-02-15",
       "basis": "rapporterad",
-      "quoteTime": 1795192185
+      "quoteTime": 1795192184
     },
     {
       "ticker": "SAND.ST",
@@ -305,7 +305,7 @@
       "gainPct": -3.3,
       "since": "2026-04-24",
       "basis": "rapporterad",
-      "quoteTime": 1795192186
+      "quoteTime": 1795192185
     },
     {
       "ticker": "SWEC-B.ST",
@@ -353,7 +353,7 @@
       "gainPct": 16.32,
       "since": "2026-09-15",
       "basis": "uppskattad",
-      "quoteTime": 1795192187
+      "quoteTime": 1795192186
     },
     {
       "ticker": "HM-B.ST",
@@ -3589,20 +3589,20 @@
     {
       "date": "2019-05-08",
       "type": "utdelning",
-      "ticker": "ARJO-B.ST",
-      "name": "Arjo",
-      "perShare": 0.55,
-      "shares": 180000,
-      "amount": 99000
-    },
-    {
-      "date": "2019-05-08",
-      "type": "utdelning",
       "ticker": "KINV-B.ST",
       "name": "Kinnevik",
       "perShare": 4.25,
       "shares": 12000,
       "amount": 51000
+    },
+    {
+      "date": "2019-05-08",
+      "type": "utdelning",
+      "ticker": "ARJO-B.ST",
+      "name": "Arjo",
+      "perShare": 0.55,
+      "shares": 180000,
+      "amount": 99000
     },
     {
       "date": "2019-04-30",
@@ -3616,20 +3616,20 @@
     {
       "date": "2019-04-26",
       "type": "utdelning",
-      "ticker": "ASSA-B.ST",
-      "name": "Assa Abloy",
-      "perShare": 3.5,
-      "shares": 18000,
-      "amount": 63000
-    },
-    {
-      "date": "2019-04-26",
-      "type": "utdelning",
       "ticker": "ATCO-A.ST",
       "name": "Atlas Copco A",
       "perShare": 0.7875,
       "shares": 28000,
       "amount": 22050
+    },
+    {
+      "date": "2019-04-26",
+      "type": "utdelning",
+      "ticker": "ASSA-B.ST",
+      "name": "Assa Abloy",
+      "perShare": 3.5,
+      "shares": 18000,
+      "amount": 63000
     },
     {
       "date": "2019-04-11",
