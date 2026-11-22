@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22T08:10:17.243Z",
-  "lastNewsScan": "2026-11-22T08:10:17.238Z",
+  "generatedAt": "2026-11-22T16:25:36.450Z",
+  "lastNewsScan": "2026-11-22T16:25:36.421Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2689,6 +2689,15 @@
     {
       "date": "2025-04-30",
       "type": "utdelning",
+      "ticker": "ALFA.ST",
+      "name": "Alfa Laval",
+      "perShare": 8.5,
+      "shares": 6000,
+      "amount": 51000
+    },
+    {
+      "date": "2025-04-30",
+      "type": "utdelning",
       "ticker": "MCOV-B.ST",
       "name": "Medicover",
       "perShare": 1.682094,
@@ -2703,15 +2712,6 @@
       "perShare": 1.5,
       "shares": 16300,
       "amount": 24450
-    },
-    {
-      "date": "2025-04-30",
-      "type": "utdelning",
-      "ticker": "ALFA.ST",
-      "name": "Alfa Laval",
-      "perShare": 8.5,
-      "shares": 6000,
-      "amount": 51000
     },
     {
       "date": "2025-04-30",
@@ -3049,20 +3049,20 @@
     {
       "date": "2023-04-28",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 1.15,
-      "shares": 28000,
-      "amount": 32200
-    },
-    {
-      "date": "2023-04-28",
-      "type": "utdelning",
       "ticker": "SAND.ST",
       "name": "Sandvik",
       "perShare": 5,
       "shares": 12000,
       "amount": 60000
+    },
+    {
+      "date": "2023-04-28",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 1.15,
+      "shares": 28000,
+      "amount": 32200
     },
     {
       "date": "2023-04-27",
@@ -3355,20 +3355,20 @@
     {
       "date": "2021-04-28",
       "type": "utdelning",
-      "ticker": "ATCO-A.ST",
-      "name": "Atlas Copco A",
-      "perShare": 0.9125,
-      "shares": 28000,
-      "amount": 25550
-    },
-    {
-      "date": "2021-04-28",
-      "type": "utdelning",
       "ticker": "SAND.ST",
       "name": "Sandvik",
       "perShare": 6.5,
       "shares": 12000,
       "amount": 78000
+    },
+    {
+      "date": "2021-04-28",
+      "type": "utdelning",
+      "ticker": "ATCO-A.ST",
+      "name": "Atlas Copco A",
+      "perShare": 0.9125,
+      "shares": 28000,
+      "amount": 25550
     },
     {
       "date": "2021-04-28",
