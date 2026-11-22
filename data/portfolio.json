@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-21T19:28:34.339Z",
-  "lastNewsScan": "2026-11-21T19:28:34.335Z",
+  "generatedAt": "2026-11-22T00:28:39.871Z",
+  "lastNewsScan": "2026-11-22T00:28:39.868Z",
   "fund": "Gallierafonden",
   "baseline": "2018-03-29",
   "denseFrom": "2023-09-07",
@@ -2950,20 +2950,20 @@
     {
       "date": "2024-03-28",
       "type": "utdelning",
-      "ticker": "SKA-B.ST",
-      "name": "Skanska",
-      "perShare": 5.5,
-      "shares": 13900,
-      "amount": 76450
-    },
-    {
-      "date": "2024-03-28",
-      "type": "utdelning",
       "ticker": "VOLV-B.ST",
       "name": "Volvo",
       "perShare": 18,
       "shares": 10327,
       "amount": 185886
+    },
+    {
+      "date": "2024-03-28",
+      "type": "utdelning",
+      "ticker": "SKA-B.ST",
+      "name": "Skanska",
+      "perShare": 5.5,
+      "shares": 13900,
+      "amount": 76450
     },
     {
       "date": "2024-03-22",
